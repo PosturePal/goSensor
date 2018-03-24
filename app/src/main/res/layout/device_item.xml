@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
-    android:paddingHorizontal="20dp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:paddingHorizontal="20dp">
 
     <ImageView
         android:id="@+id/imgview"
@@ -42,12 +41,39 @@
             android:textSize="10dp" />
     </LinearLayout>
 
-    <Button
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@android:drawable/ic_menu_send"
-        android:text=""
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/connect_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:background="@android:drawable/ic_menu_send" />
+
+        <Button
+            android:id="@+id/disconnect_button"
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="0dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:background="@android:drawable/ic_delete"
+            android:backgroundTint="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:background="@android:drawable/ic_menu_delete" />
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

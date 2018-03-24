@@ -11,6 +11,7 @@ class DevicesListAdapter(private var deviceFr:DevicesFragment, private var items
     private class ViewHolder(row: View?){
         var deviceName:TextView? = null
         var deviceStatus:TextView? = null
+        var deviceAddress:String = ""
         init {
             this.deviceName = row?.findViewById(R.id.device_item_name)
             this.deviceStatus = row?.findViewById(R.id.device_item_status)
@@ -33,10 +34,16 @@ class DevicesListAdapter(private var deviceFr:DevicesFragment, private var items
             viewHolder = view.tag as ViewHolder
         }
 
-        var device = items[position]
+        val device = items[position]
         viewHolder.deviceName?.text = device.name
-        viewHolder.deviceStatus?.text = device.address
-
+        viewHolder.deviceStatus?.text =
+                when(device.bondState){
+                    BluetoothDevice.BOND_NONE -> "not paired"
+                    BluetoothDevice.BOND_BONDING -> "pairing"
+                    BluetoothDevice.BOND_BONDED -> "paired before"
+                    else -> device.address
+                }
+        viewHolder.deviceAddress = device.address
         return view as View
     }
 

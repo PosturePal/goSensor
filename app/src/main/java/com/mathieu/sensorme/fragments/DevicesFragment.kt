@@ -126,6 +126,7 @@ class DevicesFragment : Fragment(), View.OnClickListener {
             startActivityForResult(enableBtIntent, BluetoothAdapter.STATE_ON)
         }
 
+
         if(mBluetoothAdapter.isEnabled)
         {
 
@@ -140,6 +141,11 @@ class DevicesFragment : Fragment(), View.OnClickListener {
             mBluetoothAdapter.startDiscovery()
         }
 
+
+        for (d in mBluetoothAdapter.bondedDevices)
+        {
+            mAvailableDevicesAdapter.addItem(d)
+        }
 
         available_devices_list.adapter = mAvailableDevicesAdapter
         stat_available_count.text = mAvailableDevicesAdapter.count.toString()
