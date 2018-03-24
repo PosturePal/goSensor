@@ -1,0 +1,45 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mathieu.sensorme.fragments.SettingsFragment">
+
+    <include
+        layout="@layout/fragment_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ОПА !"
+            android:textSize="@dimen/hh_text_size"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coming Soon..."
+            android:textSize="@dimen/hh_text_size"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:paddingBottom="50dp"/>
+
+        <ImageView
+            android:contentDescription="under constr"
+            android:layout_width="wrap_content"
+            android:layout_height="230dp"
+            android:src="@drawable/goose"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="-5dp"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

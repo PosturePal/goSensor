@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SensorMe</string>
+    <string name="version">Beta</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="brainhub_email">help@sensors.me</string>
+    <string name="help_link">https://google.com</string>
+    <string name="share_text">Check our website: https://google.com !</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
