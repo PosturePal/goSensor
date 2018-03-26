@@ -17,7 +17,9 @@ import android.support.design.widget.Snackbar
 import android.widget.TextView
 import com.mathieu.sensorme.DevicesListAdapter
 import com.mathieu.sensorme.R
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_devices.view.*
+import kotlinx.android.synthetic.main.nav_action.*
 
 
 /**
@@ -74,6 +76,7 @@ class DevicesFragment : Fragment(), View.OnClickListener {
 
         inf.sync_devices.setOnClickListener(this)
 //        inf.available_devices_list.isScrollContainer = false
+        activity.appbar.setVisibility(View.INVISIBLE);
 
         return inf
 
@@ -153,6 +156,8 @@ class DevicesFragment : Fragment(), View.OnClickListener {
     override fun onPause() {
         Log.d(TAG, "onPause")
         super.onPause()
+
+        activity.appbar.setVisibility(View.VISIBLE);
     }
 
     override fun onStop() {
