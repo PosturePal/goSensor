@@ -23,6 +23,14 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
+
+                <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleY="2.7"
+                    android:scaleX="2.7"
+                    app:src="@drawable/boxing"/>
                 <!--<ImageView-->
                 <!--android:layout_width="match_parent"-->
                 <!--android:layout_height="match_parent"-->
@@ -30,13 +38,13 @@
                 <!--android:contentDescription="Boxing back"-->
                 <!--android:scaleType="centerCrop"-->
                 <!--android:scrollbars="none"-->
-                <!--android:src="@drawable/boxing" />-->
+                <!--android:src="@drawable/boxing"-->
+                <!--android:tint="#af1c313a"/>-->
 
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/gradient_default">
-                    <!--#af1c313a-->
+                    android:background="#af1c313a">
                 </FrameLayout>
 
             </RelativeLayout>
