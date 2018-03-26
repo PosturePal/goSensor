@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
+    <group
+        android:id="@+id/nav_group_main"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home_item"
             android:icon="@mipmap/ic_home_black_24dp"
@@ -9,30 +11,54 @@
         <item
             android:id="@+id/nav_devices_item"
             android:icon="@mipmap/ic_devices_other_black_24dp"
-            android:title="Devices" />
+            android:title="Connect" />
+
         <item
             android:id="@+id/nav_something_item"
             android:icon="@mipmap/ic_sync_black_24dp"
-            android:title="Something" />
-        <item
-            android:id="@+id/nav_other_item"
-            android:icon="@mipmap/ic_launcher_round"
-            android:title="Other" />
+            android:title="Competition" />
         <item
             android:id="@+id/nav_settings_item"
             android:icon="@mipmap/ic_settings_black_24dp"
             android:title="Settings" />
     </group>
 
-    <item android:title="Other">
-        <menu>
-            <item
-                android:id="@+id/nav_help_item"
-                android:icon="@mipmap/ic_help_outline_black_24dp"
-                android:title="Help" />
-            <item android:id="@+id/nav_share_item"
-                android:icon="@mipmap/ic_share_black_24dp"
-                android:title="Share"/>
-        </menu>
-    </item>
+
+    <!--<group-->
+        <!--android:id="@+id/nav_group_chars"-->
+        <!--android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/nav_intensity_item"-->
+            <!--android:icon="@mipmap/ic_launcher_round"-->
+            <!--android:title="Intensity" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_quality_item"-->
+            <!--android:icon="@mipmap/ic_launcher_round"-->
+            <!--android:title="Quality" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_train_item"-->
+            <!--android:icon="@mipmap/ic_launcher_round"-->
+            <!--android:title="Train" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_track_item"-->
+            <!--android:icon="@mipmap/ic_launcher_round"-->
+            <!--android:title="Track" />-->
+    <!--</group>-->
+
+    <group
+        android:id="@+id/nav_group_other"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_help_item"
+            android:icon="@mipmap/ic_help_outline_black_24dp"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_about_item"
+            android:icon="@mipmap/ic_help_outline_black_24dp"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_share_item"
+            android:icon="@mipmap/ic_share_black_24dp"
+            android:title="Share" />
+    </group>
 </menu>

@@ -70,10 +70,15 @@ class DevicesListAdapter(private var deviceFr:DevicesFragment, private var items
     }
     public fun addItem(btd:BluetoothDevice)
     {
-        if(!items.contains(btd)) {
-            items.add(btd)
-            notifyDataSetChanged()
-        }
+//        if(!items.contains(btd)) {
+        items.add(btd)
+        items.add(btd)
+        items.add(btd)
+        items.add(btd)
+        items.add(btd)
+        items.add(btd)
+        notifyDataSetChanged()
+//        }
     }
     fun clear() {
         items.clear()

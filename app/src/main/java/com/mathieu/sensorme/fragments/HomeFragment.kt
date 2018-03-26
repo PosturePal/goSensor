@@ -1,20 +1,11 @@
 package com.mathieu.sensorme.fragments
 
 import android.content.Context
-import android.os.Build
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.transition.Explode
-import android.transition.TransitionManager
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import com.mathieu.sensorme.R
-import kotlinx.android.synthetic.main.fragment_home.*
-import android.transition.Slide
-import android.view.Gravity
-
+import android.view.*
 
 /**
  * A fragment with a Google +1 button.
@@ -46,6 +37,15 @@ class HomeFragment : Fragment(), View.OnClickListener {
         //inf.home_logo_element.setOnClickListener(this)
         return inf;
     }
+
+
+    fun changeFragment(newFragment: Fragment) {
+        val ft = this.activity.supportFragmentManager.beginTransaction()
+        ft.replace(R.id.home_fragments_layout, newFragment)
+        ft.addToBackStack(null)
+        ft.commit()
+    }
+
 
     override fun onClick(v: View) {
         when (v.id) {

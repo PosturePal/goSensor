@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_nav_connect_item"
+        android:icon="@mipmap/ic_devices_other_black_24dp"
+        android:title="Connect" />
+    <item
+        android:id="@+id/bottom_nav_intensity_item"
+        android:icon="@drawable/ic_keyboard_arrow_down_white_24dp"
+        android:title="Intensity"/>
+    <item
+        android:id="@+id/bottom_nav_quality_item"
+        android:icon="@mipmap/ic_sync_black_24dp"
+        android:title="Quality"/>
+    <item
+        android:id="@+id/bottom_nav_train_item"
+        android:icon="@mipmap/ic_settings_black_24dp"
+        android:title="Train"/>
+    <item
+        android:id="@+id/bottom_nav_track_item"
+        android:icon="@mipmap/ic_share_black_24dp"
+        android:title="Track"/>
+</menu>
