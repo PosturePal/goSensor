@@ -15,9 +15,9 @@
         android:icon="@mipmap/ic_sync_black_24dp"
         android:title="Quality"/>
     <item
-        android:id="@+id/bottom_nav_train_item"
+        android:id="@+id/bottom_nav_competition_item"
         android:icon="@mipmap/ic_settings_black_24dp"
-        android:title="Train"/>
+        android:title="Competition"/>
     <item
         android:id="@+id/bottom_nav_track_item"
         android:icon="@mipmap/ic_share_black_24dp"

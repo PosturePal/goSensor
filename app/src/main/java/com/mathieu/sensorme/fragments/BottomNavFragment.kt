@@ -61,7 +61,7 @@ class BottomNavFragment : Fragment(), View.OnClickListener {
         inf.bottom_navigation.enableAnimation(false)
         inf.bottom_navigation.enableShiftingMode(false)
         inf.bottom_navigation.enableItemShiftingMode(false)
-        //        activity.nav_action.setVisibility(View.GONE)
+                activity.collapsingtoolbarly.setVisibility(View.GONE)
         return inf;
     }
 
@@ -83,6 +83,18 @@ class BottomNavFragment : Fragment(), View.OnClickListener {
             R.id.bottom_nav_intensity_item -> {
                 activity.nav_action.setTitle("Intensity")
                 changeFragment(IntensityFagment())
+            }
+            R.id.bottom_nav_quality_item -> {
+                activity.nav_action.setTitle("Quality")
+                changeFragment(QualityFragment())
+            }
+            R.id.bottom_nav_competition_item -> {
+                activity.nav_action.setTitle("Competition")
+                changeFragment(CompetitionFragment())
+            }
+            R.id.bottom_nav_track_item -> {
+                activity.nav_action.setTitle("Track")
+                changeFragment(TrackFragment())
             }
             else -> {
                 activity.nav_action.setTitle("Under Construction")
@@ -117,7 +129,7 @@ class BottomNavFragment : Fragment(), View.OnClickListener {
     override fun onPause() {
         Log.d(TAG, "onPause")
         super.onPause()
-//        activity.nav_action.setVisibility(View.VISIBLE);
+        activity.collapsingtoolbarly.setVisibility(View.VISIBLE);
     }
 
     override fun onStop() {

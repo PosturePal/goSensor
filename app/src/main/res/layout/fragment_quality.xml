@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mathieu.sensorme.fragments.QualityFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_keyboard_arrow_down_white_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleY="2.7"
+                android:scaleX="2.7"
+                app:src="@drawable/boxing_girl"/>
+            <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:contentDescription="Boxing back"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:scrollbars="none"-->
+            <!--android:src="@drawable/boxing"-->
+            <!--android:tint="#af1c313a"/>-->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#bf1c313a">
+
+                <com.jjoe64.graphview.GraphView
+                    android:id="@+id/quality_graph"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:seriesType="line"
+                    app:seriesColor="#d15b5b"/>
+            </FrameLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

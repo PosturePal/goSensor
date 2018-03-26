@@ -86,7 +86,7 @@ class MainActivity() : AppCompatActivity() {
                 changeFragment(BottomNavFragment())
             }
             R.id.nav_devices_item -> {
-                nav_action.setTitle("Devices");
+                nav_action.setTitle("Connect");
                 changeFragment(DevicesFragment())
             }
 //            R.id.nav_intensity_item -> {

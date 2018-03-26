@@ -48,14 +48,19 @@ class DevicesFragment : Fragment(), View.OnClickListener {
     private val mReceiver: BroadcastReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context, intent: Intent) {
             Log.d(TAG, "inside receiver")
-            if (BluetoothDevice.ACTION_FOUND.equals(intent.action)) {
-                // discovery found a device
-                val d = intent.getParcelableExtra<BluetoothDevice>(BluetoothDevice.EXTRA_DEVICE)
+            when (intent.action) {
+                BluetoothDevice.ACTION_FOUND -> {
+                    // discovery found a device
+                    val d = intent.getParcelableExtra<BluetoothDevice>(BluetoothDevice.EXTRA_DEVICE)
 
-                Log.i(TAG, "Found Dev name: ${d.name}")
-                mAvailableDevicesAdapter.addItem(d)
-                view?.findViewById<TextView>(R.id.stat_available_count)?.text = mAvailableDevicesAdapter.count.toString()
-                Log.i(TAG, "Added Dev name: ${d.name}")
+                    Log.i(TAG, "Found Dev name: ${d.name}")
+                    mAvailableDevicesAdapter.addItem(d)
+                    view?.findViewById<TextView>(R.id.stat_available_count)?.text = mAvailableDevicesAdapter.count.toString()
+                    Log.i(TAG, "Added Dev name: ${d.name}")
+                }
+                BluetoothAdapter.ACTION_DISCOVERY_FINISHED -> {
+                    sync_devices?.alpha = 0.5f
+                }
             }
         }
     }
@@ -77,7 +82,7 @@ class DevicesFragment : Fragment(), View.OnClickListener {
         inf.sync_devices.setOnClickListener(this)
         inf.delete_devices.setOnClickListener(this)
 //        inf.available_devices_list.isScrollContainer = false
-        activity.appbar.setVisibility(View.INVISIBLE);
+//        activity.appbar.setVisibility(View.INVISIBLE);
 
         return inf
 
@@ -86,9 +91,12 @@ class DevicesFragment : Fragment(), View.OnClickListener {
     override fun onClick(v: View) {
         when (v.id) {
             R.id.sync_devices -> {
-                Log.i(TAG, "Scanning...")
-                rescanBTDevices()
-                alert(v, "Searching new bluetooth devices...")
+//                Log.i(TAG, "Scanning...")
+                if(sync_devices.alpha == 0.5f) {
+                    rescanBTDevices()
+                    alert(v, "Scan enabled..")
+                    sync_devices.alpha = 0.9f
+                }
             }
             R.id.delete_devices -> {
                 mBluetoothAdapter.cancelDiscovery()
@@ -99,10 +107,9 @@ class DevicesFragment : Fragment(), View.OnClickListener {
         }
     }
 
-    private fun alert(v:View, txt:String)
-    {
+    private fun alert(v: View, txt: String) {
 
-        Snackbar.make(v, txt, Snackbar.LENGTH_LONG)
+        Snackbar.make(v, txt, Snackbar.LENGTH_SHORT)
                 .setAction("Action", null).show()
     }
 
@@ -170,7 +177,7 @@ class DevicesFragment : Fragment(), View.OnClickListener {
         Log.d(TAG, "onPause")
         super.onPause()
 
-        activity.appbar.setVisibility(View.VISIBLE);
+//        activity.appbar.setVisibility(View.VISIBLE);
     }
 
     override fun onStop() {

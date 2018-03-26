@@ -51,4 +51,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     compile 'com.github.ittianyu:BottomNavigationViewEx:1.2.4'
+    compile 'com.jjoe64:graphview:4.2.1'
+
 }
