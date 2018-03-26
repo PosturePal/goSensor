@@ -47,7 +47,7 @@ class BottomNavFragment : Fragment(), View.OnClickListener {
         Log.d(TAG, "onCreate")
         super.onCreate(savedInstanceState)
 
-        changeFragment(HomeFragment())
+        changeFragment(DevicesFragment())
     }
 
 

@@ -75,6 +75,7 @@ class DevicesFragment : Fragment(), View.OnClickListener {
         var inf = inflater!!.inflate(R.layout.fragment_devices, container, false)
 
         inf.sync_devices.setOnClickListener(this)
+        inf.delete_devices.setOnClickListener(this)
 //        inf.available_devices_list.isScrollContainer = false
         activity.appbar.setVisibility(View.INVISIBLE);
 
@@ -87,10 +88,22 @@ class DevicesFragment : Fragment(), View.OnClickListener {
             R.id.sync_devices -> {
                 Log.i(TAG, "Scanning...")
                 rescanBTDevices()
-                Snackbar.make(v, "Syncing bluetooth devices...", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show()
+                alert(v, "Searching new bluetooth devices...")
+            }
+            R.id.delete_devices -> {
+                mBluetoothAdapter.cancelDiscovery()
+                mAvailableDevicesAdapter.clear()
+                stat_available_count.text = "0"
+                alert(v, "List is clean now")
             }
         }
+    }
+
+    private fun alert(v:View, txt:String)
+    {
+
+        Snackbar.make(v, txt, Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show()
     }
 
     private fun rescanBTDevices() {
