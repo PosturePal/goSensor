@@ -61,7 +61,7 @@ class BottomNavFragment : Fragment(), View.OnClickListener {
         inf.bottom_navigation.enableAnimation(false)
         inf.bottom_navigation.enableShiftingMode(false)
         inf.bottom_navigation.enableItemShiftingMode(false)
-                activity.collapsingtoolbarly.setVisibility(View.GONE)
+//                activity.collapsingtoolbarly.setVisibility(View.GONE)
         return inf;
     }
 
@@ -129,7 +129,7 @@ class BottomNavFragment : Fragment(), View.OnClickListener {
     override fun onPause() {
         Log.d(TAG, "onPause")
         super.onPause()
-        activity.collapsingtoolbarly.setVisibility(View.VISIBLE);
+//        activity.collapsingtoolbarly.setVisibility(View.VISIBLE);
     }
 
     override fun onStop() {
