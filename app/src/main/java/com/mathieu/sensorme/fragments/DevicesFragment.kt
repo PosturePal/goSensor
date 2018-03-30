@@ -27,7 +27,6 @@ import java.io.InputStream
 import java.io.OutputStream
 import android.bluetooth.BluetoothDevice
 import com.mathieu.sensorme.BTDevice
-import com.mathieu.sensorme.BluetoothConnectionService
 import java.io.DataInputStream
 import java.util.*
 
@@ -50,9 +49,6 @@ class DevicesFragment : Fragment(), View.OnClickListener {
     public val title = "Devices"
     val TAG = "FragmentOne"
     var mAvailableDevicesAdapter = DevicesListAdapter(this, ArrayList())
-//
-//    var mBluetoothConnection: BluetoothConnectionService = BluetoothConnectionService(this.context!!)
-
     var mBluetoothAdapter: BluetoothAdapter = BluetoothAdapter.getDefaultAdapter()
 
     var btdev: BluetoothDevice? = null
@@ -152,9 +148,7 @@ class DevicesFragment : Fragment(), View.OnClickListener {
      */
     fun startBTConnection(device: BluetoothDevice, uuid: UUID) {
         Log.d(TAG, "startBTConnection: Initializing RFCOM Bluetooth Connection.")
-
-        val mBluetoothConnection = BluetoothConnectionService(this.context)
-        mBluetoothConnection.startClient(device, uuid)
+//        mBluetoothConnection.connect(uuid.toString())
     }
 
     override fun onClick(v: View) {
@@ -178,9 +172,11 @@ class DevicesFragment : Fragment(), View.OnClickListener {
         }
     }
 
-    private fun alert(txt: String) {
-        Snackbar.make(view!!, txt, Snackbar.LENGTH_SHORT)
+    public fun alert(txt: String) {
+        view?.let {
+            Snackbar.make(it, txt, Snackbar.LENGTH_SHORT)
                 .setAction("Action", null).show()
+        }
     }
 
     private fun rescanBTDevices() {
@@ -268,6 +264,7 @@ class DevicesFragment : Fragment(), View.OnClickListener {
         Log.d(TAG, "onDestroy")
         super.onDestroy()
 
+//        mBluetoothConnection.close()
         if (registered) {
             context.unregisterReceiver(mReceiver)
         }

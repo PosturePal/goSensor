@@ -68,12 +68,12 @@
             <!--android:background="@android:drawable/ic_delete"-->
             <!--android:backgroundTint="@android:color/darker_gray" />-->
 
-        <!--<Button-->
-            <!--android:id="@+id/device_delete_button"-->
-            <!--android:layout_width="30dp"-->
-            <!--android:layout_height="30dp"-->
-            <!--style="@style/Base.Widget.AppCompat.Button.Borderless"-->
-            <!--android:background="@android:drawable/ic_menu_delete" />-->
+        <Button
+            android:id="@+id/device_read_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:background="@android:drawable/ic_menu_delete" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

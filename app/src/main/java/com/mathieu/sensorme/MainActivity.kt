@@ -13,10 +13,7 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.view.MenuItem
 import com.mathieu.sensorme.fragments.*
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.nav_action.*
-import kotlinx.android.synthetic.main.nav_header.view.*
-
 class MainActivity() : AppCompatActivity() {
 
     private var mToogle: ActionBarDrawerToggle? = null

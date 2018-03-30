@@ -9,7 +9,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.mathieu.sensorme"
-        minSdkVersion 19 //15 //Todo 21
+        minSdkVersion 19 // 15 //Todo 21
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
