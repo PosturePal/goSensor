@@ -53,4 +53,8 @@ dependencies {
     implementation 'com.github.ittianyu:BottomNavigationViewEx:1.2.4'
     implementation 'com.jjoe64:graphview:4.2.1'
 
+//    implementation 'com.clj.fastble:FastBleLib:2.2.4'
+    implementation "com.polidea.rxandroidble2:rxandroidble:1.5.0"
+
+
 }

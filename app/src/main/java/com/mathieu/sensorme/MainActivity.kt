@@ -12,9 +12,12 @@ import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.view.MenuItem
 import com.mathieu.sensorme.fragments.*
+import com.polidea.rxandroidble2.RxBleClient
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.nav_action.*
 class MainActivity() : AppCompatActivity() {
+
+
 
     private var mToogle: ActionBarDrawerToggle? = null
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,8 +1,7 @@
 package com.mathieu.sensorme.fragments
 
+import android.app.AlertDialog
 import android.bluetooth.*
-import android.content.BroadcastReceiver
-import android.content.Context
 import android.os.Build
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -11,8 +10,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_devices.*
-import android.content.Intent
-import android.content.IntentFilter
 import android.support.design.widget.Snackbar
 import android.widget.TextView
 import com.mathieu.sensorme.DevicesListAdapter
@@ -26,7 +23,16 @@ import java.io.IOException
 import java.io.InputStream
 import java.io.OutputStream
 import android.bluetooth.BluetoothDevice
+import android.content.*
+import android.location.LocationManager
+import android.net.wifi.aware.SubscribeConfig
+import android.view.ContextThemeWrapper
 import com.mathieu.sensorme.BTDevice
+import com.polidea.rxandroidble2.RxBleClient
+import com.polidea.rxandroidble2.RxBleDevice
+import com.polidea.rxandroidble2.scan.ScanSettings
+import io.reactivex.ObservableOnSubscribe
+import io.reactivex.disposables.Disposable
 import java.io.DataInputStream
 import java.util.*
 
@@ -42,79 +48,27 @@ import java.util.*
  * create an instance of this fragment.
  */
 
+
 class DevicesFragment : Fragment(), View.OnClickListener {
 
 
     var registered: Boolean = false;
     public val title = "Devices"
     val TAG = "FragmentOne"
-    var mAvailableDevicesAdapter = DevicesListAdapter(this, ArrayList())
     var mBluetoothAdapter: BluetoothAdapter = BluetoothAdapter.getDefaultAdapter()
+    public var mAvailableDevicesAdapter = DevicesListAdapter(this, ArrayList())
 
-    var btdev: BluetoothDevice? = null
+    // bluetooth
 
-    private val MY_UUID_INSECURE = UUID.fromString("8ce255c0-200a-11e0-ac64-0800200c9a66")
+    public var rxBleClient: RxBleClient? = null
+    var scanSubscription: Disposable? = null
 
-
-    private val mReceiver: BroadcastReceiver = object : BroadcastReceiver() {
-        override fun onReceive(context: Context, intent: Intent) {
-            Log.d(TAG, "inside receiver")
-            when (intent.action) {
-                BluetoothDevice.ACTION_FOUND -> {
-                    // discovery found a device
-                    val d = intent.getParcelableExtra<BluetoothDevice>(BluetoothDevice.EXTRA_DEVICE)
-
-                    Log.i(TAG, "Found Dev name: ${d.name}")
-                    mAvailableDevicesAdapter.addItem(d)
-                    view?.findViewById<TextView>(R.id.stat_available_count)?.text = mAvailableDevicesAdapter.count.toString()
-                    Log.i(TAG, "Added Dev name: ${d.name}")
-                }
-                BluetoothAdapter.ACTION_DISCOVERY_STARTED -> {
-                    sync_devices?.alpha = 0.5f
-                }
-                BluetoothAdapter.ACTION_DISCOVERY_FINISHED -> {
-                    sync_devices?.alpha = 0.9f
-
-                }
-
-
-            /**
-             * Broadcast Receiver that detects bond state changes (Pairing status changes)
-             */
-                BluetoothDevice.ACTION_BOND_STATE_CHANGED -> {
-                    val mDevice: BluetoothDevice = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-                    //3 cases:
-                    //case1: bonded already
-                    if (mDevice.bondState == BluetoothDevice.BOND_BONDED) {
-                        Log.d(TAG, "BroadcastReceiver: BOND_BONDED.");
-                        alert("I am here!")
-                        var uds = mDevice.uuids
-     //                   startConnection(mDevice)
-
-
-
-//                        btdev = mDevice;
-                    }
-                    //case2: creating a bone
-                    if (mDevice.getBondState() == BluetoothDevice.BOND_BONDING) {
-                        alert("BondIING")
-                        Log.d(TAG, "BroadcastReceiver: BOND_BONDING.");
-                    }
-                    //case3: breaking a bond
-                    if (mDevice.getBondState() == BluetoothDevice.BOND_NONE) {
-                        alert("BOND NOOONE")
-
-                        Log.d(TAG, "BroadcastReceiver: BOND_NONE.");
-                    }
-                }
-            }
-        }
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d(TAG, "onCreate")
         super.onCreate(savedInstanceState)
 
+        rxBleClient = RxBleClient.create(context)
     }
 
 
@@ -132,15 +86,62 @@ class DevicesFragment : Fragment(), View.OnClickListener {
         return inf
 
     }
+// Bluetooth
+
+    //
+    //
+    //
 
 
-        //create method for starting connection
+    fun rescanBTDevices() {
+        scanSubscription?.dispose()
+        scanSubscription = rxBleClient?.scanBleDevices(
+                ScanSettings.Builder()
+                        // .setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY) // change if needed
+                        // .setCallbackType(ScanSettings.CALLBACK_TYPE_ALL_MATCHES) // change if needed
+                        .build()
+                // add filters if needed
+        )!!.subscribe(
+                { scanResult ->
+                    Log.i(TAG, "ok, " + scanResult.toString())
+                    mAvailableDevicesAdapter.addItem(scanResult.bleDevice.bluetoothDevice)
+                }
+                , { e -> Log.i(TAG, "error!" + e.toString()) }
+                , { Log.i(TAG, "Completed") }
+        );
+    }
+
+    //
+
+
+    public fun cancelScan() {
+        scanSubscription?.dispose()
+    }
+
+
+    fun clearDevices() {
+        mAvailableDevicesAdapter.clear()
+    }
+
+    fun isScanning(): Boolean {
+        return scanSubscription != null && scanSubscription!!.isDisposed
+    }
+
+    fun connect(macAddress:String){
+
+    }
+
+    //
+    // =============== BT end =============
+    //
+
+    //create method for starting connection
     //***remember the conncction will fail and app will crash if you haven't paired first
     fun startConnection(btDevice: BluetoothDevice) {
 //            btDevice.createBond()
 
 //        var mBluetoothGatt = btDevice.connectGatt(this.context, false, mGattCallback)
-        startBTConnection(btDevice, MY_UUID_INSECURE)
+//        startBTConnection(btDevice, MY_UUID_INSECURE)
     }
 
     /**
@@ -155,17 +156,19 @@ class DevicesFragment : Fragment(), View.OnClickListener {
         when (v.id) {
             R.id.sync_devices -> {
 //                Log.i(TAG, "Scanning...")
-                if (!mBluetoothAdapter.isDiscovering) {
+                if (sync_devices.alpha == 0.9f) { //&& !isScanning()) {
+                    // start scan
                     rescanBTDevices()
+                    sync_devices.alpha = 0.5f
                     alert("Scan enabled..")
+                } else {
+                    cancelScan()
+                    sync_devices.alpha = 0.9f
                 }
-//                if(sync_devices.alpha == 0.9f) {
-//                    sync_devices.alpha = 0.5f
-//                }
             }
             R.id.delete_devices -> {
-                mBluetoothAdapter.cancelDiscovery()
-                mAvailableDevicesAdapter.clear()
+                cancelScan()
+                clearDevices()
                 stat_available_count.text = "0"
                 alert("List is clean now")
             }
@@ -175,23 +178,8 @@ class DevicesFragment : Fragment(), View.OnClickListener {
     public fun alert(txt: String) {
         view?.let {
             Snackbar.make(it, txt, Snackbar.LENGTH_SHORT)
-                .setAction("Action", null).show()
+                    .setAction("Action", null).show()
         }
-    }
-
-    private fun rescanBTDevices() {
-
-//        availableDevices.clear()
-//        mAvailableDevicesAdapter.clear()
-//        stat_available_count.text = "0"
-
-        //    connectedDevices.clear()
-        //    mConnectedDevicesAdapter.updateItems(connectedDevices)
-
-        if (mBluetoothAdapter.isDiscovering) mBluetoothAdapter.cancelDiscovery()
-        mBluetoothAdapter.startDiscovery()
-
-
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -205,34 +193,56 @@ class DevicesFragment : Fragment(), View.OnClickListener {
         super.onStart()
     }
 
+    private fun buildAlertMessageNoGps() {
+        val ctw = ContextThemeWrapper(this.context, R.style.Theme_AppCompat_Light_Dialog_Alert)
+
+        val builder = AlertDialog.Builder(ctw)
+        builder.setMessage("Your GPS seems to be disabled, it's required for effective Bluetooth communication between BLE device and your phone")
+            .setCancelable(false)
+            .setPositiveButton("Yes", DialogInterface.OnClickListener { dialog, id ->
+                    startActivity(Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+                })
+            .setNegativeButton("No", DialogInterface.OnClickListener{ dialog, id ->
+                    dialog.cancel();
+            });
+        val alert = builder.create();
+        alert.show();
+    }
+
     override fun onResume() {
         Log.d(TAG, "onResume")
         super.onResume()
+        val manager = this.context.getSystemService(Context.LOCATION_SERVICE) as LocationManager
 
+        if (!manager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+            buildAlertMessageNoGps();
+        }
         if (!mBluetoothAdapter.isEnabled) {
             val enableBtIntent = Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE)
             startActivityForResult(enableBtIntent, BluetoothAdapter.STATE_ON)
+
         }
 
 
         if (mBluetoothAdapter.isEnabled) {
 
-            val filter: IntentFilter = IntentFilter(BluetoothDevice.ACTION_FOUND)
-            this.context.registerReceiver(mReceiver, filter)
 
-            val filterFinish = IntentFilter(BluetoothAdapter.ACTION_DISCOVERY_FINISHED)
-            this.context.registerReceiver(mReceiver, filterFinish)
-//            connectedDevices.add(mBluetoothAdapter.bondedDevices.last())
-
-            val filterBond = IntentFilter(BluetoothDevice.ACTION_BOND_STATE_CHANGED)
-            this.context.registerReceiver(mReceiver, filterBond)
-            if (mBluetoothAdapter.isDiscovering) mBluetoothAdapter.cancelDiscovery()
-
-            mBluetoothAdapter.startDiscovery()
+//
+//            val filter: IntentFilter = IntentFilter(BluetoothDevice.ACTION_FOUND)
+//            this.context.registerReceiver(mReceiver, filter)
+//
+//            val filterFinish = IntentFilter(BluetoothAdapter.ACTION_DISCOVERY_FINISHED)
+//            this.context.registerReceiver(mReceiver, filterFinish)
+////            connectedDevices.add(mBluetoothAdapter.bondedDevices.last())
+//
+//            val filterBond = IntentFilter(BluetoothDevice.ACTION_BOND_STATE_CHANGED)
+//            this.context.registerReceiver(mReceiver, filterBond)
+//            if (mBluetoothAdapter.isDiscovering) mBluetoothAdapter.cancelDiscovery()
+//
+//            mBluetoothAdapter.startDiscovery()
         }
 
-        registered = true;
-
+//        registered = true;
 
 
 //        for (d in mBluetoothAdapter.bondedDevices) {
@@ -247,6 +257,8 @@ class DevicesFragment : Fragment(), View.OnClickListener {
         Log.d(TAG, "onPause")
         super.onPause()
 
+        mAvailableDevicesAdapter.destroy()
+        cancelScan()
 //        activity.appbar.setVisibility(View.VISIBLE);
     }
 
@@ -264,10 +276,13 @@ class DevicesFragment : Fragment(), View.OnClickListener {
         Log.d(TAG, "onDestroy")
         super.onDestroy()
 
+
+        cancelScan()
+        mAvailableDevicesAdapter.destroy()
 //        mBluetoothConnection.close()
-        if (registered) {
-            context.unregisterReceiver(mReceiver)
-        }
+//        if (registered) {
+//            context.unregisterReceiver(mReceiver)
+//        }
     }
 
 
@@ -275,39 +290,6 @@ class DevicesFragment : Fragment(), View.OnClickListener {
         Log.d(TAG, "onDetach")
         super.onDetach();
     }
-
-    public fun connect(address: String) {
-
-        Log.i("Connection", "to ${address} now")
-
-        val btDevice: BluetoothDevice = mBluetoothAdapter.getRemoteDevice(address)
-//        btDevice.setPairingConfirmation(true)
-
-        val btSocket = btDevice.createRfcommSocketToServiceRecord(UUID.fromString("00001101-0000-1000-8000-00805F9B34FB"))
-                //        val btSocket = btDevice.createRfcommSocketToServiceRecord(btDevice.uuids[0].uuid)
-        Log.i("TAG", "should i connect?")
-        if(!btSocket.isConnected) {
-            btSocket.connect()
-            Log.i("TAG", "ttry to connect")
-
-        }
-
-        Log.i("TAG", "connection est")
-        val input = btSocket.getInputStream()
-        val dinput = DataInputStream(input)
-
-        var b:ByteArray = ByteArray(256)
-        dinput.readFully(b)
-
-        alert(b.toString())
-
-        Log.i("TAG", "closing bt")
-        btSocket.close()
-
-
-//        val bluetoothGatt:BluetoothGatt = device.connectGatt(this, false,  )
-    }
-
 }
 
 /*

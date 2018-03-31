@@ -96,7 +96,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:alpha="0.5"
+                android:alpha="0.9"
                 android:layout_marginRight="20dp"
                 android:src="@mipmap/ic_sync_black_24dp" />
 

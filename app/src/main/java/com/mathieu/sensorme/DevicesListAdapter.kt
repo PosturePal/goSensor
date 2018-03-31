@@ -15,219 +15,168 @@ import android.bluetooth.BluetoothGatt
 import java.util.*
 import android.bluetooth.BluetoothGattService
 import android.net.wifi.aware.Characteristics
+import com.polidea.rxandroidble2.RxBleClient
+import com.polidea.rxandroidble2.RxBleConnection
+import com.polidea.rxandroidble2.RxBleDevice
+import com.polidea.rxandroidble2.Timeout
+import io.reactivex.disposables.Disposable
 import java.net.URLDecoder
 import java.nio.charset.Charset
 import kotlin.collections.ArrayList
+import kotlin.concurrent.timer
 import kotlin.experimental.and
 
 
-class DevicesListAdapter(private var deviceFr: DevicesFragment, private var items: ArrayList<BluetoothDevice>) : BaseAdapter() {
+
+class DevicesListAdapter(private var deviceFr: DevicesFragment,private var items: ArrayList<BluetoothDevice>) : BaseAdapter() {
     private class ViewHolder(private val deviceFr: DevicesFragment, row: View?) {
-        var deviceName: TextView? = null
-        var deviceStatus: TextView? = null
         var deviceAddress: String = ""
         var device: BluetoothDevice? = null
 
-        val TAG = "ViewHolder List"
-        private val STATE_DISCONNECTED = 0
-        private val STATE_CONNECTING = 1
-        private val STATE_CONNECTED = 2
-
-
-        private var mBluetoothDeviceAddress: String? = null
-        private var mBluetoothGatt: BluetoothGatt? = null
-        private var mConnectionState: Int = STATE_DISCONNECTED
-
-
-        val ACTION_GATT_CONNECTED = "com.example.bluetooth.le.ACTION_GATT_CONNECTED"
-        val ACTION_GATT_DISCONNECTED = "com.example.bluetooth.le.ACTION_GATT_DISCONNECTED"
-        val ACTION_GATT_SERVICES_DISCOVERED = "com.example.bluetooth.le.ACTION_GATT_SERVICES_DISCOVERED"
-        val ACTION_DATA_AVAILABLE = "com.example.bluetooth.le.ACTION_DATA_AVAILABLE"
-        val EXTRA_DATA = "com.example.bluetooth.le.EXTRA_DATA"
-        // Various callback methods defined by the BLE API.
-
-        var mChars: ArrayList<BluetoothGattCharacteristic> = ArrayList()
-        private final val mGattCallback: BluetoothGattCallback = object : BluetoothGattCallback() {
-
-            override fun onConnectionStateChange(gatt: BluetoothGatt, status: Int,
-                                                 newState: Int) {
-                var intentAction: String
-                if (newState == BluetoothProfile.STATE_CONNECTED) {
-                    intentAction = ACTION_GATT_CONNECTED;
-                    mConnectionState = STATE_CONNECTED;
-//                broadcastUpdate(intentAction);
-                    Log.i(TAG, "Connected to GATT server.");
-                    Log.i(TAG, "Attempting to start service discovery:" +
-                            mBluetoothGatt?.discoverServices())
-
-                    mBluetoothGatt?.discoverServices()
-//                    val chars = mBluetoothGatt?.getService(UUID.randomUUID())?.characteristics
-
-
-//                    deviceFr.mAvailableDevicesAdapter.notifyDataSetChanged()
-
-                } else if (newState == BluetoothProfile.STATE_DISCONNECTED) {
-                    intentAction = ACTION_GATT_DISCONNECTED;
-                    mConnectionState = STATE_DISCONNECTED;
-                    Log.i(TAG, "Disconnected from GATT server.");
-//                broadcastUpdate(intentAction);
-//                    deviceFr.mAvailableDevicesAdapter.notifyDataSetChanged()
-
-                } else {
-                    Log.i(TAG, "WHAT IS G ON " + newState)
-                }
-            }
-
-            override fun onCharacteristicChanged(gatt: BluetoothGatt?, characteristic: BluetoothGattCharacteristic?) {
-                Log.i(TAG, "onCharacteristicChanged\nchar uudi:" + characteristic?.uuid)
-                gatt?.readCharacteristic(characteristic)
-
-            }
-
-            override fun onCharacteristicRead(gatt: BluetoothGatt?, characteristic: BluetoothGattCharacteristic?, status: Int) {
-                val str = toHex(characteristic?.value!!)
-                Log.i(TAG, "OnCharREAD: " + str + " ch = " + characteristic.service)
-            }
-
-            override fun onServicesDiscovered(gatt: BluetoothGatt?, status: Int) {
-                // now we cat start reading / writing chars
-
-                if (status == BluetoothGatt.GATT_SUCCESS) {
-                    deviceFr.alert("gatt success")
-
-                    for (gattService in gatt!!.getServices()) {
-//                        Log.i(TAG, "onServicesDiscovered: ---------------------")
-                        Log.i(TAG, "onServicesDiscovered: service=" + gattService.uuid)
-                        for (characteristic in gattService.characteristics) {
-//                            if (characteristic.uuid.toString() == "0000fff2-0000-1000-8000-00805f9b34fb") {
-                            // acc / gyro
-
-//                                Log.i(TAG, "YRRE\n\n\n\t HERE IT IS ACC \n\n")
-
-                            mChars.add(characteristic)
-
-                            Log.i(TAG, "new char add! size: " + mChars.size)
-                            mBluetoothGatt?.readCharacteristic(characteristic)
-                            mBluetoothGatt?.setCharacteristicNotification(characteristic, true)
-//                            }
-                        }
-                    }
-                } else {
-                    deviceFr.alert("gatt fuck")
-                }
-            }
-
-            fun hexStringToByteArray(s: String): ByteArray {
-                val len = s.length
-                val data = ByteArray(len / 2)
-                var i = 0
-                while (i < len) {
-                    data[i / 2] = ((Character.digit(s[i], 16) shl 4) + Character.digit(s[i + 1], 16)).toByte()
-                    i += 2
-                }
-                return data
-            }
-
-            fun toHex(bytes: ByteArray): String {
-                val HEX_DIGITS = "0123456789abcdef".toCharArray()
-                val c = CharArray(bytes.size * 2)
-                var index = 0
-                for (b in bytes) {
-                    c[index++] = HEX_DIGITS[(b.toInt() shr 4) and 0xf]
-                    c[index++] = HEX_DIGITS[b.toInt() and 0xf]
-                }
-                return String(c)
-            }
-
-
-        }
         private var connected: Boolean = false
+
+
+        var mConnectionDisposable:Disposable? = null
+        var mRxDevice : RxBleDevice? = null
+
+        var mRxBleConnection:RxBleConnection? = null
+
+        val TAG = "ViewHolder List"
+
+        var connectBtn:Button? = null
+        var readBtn:Button? = null
+        var deviceName: TextView? = null
+        var deviceStatus: TextView? = null
+
+        val characteristicUUID:UUID = UUID.fromString("0000fff2-0000-1000-8000-00805f9b34fb")
 
         init {
             this.deviceName = row?.findViewById(R.id.device_item_name)
             this.deviceStatus = row?.findViewById(R.id.device_item_status)
-            val connectBtn = row?.findViewById<Button>(R.id.device_connect_button)
-            val readBtn = row?.findViewById<Button>(R.id.device_read_button)
+            this.connectBtn = row?.findViewById<Button>(R.id.device_connect_button)
+            this.readBtn = row?.findViewById<Button>(R.id.device_read_button)
 
             connectBtn?.setOnClickListener { view ->
 
-                connected = !connected
-
-//                if (connected && device != null) {
-
-
-                connected = this.startConnection()
-                if (connected) {
-                    alert(view, "Connecting device with address " + this.device?.address + " " + connected)
-                    connectBtn.alpha = 0.5f
+                if(mRxDevice != null && mRxDevice?.connectionState == RxBleConnection.RxBleConnectionState.CONNECTED)
+                {
+                    // connected, disconnect
+                    mConnectionDisposable?.dispose()
+                    mConnectionDisposable = null
+                    mRxBleConnection= null
+                    mRxDevice = null
+                    deviceFr.alert("Disconnected device with address " + this.deviceAddress)
+                    connectBtn?.alpha = 1.0f
+                } else {
+                    startConnection()
                 }
-//                } else {
-//                    // CONNECTED
-//                    //  mBluetoothGatt?.close()
-////                    mBluetoothGatt?.disconnect()
-////                    alert(view, "Disconnected device with address " + this.deviceAddress)
-////                    connectBtn.alpha = 1.0f
-//                }
             }
 
-            readBtn?.setOnClickListener { view -> read() }
+            readBtn?.setOnClickListener { view ->
+                //                Thread {
+//                    while (true) {
+                read()
+//                    }
+//                }.start() }
+            }
+
 
         }
-
-        fun read()
-        {
-            Log.i(TAG, "Mchars size: " + mChars.size)
-
-            val services = mBluetoothGatt?.discoverServices()
-//
-//            for (s in services!!)
-//            {
-//                for(c in s.characteristics)
-//                {
-//                    mBluetoothGatt?.readCharacteristic(c)
-//                }
-//            }
-//            for (s in services!!)
-//            {
-//                for(c in s.characteristics)
-//                {
-//                    mBluetoothGatt?.readCharacteristic(c)
-//                }
-//            }
-
-//            if (!mChars.isEmpty()) {
-//                for (mChar in mChars) {
-//                    mBluetoothGatt?.readCharacteristic(mChar)
-//                }
-//                deviceFr.alert("readed chars")
-//                connected = true
-//            } else {
-//                deviceFr.alert("no mchar")
-////                        mBluetoothGatt?.close()
-//            }
+        fun hexStringToByteArray(s: String): ByteArray {
+            val len = s.length
+            val data = ByteArray(len / 2)
+            var i = 0
+            while (i < len) {
+                data[i / 2] = ((Character.digit(s[i], 16) shl 4) + Character.digit(s[i + 1], 16)).toByte()
+                i += 2
+            }
+            return data
         }
-        fun startConnection(): Boolean {
+
+        fun toHex(bytes: ByteArray): String {
+            val HEX_DIGITS = "0123456789abcdef".toCharArray()
+            val c = CharArray(bytes.size * 2)
+            var index = 0
+            for (b in bytes) {
+                c[index++] = HEX_DIGITS[(b.toInt() shr 4) and 0xf]
+                c[index++] = HEX_DIGITS[b.toInt() and 0xf]
+            }
+            return String(c)
+        }
+
+
+        fun read() {
             if (device == null) {
-                Log.i(TAG, "No device to start a conn")
-                return false;
+                deviceFr.alert("There is no device for connection")
             }
-            device?.createBond()
-            mBluetoothGatt = device?.connectGatt(deviceFr.context, false, mGattCallback)
-            return device?.bondState == BluetoothDevice.BOND_BONDED
+
+            if(mRxDevice?.connectionState != RxBleConnection.RxBleConnectionState.CONNECTED)
+            {
+                deviceFr.alert("device is not connected")
+                return;
+            }
+            mRxBleConnection?.readCharacteristic(characteristicUUID)?.subscribe(
+                    {characteristicValue ->
+                        Log.i(TAG,"read char: " + toHex(characteristicValue))
+                        deviceFr.alert("read char: " + toHex(characteristicValue))
+                    },
+                    {e ->
+                        Log.i(TAG, "error reading char" + e.toString())
+                    }
+
+            )
         }
 
+        fun startConnection() {
+            if (device == null) {
+                deviceFr.alert("There is no device for connection")
+            }
+            //device?.createBond()
+            mRxDevice = deviceFr.rxBleClient!!.getBleDevice(deviceAddress);
 
-        private fun alert(v: View, txt: String) {
+            mConnectionDisposable?.dispose()
+            mConnectionDisposable = mRxDevice!!.establishConnection(false) // <-- autoConnect flag
+                    .subscribe(
+                            {rxBleConnection ->
+                                deviceFr.alert("YEAH, rxble connected")
+                                deviceFr.alert("Connected device with address " + this.device?.address + " " + connected)
+                                connectBtn?.alpha = 0.5f
 
-            Snackbar.make(v, txt, Snackbar.LENGTH_SHORT)
-                    .setAction("Action", null).show()
+                                mRxBleConnection = rxBleConnection
+                            }
+                            , { e ->
+                                Log.i(TAG, "error!" + e.toString())
+                                deviceFr.alert("Error while connecting device with address " + this.device?.address + " " + connected)
+                                connectBtn?.alpha = 1.0f }
+                            , { Log.i(TAG, "Completed")
+                                deviceFr.alert("EWHATTATATATA FUCK")}
+                    );
         }
+
+        public fun disconnect()
+        {
+            Log.i(TAG, "dsconnect proc")
+//            if(mRxDevice != null && mRxDevice?.connectionState == RxBleConnection.RxBleConnectionState.CONNECTED)
+//            {
+                // connected, disconnect
+                mConnectionDisposable?.dispose()
+                mConnectionDisposable = null
+                mRxBleConnection= null
+                mRxDevice = null
+                Log.i(TAG, "disconnected frrom here")
+//            }
+        }
+    }
+
+    private var viewHolder: ViewHolder? = null
+
+    public fun destroy()
+    {
+        viewHolder?.disconnect()
     }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val view: View?
-        val viewHolder: ViewHolder
-
 
         if (convertView == null) {
             view = deviceFr.layoutInflater.inflate(R.layout.device_item, null)
@@ -240,16 +189,16 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
 
 
         val device = items[position]
-        viewHolder.device = device
-        viewHolder.deviceName?.text = device.name
-        viewHolder.deviceStatus?.text = device.address
+        viewHolder?.device = device
+        viewHolder?.deviceName?.text = device.name
+        viewHolder?.deviceStatus?.text = device.address
 //                when (device.bondState) {
 //                    BluetoothDevice.BOND_NONE -> "not paired"
 //                    BluetoothDevice.BOND_BONDING -> "pairing"
 //                    BluetoothDevice.BOND_BONDED -> "paired before"
 //                    else -> device.address
 //                }
-        viewHolder.deviceAddress = device.address
+        viewHolder?.deviceAddress = device.address
         return view as View
     }
 
