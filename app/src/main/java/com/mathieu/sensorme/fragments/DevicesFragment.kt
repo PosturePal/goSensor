@@ -28,6 +28,7 @@ import android.location.LocationManager
 import android.net.wifi.aware.SubscribeConfig
 import android.view.ContextThemeWrapper
 import com.mathieu.sensorme.BTDevice
+import com.mathieu.sensorme.StageRenderGL
 import com.polidea.rxandroidble2.RxBleClient
 import com.polidea.rxandroidble2.RxBleDevice
 import com.polidea.rxandroidble2.scan.ScanSettings
@@ -64,11 +65,15 @@ class DevicesFragment : Fragment(), View.OnClickListener {
     var scanSubscription: Disposable? = null
 
 
+    // opengl
+    public var rendererStage:StageRenderGL? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d(TAG, "onCreate")
         super.onCreate(savedInstanceState)
 
         rxBleClient = RxBleClient.create(context)
+        rendererStage = view?.devices_stage_render
     }
 
 

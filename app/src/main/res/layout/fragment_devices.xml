@@ -15,10 +15,17 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:background="@drawable/gradient_default"
             android:gravity="center"
             android:orientation="vertical">
+
+            <com.mathieu.sensorme.StageRenderGL
+                android:id="@+id/devices_stage_render"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                />
+
             <TextView
                 android:id="@+id/stat_available_count"
                 android:layout_width="80dp"

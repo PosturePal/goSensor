@@ -28,28 +28,34 @@ import kotlin.concurrent.timer
 import kotlin.experimental.and
 
 
-
-class DevicesListAdapter(private var deviceFr: DevicesFragment,private var items: ArrayList<BluetoothDevice>) : BaseAdapter() {
+class DevicesListAdapter(private var deviceFr: DevicesFragment, private var items: ArrayList<BluetoothDevice>) : BaseAdapter() {
     private class ViewHolder(private val deviceFr: DevicesFragment, row: View?) {
         var deviceAddress: String = ""
         var device: BluetoothDevice? = null
-
         private var connected: Boolean = false
 
 
-        var mConnectionDisposable:Disposable? = null
-        var mRxDevice : RxBleDevice? = null
+        var mConnectionDisposable: Disposable? = null
+        var mRxDevice: RxBleDevice? = null
 
-        var mRxBleConnection:RxBleConnection? = null
+        var mRxBleConnection: RxBleConnection? = null
 
         val TAG = "ViewHolder List"
 
-        var connectBtn:Button? = null
-        var readBtn:Button? = null
+        var connectBtn: Button? = null
+        var readBtn: Button? = null
         var deviceName: TextView? = null
         var deviceStatus: TextView? = null
 
-        val accGyroCharacteristicUUID:UUID = UUID.fromString("0000fff7-0000-1000-8000-00805f9b34fb")
+        val accGyroCharacteristicUUID: UUID = UUID.fromString("0000fff7-0000-1000-8000-00805f9b34fb")
+
+        var madgwickAHRS = MadgwickAHRS(0.01f, 0.041f)
+        private val madgwickTimer = Timer()
+        private var lastUpdate: Long = 0
+        var lpPitch = 0.0
+        var lpRoll = 0.0
+        var lpYaw = 0.0
+
 
         init {
             this.deviceName = row?.findViewById(R.id.device_item_name)
@@ -59,12 +65,11 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment,private var items
 
             connectBtn?.setOnClickListener { view ->
 
-                if(mRxDevice != null && mRxDevice?.connectionState == RxBleConnection.RxBleConnectionState.CONNECTED)
-                {
+                if (mRxDevice != null && mRxDevice?.connectionState == RxBleConnection.RxBleConnectionState.CONNECTED) {
                     // connected, disconnect
                     mConnectionDisposable?.dispose()
                     mConnectionDisposable = null
-                    mRxBleConnection= null
+                    mRxBleConnection = null
                     mRxDevice = null
                     deviceFr.alert("Disconnected device with address " + this.deviceAddress)
                     connectBtn?.alpha = 1.0f
@@ -74,15 +79,22 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment,private var items
             }
 
             readBtn?.setOnClickListener { view ->
-                                Thread {
-                    while (true) {
+
+//                Thread {
+//                    while (true) {
                         read()
-                    }
-                }.start()
+//                    }
+//                }.start()
             }
 
 
+//            madgwickTimer.scheduleAtFixedRate(DoMadgwick(madgwickAHRS),
+//                    1000, 10)
+
+
         }
+
+
         fun hexStringToByteArray(s: String): ByteArray {
             val len = s.length
             val data = ByteArray(len / 2)
@@ -111,19 +123,18 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment,private var items
                 deviceFr.alert("There is no device for connection")
             }
 
-            if(mRxDevice?.connectionState != RxBleConnection.RxBleConnectionState.CONNECTED)
-            {
+            if (mRxDevice?.connectionState != RxBleConnection.RxBleConnectionState.CONNECTED) {
                 deviceFr.alert("device is not connected")
                 return;
             }
             mRxBleConnection?.readCharacteristic(accGyroCharacteristicUUID)?.subscribe(
-                    {characteristicValue ->
+                    { characteristicValue ->
 
 
-//                        Log.i(TAG,"read char: " + toHex(characteristicValue) + ", bytes are\n " + characteristicValue.contentToString())
+                        //                        Log.i(TAG,"read char: " + toHex(characteristicValue) + ", bytes are\n " + characteristicValue.contentToString())
                         val bytes = characteristicValue.asList()
 
-                        if(bytes.size > 16) {
+                        if (bytes.size > 16) {
                             // 44020100e7fffdfff9039d00fbee9cfd0100d022
                             /*
                           1    2    3  4    5    6   7    8   9   10  11   12   13   14   15   16   17 18 19   20
@@ -149,20 +160,71 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment,private var items
                                     + "; gy " + gy.toString()
                                     + "; gz " + gz.toString()
                             )
+
+                            val now:Long = System.currentTimeMillis()
+                            madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
+                            lastUpdate = now
+
+                            madgwickAHRS.Update(gx.toFloat()/1000, gy.toFloat()/1000,gz.toFloat()/1000, ax.toFloat()/1000,ay.toFloat()/1000, az.toFloat()/1000)
+
+                            lpPitch = lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8;
+                            lpRoll = lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8;
+                            lpYaw = lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8;
+
+                            Log.i("MAD DATA", "pitch: " + lpPitch.toString()
+                            + "roll: " + lpRoll.toString()
+                            + "yaw: " + lpYaw.toString())
                         }
 
 //                        Log.i(TAG, ByteBuffer.wrap(timestamp.toByteArray()).int.toString())
                     },
-                    {e ->
+                    { e ->
                         Log.i(TAG, "error reading char" + e.toString())
                     }
 
             )
 
-            fun fromByteArray(bytes:ByteArray):Int {
+            fun fromByteArray(bytes: ByteArray): Int {
                 return ByteBuffer.wrap(bytes).getInt();
             }
         }
+//
+//
+//        class DoMadgwick(private val madgwickAHRS: MadgwickAHRS, private var lastUpdate:Long) : TimerTask() {
+//            override fun run() {
+//                val now: Long = System.currentTimeMillis()
+//                madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f;
+//                lastUpdate = now;
+//                madgwickAHRS.Update(gyro[0], gyro[1], gyro[2], accel[0], accel[1], accel[2], magnet[0], magnet[1], magnet[2]);
+//                if (seriesAccx.size() > HISTORY_SIZE) {
+//                    seriesAccx.removeFirst();
+//                    seriesAccy.removeFirst();
+//                    seriesAccz.removeFirst();
+//                }
+//
+//                //add the latest history sample:
+//                lpPitch = lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8;
+//                lpRpll = lpRpll * 0.2 + madgwickAHRS.MadgRoll * 0.8;
+//                lpYaw = lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8;
+//                seriesAccx.addLast(null, lpPitch);
+//                seriesAccy.addLast(null, lpRpll);
+//                seriesAccz.addLast(null, lpYaw);
+//                //  seriesAccx.addLast(null, gyro[0]);
+//                //   seriesAccy.addLast(null, gyro[1]);
+//                //  seriesAccz.addLast(null, gyro[2]);
+////            plot.post(new Runnable() {
+////                public void run() {
+////            /* the desired UI update */
+////                 //   labelaccx.setText(Double.toString(madgwickAHRS.MadgPitch));
+////                  //  labelaccy.setText(Double.toString(madgwickAHRS.MadgRoll));
+////                  //  labelaccz.setText(Double.toString(madgwickAHRS.MadgYaw));
+////                   //labeldt.setText(Double.toString(madgwickAHRS.SamplePeriod));
+////                    plot.redraw();
+////                }
+////            });
+//            }
+//
+//        }
 
         fun startConnection() {
             if (device == null) {
@@ -174,7 +236,7 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment,private var items
             mConnectionDisposable?.dispose()
             mConnectionDisposable = mRxDevice!!.establishConnection(false) // <-- autoConnect flag
                     .subscribe(
-                            {rxBleConnection ->
+                            { rxBleConnection ->
                                 deviceFr.alert("YEAH, rxble connected")
                                 deviceFr.alert("Connected device with address " + this.device?.address + " " + connected)
                                 connectBtn?.alpha = 0.5f
@@ -182,33 +244,34 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment,private var items
                                 mRxBleConnection = rxBleConnection
                             }
                             , { e ->
-                                Log.i(TAG, "error!" + e.toString())
-                                deviceFr.alert("Error while connecting device with address " + this.device?.address + " " + connected)
-                                connectBtn?.alpha = 1.0f }
-                            , { Log.i(TAG, "Completed")
-                                deviceFr.alert("EWHATTATATATA FUCK")}
+                        Log.i(TAG, "error!" + e.toString())
+                        deviceFr.alert("Error while connecting device with address " + this.device?.address + " " + connected)
+                        connectBtn?.alpha = 1.0f
+                    }
+                            , {
+                        Log.i(TAG, "Completed")
+                        deviceFr.alert("EWHATTATATATA FUCK")
+                    }
                     );
         }
 
-        public fun disconnect()
-        {
+        public fun disconnect() {
             Log.i(TAG, "dsconnect proc")
 //            if(mRxDevice != null && mRxDevice?.connectionState == RxBleConnection.RxBleConnectionState.CONNECTED)
 //            {
-                // connected, disconnect
-                mConnectionDisposable?.dispose()
-                mConnectionDisposable = null
-                mRxBleConnection= null
-                mRxDevice = null
-                Log.i(TAG, "disconnected frrom here")
+            // connected, disconnect
+            mConnectionDisposable?.dispose()
+            mConnectionDisposable = null
+            mRxBleConnection = null
+            mRxDevice = null
+            Log.i(TAG, "disconnected frrom here")
 //            }
         }
     }
 
     private var viewHolder: ViewHolder? = null
 
-    public fun destroy()
-    {
+    public fun destroy() {
         viewHolder?.disconnect()
     }
 
