@@ -21,6 +21,7 @@ import com.polidea.rxandroidble2.RxBleDevice
 import com.polidea.rxandroidble2.Timeout
 import io.reactivex.disposables.Disposable
 import java.net.URLDecoder
+import java.nio.ByteBuffer
 import java.nio.charset.Charset
 import kotlin.collections.ArrayList
 import kotlin.concurrent.timer
@@ -48,7 +49,7 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment,private var items
         var deviceName: TextView? = null
         var deviceStatus: TextView? = null
 
-        val characteristicUUID:UUID = UUID.fromString("0000fff2-0000-1000-8000-00805f9b34fb")
+        val accGyroCharacteristicUUID:UUID = UUID.fromString("0000fff7-0000-1000-8000-00805f9b34fb")
 
         init {
             this.deviceName = row?.findViewById(R.id.device_item_name)
@@ -73,11 +74,11 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment,private var items
             }
 
             readBtn?.setOnClickListener { view ->
-                //                Thread {
-//                    while (true) {
-                read()
-//                    }
-//                }.start() }
+                                Thread {
+                    while (true) {
+                        read()
+                    }
+                }.start()
             }
 
 
@@ -115,16 +116,52 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment,private var items
                 deviceFr.alert("device is not connected")
                 return;
             }
-            mRxBleConnection?.readCharacteristic(characteristicUUID)?.subscribe(
+            mRxBleConnection?.readCharacteristic(accGyroCharacteristicUUID)?.subscribe(
                     {characteristicValue ->
-                        Log.i(TAG,"read char: " + toHex(characteristicValue))
-                        deviceFr.alert("read char: " + toHex(characteristicValue))
+
+
+//                        Log.i(TAG,"read char: " + toHex(characteristicValue) + ", bytes are\n " + characteristicValue.contentToString())
+                        val bytes = characteristicValue.asList()
+
+                        if(bytes.size > 16) {
+                            // 44020100e7fffdfff9039d00fbee9cfd0100d022
+                            /*
+                          1    2    3  4    5    6   7    8   9   10  11   12   13   14   15   16   17 18 19   20
+                        [-40, -114, 0, 0,| -24, -1,| -6, -1,| -7, 3,| 122, 0|, -40, -18|, -13, -3,| 1, 0, -48, 34]
+                         -- timestamp -- | - ax -  |- ay -  | - az -| - gx -| - gy -   | - gz -   | -- reserve --
+                         */
+
+                            val timestamp = ByteBuffer.allocate(4).put(bytes.subList(0, 4).toByteArray()).getInt(0)
+                            val ax = ByteBuffer.allocate(2).put(bytes.subList(4, 6).toByteArray()).getShort(0)
+                            val ay = ByteBuffer.allocate(2).put(bytes.subList(6, 8).toByteArray()).getShort(0)
+                            val az = ByteBuffer.allocate(2).put(bytes.subList(8, 10).toByteArray()).getShort(0)
+                            val gx = ByteBuffer.allocate(2).put(bytes.subList(10, 12).toByteArray()).getShort(0)
+                            val gy = ByteBuffer.allocate(2).put(bytes.subList(12, 14).toByteArray()).getShort(0)
+                            val gz = ByteBuffer.allocate(2).put(bytes.subList(14, 16).toByteArray()).getShort(0)
+
+                            // reserved - (17, 21)
+                            Log.i(TAG, "Got : tmstmp "
+                                    + timestamp.toString()
+                                    + "; ax " + ax.toString()
+                                    + "; ay " + ay.toString()
+                                    + "; az " + az.toString()
+                                    + "; gx " + gx.toString()
+                                    + "; gy " + gy.toString()
+                                    + "; gz " + gz.toString()
+                            )
+                        }
+
+//                        Log.i(TAG, ByteBuffer.wrap(timestamp.toByteArray()).int.toString())
                     },
                     {e ->
                         Log.i(TAG, "error reading char" + e.toString())
                     }
 
             )
+
+            fun fromByteArray(bytes:ByteArray):Int {
+                return ByteBuffer.wrap(bytes).getInt();
+            }
         }
 
         fun startConnection() {
