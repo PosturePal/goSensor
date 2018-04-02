@@ -7,7 +7,7 @@ public class MadgwickAHRS {
     public float SamplePeriod;
     public float Beta;
     float[] Quaternion;
-    double MadgPitch,MadgRoll,MadgYaw;
+    public double MadgPitch,MadgRoll,MadgYaw;
     public MadgwickAHRS(float samplePeriod, float beta)
     {
         SamplePeriod = samplePeriod;

@@ -37,7 +37,7 @@ import kotlin.experimental.and
 
 
 class DevicesListAdapter(private var deviceFr: DevicesFragment, private var items: ArrayList<BluetoothDevice>) : BaseAdapter() {
-    private class ViewHolder(private val deviceFr: DevicesFragment, row: View?) : SensorEventListener {
+    private class ViewHolder(private val deviceFr: DevicesFragment, row: View?) {
         var deviceAddress: String = ""
         var device: BluetoothDevice? = null
         private var connected: Boolean = false
@@ -67,18 +67,6 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
         var lpYaw: Float = 0.0f
 
 
-        var mSensorManager: SensorManager? = null
-        var mAccelerometer: Sensor? = null
-        var mGyroscope: Sensor? = null
-
-        var agx = 0.0f
-        var agy = 0.0f
-        var agz = 0.0f
-        var aax = 0.0f
-        var aay = 0.0f
-        var aaz = 0.0f
-
-        var readFromAndroid = true
         init {
             this.deviceName = row?.findViewById(R.id.device_item_name)
             this.deviceStatus = row?.findViewById(R.id.device_item_status)
@@ -95,7 +83,6 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                     mRxDevice = null
                     deviceFr.alert("Disconnected device with address " + this.deviceAddress)
                     connectBtn?.alpha = 1.0f
-                    readFromAndroid = true
                 } else {
                     startConnection()
                 }
@@ -112,14 +99,14 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
 
 
 
-            mSensorManager = deviceFr.context.getSystemService(SENSOR_SERVICE) as SensorManager?
-            mAccelerometer = mSensorManager!!.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
-            mGyroscope = mSensorManager!!.getDefaultSensor(Sensor.TYPE_GYROSCOPE)
+//            mSensorManager = deviceFr.context.getSystemService(SENSOR_SERVICE) as SensorManager?
+//            mAccelerometer = mSensorManager!!.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
+//            mGyroscope = mSensorManager!!.getDefaultSensor(Sensor.TYPE_GYROSCOPE)
 //            madgwickTimer.scheduleAtFixedRate(DoMadgwick(madgwickAHRS),
 //                    1000, 10)
-
-            mSensorManager!!.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
-            mSensorManager!!.registerListener(this, mGyroscope, SensorManager.SENSOR_DELAY_NORMAL);
+//
+//            mSensorManager!!.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+//            mSensorManager!!.registerListener(this, mGyroscope, SensorManager.SENSOR_DELAY_NORMAL);
 
 
 //            var x =
@@ -127,49 +114,49 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
         }
 
 
-        override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
-            Log.i(TAG, "onaccuracy changed")
-            ///TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-        }
-
-        override fun onSensorChanged(event: SensorEvent?) {
-            Log.i(TAG, "onSchngd")
-            if(readFromAndroid)
-            {
-                if (event?.sensor?.getType() == Sensor.TYPE_ACCELEROMETER) {
-                    aax = event.values[0];
-                    aay = event.values[1];
-                    aaz = event.values[2];
-                    Log.i(TAG, "OnSensorChanged: x: " + aax.toString()
-                            + ", y: " + aay.toString()
-                            + ", z: " + aaz.toString())
-                } else if (event?.sensor?.type == Sensor.TYPE_GYROSCOPE) {
-                    agx = event.values[0];
-                    agy = event.values[1];
-                    agz = event.values[2];
-                    Log.i(TAG, "OnSensorChanged: x: " + agx.toString() + ", y: " + agy.toString() + ", z: " + agz.toString())
-                }
-
-
-                val now: Long = System.currentTimeMillis()
-                madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
-                lastUpdate = now
-
-                madgwickAHRS.Update(agx.toFloat(), agy.toFloat(), agz.toFloat(),
-                        aax.toFloat(), aay.toFloat(), aaz.toFloat())
-
-                lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
-                lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
-                lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
-
-                Log.i("Android:", "pitch: " + lpPitch.toString()
-                        + "roll: " + lpRoll.toString()
-                        + "yaw: " + lpYaw.toString())
-
-
-                deviceFr.view!!.devices_stage_render.mStageRenderer.setRotation(lpRoll, lpPitch, lpYaw)
-            }
-        }
+//        override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
+//            Log.i(TAG, "onaccuracy changed")
+//            ///TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+//        }
+//
+//        override fun onSensorChanged(event: SensorEvent?) {
+//            Log.i(TAG, "onSchngd")
+//            if(readFromAndroid)
+//            {
+//                if (event?.sensor?.getType() == Sensor.TYPE_ACCELEROMETER) {
+//                    aax = event.values[0];
+//                    aay = event.values[1];
+//                    aaz = event.values[2];
+//                    Log.i(TAG, "OnSensorChanged: x: " + aax.toString()
+//                            + ", y: " + aay.toString()
+//                            + ", z: " + aaz.toString())
+//                } else if (event?.sensor?.type == Sensor.TYPE_GYROSCOPE) {
+//                    agx = event.values[0];
+//                    agy = event.values[1];
+//                    agz = event.values[2];
+//                    Log.i(TAG, "OnSensorChanged: x: " + agx.toString() + ", y: " + agy.toString() + ", z: " + agz.toString())
+//                }
+//
+//
+//                val now: Long = System.currentTimeMillis()
+//                madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
+//                lastUpdate = now
+//
+//                madgwickAHRS.Update(agx.toFloat(), agy.toFloat(), agz.toFloat(),
+//                        aax.toFloat(), aay.toFloat(), aaz.toFloat())
+//
+//                lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
+//                lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
+//                lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
+//
+//                Log.i("Android:", "pitch: " + lpPitch.toString()
+//                        + "roll: " + lpRoll.toString()
+//                        + "yaw: " + lpYaw.toString())
+//
+//
+//                deviceFr.view!!.devices_stage_render.mStageRenderer.setRotation(lpRoll, lpPitch, lpYaw)
+//            }
+//        }
 
         fun hexStringToByteArray(s: String): ByteArray {
             val len = s.length
@@ -197,78 +184,80 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
         fun read() {
             if (device == null) {
                 deviceFr.alert("There is no device for connection")
+                return
             }
 
             if (mRxDevice?.connectionState != RxBleConnection.RxBleConnectionState.CONNECTED) {
                 deviceFr.alert("device is not connected")
-                return;
+                return
             }
             mRxBleConnection?.readCharacteristic(accGyroCharacteristicUUID)?.subscribe(
                     { characteristicValue ->
-                        readFromAndroid = false
 
 
-                        //                        Log.i(TAG,"read char: " + toHex(characteristicValue) + ", bytes are\n " + characteristicValue.contentToString())
-                        val bytes = characteristicValue.asList()
+                        if(!deviceFr.readFromAndroid) {
 
-                        if (bytes.size > 16) {
-                            // 44020100e7fffdfff9039d00fbee9cfd0100d022
-                            /*
+
+                            //                        Log.i(TAG,"read char: " + toHex(characteristicValue) + ", bytes are\n " + characteristicValue.contentToString())
+                            val bytes = characteristicValue.asList()
+
+                            if (bytes.size > 16) {
+                                // 44020100e7fffdfff9039d00fbee9cfd0100d022
+                                /*
                           1    2    3  4    5    6   7    8   9   10  11   12   13   14   15   16   17 18 19   20
                         [-40, -114, 0, 0,| -24, -1,| -6, -1,| -7, 3,| 122, 0|, -40, -18|, -13, -3,| 1, 0, -48, 34]
                          -- timestamp -- | - ax -  |- ay -  | - az -| - gx -| - gy -   | - gz -   | -- reserve --
                          */
 
-                            val timestamp = ByteBuffer.allocate(4).put(bytes.subList(0, 4).toByteArray()).getInt(0)
-                            val ax = ByteBuffer.allocate(2).put(bytes.subList(4, 6).toByteArray()).getShort(0)
-                            val ay = ByteBuffer.allocate(2).put(bytes.subList(6, 8).toByteArray()).getShort(0)
-                            val az = ByteBuffer.allocate(2).put(bytes.subList(8, 10).toByteArray()).getShort(0)
-                            val gx = ByteBuffer.allocate(2).put(bytes.subList(10, 12).toByteArray()).getShort(0)
-                            val gy = ByteBuffer.allocate(2).put(bytes.subList(12, 14).toByteArray()).getShort(0)
-                            val gz = ByteBuffer.allocate(2).put(bytes.subList(14, 16).toByteArray()).getShort(0)
+                                val timestamp = ByteBuffer.allocate(4).put(bytes.subList(0, 4).toByteArray()).getInt(0)
+                                val ax = ByteBuffer.allocate(2).put(bytes.subList(4, 6).toByteArray()).getShort(0)
+                                val ay = ByteBuffer.allocate(2).put(bytes.subList(6, 8).toByteArray()).getShort(0)
+                                val az = ByteBuffer.allocate(2).put(bytes.subList(8, 10).toByteArray()).getShort(0)
+                                val gx = ByteBuffer.allocate(2).put(bytes.subList(10, 12).toByteArray()).getShort(0)
+                                val gy = ByteBuffer.allocate(2).put(bytes.subList(12, 14).toByteArray()).getShort(0)
+                                val gz = ByteBuffer.allocate(2).put(bytes.subList(14, 16).toByteArray()).getShort(0)
 
-                            // reserved - (17, 21)
-                            Log.i(TAG, "Got : tmstmp "
-                                    + timestamp.toString()
-                                    + "; ax " + ax.toString()
-                                    + "; ay " + ay.toString()
-                                    + "; az " + az.toString()
-                                    + "; gx " + gx.toString()
-                                    + "; gy " + gy.toString()
-                                    + "; gz " + gz.toString()
-                            )
+                                // reserved - (17, 21)
+                                Log.i(TAG, "Got : tmstmp "
+                                        + timestamp.toString()
+                                        + "; ax " + ax.toString()
+                                        + "; ay " + ay.toString()
+                                        + "; az " + az.toString()
+                                        + "; gx " + gx.toString()
+                                        + "; gy " + gy.toString()
+                                        + "; gz " + gz.toString()
+                                )
 
-                            val now: Long = System.currentTimeMillis()
-                            madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
-                            lastUpdate = now
+                                val now: Long = System.currentTimeMillis()
+                                madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
+                                lastUpdate = now
 
-                            madgwickAHRS.Update(gx.toFloat(), gy.toFloat(), gz.toFloat(), ax.toFloat(), ay.toFloat(), az.toFloat())
+                                madgwickAHRS.Update(gx.toFloat(), gy.toFloat(), gz.toFloat(), ax.toFloat(), ay.toFloat(), az.toFloat())
 
-                            lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
-                            lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
-                            lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
+                                lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
+                                lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
+                                lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
 
-                            Log.i("MAD DATA", "pitch: " + lpPitch.toString()
-                                    + "roll: " + lpRoll.toString()
-                                    + "yaw: " + lpYaw.toString())
+                                Log.i("MAD DATA", "pitch: " + lpPitch.toString()
+                                        + "roll: " + lpRoll.toString()
+                                        + "yaw: " + lpYaw.toString())
 
 
-                            deviceFr.view!!.devices_stage_render.mStageRenderer.setRotation(lpRoll, lpPitch, lpYaw)
+                                deviceFr.view!!.devices_stage_render.mStageRenderer.setRotation(lpRoll, lpPitch, lpYaw)
 //                            deviceFr.view!!.devices_stage_render.mStageRenderer.setRotation(madgwickAHRS.MadgRoll.toFloat(), madgwickAHRS.MadgPitch.toFloat(), madgwickAHRS.MadgYaw.toFloat())
 //                            //
 //                            madgwickAHRS.Quaternion.size
-                            //
+                                //
 //                            Log.i("MAD", deviceFr..toString())
-                            //.mStageRenderer
+                                //.mStageRenderer
 //                                    .mCube!!
 //                                    .setRotation(lpRoll, lpPitch, lpYaw)
+                            }
                         }
-
 //                        Log.i(TAG, ByteBuffer.wrap(timestamp.toByteArray()).int.toString())
                     },
                     { e ->
                         Log.i(TAG, "error reading char" + e.toString())
-                        readFromAndroid =true
                     }
 
             )
@@ -346,7 +335,7 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
 
         public fun disconnect() {
             Log.i(TAG, "dsconnect proc")
-            mSensorManager?.unregisterListener(this);
+//            mSensorManager?.unregisterListener(this);
 //            if(mRxDevice != null && mRxDevice?.connectionState == RxBleConnection.RxBleConnectionState.CONNECTED)
 //            {
             // connected, disconnect
@@ -354,7 +343,6 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
             mConnectionDisposable = null
             mRxBleConnection = null
             mRxDevice = null
-            readFromAndroid = true
             Log.i(TAG, "disconnected frrom here")
 //            }
         }

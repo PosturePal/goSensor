@@ -15,8 +15,13 @@ import com.mathieu.sensorme.R
 import kotlinx.android.synthetic.main.fragment_devices.view.*
 import android.bluetooth.BluetoothDevice
 import android.content.*
+import android.hardware.Sensor
+import android.hardware.SensorEvent
+import android.hardware.SensorEventListener
+import android.hardware.SensorManager
 import android.location.LocationManager
 import android.view.ContextThemeWrapper
+import com.mathieu.sensorme.MadgwickAHRS
 import com.mathieu.sensorme.StageRenderGL
 import com.polidea.rxandroidble2.RxBleClient
 import com.polidea.rxandroidble2.scan.ScanSettings
@@ -36,7 +41,7 @@ import java.util.*
  */
 
 
-class DevicesFragment : Fragment(), View.OnClickListener {
+class DevicesFragment : Fragment(), View.OnClickListener, SensorEventListener {
 
 
     var registered: Boolean = false;
@@ -54,6 +59,21 @@ class DevicesFragment : Fragment(), View.OnClickListener {
     // opengl
     public var rendererStage:StageRenderGL? = null
 
+
+    var mSensorManager: SensorManager? = null
+    var mAccelerometer: Sensor? = null
+    var mGyroscope: Sensor? = null
+
+    var agx = 0.0f
+    var agy = 0.0f
+    var agz = 0.0f
+    var aax = 0.0f
+    var aay = 0.0f
+    var aaz = 0.0f
+
+
+    public var readFromAndroid = true
+
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d(TAG, "onCreate")
         super.onCreate(savedInstanceState)
@@ -61,6 +81,64 @@ class DevicesFragment : Fragment(), View.OnClickListener {
         rxBleClient = RxBleClient.create(context)
         rendererStage = StageRenderGL(context, null)
 //        devices_stage_render.mStageRenderer.mCube = rendererStage
+
+        mSensorManager = context.getSystemService(Context.SENSOR_SERVICE) as SensorManager?
+        mAccelerometer = mSensorManager!!.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
+        mGyroscope = mSensorManager!!.getDefaultSensor(Sensor.TYPE_GYROSCOPE)
+    }
+
+
+    override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
+        Log.i(TAG, "onaccuracy changed")
+        ///TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    var madgwickAHRS = MadgwickAHRS(500.0f, 0.1f)
+    private val madgwickTimer = Timer()
+    private var lastUpdate: Long = 0
+    var lpPitch: Float = 0.0f
+    var lpRoll: Float = 0.0f
+    var lpYaw: Float = 0.0f
+
+
+
+    override fun onSensorChanged(event: SensorEvent?) {
+//        Log.i(TAG, "onSchngd")
+        if(readFromAndroid)
+        {
+            if (event?.sensor?.getType() == Sensor.TYPE_ACCELEROMETER) {
+                aax = event.values[0];
+                aay = event.values[1];
+                aaz = event.values[2];
+                Log.i(TAG, "OnSensorChanged: x: " + aax.toString()
+                        + ", y: " + aay.toString()
+                        + ", z: " + aaz.toString())
+            } else if (event?.sensor?.type == Sensor.TYPE_GYROSCOPE) {
+                agx = event.values[0];
+                agy = event.values[1];
+                agz = event.values[2];
+                Log.i(TAG, "OnSensorChanged: x: " + agx.toString() + ", y: " + agy.toString() + ", z: " + agz.toString())
+            }
+
+
+            val now: Long = System.currentTimeMillis()
+            madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
+            lastUpdate = now
+
+            madgwickAHRS.Update(agx.toFloat(), agy.toFloat(), agz.toFloat(),
+                    aax.toFloat(), aay.toFloat(), aaz.toFloat())
+
+            lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
+            lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
+            lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
+
+            Log.i("Android:", "pitch: " + lpPitch.toString()
+                    + "roll: " + lpRoll.toString()
+                    + "yaw: " + lpYaw.toString())
+
+
+            view!!.devices_stage_render.mStageRenderer.setRotation(-lpPitch, lpRoll, -lpYaw)
+        }
     }
 
 
@@ -73,6 +151,7 @@ class DevicesFragment : Fragment(), View.OnClickListener {
 
         inf.sync_devices.setOnClickListener(this)
         inf.delete_devices.setOnClickListener(this)
+        inf.android_imu_enable.setOnClickListener(this)
 //        inf.available_devices_list.isScrollContainer = false
 //        activity.appbar.setVisibility(View.INVISIBLE);
         return inf
@@ -165,6 +244,17 @@ class DevicesFragment : Fragment(), View.OnClickListener {
                 stat_available_count.text = "0"
                 alert("List is clean now")
             }
+            R.id.android_imu_enable -> {
+                readFromAndroid = !readFromAndroid
+                if(readFromAndroid)
+                {
+                    android_imu_enable.alpha = 0.5f
+                }
+                else
+                {
+                    android_imu_enable.alpha = 0.9f
+                }
+            }
         }
     }
 
@@ -216,6 +306,9 @@ class DevicesFragment : Fragment(), View.OnClickListener {
 
         }
 
+
+        mSensorManager!!.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+        mSensorManager!!.registerListener(this, mGyroscope, SensorManager.SENSOR_DELAY_NORMAL);
 
         if (mBluetoothAdapter.isEnabled) {
 

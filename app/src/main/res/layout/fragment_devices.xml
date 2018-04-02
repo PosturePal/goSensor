@@ -118,6 +118,17 @@
                 android:alpha="0.9"
                 android:src="@android:drawable/ic_menu_delete"
                 android:tint="@color/colorBlack"/>
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/android_imu_enable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:src="@android:drawable/sym_def_app_icon" />
+
         </LinearLayout>
     </RelativeLayout>
 
