@@ -2,7 +2,6 @@ package com.mathieu.sensorme.fragments
 
 import android.app.AlertDialog
 import android.bluetooth.*
-import android.os.Build
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.util.Log
@@ -11,30 +10,17 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_devices.*
 import android.support.design.widget.Snackbar
-import android.widget.TextView
 import com.mathieu.sensorme.DevicesListAdapter
 import com.mathieu.sensorme.R
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_devices.view.*
-import kotlinx.android.synthetic.main.nav_action.*
-import android.bluetooth.BluetoothSocket
-import android.os.Handler
-import java.io.IOException
-import java.io.InputStream
-import java.io.OutputStream
 import android.bluetooth.BluetoothDevice
 import android.content.*
 import android.location.LocationManager
-import android.net.wifi.aware.SubscribeConfig
 import android.view.ContextThemeWrapper
-import com.mathieu.sensorme.BTDevice
 import com.mathieu.sensorme.StageRenderGL
 import com.polidea.rxandroidble2.RxBleClient
-import com.polidea.rxandroidble2.RxBleDevice
 import com.polidea.rxandroidble2.scan.ScanSettings
-import io.reactivex.ObservableOnSubscribe
 import io.reactivex.disposables.Disposable
-import java.io.DataInputStream
 import java.util.*
 
 
@@ -73,7 +59,8 @@ class DevicesFragment : Fragment(), View.OnClickListener {
         super.onCreate(savedInstanceState)
 
         rxBleClient = RxBleClient.create(context)
-        rendererStage = view?.devices_stage_render
+        rendererStage = StageRenderGL(context, null)
+//        devices_stage_render.mStageRenderer.mCube = rendererStage
     }
 
 
@@ -125,6 +112,7 @@ class DevicesFragment : Fragment(), View.OnClickListener {
 
 
     fun clearDevices() {
+        mAvailableDevicesAdapter.disconnect()
         mAvailableDevicesAdapter.clear()
     }
 
@@ -262,7 +250,7 @@ class DevicesFragment : Fragment(), View.OnClickListener {
         Log.d(TAG, "onPause")
         super.onPause()
 
-        mAvailableDevicesAdapter.destroy()
+        mAvailableDevicesAdapter.disconnect()
         cancelScan()
 //        activity.appbar.setVisibility(View.VISIBLE);
     }
@@ -283,7 +271,7 @@ class DevicesFragment : Fragment(), View.OnClickListener {
 
 
         cancelScan()
-        mAvailableDevicesAdapter.destroy()
+        mAvailableDevicesAdapter.disconnect()
 //        mBluetoothConnection.close()
 //        if (registered) {
 //            context.unregisterReceiver(mReceiver)

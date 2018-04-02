@@ -14,12 +14,20 @@ import android.bluetooth.BluetoothGattCharacteristic
 import android.bluetooth.BluetoothGatt
 import java.util.*
 import android.bluetooth.BluetoothGattService
+import android.content.Context.SENSOR_SERVICE
+import android.hardware.Sensor
+import android.hardware.Sensor.TYPE_GYROSCOPE
+import android.hardware.SensorEvent
+import android.hardware.SensorEventListener
+import android.hardware.SensorManager
 import android.net.wifi.aware.Characteristics
 import com.polidea.rxandroidble2.RxBleClient
 import com.polidea.rxandroidble2.RxBleConnection
 import com.polidea.rxandroidble2.RxBleDevice
 import com.polidea.rxandroidble2.Timeout
 import io.reactivex.disposables.Disposable
+import kotlinx.android.synthetic.main.fragment_devices.*
+import kotlinx.android.synthetic.main.fragment_devices.view.*
 import java.net.URLDecoder
 import java.nio.ByteBuffer
 import java.nio.charset.Charset
@@ -29,7 +37,7 @@ import kotlin.experimental.and
 
 
 class DevicesListAdapter(private var deviceFr: DevicesFragment, private var items: ArrayList<BluetoothDevice>) : BaseAdapter() {
-    private class ViewHolder(private val deviceFr: DevicesFragment, row: View?) {
+    private class ViewHolder(private val deviceFr: DevicesFragment, row: View?) : SensorEventListener {
         var deviceAddress: String = ""
         var device: BluetoothDevice? = null
         private var connected: Boolean = false
@@ -49,14 +57,28 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
 
         val accGyroCharacteristicUUID: UUID = UUID.fromString("0000fff7-0000-1000-8000-00805f9b34fb")
 
-        var madgwickAHRS = MadgwickAHRS(0.01f, 0.041f)
+//        var madgwickAHRS = MadgwickAHRS(0.01f, 0.041f)
+
+        var madgwickAHRS = MadgwickAHRS(500.0f, 0.1f)
         private val madgwickTimer = Timer()
         private var lastUpdate: Long = 0
-        var lpPitch = 0.0
-        var lpRoll = 0.0
-        var lpYaw = 0.0
+        var lpPitch: Float = 0.0f
+        var lpRoll: Float = 0.0f
+        var lpYaw: Float = 0.0f
 
 
+        var mSensorManager: SensorManager? = null
+        var mAccelerometer: Sensor? = null
+        var mGyroscope: Sensor? = null
+
+        var agx = 0.0f
+        var agy = 0.0f
+        var agz = 0.0f
+        var aax = 0.0f
+        var aay = 0.0f
+        var aaz = 0.0f
+
+        var readFromAndroid = true
         init {
             this.deviceName = row?.findViewById(R.id.device_item_name)
             this.deviceStatus = row?.findViewById(R.id.device_item_status)
@@ -73,6 +95,7 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                     mRxDevice = null
                     deviceFr.alert("Disconnected device with address " + this.deviceAddress)
                     connectBtn?.alpha = 1.0f
+                    readFromAndroid = true
                 } else {
                     startConnection()
                 }
@@ -80,20 +103,73 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
 
             readBtn?.setOnClickListener { view ->
 
-//                Thread {
-//                    while (true) {
+                Thread {
+                    while (true) {
                         read()
-//                    }
-//                }.start()
+                    }
+                }.start()
             }
 
 
+
+            mSensorManager = deviceFr.context.getSystemService(SENSOR_SERVICE) as SensorManager?
+            mAccelerometer = mSensorManager!!.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
+            mGyroscope = mSensorManager!!.getDefaultSensor(Sensor.TYPE_GYROSCOPE)
 //            madgwickTimer.scheduleAtFixedRate(DoMadgwick(madgwickAHRS),
 //                    1000, 10)
 
+            mSensorManager!!.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+            mSensorManager!!.registerListener(this, mGyroscope, SensorManager.SENSOR_DELAY_NORMAL);
+
+
+//            var x =
 
         }
 
+
+        override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
+            Log.i(TAG, "onaccuracy changed")
+            ///TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        }
+
+        override fun onSensorChanged(event: SensorEvent?) {
+            Log.i(TAG, "onSchngd")
+            if(readFromAndroid)
+            {
+                if (event?.sensor?.getType() == Sensor.TYPE_ACCELEROMETER) {
+                    aax = event.values[0];
+                    aay = event.values[1];
+                    aaz = event.values[2];
+                    Log.i(TAG, "OnSensorChanged: x: " + aax.toString()
+                            + ", y: " + aay.toString()
+                            + ", z: " + aaz.toString())
+                } else if (event?.sensor?.type == Sensor.TYPE_GYROSCOPE) {
+                    agx = event.values[0];
+                    agy = event.values[1];
+                    agz = event.values[2];
+                    Log.i(TAG, "OnSensorChanged: x: " + agx.toString() + ", y: " + agy.toString() + ", z: " + agz.toString())
+                }
+
+
+                val now: Long = System.currentTimeMillis()
+                madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
+                lastUpdate = now
+
+                madgwickAHRS.Update(agx.toFloat(), agy.toFloat(), agz.toFloat(),
+                        aax.toFloat(), aay.toFloat(), aaz.toFloat())
+
+                lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
+                lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
+                lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
+
+                Log.i("Android:", "pitch: " + lpPitch.toString()
+                        + "roll: " + lpRoll.toString()
+                        + "yaw: " + lpYaw.toString())
+
+
+                deviceFr.view!!.devices_stage_render.mStageRenderer.setRotation(lpRoll, lpPitch, lpYaw)
+            }
+        }
 
         fun hexStringToByteArray(s: String): ByteArray {
             val len = s.length
@@ -129,6 +205,7 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
             }
             mRxBleConnection?.readCharacteristic(accGyroCharacteristicUUID)?.subscribe(
                     { characteristicValue ->
+                        readFromAndroid = false
 
 
                         //                        Log.i(TAG,"read char: " + toHex(characteristicValue) + ", bytes are\n " + characteristicValue.contentToString())
@@ -161,25 +238,37 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                                     + "; gz " + gz.toString()
                             )
 
-                            val now:Long = System.currentTimeMillis()
+                            val now: Long = System.currentTimeMillis()
                             madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
                             lastUpdate = now
 
-                            madgwickAHRS.Update(gx.toFloat()/1000, gy.toFloat()/1000,gz.toFloat()/1000, ax.toFloat()/1000,ay.toFloat()/1000, az.toFloat()/1000)
+                            madgwickAHRS.Update(gx.toFloat(), gy.toFloat(), gz.toFloat(), ax.toFloat(), ay.toFloat(), az.toFloat())
 
-                            lpPitch = lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8;
-                            lpRoll = lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8;
-                            lpYaw = lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8;
+                            lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
+                            lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
+                            lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
 
                             Log.i("MAD DATA", "pitch: " + lpPitch.toString()
-                            + "roll: " + lpRoll.toString()
-                            + "yaw: " + lpYaw.toString())
+                                    + "roll: " + lpRoll.toString()
+                                    + "yaw: " + lpYaw.toString())
+
+
+                            deviceFr.view!!.devices_stage_render.mStageRenderer.setRotation(lpRoll, lpPitch, lpYaw)
+//                            deviceFr.view!!.devices_stage_render.mStageRenderer.setRotation(madgwickAHRS.MadgRoll.toFloat(), madgwickAHRS.MadgPitch.toFloat(), madgwickAHRS.MadgYaw.toFloat())
+//                            //
+//                            madgwickAHRS.Quaternion.size
+                            //
+//                            Log.i("MAD", deviceFr..toString())
+                            //.mStageRenderer
+//                                    .mCube!!
+//                                    .setRotation(lpRoll, lpPitch, lpYaw)
                         }
 
 //                        Log.i(TAG, ByteBuffer.wrap(timestamp.toByteArray()).int.toString())
                     },
                     { e ->
                         Log.i(TAG, "error reading char" + e.toString())
+                        readFromAndroid =true
                     }
 
             )
@@ -257,6 +346,7 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
 
         public fun disconnect() {
             Log.i(TAG, "dsconnect proc")
+            mSensorManager?.unregisterListener(this);
 //            if(mRxDevice != null && mRxDevice?.connectionState == RxBleConnection.RxBleConnectionState.CONNECTED)
 //            {
             // connected, disconnect
@@ -264,6 +354,7 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
             mConnectionDisposable = null
             mRxBleConnection = null
             mRxDevice = null
+            readFromAndroid = true
             Log.i(TAG, "disconnected frrom here")
 //            }
         }
@@ -271,7 +362,7 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
 
     private var viewHolder: ViewHolder? = null
 
-    public fun destroy() {
+    public fun disconnect() {
         viewHolder?.disconnect()
     }
 
@@ -331,6 +422,7 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
     }
 
     fun clear() {
+        disconnect()
         items.clear()
         notifyDataSetChanged()
     }
