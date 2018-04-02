@@ -1,0 +1,418 @@
+I: data from sensors: ; ax 14.848; ay -22.017; az -2.557; gx 13.827; gy -25.107; gz 29.951
+I: pitch: -69.743roll: -22.732452yaw: -122.31897
+I: data from sensors: ; ax 15.36; ay -21.505; az -3.069; gx 13.827; gy 31.469; gz -30.977
+I: pitch: 0.65518546roll: 6.6265597yaw: 41.561382
+I: data from sensors: ; ax 15.36; ay -21.761; az -3.325; gx -13.054; gy -20.755; gz -22.017
+I: pitch: 4.744359roll: -46.623444yaw: -0.6906608
+I: data from sensors: ; ax 14.848; ay -21.505; az -2.557; gx 18.435; gy 26.861; gz -30.977
+I: pitch: 105.26206roll: 41.190884yaw: 17.919376
+I: data from sensors: ; ax 15.616; ay -22.017; az -3.837; gx -4.094; gy -25.107; gz -4.097
+I: pitch: 20.94182roll: 11.526103yaw: -82.229256
+I: data from sensors: ; ax 15.36; ay -21.249; az -3.837; gx 13.827; gy -25.107; gz 29.951
+I: pitch: -43.756565roll: -48.0113yaw: 16.667192
+I: data from sensors: ; ax 14.08; ay -21.761; az -2.301; gx 31.747; gy -16.147; gz -30.977
+I: pitch: 118.607506roll: -16.544704yaw: -50.661236
+I: data from sensors: ; ax 14.848; ay -21.249; az -2.557; gx 27.395; gy -20.755; gz 12.031
+I: pitch: -46.764267roll: 46.17791yaw: -58.61286
+I: data from sensors: ; ax 15.872; ay -21.505; az -3.581; gx 12.29; gy 17.901; gz -4.097
+I: pitch: -94.75925roll: 26.549139yaw: -141.15338
+I: data from sensors: ; ax 14.848; ay -22.017; az -3.325; gx -22.014; gy 31.469; gz -26.625
+I: pitch: 57.35809roll: -55.025208yaw: -91.94407
+I: data from sensors: ; ax 14.848; ay -21.761; az -2.301; gx 2.052; gy -7.187; gz -22.017
+I: pitch: 101.28154roll: 6.96563yaw: -88.05419
+I: data from sensors: ; ax 15.104; ay -21.761; az -2.813; gx 22.787; gy -29.715; gz -17.665
+I: pitch: 18.634396roll: 38.15083yaw: 30.401608
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.581; gx 4.867; gy 31.469; gz -26.625
+I: pitch: -79.49185roll: -0.55492735yaw: -78.87344
+I: data from sensors: ; ax 14.336; ay -21.761; az -4.093; gx -4.094; gy 31.469; gz -22.017
+I: pitch: -22.351303roll: -20.835934yaw: 56.531464
+I: data from sensors: ; ax 14.848; ay -21.761; az -2.813; gx 0.515; gy 31.469; gz -30.977
+I: pitch: -42.024174roll: 31.910702yaw: -14.400671
+I: data from sensors: ; ax 15.104; ay -22.017; az -3.069; gx 22.787; gy -16.147; gz -30.977
+I: pitch: 15.890739roll: -12.870222yaw: -90.551926
+I: data from sensors: ; ax 14.848; ay -21.761; az -4.093; gx 13.827; gy 31.469; gz -26.625
+I: pitch: 140.38489roll: 51.351257yaw: -19.412067
+I: data from sensors: ; ax 15.36; ay -21.761; az -3.325; gx 4.867; gy 31.469; gz -22.017
+I: pitch: -91.350204roll: -32.15178yaw: 28.755857
+I: data from sensors: ; ax 14.08; ay -21.505; az -3.069; gx -29.181; gy 31.469; gz -30.977
+I: pitch: 0.298013roll: -8.03824yaw: 129.7248
+I: data from sensors: ; ax 15.104; ay -21.505; az -2.557; gx 4.867; gy 17.901; gz -17.665
+I: pitch: -64.5295roll: 60.448135yaw: 38.124016
+I: data from sensors: ; ax 14.592; ay -21.505; az -4.349; gx 0.515; gy -29.715; gz -30.977
+I: pitch: -57.33194roll: -28.605436yaw: 52.322643
+I: data from sensors: ; ax 15.36; ay -21.249; az -2.557; gx -4.094; gy 26.861; gz -26.625
+I: pitch: -14.609726roll: 4.5077133yaw: -46.45675
+I: data from sensors: ; ax 14.336; ay -21.761; az -2.557; gx 4.867; gy 31.469; gz -30.977
+I: pitch: -68.870186roll: 23.111538yaw: 101.8101
+I: data from sensors: ; ax 15.104; ay -21.761; az -3.325; gx 4.867; gy 31.469; gz -30.977
+I: pitch: -46.20844roll: -23.229189yaw: 34.167446
+I: data from sensors: ; ax 14.848; ay -21.761; az -2.813; gx 13.827; gy -16.147; gz -17.665
+I: pitch: 88.97623roll: -36.1073yaw: -77.29138
+I: data from sensors: ; ax 15.104; ay -21.761; az -3.325; gx 9.475; gy 22.509; gz -30.977
+I: pitch: 130.86935roll: 6.633335yaw: 6.938199
+I: data from sensors: ; ax 14.592; ay -21.761; az -2.557; gx 4.867; gy 26.861; gz -22.017
+I: pitch: 143.76855roll: -23.235142yaw: 115.05222
+I: data from sensors: ; ax 15.104; ay -22.017; az -3.069; gx 9.475; gy 26.861; gz -26.625
+I: pitch: 120.06593roll: -14.295229yaw: -42.878933
+I: data from sensors: ; ax 14.592; ay -21.249; az -3.581; gx 9.475; gy -25.107; gz -26.625
+I: pitch: -10.159151roll: 52.162968yaw: 52.990067
+I: data from sensors: ; ax 14.592; ay -21.505; az -3.581; gx 4.867; gy -29.715; gz -26.625
+I: pitch: -6.3354826roll: -44.230648yaw: 45.310192
+I: data from sensors: ; ax 14.848; ay -22.017; az -2.557; gx 27.395; gy 22.509; gz -17.665
+I: pitch: 75.27124roll: 0.2731391yaw: 52.208935
+I: data from sensors: ; ax 14.336; ay -21.761; az -3.325; gx 13.827; gy -29.715; gz -30.977
+I: pitch: 9.796282roll: 37.883766yaw: -87.18107
+I: data from sensors: ; ax 14.848; ay -21.761; az -2.813; gx 4.867; gy -29.715; gz -30.977
+I: pitch: 23.7996roll: -33.397427yaw: 94.55197
+I: data from sensors: ; ax 15.36; ay -21.761; az -4.349; gx -4.094; gy -29.715; gz -22.017
+I: pitch: 86.635056roll: -2.6684637yaw: 20.370096
+I: data from sensors: ; ax 14.592; ay -22.017; az -3.325; gx 4.867; gy 17.901; gz 29.951
+I: pitch: -10.369764roll: -52.338272yaw: 142.22452
+I: data from sensors: ; ax 15.104; ay -21.761; az -2.813; gx 13.827; gy 31.469; gz -22.017
+I: pitch: 37.317852roll: 25.112982yaw: 129.22244
+I: data from sensors: ; ax 14.336; ay -21.761; az -3.325; gx 0.515; gy -29.715; gz 25.599
+I: pitch: 77.04375roll: -58.921547yaw: 85.44359
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.325; gx 4.867; gy -29.715; gz -26.625
+I: pitch: 130.12009roll: 21.657372yaw: 42.157204
+I: data from sensors: ; ax 15.104; ay -21.761; az -2.813; gx 0.515; gy 26.861; gz -30.977
+I: pitch: 164.63663roll: -18.360794yaw: 127.68072
+I: data from sensors: ; ax 14.336; ay -21.761; az -3.069; gx 4.867; gy 31.469; gz -30.977
+I: pitch: 106.20128roll: -14.410954yaw: -22.062761
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.325; gx 9.475; gy 26.861; gz -17.665
+I: pitch: 132.05096roll: 5.273831yaw: 36.008972
+I: data from sensors: ; ax 14.848; ay -22.273; az -3.325; gx 9.475; gy -16.147; gz 29.951
+I: pitch: 158.53258roll: 9.550278yaw: -58.892517
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.581; gx -8.446; gy -25.107; gz -17.665
+I: pitch: -9.52219roll: 35.441227yaw: 76.68998
+I: data from sensors: ; ax 14.848; ay -22.273; az -3.581; gx 0.515; gy 31.469; gz -30.977
+I: pitch: -50.468227roll: -23.876623yaw: -13.800386
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.069; gx -8.446; gy 17.901; gz -13.057
+I: pitch: -38.234886roll: -17.58446yaw: -135.84695
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.581; gx 0.515; gy 26.861; gz -22.017
+I: pitch: -42.52392roll: 14.130574yaw: 33.510605
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.069; gx 18.435; gy 26.861; gz -4.097
+I: pitch: -103.737175roll: 49.271797yaw: -77.800865
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.325; gx 4.867; gy -25.107; gz -13.057
+I: pitch: -61.63912roll: -31.244925yaw: -16.994125
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.837; gx 4.867; gy 26.861; gz -17.665
+I: pitch: -13.543144roll: 30.247322yaw: -87.935196
+I: data from sensors: ; ax 14.848; ay -21.761; az -2.813; gx 18.435; gy -29.715; gz -30.977
+I: pitch: 45.175724roll: -7.4065957yaw: 83.393135
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.069; gx 9.475; gy -20.755; gz -26.625
+I: pitch: 58.260727roll: 38.162685yaw: 31.399551
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.325; gx 9.475; gy 17.901; gz -30.977
+I: pitch: -74.36832roll: 2.343868yaw: 143.23215
+I: data from sensors: ; ax 15.36; ay -21.761; az -3.069; gx 9.475; gy -29.715; gz -22.017
+I: pitch: -126.15877roll: -24.715578yaw: -2.1856778
+I: data from sensors: ; ax 14.592; ay -21.505; az -2.813; gx 0.515; gy -16.147; gz -30.977
+I: pitch: -169.00479roll: 9.756777yaw: 87.37999
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.837; gx 0.515; gy -29.715; gz -26.625
+I: pitch: -99.32687roll: 8.758236yaw: -58.791416
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.069; gx 18.435; gy 31.469; gz 20.991
+I: pitch: -154.77908roll: 44.39787yaw: 49.521576
+I: data from sensors: ; ax 15.104; ay -21.505; az -3.325; gx -4.094; gy 31.469; gz -26.625
+I: pitch: 75.2511roll: -41.459785yaw: -130.45969
+I: data from sensors: ; ax 14.848; ay -22.017; az -3.069; gx 13.827; gy -29.715; gz 29.951
+I: pitch: -83.680275roll: 36.431683yaw: 63.04137
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.581; gx 13.827; gy -29.715; gz -26.625
+I: pitch: -46.90076roll: -41.59593yaw: 156.47638
+I: data from sensors: ; ax 14.592; ay -22.017; az -3.325; gx 18.435; gy 31.469; gz -17.665
+I: pitch: 48.69656roll: 34.283863yaw: 159.30096
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.325; gx 18.435; gy -25.107; gz -30.977
+I: pitch: 13.383944roll: 11.619812yaw: 17.292652
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.325; gx 4.867; gy -29.715; gz -26.625
+I: pitch: 69.4282roll: -13.216456yaw: -125.463745
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.325; gx -4.094; gy -20.755; gz -30.977
+I: pitch: 17.998236roll: 25.819052yaw: 24.242542
+I: data from sensors: ; ax 14.336; ay -21.761; az -3.069; gx -4.094; gy -25.107; gz -22.017
+I: pitch: 55.971607roll: -47.008793yaw: -63.148685
+I: data from sensors: ; ax 15.104; ay -21.761; az -3.069; gx 9.475; gy -29.715; gz -30.977
+I: pitch: 119.72033roll: 43.26138yaw: -130.24113
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.325; gx -17.406; gy 31.469; gz 29.951
+I: pitch: 67.11086roll: -29.51619yaw: -84.410416
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.325; gx 4.867; gy 26.861; gz 29.951
+I: pitch: 20.67577roll: 10.626338yaw: 41.1777
+I: data from sensors: ; ax 14.336; ay -21.761; az -3.069; gx 4.867; gy 31.469; gz -22.017
+I: pitch: -90.98144roll: 17.639229yaw: -74.162766
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.325; gx 9.475; gy 31.469; gz -22.017
+I: pitch: -24.915411roll: -18.518589yaw: 80.446724
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.069; gx 0.515; gy -25.107; gz -22.017
+I: pitch: 83.57818roll: -4.32994yaw: -18.027899
+I: data from sensors: ; ax 14.592; ay -22.017; az -3.325; gx 13.827; gy 26.861; gz -30.977
+I: pitch: 155.0997roll: -11.541605yaw: 67.55764
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.069; gx 13.827; gy -29.715; gz -26.625
+I: pitch: -41.486565roll: 9.614384yaw: -101.75586
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.325; gx -4.094; gy -20.755; gz -13.057
+I: pitch: -115.56005roll: -14.096251yaw: -41.097153
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.325; gx 4.867; gy 26.861; gz 29.951
+I: pitch: -122.0193roll: 21.834957yaw: -140.15631
+I: FinalizerDaemon: finalize objects = 174
+I: data from sensors: ; ax 14.592; ay -22.273; az -3.069; gx 18.435; gy 31.469; gz -26.625
+I: pitch: -30.608019roll: -16.825434yaw: 33.444374
+I: data from sensors: ; ax 14.592; ay -21.761; az -2.813; gx 13.827; gy -25.107; gz -30.977
+I: pitch: 79.22935roll: 8.522529yaw: -32.57293
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.581; gx 27.395; gy 31.469; gz 20.991
+I: pitch: -38.750504roll: -51.023777yaw: -115.474915
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.325; gx 0.515; gy 31.469; gz -30.977
+I: pitch: 4.26228roll: 24.105549yaw: 47.89743
+I: data from sensors: ; ax 14.592; ay -21.249; az -3.069; gx 9.475; gy -7.187; gz -30.977
+I: pitch: -3.8345554roll: 2.8888347yaw: -31.239702
+I: data from sensors: ; ax 13.824; ay -21.249; az -3.325; gx 0.515; gy 31.469; gz -30.977
+I: pitch: -63.646866roll: 19.286676yaw: 118.53081
+I: data from sensors: ; ax 14.848; ay -21.761; az -2.813; gx 18.435; gy 26.861; gz 29.951
+I: pitch: 115.952736roll: 28.904554yaw: -14.249765
+I: data from sensors: ; ax 15.104; ay -21.505; az -3.325; gx 13.827; gy -25.107; gz -13.057
+I: pitch: 1.3166538roll: 17.726858yaw: 61.6233
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.581; gx 13.827; gy -11.795; gz -22.017
+I: pitch: 49.728214roll: -7.045375yaw: -5.3707814
+I: data from sensors: ; ax 14.08; ay -21.505; az -3.325; gx 0.515; gy 22.509; gz -22.017
+I: pitch: -124.58968roll: 42.453yaw: 105.492096
+I: data from sensors: ; ax 14.08; ay -21.249; az -3.325; gx 4.867; gy -16.147; gz 29.951
+I: pitch: 54.27758roll: -1.8460203yaw: 0.32751527
+I: data from sensors: ; ax 14.336; ay -21.761; az -3.325; gx 9.475; gy -20.755; gz -17.665
+I: pitch: 7.300019roll: 52.380463yaw: 117.80005
+I: data from sensors: ; ax 14.848; ay -21.249; az -3.581; gx -13.054; gy -25.107; gz -13.057
+I: pitch: -66.427864roll: -25.851679yaw: 164.29558
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.325; gx 9.475; gy 31.469; gz -26.625
+I: pitch: 2.6934419roll: 25.931482yaw: 69.56757
+I: data from sensors: ; ax 14.592; ay -22.017; az -3.325; gx 9.475; gy -29.715; gz -26.625
+I: pitch: 40.725277roll: -12.818905yaw: -54.73617
+I: data from sensors: ; ax 14.336; ay -21.761; az -3.069; gx 9.475; gy 22.509; gz -30.977
+I: pitch: -111.89003roll: 41.172718yaw: 31.077856
+I: data from sensors: ; ax 14.848; ay -22.273; az -3.069; gx 0.515; gy 31.469; gz -26.625
+I: pitch: 105.834946roll: -59.56037yaw: 103.27712
+I: data from sensors: ; ax 14.592; ay -21.249; az -3.325; gx 13.827; gy -25.107; gz -30.977
+I: pitch: -112.90439roll: 23.607887yaw: -96.63625
+I: data from sensors: ; ax 14.592; ay -21.505; az -3.325; gx 4.867; gy 31.469; gz 20.991
+I: pitch: -113.92959roll: -31.318981yaw: 45.591663
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.325; gx 13.827; gy 22.509; gz -22.017
+I: pitch: 20.069178roll: 4.8511934yaw: -24.24803
+I: data from sensors: ; ax 15.104; ay -21.249; az -2.813; gx 13.827; gy 31.469; gz -26.625
+I: pitch: -115.77937roll: 4.9500165yaw: 73.136665
+I: data from sensors: ; ax 14.592; ay -21.505; az -3.069; gx 0.515; gy 31.469; gz -26.625
+I: pitch: 18.785145roll: -31.028982yaw: -55.838734
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.325; gx 9.475; gy 31.469; gz -26.625
+I: pitch: 131.05843roll: 37.96389yaw: 12.332262
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.581; gx 18.435; gy 31.469; gz -26.625
+I: pitch: -49.543873roll: -45.815372yaw: 37.289597
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.325; gx 0.515; gy -25.107; gz -13.057
+I: pitch: 133.148roll: 12.423626yaw: 144.47018
+I: data from sensors: ; ax 14.848; ay -22.017; az -3.069; gx 4.867; gy -25.107; gz -22.017
+I: pitch: -29.946564roll: -4.836862yaw: -4.899657
+
+    --------- beginning of system
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.069; gx 9.475; gy -20.755; gz -26.625
+I: pitch: 108.04687roll: -25.777971yaw: 124.77685
+I: data from sensors: ; ax 14.336; ay -21.761; az -3.069; gx 4.867; gy 31.469; gz -8.705
+I: pitch: 73.90902roll: -3.3905568yaw: -0.6558331
+I: data from sensors: ; ax 14.848; ay -20.993; az -3.069; gx -4.094; gy -16.147; gz -17.665
+I: pitch: 28.083359roll: -7.579856yaw: -143.3984
+I: data from sensors: ; ax 15.104; ay -21.505; az -3.325; gx 0.515; gy -20.755; gz -26.625
+I: pitch: 54.607708roll: -3.8733804yaw: -3.387663
+I: data from sensors: ; ax 15.104; ay -21.505; az -3.325; gx 9.475; gy 26.861; gz -22.017
+I: pitch: -128.87968roll: 19.670568yaw: 132.06874
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.325; gx 9.475; gy -25.107; gz -30.977
+I: pitch: -96.32026roll: -16.679184yaw: -18.985044
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.325; gx 0.515; gy 31.469; gz -13.057
+I: pitch: -47.781967roll: 6.1685376yaw: 120.43855
+I: data from sensors: ; ax 14.336; ay -21.505; az -3.325; gx 9.475; gy -20.755; gz -8.705
+I: pitch: 102.39594roll: -39.216125yaw: 45.803078
+I: data from sensors: ; ax 14.848; ay -21.761; az -2.813; gx 4.867; gy -25.107; gz -22.017
+I: pitch: -64.466484roll: 50.437473yaw: 119.141235
+I: data from sensors: ; ax 14.336; ay -21.505; az -3.325; gx 9.475; gy 26.861; gz 20.991
+I: pitch: -145.51656roll: -14.155493yaw: 5.2881045
+I: data from sensors: ; ax 14.592; ay -22.017; az -3.069; gx 9.475; gy -25.107; gz -26.625
+I: pitch: -127.93912roll: 7.874208yaw: 93.88059
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.325; gx -4.094; gy 31.469; gz 25.599
+I: pitch: -140.08148roll: -14.360587yaw: -8.495479
+I: data from sensors: ; ax 14.592; ay -21.505; az -3.325; gx 4.867; gy -29.715; gz -26.625
+I: pitch: -130.8918roll: 4.6106935yaw: 90.83527
+I: data from sensors: ; ax 14.592; ay -22.017; az -3.325; gx 13.827; gy 26.861; gz -22.017
+I: pitch: -14.819373roll: -14.507333yaw: 6.657967
+I: data from sensors: ; ax 14.336; ay -22.017; az -3.069; gx 4.867; gy 31.469; gz -22.017
+I: pitch: -104.22654roll: 38.161224yaw: 130.73282
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.069; gx 0.515; gy -25.107; gz -30.977
+I: pitch: -116.69029roll: -33.343506yaw: -24.493605
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.325; gx 4.867; gy -25.107; gz -17.665
+I: pitch: -145.77036roll: 11.640235yaw: 59.519234
+I: data from sensors: ; ax 14.592; ay -21.249; az -3.325; gx 4.867; gy -29.715; gz -30.977
+I: pitch: -114.45521roll: -17.405342yaw: -92.8187
+I: data from sensors: ; ax 14.336; ay -21.761; az -3.069; gx 0.515; gy -20.755; gz -22.017
+I: pitch: -162.35631roll: -1.7174001yaw: -2.805105
+I: data from sensors: ; ax 15.104; ay -21.505; az -3.325; gx 4.867; gy -25.107; gz -22.017
+I: pitch: -103.40052roll: 2.4232252yaw: 134.91652
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.325; gx 4.867; gy -20.755; gz -17.665
+I: pitch: -157.63202roll: -26.447353yaw: 14.6686325
+I: data from sensors: ; ax 15.104; ay -21.505; az -3.581; gx -4.094; gy -20.755; gz 29.951
+I: pitch: 65.692345roll: 24.219107yaw: -126.82808
+I: data from sensors: ; ax 14.592; ay -21.505; az -3.069; gx 13.827; gy -25.107; gz 20.991
+I: pitch: 115.92203roll: 10.734569yaw: 16.643461
+I: data from sensors: ; ax 14.336; ay -21.761; az -3.325; gx 9.475; gy 31.469; gz -17.665
+I: pitch: 121.11093roll: -28.725397yaw: -122.66645
+I: data from sensors: ; ax 14.592; ay -22.017; az -3.069; gx 0.515; gy 31.469; gz -26.625
+I: pitch: 117.62999roll: 22.739807yaw: -33.917637
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.581; gx 4.867; gy -25.107; gz 29.951
+I: pitch: 138.58507roll: -18.027275yaw: -131.3863
+I: data from sensors: ; ax 14.592; ay -21.505; az -3.325; gx 13.827; gy 17.901; gz -22.017
+I: pitch: 137.24571roll: -24.281578yaw: -32.082874
+I: FinalizerDaemon: finalize objects = 24
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.325; gx 0.515; gy -25.107; gz -26.625
+I: pitch: -16.060522roll: 39.801525yaw: 126.82171
+I: data from sensors: ; ax 14.592; ay -21.505; az -3.069; gx 4.867; gy 26.861; gz -22.017
+I: pitch: -63.757168roll: -19.078485yaw: 46.480118
+I: data from sensors: ; ax 14.848; ay -22.017; az -3.325; gx 18.435; gy 26.861; gz 29.951
+I: pitch: 63.822243roll: 46.03104yaw: 112.16038
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.069; gx 4.867; gy -29.715; gz -26.625
+I: pitch: 7.5628386roll: -17.010138yaw: -11.442384
+I: data from sensors: ; ax 14.848; ay -22.017; az -3.325; gx 13.827; gy 31.469; gz -17.665
+I: pitch: -128.39134roll: 52.182896yaw: 62.751236
+I: data from sensors: ; ax 15.104; ay -21.761; az -3.325; gx 9.475; gy 31.469; gz 29.951
+I: pitch: -145.94424roll: -26.113829yaw: -24.69214
+I: data from sensors: ; ax 15.104; ay -21.761; az -3.325; gx 18.435; gy 31.469; gz -22.017
+I: pitch: 19.581915roll: -2.246669yaw: 137.74406
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.069; gx 0.515; gy -25.107; gz 25.599
+I: pitch: -117.790535roll: -21.956905yaw: 33.162045
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.581; gx 9.475; gy -29.715; gz -17.665
+I: pitch: -106.92255roll: 4.5187354yaw: 121.69312
+I: data from sensors: ; ax 14.336; ay -22.017; az -3.325; gx 0.515; gy 31.469; gz -30.977
+I: pitch: -13.987835roll: -20.934763yaw: 5.700354
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.325; gx 4.867; gy -29.715; gz -8.705
+I: pitch: 114.56843roll: 1.0002544yaw: -139.7451
+I: data from sensors: ; ax 15.104; ay -21.505; az -3.069; gx 0.515; gy 31.469; gz -17.665
+I: pitch: 101.68856roll: -16.418428yaw: -46.9227
+I: data from sensors: ; ax 15.104; ay -22.273; az -3.069; gx 18.435; gy -25.107; gz 20.991
+I: pitch: -105.90306roll: 28.826849yaw: -115.1653
+I: data from sensors: ; ax 14.592; ay -21.249; az -3.325; gx 22.787; gy -29.715; gz -26.625
+I: pitch: -45.50621roll: -35.096878yaw: -60.49858
+I: data from sensors: ; ax 14.08; ay -22.017; az -3.837; gx 13.827; gy 31.469; gz -8.705
+I: pitch: 76.12892roll: 51.856117yaw: -16.380022
+I: data from sensors: ; ax 14.592; ay -22.017; az -3.325; gx 13.827; gy 26.861; gz -22.017
+I: pitch: -68.80906roll: -26.189259yaw: 49.13071
+I: data from sensors: ; ax 14.592; ay -22.017; az -3.837; gx 13.827; gy 26.861; gz -30.977
+I: pitch: 30.763685roll: 18.228567yaw: -40.85259
+I: data from sensors: ; ax 14.592; ay -21.249; az -3.069; gx 4.867; gy -16.147; gz 20.991
+I: pitch: -120.52494roll: -40.798244yaw: 116.2104
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.325; gx 13.827; gy -25.107; gz -30.977
+I: pitch: -139.62952roll: 7.167493yaw: -22.174513
+I: data from sensors: ; ax 15.104; ay -21.505; az -3.325; gx 9.475; gy 31.469; gz -13.057
+I: pitch: -35.357616roll: -23.815327yaw: 127.96712
+I: data from sensors: ; ax 15.104; ay -21.761; az -3.325; gx 9.475; gy -29.715; gz -26.625
+I: pitch: 91.53342roll: 15.156806yaw: 42.519833
+I: data from sensors: ; ax 14.592; ay -22.017; az -3.069; gx 31.747; gy -29.715; gz -22.017
+I: pitch: 3.7690444roll: 24.903702yaw: 115.66398
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.325; gx 4.867; gy 26.861; gz -26.625
+I: pitch: -59.922615roll: 2.136117yaw: -2.262523
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.325; gx 18.435; gy 31.469; gz -30.977
+I: pitch: -13.270909roll: 23.298908yaw: -134.63234
+I: data from sensors: ; ax 14.592; ay -21.761; az -2.813; gx 9.475; gy -29.715; gz -22.017
+I: pitch: 70.44278roll: -14.117075yaw: 13.159064
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.069; gx 0.515; gy -29.715; gz -26.625
+I: pitch: 26.320433roll: 28.037994yaw: -85.76015
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.069; gx 9.475; gy 26.861; gz -30.977
+I: pitch: -68.587roll: -1.629087yaw: 29.731674
+I: data from sensors: ; ax 15.104; ay -22.017; az -2.813; gx 13.827; gy 31.469; gz -13.057
+I: pitch: -32.984283roll: 27.459232yaw: -55.301933
+I: data from sensors: ; ax 14.848; ay -22.017; az -3.581; gx 9.475; gy -29.715; gz -26.625
+I: pitch: 68.302956roll: -26.60989yaw: 105.65174
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.069; gx 9.475; gy 22.509; gz -13.057
+I: pitch: 113.728325roll: 2.3207471yaw: -43.148052
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.069; gx 0.515; gy 17.901; gz -30.977
+I: pitch: 164.14647roll: 0.22740634yaw: 52.684307
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.325; gx 9.475; gy -29.715; gz 29.951
+I: pitch: 107.56793roll: 26.432077yaw: -73.19906
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.069; gx 18.435; gy -25.107; gz 29.951
+I: pitch: 158.18071roll: 2.8905199yaw: 83.21418
+I: data from sensors: ; ax 14.848; ay -21.761; az -2.813; gx 13.827; gy 31.469; gz -30.977
+I: pitch: 108.21489roll: -27.020763yaw: -22.75207
+I: data from sensors: ; ax 15.104; ay -21.761; az -3.325; gx 13.827; gy 31.469; gz -26.625
+I: pitch: 143.29129roll: 1.0887946yaw: 74.00254
+I: data from sensors: ; ax 14.336; ay -21.761; az -3.325; gx 13.827; gy 31.469; gz -17.665
+I: pitch: 95.42573roll: -44.042393yaw: -46.471912
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.069; gx 4.867; gy -29.715; gz -26.625
+I: pitch: 63.22874roll: 51.705837yaw: 109.51352
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.325; gx 4.867; gy -29.715; gz 25.599
+I: pitch: 105.99484roll: -47.242065yaw: 70.09707
+I: data from sensors: ; ax 14.592; ay -21.249; az -3.069; gx 13.827; gy 31.469; gz -26.625
+I: pitch: 112.8224roll: 17.130995yaw: -109.03002
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.325; gx 4.867; gy 22.509; gz 29.951
+I: pitch: -20.014782roll: -42.42319yaw: 12.983542
+I: FinalizerDaemon: finalize objects = 20
+I: data from sensors: ; ax 14.592; ay -21.505; az -2.813; gx 4.867; gy -25.107; gz -22.017
+I: pitch: 123.94885roll: 15.928193yaw: -96.90778
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.325; gx 0.515; gy -20.755; gz -22.017
+I: pitch: -30.632042roll: -6.822924yaw: 16.03978
+I: data from sensors: ; ax 14.848; ay -21.761; az -2.813; gx 4.867; gy -20.755; gz -4.097
+I: pitch: -109.8874roll: -25.220064yaw: -124.200714
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.069; gx 22.787; gy -29.715; gz -26.625
+I: pitch: -129.23616roll: -29.332657yaw: -17.351412
+I: data from sensors: ; ax 14.592; ay -22.017; az -3.581; gx 13.827; gy 31.469; gz -26.625
+I: pitch: 12.167636roll: 0.025774047yaw: -109.18873
+I: data from sensors: ; ax 14.592; ay -21.505; az -3.325; gx 9.475; gy -29.715; gz 20.991
+I: pitch: -130.51677roll: -17.41489yaw: 44.51571
+I: data from sensors: ; ax 14.592; ay -21.249; az -3.581; gx 13.827; gy -29.715; gz -30.977
+I: pitch: -115.48231roll: -5.772457yaw: -94.05888
+I: data from sensors: ; ax 14.08; ay -21.761; az -3.069; gx 4.867; gy -29.715; gz -26.625
+I: pitch: -143.79327roll: -14.350659yaw: 12.116982
+I: data from sensors: ; ax 14.592; ay -21.505; az -3.581; gx 4.867; gy 31.469; gz -22.017
+I: pitch: 5.161717roll: -4.105389yaw: -100.510895
+I: data from sensors: ; ax 15.104; ay -22.017; az -3.069; gx 13.827; gy 13.549; gz -13.057
+I: pitch: -124.743126roll: 20.531763yaw: -41.074646
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.325; gx 13.827; gy -29.715; gz -26.625
+I: pitch: -86.74548roll: -32.67438yaw: 76.96961
+I: data from sensors: ; ax 14.592; ay -22.017; az -3.069; gx 18.435; gy 26.861; gz 20.991
+I: pitch: 45.730137roll: 42.79777yaw: 154.10689
+I: data from sensors: ; ax 14.592; ay -21.505; az -3.325; gx 9.475; gy 22.509; gz -22.017
+I: pitch: -86.86848roll: -25.27458yaw: -22.864033
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.325; gx 9.475; gy 31.469; gz -26.625
+I: pitch: 16.010477roll: 19.776062yaw: 113.87673
+I: data from sensors: ; ax 14.848; ay -22.017; az -3.069; gx 9.475; gy -16.147; gz 25.599
+I: pitch: -109.16132roll: -39.957817yaw: 35.188835
+I: data from sensors: ; ax 14.592; ay -21.761; az -2.813; gx 13.827; gy -20.755; gz -13.057
+I: pitch: -121.147606roll: -8.983089yaw: 132.12161
+I: data from sensors: ; ax 14.336; ay -21.761; az -3.581; gx 18.435; gy 31.469; gz 29.951
+I: pitch: -134.14081roll: 37.285255yaw: 16.702814
+I: data from sensors: ; ax 15.104; ay -21.761; az -3.069; gx 13.827; gy 26.861; gz -13.057
+I: pitch: -58.211014roll: -17.562454yaw: -94.66339
+I: data from sensors: ; ax 14.848; ay -22.273; az -3.325; gx 13.827; gy -29.715; gz -30.977
+I: pitch: 101.923904roll: 7.003219yaw: 57.180386
+I: data from sensors: ; ax 15.104; ay -22.017; az -3.581; gx 4.867; gy -25.107; gz -17.665
+I: pitch: -5.338808roll: 11.335093yaw: -69.704384
+I: data from sensors: ; ax 15.104; ay -21.505; az -3.069; gx 22.787; gy 26.861; gz -26.625
+I: pitch: -45.883755roll: 43.339073yaw: 52.85914
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.325; gx 13.827; gy -16.147; gz -4.097
+I: pitch: 50.607773roll: -23.530598yaw: 48.7855
+I: data from sensors: ; ax 14.336; ay -21.505; az -3.325; gx 4.867; gy 31.469; gz -13.057
+I: pitch: 115.01616roll: 23.057444yaw: -120.38617
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.069; gx 18.435; gy 22.509; gz -13.057
+I: pitch: -49.671307roll: -52.705734yaw: -140.72687
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.581; gx 4.867; gy -25.107; gz 12.031
+I: pitch: -80.776184roll: 29.803677yaw: -46.100292
+I: data from sensors: ; ax 14.848; ay -21.761; az -2.813; gx 9.475; gy -16.147; gz 25.599
+I: pitch: 33.621353roll: -21.757069yaw: 73.54255
+I: data from sensors: ; ax 15.104; ay -21.505; az -3.069; gx 22.787; gy -29.715; gz -30.977
+I: pitch: -65.63078roll: 64.37266yaw: 146.99065
+I: data from sensors: ; ax 14.592; ay -22.017; az -3.069; gx 4.867; gy 26.861; gz 25.599
+I: pitch: 126.67635roll: -36.074886yaw: 24.781162
+I: data from sensors: ; ax 14.592; ay -21.505; az -3.325; gx 27.395; gy -20.755; gz -17.665
+I: pitch: -67.69512roll: -16.98508yaw: 86.870674
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.325; gx 13.827; gy 26.861; gz -4.097
+I: pitch: -30.281973roll: 22.057777yaw: 3.746521
+I: data from sensors: ; ax 14.848; ay -22.017; az -3.325; gx 9.475; gy 31.469; gz -22.017
+I: pitch: -76.33014roll: 3.532101yaw: 128.7905
+I: data from sensors: ; ax 14.848; ay -22.017; az -2.045; gx 19.972; gy -16.147; gz -30.977
+I: pitch: 85.15428roll: -26.784513yaw: 52.34352
+I: data from sensors: ; ax 14.592; ay -21.761; az -4.093; gx -17.406; gy 31.469; gz -13.057
+I: pitch: 40.95002roll: 46.24515yaw: 114.94865
+I: FinalizerDaemon: finalize objects = 14
+I: data from sensors: ; ax 15.872; ay -22.273; az -2.557; gx -24.829; gy 26.861; gz -22.017
+I: pitch: 141.84297roll: -3.0674322yaw: 48.086452
+I: data from sensors: ; ax 14.848; ay -21.761; az -3.581; gx 9.475; gy 31.469; gz -26.625
+I: pitch: 102.98557roll: -12.129991yaw: -106.481926
+I: data from sensors: ; ax 14.592; ay -21.761; az -3.581; gx 9.475; gy -29.715; gz -13.057
+I: pitch: 52.296093roll: 38.194805yaw: 6.6929417
+I: data from sensors: ; ax 12.288; ay -20.481; az -1.021; gx -29.181; gy -25.107; gz -30.977
+I: pitch: -85.99305roll: -36.48279yaw: 15.815867
+I: data from sensors: ; ax 14.848; ay -21.505; az -3.069; gx 9.475; gy -29.715; gz 25.599
+I: pitch: -31.17122roll: 31.61265yaw: 122.069084
+I: data from sensors: ; ax 15.104; ay -21.761; az -3.325; gx -4.094; gy -25.107; gz -8.705
+I: pitch: -140.94237roll: -43.84672yaw: -31.899307

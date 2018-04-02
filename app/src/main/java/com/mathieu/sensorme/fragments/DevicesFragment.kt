@@ -111,16 +111,25 @@ class DevicesFragment : Fragment(), View.OnClickListener, SensorEventListener {
             aax = event.values[0];
             aay = event.values[1];
             aaz = event.values[2];
-            Log.i(TAG, "OnSensorChanged: x: " + aax.toString()
-                    + ", y: " + aay.toString()
-                    + ", z: " + aaz.toString())
+//            Log.i(TAG, "OnSensorChanged: x: " + aax.toString()
+//                    + ", y: " + aay.toString()
+//                    + ", z: " + aaz.toString())
         } else if (event?.sensor?.type == Sensor.TYPE_GYROSCOPE) {
             agx = event.values[0];
             agy = event.values[1];
             agz = event.values[2];
-            Log.i(TAG, "OnSensorChanged: x: " + agx.toString() + ", y: " + agy.toString() + ", z: " + agz.toString())
+//            Log.i(TAG, "OnSensorChanged: x: " + agx.toString() + ", y: " + agy.toString() + ", z: " + agz.toString())
         }
 
+
+        Log.i("I:", "data from sensors: "
+                + "; ax " + aax.toString()
+                + "; ay " + aay.toString()
+                + "; az " + aaz.toString()
+                + "; gx " + agx.toString()
+                + "; gy " + agy.toString()
+                + "; gz " + agz.toString()
+        )
 
         val now: Long = System.currentTimeMillis()
         madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
@@ -139,7 +148,7 @@ class DevicesFragment : Fragment(), View.OnClickListener, SensorEventListener {
 
 
         view!!.devices_stage_render.mStageRenderer.setRotation(-lpPitch, lpRoll, -lpYaw)
-        
+
     }
 
 

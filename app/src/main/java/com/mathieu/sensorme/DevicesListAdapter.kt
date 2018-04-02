@@ -211,16 +211,15 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                                 // TODO: here may be an error
                                 // TODO: maybe use C for converting bytes to uints?
                                 val timestamp = ByteBuffer.allocate(4).put(bytes.subList(0, 4).toByteArray()).getInt(0)
-                                val ax = ByteBuffer.allocate(2).put(bytes.subList(4, 6).toByteArray()).getShort(0)
-                                val ay = ByteBuffer.allocate(2).put(bytes.subList(6, 8).toByteArray()).getShort(0)
-                                val az = ByteBuffer.allocate(2).put(bytes.subList(8, 10).toByteArray()).getShort(0)
-                                val gx = ByteBuffer.allocate(2).put(bytes.subList(10, 12).toByteArray()).getShort(0)
-                                val gy = ByteBuffer.allocate(2).put(bytes.subList(12, 14).toByteArray()).getShort(0)
-                                val gz = ByteBuffer.allocate(2).put(bytes.subList(14, 16).toByteArray()).getShort(0)
+                                val ax = ByteBuffer.allocate(2).put(bytes.subList(4, 6).toByteArray()).getShort(0).toFloat()/1000.0f
+                                val ay = ByteBuffer.allocate(2).put(bytes.subList(6, 8).toByteArray()).getShort(0).toFloat()/1000.0f
+                                val az = ByteBuffer.allocate(2).put(bytes.subList(8, 10).toByteArray()).getShort(0).toFloat()/1000.0f
+                                val gx = ByteBuffer.allocate(2).put(bytes.subList(10, 12).toByteArray()).getShort(0).toFloat()/1000.0f
+                                val gy = ByteBuffer.allocate(2).put(bytes.subList(12, 14).toByteArray()).getShort(0).toFloat()/1000.0f
+                                val gz = ByteBuffer.allocate(2).put(bytes.subList(14, 16).toByteArray()).getShort(0).toFloat()/1000.0f
 
                                 // reserved - (17, 21)
-                                Log.i(TAG, "Got : tmstmp "
-                                        + timestamp.toString()
+                                Log.i("I:", "data from sensors: "
                                         + "; ax " + ax.toString()
                                         + "; ay " + ay.toString()
                                         + "; az " + az.toString()
@@ -233,13 +232,18 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                                 madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
                                 lastUpdate = now
 
-                                madgwickAHRS.Update(gx.toFloat(), gy.toFloat(), gz.toFloat(), ax.toFloat(), ay.toFloat(), az.toFloat())
+                                madgwickAHRS.Update(gx.toFloat(),
+                                        gy.toFloat(),
+                                        gz.toFloat(),
+                                        ax.toFloat(),
+                                        ay.toFloat(),
+                                        az.toFloat())
 
                                 lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
                                 lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
                                 lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
 
-                                Log.i("MAD DATA", "pitch: " + lpPitch.toString()
+                                Log.i("Android:", "pitch: " + lpPitch.toString()
                                         + "roll: " + lpRoll.toString()
                                         + "yaw: " + lpYaw.toString())
 
