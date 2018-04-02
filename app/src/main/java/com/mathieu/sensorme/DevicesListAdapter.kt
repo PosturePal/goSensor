@@ -67,6 +67,8 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
         var lpYaw: Float = 0.0f
 
 
+        var calibIterator:Int = 0
+        var calibOffsets = FloatArray(6, { i -> 0.0f})
         init {
             this.deviceName = row?.findViewById(R.id.device_item_name)
             this.deviceStatus = row?.findViewById(R.id.device_item_status)
@@ -193,10 +195,7 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
             }
             mRxBleConnection?.readCharacteristic(accGyroCharacteristicUUID)?.subscribe(
                     { characteristicValue ->
-
-
                         if(!deviceFr.readFromAndroid) {
-
 
                             //                        Log.i(TAG,"read char: " + toHex(characteristicValue) + ", bytes are\n " + characteristicValue.contentToString())
                             val bytes = characteristicValue.asList()
@@ -210,13 +209,13 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                          */
                                 // TODO: here may be an error
                                 // TODO: maybe use C for converting bytes to uints?
-                                val timestamp = ByteBuffer.allocate(4).put(bytes.subList(0, 4).toByteArray()).getInt(0)
-                                val ax = ByteBuffer.allocate(2).put(bytes.subList(4, 6).toByteArray()).getShort(0).toFloat()/1000.0f
-                                val ay = ByteBuffer.allocate(2).put(bytes.subList(6, 8).toByteArray()).getShort(0).toFloat()/1000.0f
-                                val az = ByteBuffer.allocate(2).put(bytes.subList(8, 10).toByteArray()).getShort(0).toFloat()/1000.0f
-                                val gx = ByteBuffer.allocate(2).put(bytes.subList(10, 12).toByteArray()).getShort(0).toFloat()/1000.0f
-                                val gy = ByteBuffer.allocate(2).put(bytes.subList(12, 14).toByteArray()).getShort(0).toFloat()/1000.0f
-                                val gz = ByteBuffer.allocate(2).put(bytes.subList(14, 16).toByteArray()).getShort(0).toFloat()/1000.0f
+                                var timestamp = ByteBuffer.allocate(4).put(bytes.subList(0, 4).toByteArray()).getInt(0)
+                                var ax = ByteBuffer.allocate(2).put(bytes.subList(4, 6).toByteArray()).getShort(0).toFloat()/1000.0f
+                                var ay = ByteBuffer.allocate(2).put(bytes.subList(6, 8).toByteArray()).getShort(0).toFloat()/1000.0f
+                                var az = ByteBuffer.allocate(2).put(bytes.subList(8, 10).toByteArray()).getShort(0).toFloat()/1000.0f
+                                var gx = ByteBuffer.allocate(2).put(bytes.subList(10, 12).toByteArray()).getShort(0).toFloat()/1000.0f
+                                var gy = ByteBuffer.allocate(2).put(bytes.subList(12, 14).toByteArray()).getShort(0).toFloat()/1000.0f
+                                var gz = ByteBuffer.allocate(2).put(bytes.subList(14, 16).toByteArray()).getShort(0).toFloat()/1000.0f
 
                                 // reserved - (17, 21)
                                 Log.i("I:", "data from sensors: "
@@ -228,27 +227,53 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                                         + "; gz " + gz.toString()
                                 )
 
-                                val now: Long = System.currentTimeMillis()
-                                madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
-                                lastUpdate = now
+                                if(calibIterator < 32)
+                                {
+                                    Log.i(TAG, "Calib?" + calibIterator)
+                                    calibOffsets[0] = calibOffsets[0] + gx
+                                    calibOffsets[1] = calibOffsets[1] + gy
+                                    calibOffsets[2] = calibOffsets[2] + gz
 
-                                madgwickAHRS.Update(gx.toFloat(),
-                                        gy.toFloat(),
-                                        gz.toFloat(),
-                                        ax.toFloat(),
-                                        ay.toFloat(),
-                                        az.toFloat())
+                                    calibOffsets[3] = calibOffsets[3] + ax
+                                    calibOffsets[4] = calibOffsets[4] + ay
+                                    calibOffsets[5] = calibOffsets[5] + az
 
-                                lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
-                                lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
-                                lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
+                                    calibIterator++;
+                                }
+                                else {
+                                    val now: Long = System.currentTimeMillis()
+                                    madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
+                                    lastUpdate = now
 
-                                Log.i("Android:", "pitch: " + lpPitch.toString()
-                                        + "roll: " + lpRoll.toString()
-                                        + "yaw: " + lpYaw.toString())
+                                    // calib
+                                    gx -= calibOffsets[0]/32
+                                    gy -= calibOffsets[1]/32
+                                    gz -= calibOffsets[2]/32
 
 
-                                deviceFr.view!!.devices_stage_render.mStageRenderer.setRotation(lpRoll, lpPitch, lpYaw)
+                                    ax -= calibOffsets[3]/32
+                                    ay -= calibOffsets[4]/32
+                                    az -= calibOffsets[5]/32
+
+
+                                    madgwickAHRS.Update(gx.toFloat(),
+                                            gy.toFloat(),
+                                            gz.toFloat(),
+                                            ax.toFloat(),
+                                            ay.toFloat(),
+                                            az.toFloat())
+
+                                    lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
+                                    lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
+                                    lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
+
+                                    Log.i("Android:", "pitch: " + lpPitch.toString()
+                                            + "roll: " + lpRoll.toString()
+                                            + "yaw: " + lpYaw.toString())
+
+
+                                    deviceFr.view!!.devices_stage_render.mStageRenderer.setRotation(lpRoll, lpPitch, lpYaw)
+                                }
                             }
                         }
 //                        Log.i(TAG, ByteBuffer.wrap(timestamp.toByteArray()).int.toString())
