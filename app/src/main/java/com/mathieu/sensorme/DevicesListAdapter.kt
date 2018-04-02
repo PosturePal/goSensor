@@ -208,7 +208,8 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                         [-40, -114, 0, 0,| -24, -1,| -6, -1,| -7, 3,| 122, 0|, -40, -18|, -13, -3,| 1, 0, -48, 34]
                          -- timestamp -- | - ax -  |- ay -  | - az -| - gx -| - gy -   | - gz -   | -- reserve --
                          */
-
+                                // TODO: here may be an error
+                                // TODO: maybe use C for converting bytes to uints?
                                 val timestamp = ByteBuffer.allocate(4).put(bytes.subList(0, 4).toByteArray()).getInt(0)
                                 val ax = ByteBuffer.allocate(2).put(bytes.subList(4, 6).toByteArray()).getShort(0)
                                 val ay = ByteBuffer.allocate(2).put(bytes.subList(6, 8).toByteArray()).getShort(0)
@@ -244,14 +245,6 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
 
 
                                 deviceFr.view!!.devices_stage_render.mStageRenderer.setRotation(lpRoll, lpPitch, lpYaw)
-//                            deviceFr.view!!.devices_stage_render.mStageRenderer.setRotation(madgwickAHRS.MadgRoll.toFloat(), madgwickAHRS.MadgPitch.toFloat(), madgwickAHRS.MadgYaw.toFloat())
-//                            //
-//                            madgwickAHRS.Quaternion.size
-                                //
-//                            Log.i("MAD", deviceFr..toString())
-                                //.mStageRenderer
-//                                    .mCube!!
-//                                    .setRotation(lpRoll, lpPitch, lpYaw)
                             }
                         }
 //                        Log.i(TAG, ByteBuffer.wrap(timestamp.toByteArray()).int.toString())

@@ -57,7 +57,7 @@ class DevicesFragment : Fragment(), View.OnClickListener, SensorEventListener {
 
 
     // opengl
-    public var rendererStage:StageRenderGL? = null
+    public var rendererStage: StageRenderGL? = null
 
 
     var mSensorManager: SensorManager? = null
@@ -101,44 +101,45 @@ class DevicesFragment : Fragment(), View.OnClickListener, SensorEventListener {
     var lpYaw: Float = 0.0f
 
 
-
     override fun onSensorChanged(event: SensorEvent?) {
 //        Log.i(TAG, "onSchngd")
-        if(readFromAndroid)
-        {
-            if (event?.sensor?.getType() == Sensor.TYPE_ACCELEROMETER) {
-                aax = event.values[0];
-                aay = event.values[1];
-                aaz = event.values[2];
-                Log.i(TAG, "OnSensorChanged: x: " + aax.toString()
-                        + ", y: " + aay.toString()
-                        + ", z: " + aaz.toString())
-            } else if (event?.sensor?.type == Sensor.TYPE_GYROSCOPE) {
-                agx = event.values[0];
-                agy = event.values[1];
-                agz = event.values[2];
-                Log.i(TAG, "OnSensorChanged: x: " + agx.toString() + ", y: " + agy.toString() + ", z: " + agz.toString())
-            }
-
-
-            val now: Long = System.currentTimeMillis()
-            madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
-            lastUpdate = now
-
-            madgwickAHRS.Update(agx.toFloat(), agy.toFloat(), agz.toFloat(),
-                    aax.toFloat(), aay.toFloat(), aaz.toFloat())
-
-            lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
-            lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
-            lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
-
-            Log.i("Android:", "pitch: " + lpPitch.toString()
-                    + "roll: " + lpRoll.toString()
-                    + "yaw: " + lpYaw.toString())
-
-
-            view!!.devices_stage_render.mStageRenderer.setRotation(-lpPitch, lpRoll, -lpYaw)
+        if (!readFromAndroid) {
+            return
         }
+
+        if (event?.sensor?.getType() == Sensor.TYPE_ACCELEROMETER) {
+            aax = event.values[0];
+            aay = event.values[1];
+            aaz = event.values[2];
+            Log.i(TAG, "OnSensorChanged: x: " + aax.toString()
+                    + ", y: " + aay.toString()
+                    + ", z: " + aaz.toString())
+        } else if (event?.sensor?.type == Sensor.TYPE_GYROSCOPE) {
+            agx = event.values[0];
+            agy = event.values[1];
+            agz = event.values[2];
+            Log.i(TAG, "OnSensorChanged: x: " + agx.toString() + ", y: " + agy.toString() + ", z: " + agz.toString())
+        }
+
+
+        val now: Long = System.currentTimeMillis()
+        madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
+        lastUpdate = now
+
+        madgwickAHRS.Update(agx.toFloat(), agy.toFloat(), agz.toFloat(),
+                aax.toFloat(), aay.toFloat(), aaz.toFloat())
+
+        lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
+        lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
+        lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
+
+        Log.i("Android:", "pitch: " + lpPitch.toString()
+                + "roll: " + lpRoll.toString()
+                + "yaw: " + lpYaw.toString())
+
+
+        view!!.devices_stage_render.mStageRenderer.setRotation(-lpPitch, lpRoll, -lpYaw)
+        
     }
 
 
@@ -199,7 +200,7 @@ class DevicesFragment : Fragment(), View.OnClickListener, SensorEventListener {
         return scanSubscription != null && scanSubscription!!.isDisposed
     }
 
-    fun connect(macAddress:String){
+    fun connect(macAddress: String) {
 
     }
 
@@ -246,12 +247,9 @@ class DevicesFragment : Fragment(), View.OnClickListener, SensorEventListener {
             }
             R.id.android_imu_enable -> {
                 readFromAndroid = !readFromAndroid
-                if(readFromAndroid)
-                {
+                if (readFromAndroid) {
                     android_imu_enable.alpha = 0.5f
-                }
-                else
-                {
+                } else {
                     android_imu_enable.alpha = 0.9f
                 }
             }
@@ -281,13 +279,13 @@ class DevicesFragment : Fragment(), View.OnClickListener, SensorEventListener {
 
         val builder = AlertDialog.Builder(ctw)
         builder.setMessage("Your GPS seems to be disabled, it's required for effective Bluetooth communication between BLE device and your phone")
-            .setCancelable(false)
-            .setPositiveButton("Yes", DialogInterface.OnClickListener { dialog, id ->
+                .setCancelable(false)
+                .setPositiveButton("Yes", DialogInterface.OnClickListener { dialog, id ->
                     startActivity(Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS));
                 })
-            .setNegativeButton("No", DialogInterface.OnClickListener{ dialog, id ->
+                .setNegativeButton("No", DialogInterface.OnClickListener { dialog, id ->
                     dialog.cancel();
-            });
+                });
         val alert = builder.create();
         alert.show();
     }
