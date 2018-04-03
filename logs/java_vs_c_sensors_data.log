@@ -1,0 +1,1256 @@
+I: FinalizerDaemon: finalize objects = 376
+I: data [NOT CALIB]: ; ax -0.03; ay 0.093; az 0.999; gx 0.262; gy -5.53; gz -2.467; ts 656932864
+    data [NOT CALIB] [JAVA]: ; ax -7.425; ay 23.808; az -6.397; gx 1.537; gy 26.346; gz 24.054; ts 656932864
+I: Calib?0
+I: data [NOT CALIB]: ; ax -0.028; ay 0.096; az 0.998; gx 0.595; gy -5.652; gz -2.485; ts 1697185792
+I: data [NOT CALIB] [JAVA]: ; ax -6.913; ay 24.576; az -6.653; gx 21.25; gy -4.887; gz 19.446; ts 1697185792
+I: Calib?1
+I: data [NOT CALIB]: ; ax -0.033; ay 0.095; az 1.007; gx 1.067; gy -5.775; gz -2.572; ts -920059904
+    data [NOT CALIB] [JAVA]: ; ax -8.193; ay 24.32; az -4.349; gx 11.012; gy 29.161; gz -2.827; ts -920059904
+I: Calib?2
+I: data [NOT CALIB]: ; ax -0.027; ay 0.092; az 1.001; gx 0.56; gy -5.722; gz -2.432; ts 740950016
+    data [NOT CALIB] [JAVA]: ; ax -6.657; ay 23.552; az -5.885; gx 12.29; gy -22.807; gz -32.522; ts 740950016
+I: Calib?3
+I: data [NOT CALIB]: ; ax -0.031; ay 0.093; az 1.004; gx 0.962; gy -5.81; gz -2.52; ts -1876295680
+    data [NOT CALIB] [JAVA]: ; ax -7.681; ay 23.808; az -5.117; gx -15.869; gy 20.201; gz 10.486; ts -1876295680
+I: Calib?4
+I: data [NOT CALIB]: ; ax -0.031; ay 0.097; az 1.001; gx 0.787; gy -5.722; gz -2.537; ts -215351296
+I: data [NOT CALIB] [JAVA]: ; ax -7.681; ay 24.832; az -5.885; gx 4.867; gy -22.807; gz 6.134; ts -215351296
+I: Calib?5
+I: data [NOT CALIB]: ; ax -0.028; ay 0.092; az 1.003; gx 0.945; gy -5.792; gz -2.502; ts 1462435840
+I: data [NOT CALIB] [JAVA]: ; ax -6.913; ay 23.552; az -5.373; gx -20.221; gy 24.809; gz 15.094; ts 1462435840
+I: Calib?6
+I: data [NOT CALIB]: ; ax -0.027; ay 0.094; az 1.005; gx 0.84; gy -5.775; gz -2.467; ts -500498432
+    data [NOT CALIB] [JAVA]: ; ax -6.657; ay 24.064; az -4.861; gx 18.435; gy 29.161; gz 24.054; ts -500498432
+I: Calib?7
+I: data [NOT CALIB]: ; ax -0.03; ay 0.096; az 1.002; gx 0.77; gy -5.81; gz -2.502; ts 1177288704
+    data [NOT CALIB] [JAVA]: ; ax -7.425; ay 24.576; az -5.629; gx 0.515; gy 20.201; gz 15.094; ts 1177288704
+I: Calib?8
+I: data [NOT CALIB]: ; ax -0.03; ay 0.093; az 1.003; gx 1.12; gy -5.792; gz -2.537; ts -1456734208
+    data [NOT CALIB] [JAVA]: ; ax -7.425; ay 23.808; az -5.373; gx 24.58; gy 24.809; gz 6.134; ts -1456734208
+I: Calib?9
+I: data [NOT CALIB]: ; ax -0.028; ay 0.093; az 1.001; gx 0.297; gy -5.635; gz -2.432; ts 221052928
+I: data [NOT CALIB] [JAVA]: ; ax -6.913; ay 23.808; az -5.885; gx 10.497; gy -0.535; gz -32.522; ts 221052928
+I: Calib?10
+I: data [NOT CALIB]: ; ax -0.028; ay 0.095; az 1.003; gx 0.98; gy -5.757; gz -2.52; ts 1881997312
+I: data [NOT CALIB] [JAVA]: ; ax -6.913; ay 24.32; az -5.373; gx -11.261; gy -31.767; gz 10.486; ts 1881997312
+I: Calib?11
+I: data [NOT CALIB]: ; ax -0.031; ay 0.094; az 1.004; gx 0.665; gy -5.687; gz -2.52; ts -735248384
+    data [NOT CALIB] [JAVA]: ; ax -7.681; ay 24.064; az -5.117; gx -26.366; gy -13.847; gz 10.486; ts -735248384
+I: Calib?12
+I: data [NOT CALIB]: ; ax -0.033; ay 0.096; az 0.999; gx 0.647; gy -5.687; gz -2.485; ts 1932394496
+    data [NOT CALIB] [JAVA]: ; ax -8.193; ay 24.576; az -6.397; gx -30.974; gy -13.847; gz 19.446; ts 1932394496
+I: Calib?13
+I: data [NOT CALIB]: ; ax -0.026; ay 0.097; az 1.007; gx 0.84; gy -5.74; gz -2.38; ts -684851200
+I: data [NOT CALIB] [JAVA]: ; ax -6.401; ay 24.832; az -4.349; gx 18.435; gy -27.415; gz -19.21; ts -684851200
+I: Calib?14
+I: data [NOT CALIB]: ; ax -0.031; ay 0.093; az 1.003; gx -0.577; gy -5.372; gz -2.275; ts 976158720
+I: data [NOT CALIB] [JAVA]: ; ax -7.681; ay 23.808; az -5.373; gx -16.387; gy 1.259; gz 7.671; ts 976158720
+I: Calib?15
+I: data [NOT CALIB]: ; ax -0.032; ay 0.096; az 1.006; gx 0.402; gy -5.547; gz -2.432; ts -1641086976
+I: data [NOT CALIB] [JAVA]: ; ax -7.937; ay 24.576; az -4.605; gx -28.159; gy 21.994; gz -32.522; ts -1641086976
+I: Calib?16
+I: data [NOT CALIB]: ; ax -0.034; ay 0.088; az 1.002; gx -0.052; gy -5.39; gz -2.31; ts 19922944
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.528; az -5.629; gx -13.057; gy -3.35; gz -1.29; ts 19922944
+I: Calib?17
+I: data [NOT CALIB]: ; ax -0.037; ay 0.085; az 1.007; gx -0.665; gy -5.197; gz -2.135; ts -1926234112
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 21.76; az -4.349; gx 26.621; gy -19.477; gz -22.025; ts -1926234112
+I: Calib?18
+I: data [NOT CALIB]: ; ax -0.035; ay 0.085; az 1.005; gx 1.172; gy -5.425; gz -2.625; ts 741408768
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 21.76; az -4.861; gx -27.644; gy -12.31; gz -16.395; ts 741408768
+I: Calib?19
+I: data [NOT CALIB]: ; ax -0.039; ay 0.094; az 1.004; gx 0.98; gy -5.897; gz -2.502; ts -1892614144
+    data [NOT CALIB] [JAVA]: ; ax -9.729; ay 24.064; az -5.117; gx -11.261; gy -2.072; gz 15.094; ts -1892614144
+I: Calib?20
+I: data [NOT CALIB]: ; ax -0.036; ay 0.098; az 0.995; gx -0.402; gy -5.407; gz -2.327; ts 791805952
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 25.088; az -7.421; gx 28.414; gy -7.702; gz -5.642; ts 791805952
+I: Calib?21
+I: data [NOT CALIB]: ; ax -0.02; ay 0.076; az 1.026; gx 0.227; gy -5.652; gz -2.38; ts -1842216960
+    data [NOT CALIB] [JAVA]: ; ax -4.865; ay 19.456; az 0.516; gx -7.424; gy -4.887; gz -19.21; ts -1842216960
+I: Calib?22
+I: data [NOT CALIB]: ; ax -0.055; ay 0.044; az 0.956; gx -3.517; gy -4.042; gz -1.89; ts -164495360
+I: data [NOT CALIB] [JAVA]: ; ax -13.825; ay 11.264; az -17.405; gx 17.394; gy 14.064; gz -24.84; ts -164495360
+I: Calib?23
+I: data [NOT CALIB]: ; ax -0.019; ay 0.083; az 1.025; gx 2.012; gy -6.072; gz -2.852; ts 1496514560
+I: data [NOT CALIB] [JAVA]: ; ax -4.609; ay 21.248; az 0.26; gx -9.209; gy 18.664; gz -8.972; ts 1496514560
+I: Calib?24
+I: data [NOT CALIB]: ; ax -0.046; ay 0.094; az 1.022; gx 6.475; gy -7.035; gz -3.272; ts -1120731136
+I: data [NOT CALIB] [JAVA]: ; ax -11.521; ay 24.064; az -0.509; gx 19.225; gy -31.26; gz 14.579; ts -1120731136
+I: Calib?25
+I: data [NOT CALIB]: ; ax -0.044; ay 0.081; az 0.995; gx 2.327; gy -5.967; gz -2.66; ts 540278784
+    data [NOT CALIB] [JAVA]: ; ax -11.009; ay 20.736; az -7.421; gx 5.897; gy -19.992; gz -25.355; ts 540278784
+I: Calib?26
+I: data [NOT CALIB]: ; ax -0.027; ay 0.098; az 0.992; gx -0.647; gy -4.987; gz -2.467; ts -2076966912
+I: data [NOT CALIB] [JAVA]: ; ax -6.657; ay 25.088; az -8.189; gx 31.229; gy -31.252; gz 24.054; ts -2076966912
+I: Calib?27
+I: data [NOT CALIB]: ; ax -0.037; ay 0.069; az 0.976; gx -1.855; gy -5.25; gz -2.275; ts -416022528
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 17.664; az -12.285; gx -15.88; gy 32.491; gz 7.671; ts -416022528
+I: Calib?28
+I: data [NOT CALIB]: ; ax -0.036; ay 0.09; az 1.024; gx 1.295; gy -6.037; gz -2.625; ts 1261764608
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 23.04; az 0.004; gx 3.845; gy 27.624; gz -16.395; ts 1261764608
+I: Calib?29
+I: data [NOT CALIB]: ; ax -0.05; ay 0.074; az 1.037; gx 1.067; gy -5.355; gz -2.572; ts -1372258304
+    data [NOT CALIB] [JAVA]: ; ax -12.545; ay 18.944; az 3.332; gx 11.012; gy 5.611; gz -2.827; ts -1372258304
+I: Calib?30
+I: data [NOT CALIB]: ; ax -0.045; ay 0.08; az 1.007; gx 1.627; gy -5.915; gz -2.625; ts 1966473216
+    data [NOT CALIB] [JAVA]: ; ax -11.265; ay 20.48; az -4.349; gx 23.302; gy -6.68; gz -16.395; ts 1966473216
+I: Calib?31
+I: data [NOT CALIB]: ; ax -0.029; ay 0.096; az 1.007; gx 2.082; gy -5.827; gz -2.677; ts -650772480
+    data [NOT CALIB] [JAVA]: ; ax -7.169; ay 24.576; az -4.349; gx 8.712; gy 15.849; gz -29.707; ts -650772480
+    data [calibrated]: ; ax 0.0042499974; ay 0.007125005; az 0.0032812357; gx 1.4193125; gy -0.18846893; gz -0.19006228
+I: pitch: 142.03651roll: 10.545012yaw: -16.805977
+I: data [NOT CALIB]: ; ax -0.048; ay 0.082; az 1.009; gx 1.662; gy -6.055; gz -2.502; ts 1010237440
+    data [NOT CALIB] [JAVA]: ; ax -12.033; ay 20.992; az -3.837; gx 32.262; gy 23.016; gz 15.094; ts 1010237440
+    data [calibrated]: ; ax -0.014750004; ay -0.0068749934; az 0.00528121; gx 0.99931234; gy -0.41646862; gz -0.015062332
+I: pitch: -112.76722roll: 14.89975yaw: -20.026604
+I: data [NOT CALIB]: ; ax -0.025; ay 0.092; az 0.995; gx 0.262; gy -5.565; gz -2.397; ts -1607008256
+I: data [NOT CALIB] [JAVA]: ; ax -6.145; ay 23.552; az -7.421; gx 1.537; gy 17.386; gz -23.562; ts -1607008256
+    data [calibrated]: ; ax 0.008249996; ay 0.0031250045; az -0.008718729; gx -0.4006876; gy 0.07353115; gz 0.08993769
+I: pitch: -165.95177roll: 14.785946yaw: -21.168507
+I: data [NOT CALIB]: ; ax -0.04; ay 0.081; az 1.012; gx 1.557; gy -5.897; gz -2.59; ts 70778880
+    data [NOT CALIB] [JAVA]: ; ax -9.985; ay 20.736; az -3.069; gx 5.382; gy -2.072; gz -7.435; ts 70778880
+    data [calibrated]: ; ax -0.0067500025; ay -0.0078749955; az 0.008281231; gx 0.89431244; gy -0.25846863; gz -0.10306215
+I: pitch: -172.1153roll: 16.112297yaw: -20.770752
+I: data [NOT CALIB]: ; ax -0.032; ay 0.087; az 1.003; gx 0.752; gy -5.722; gz -2.555; ts -1892155392
+    data [NOT CALIB] [JAVA]: ; ax -7.937; ay 22.272; az -5.373; gx -4.094; gy -22.807; gz 1.526; ts -1892155392
+I: data [calibrated]: ; ax 0.0012499951; ay -0.0018749982; az -7.187128E-4; gx 0.089312375; gy -0.083468914; gz -0.068062305
+I: pitch: -171.93396roll: 16.394175yaw: -19.95341
+I: data [NOT CALIB]: ; ax -0.037; ay 0.085; az 0.999; gx 0.49; gy -5.6; gz -2.38; ts -231211008
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 21.76; az -6.397; gx -5.631; gy 8.426; gz -19.21; ts -231211008
+    data [calibrated]: ; ax -0.0037500039; ay -0.0038749948; az -0.004718721; gx -0.17268759; gy 0.038531303; gz 0.10693765
+I: pitch: -172.22998roll: 16.733402yaw: -20.14905
+I: data [NOT CALIB]: ; ax -0.038; ay 0.088; az 1.002; gx 0.875; gy -5.687; gz -2.555; ts -1841758208
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.528; az -5.629; gx 27.395; gy -13.847; gz 1.526; ts -1841758208
+    data [calibrated]: ; ax -0.004750002; ay -8.749962E-4; az -0.0017187595; gx 0.2123124; gy -0.04846859; gz -0.068062305
+I: pitch: -170.48938roll: 17.919956yaw: -19.580862
+I: data [NOT CALIB]: ; ax -0.035; ay 0.087; az 1.005; gx 0.84; gy -5.845; gz -2.467; ts -180813824
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.272; az -4.861; gx 18.435; gy 11.241; gz 24.054; ts -180813824
+    data [calibrated]: ; ax -0.0017500035; ay -0.0018749982; az 0.0012812614; gx 0.17731237; gy -0.20646858; gz 0.019937754
+I: pitch: -169.02838roll: 19.34647yaw: -19.29164
+I: data [NOT CALIB]: ; ax -0.038; ay 0.087; az 1.006; gx 1.032; gy -5.915; gz -2.45; ts -1808138240
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.272; az -4.605; gx 2.052; gy -6.68; gz 28.406; ts -1808138240
+    data [calibrated]: ; ax -0.004750002; ay -0.0018749982; az 0.0022813082; gx 0.36931235; gy -0.27646875; gz 0.036937714
+I: pitch: -165.84483roll: 22.059431yaw: -18.935638
+I: data [NOT CALIB]: ; ax -0.035; ay 0.091; az 1.012; gx 1.487; gy -5.897; gz -2.537; ts 540737536
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 23.296; az -3.069; gx -12.539; gy -2.072; gz 6.134; ts 540737536
+    data [calibrated]: ; ax -0.0017500035; ay 0.0021250024; az 0.008281231; gx 0.8243124; gy -0.25846863; gz -0.05006218
+I: pitch: -159.09196roll: 24.393057yaw: -17.860027
+I: data [NOT CALIB]: ; ax -0.033; ay 0.089; az 0.991; gx 0.122; gy -5.495; gz -2.38; ts -2093285376
+    data [NOT CALIB] [JAVA]: ; ax -8.193; ay 22.784; az -8.445; gx 31.232; gy -30.23; gz -19.21; ts -2093285376
+    data [calibrated]: ; ax 2.4999678E-4; ay 1.2500584E-4; az -0.012718737; gx -0.5406876; gy 0.14353132; gz 0.10693765
+I: pitch: -161.21803roll: 23.746647yaw: -18.668018
+I: data [NOT CALIB]: ; ax -0.035; ay 0.091; az 1.006; gx 0.822; gy -5.705; gz -2.485; ts 574357504
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 23.296; az -4.605; gx 13.827; gy -18.455; gz 19.446; ts 574357504
+    data [calibrated]: ; ax -0.0017500035; ay 0.0021250024; az 0.0022813082; gx 0.15931243; gy -0.066468716; gz 0.0019378662
+I: pitch: -160.63878roll: 24.404995yaw: -18.745348
+I: data [NOT CALIB]: ; ax -0.04; ay 0.086; az 0.998; gx 0.577; gy -5.652; gz -2.485; ts -1371799552
+    data [NOT CALIB] [JAVA]: ; ax -9.985; ay 22.016; az -6.653; gx 16.642; gy -4.887; gz 19.446; ts -1371799552
+    data [calibrated]: ; ax -0.0067500025; ay -0.0028749928; az -0.005718708; gx -0.08568758; gy -0.013468742; gz 0.0019378662
+I: pitch: -160.84511roll: 25.663818yaw: -18.635963
+I: data [NOT CALIB]: ; ax -0.033; ay 0.089; az 1.004; gx 0.91; gy -5.775; gz -2.485; ts 289210368
+    data [NOT CALIB] [JAVA]: ; ax -8.193; ay 22.784; az -5.117; gx -29.181; gy 29.161; gz 19.446; ts 289210368
+I: data [calibrated]: ; ax 2.4999678E-4; ay 1.2500584E-4; az 2.812147E-4; gx 0.24731243; gy -0.13646889; gz 0.0019378662
+I: pitch: -159.64655roll: 26.45863yaw: -18.390923
+I: data [NOT CALIB]: ; ax -0.032; ay 0.09; az 1.0; gx 0.647; gy -5.652; gz -2.485; ts 1966931968
+    data [NOT CALIB] [JAVA]: ; ax -7.937; ay 23.04; az -6.141; gx -30.974; gy -4.887; gz 19.446; ts 1966931968
+    data [calibrated]: ; ax 0.0012499951; ay 0.0011250079; az -0.0037187338; gx -0.015687585; gy -0.013468742; gz 0.0019378662
+I: pitch: -160.11845roll: 26.063591yaw: -18.612427
+I: data [NOT CALIB]: ; ax -0.038; ay 0.084; az 1.001; gx 0.402; gy -5.635; gz -2.415; ts 339607552
+    data [NOT CALIB] [JAVA]: ; ax -9.473; ay 21.504; az -5.885; gx -28.159; gy -0.535; gz -28.17; ts 339607552
+    data [calibrated]: ; ax -0.004750002; ay -0.004874997; az -0.002718687; gx -0.2606876; gy 0.0035309792; gz 0.0719378
+I: pitch: -161.3912roll: 26.629864yaw: -18.822094
+I: data [NOT CALIB]: ; ax -0.035; ay 0.089; az 1.0; gx 0.787; gy -5.635; gz -2.467; ts 2017329152
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.784; az -6.141; gx 4.867; gy -0.535; gz 24.054; ts 2017329152
+    data [calibrated]: ; ax -0.0017500035; ay 1.2500584E-4; az -0.0037187338; gx 0.1243124; gy 0.0035309792; gz 0.019937754
+I: pitch: -162.14876roll: 26.74631yaw: -19.4292
+I: data [NOT CALIB]: ; ax -0.035; ay 0.09; az 0.999; gx 0.77; gy -5.705; gz -2.502; ts -616693760
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 23.04; az -6.397; gx 0.515; gy -18.455; gz 15.094; ts -616693760
+    data [calibrated]: ; ax -0.0017500035; ay 0.0011250079; az -0.004718721; gx 0.10731238; gy -0.066468716; gz -0.015062332
+I: pitch: -162.74947roll: 26.929573yaw: -19.83573
+I: data [NOT CALIB]: ; ax -0.039; ay 0.084; az 1.005; gx 0.507; gy -5.845; gz -2.38; ts 1732182016
+    data [NOT CALIB] [JAVA]: ; ax -9.729; ay 21.504; az -4.861; gx -1.279; gy 11.241; gz -19.21; ts 1732182016
+    data [calibrated]: ; ax -0.005750004; ay -0.004874997; az 0.0012812614; gx -0.15568757; gy -0.20646858; gz 0.10693765
+I: pitch: -163.55972roll: 29.013952yaw: -20.012657
+I: data [NOT CALIB]: ; ax -0.031; ay 0.091; az 1.002; gx 1.295; gy -5.635; gz -2.607; ts -901840896
+    data [NOT CALIB] [JAVA]: ; ax -7.681; ay 23.296; az -5.629; gx 3.845; gy -0.535; gz -11.787; ts -901840896
+    data [calibrated]: ; ax 0.002249997; ay 0.0021250024; az -0.0017187595; gx 0.63231236; gy 0.0035309792; gz -0.12006235
+I: pitch: -159.56102roll: 28.586218yaw: -19.506643
+I: data [NOT CALIB]: ; ax -0.029; ay 0.089; az 1.017; gx 0.77; gy -5.442; gz -2.537; ts -851443712
+    data [NOT CALIB] [JAVA]: ; ax -7.169; ay 22.784; az -1.789; gx 0.515; gy -16.662; gz 6.134; ts -851443712
+I: data [calibrated]: ; ax 0.0042499974; ay 1.2500584E-4; az 0.013281226; gx 0.10731238; gy 0.1965313; gz -0.05006218
+I: pitch: -157.69803roll: 26.699469yaw: -19.602865
+I: data [NOT CALIB]: ; ax -0.036; ay 0.086; az 1.005; gx 0.525; gy -5.775; gz -2.467; ts -1807679488
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.016; az -4.861; gx 3.33; gy 29.161; gz 24.054; ts -1807679488
+    data [calibrated]: ; ax -0.0027500018; ay -0.0028749928; az 0.0012812614; gx -0.13768762; gy -0.13646889; gz 0.019937754
+I: pitch: -157.69176roll: 28.103975yaw: -18.934254
+I: data [NOT CALIB]: ; ax -0.033; ay 0.094; az 1.0; gx 1.067; gy -5.617; gz -2.607; ts -146735104
+I: data [NOT CALIB] [JAVA]: ; ax -8.193; ay 24.064; az -6.141; gx 11.012; gy 4.074; gz -11.787; ts -146735104
+    data [calibrated]: ; ax 2.4999678E-4; ay 0.005125001; az -0.0037187338; gx 0.40431243; gy 0.021531105; gz -0.12006235
+I: pitch: -156.2702roll: 27.980747yaw: -18.605764
+I: data [NOT CALIB]: ; ax -0.035; ay 0.088; az 1.004; gx 0.577; gy -5.67; gz -2.45; ts -1757282304
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.528; az -5.117; gx 16.642; gy -9.495; gz 28.406; ts -1757282304
+    data [calibrated]: ; ax -0.0017500035; ay -8.749962E-4; az 2.812147E-4; gx -0.08568758; gy -0.03146887; gz 0.036937714
+I: pitch: -156.23875roll: 28.864374yaw: -18.510548
+I: data [NOT CALIB]: ; ax -0.034; ay 0.09; az 1.008; gx 1.295; gy -5.845; gz -2.555; ts 574816256
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 23.04; az -4.093; gx 3.845; gy 11.241; gz 1.526; ts 574816256
+    data [calibrated]: ; ax -7.5000525E-4; ay 0.0011250079; az 0.0042812824; gx 0.63231236; gy -0.20646858; gz -0.068062305
+I: pitch: -151.12764roll: 30.347816yaw: -17.201984
+I: data [NOT CALIB]: ; ax -0.035; ay 0.089; az 1.003; gx 0.717; gy -5.775; gz -2.45; ts -1052573696
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.784; az -5.373; gx -13.054; gy 29.161; gz 28.406; ts -1052573696
+    data [calibrated]: ; ax -0.0017500035; ay 1.2500584E-4; az -7.187128E-4; gx 0.054312408; gy -0.13646889; gz 0.036937714
+I: pitch: -149.9984roll: 32.55584yaw: -16.857637
+
+    --------- beginning of system
+I: data [NOT CALIB]: ; ax -0.036; ay 0.09; az 1.005; gx 0.997; gy -5.74; gz -2.485; ts 1296302080
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 23.04; az -4.861; gx -6.909; gy -27.415; gz 19.446; ts 1296302080
+    data [calibrated]: ; ax -0.0027500018; ay 0.0011250079; az 0.0012812614; gx 0.33431238; gy -0.10146856; gz 0.0019378662
+I: pitch: -146.36237roll: 34.62524yaw: -16.205788
+I: data [NOT CALIB]: ; ax -0.037; ay 0.087; az 1.008; gx 1.032; gy -5.827; gz -2.502; ts 340066304
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.272; az -4.093; gx 2.052; gy 15.849; gz 15.094; ts 340066304
+    data [calibrated]: ; ax -0.0037500039; ay -0.0018749982; az 0.0042812824; gx 0.36931235; gy -0.18846893; gz -0.015062332
+I: pitch: -141.99644roll: 36.41595yaw: -14.732101
+I: data [NOT CALIB]: ; ax -0.033; ay 0.089; az 1.004; gx 1.067; gy -5.74; gz -2.555; ts -1287323648
+I: data [NOT CALIB] [JAVA]: ; ax -8.193; ay 22.784; az -5.117; gx 11.012; gy -27.415; gz 1.526; ts -1287323648
+    data [calibrated]: ; ax 2.4999678E-4; ay 1.2500584E-4; az 2.812147E-4; gx 0.40431243; gy -0.10146856; gz -0.068062305
+I: pitch: -137.59952roll: 36.96616yaw: -13.3504505
+I: data [NOT CALIB]: ; ax -0.035; ay 0.088; az 0.998; gx 0.542; gy -5.652; gz -2.415; ts 1044774912
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.528; az -6.653; gx 7.682; gy -4.887; gz -28.17; ts 1044774912
+I: data [calibrated]: ; ax -0.0017500035; ay -8.749962E-4; az -0.005718708; gx -0.120687604; gy -0.013468742; gz 0.0719378
+I: pitch: -139.27211roll: 36.917847yaw: -14.346165
+I: data [NOT CALIB]: ; ax -0.037; ay 0.088; az 1.0; gx 0.56; gy -5.67; gz -2.537; ts -582615040
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.528; az -6.141; gx 12.29; gy -9.495; gz 6.134; ts -582615040
+I: data [calibrated]: ; ax -0.0037500039; ay -8.749962E-4; az -0.0037187338; gx -0.1026876; gy -0.03146887; gz -0.05006218
+I: pitch: -141.52792roll: 37.505253yaw: -14.963816
+I: data [NOT CALIB]: ; ax -0.037; ay 0.089; az 1.006; gx 1.085; gy -5.74; gz -2.59; ts 1766260736
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.784; az -4.605; gx 15.62; gy -27.415; gz -7.435; ts 1766260736
+    data [calibrated]: ; ax -0.0037500039; ay 1.2500584E-4; az 0.0022813082; gx 0.42231244; gy -0.10146856; gz -0.10306215
+I: pitch: -138.01788roll: 38.281174yaw: -13.642475
+I: data [NOT CALIB]: ; ax -0.035; ay 0.089; az 1.006; gx 0.98; gy -5.757; gz -2.502; ts 138936320
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.784; az -4.605; gx -11.261; gy -31.767; gz 15.094; ts 138936320
+    data [calibrated]: ; ax -0.0017500035; ay 1.2500584E-4; az 0.0022813082; gx 0.31731242; gy -0.11846876; gz -0.015062332
+I: pitch: -134.21631roll: 39.391148yaw: -12.300369
+I: data [NOT CALIB]: ; ax -0.033; ay 0.09; az 1.001; gx 0.717; gy -5.67; gz -2.52; ts -1823997952
+    data [NOT CALIB] [JAVA]: ; ax -8.193; ay 23.04; az -5.885; gx -13.054; gy -9.495; gz 10.486; ts -1823997952
+    data [calibrated]: ; ax 2.4999678E-4; ay 0.0011250079; az -0.002718687; gx 0.054312408; gy -0.03146887; gz -0.03306222
+I: pitch: -134.40526roll: 39.20809yaw: -12.631857
+I: data [NOT CALIB]: ; ax -0.034; ay 0.087; az 1.004; gx 0.525; gy -5.722; gz -2.485; ts 860422144
+    data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.272; az -5.117; gx 3.33; gy -22.807; gz 19.446; ts 860422144
+    data [calibrated]: ; ax -7.5000525E-4; ay -0.0018749982; az 2.812147E-4; gx -0.13768762; gy -0.083468914; gz 0.0019378662
+I: pitch: -134.00563roll: 39.50798yaw: -11.501344
+I: data [NOT CALIB]: ; ax -0.033; ay 0.091; az 1.005; gx 1.382; gy -5.967; gz -2.607; ts -766967808
+    data [NOT CALIB] [JAVA]: ; ax -8.193; ay 23.296; az -4.861; gx 26.117; gy -19.992; gz -11.787; ts -766967808
+I: data [calibrated]: ; ax 2.4999678E-4; ay 0.0021250024; az 0.0012812614; gx 0.71931237; gy -0.3284688; gz -0.12006235
+I: pitch: -124.72429roll: 40.933365yaw: -7.2748575
+I: data [NOT CALIB]: ; ax -0.035; ay 0.087; az 0.998; gx 1.067; gy -5.775; gz -2.502; ts -1723203584
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.272; az -6.653; gx 11.012; gy 29.161; gz 15.094; ts -1723203584
+    data [calibrated]: ; ax -0.0017500035; ay -0.0018749982; az -0.005718708; gx 0.40431243; gy -0.13646889; gz -0.015062332
+I: pitch: -120.90196roll: 41.09566yaw: -6.333043
+I: data [NOT CALIB]: ; ax -0.037; ay 0.089; az 1.004; gx 0.7; gy -5.74; gz -2.45; ts 608894976
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.784; az -5.117; gx -17.406; gy -27.415; gz 28.406; ts 608894976
+    data [calibrated]: ; ax -0.0037500039; ay 1.2500584E-4; az 2.812147E-4; gx 0.03731239; gy -0.10146856; gz 0.036937714
+I: pitch: -119.35235roll: 42.64945yaw: -5.425203
+I: data [NOT CALIB]: ; ax -0.035; ay 0.091; az 1.012; gx 1.032; gy -5.775; gz -2.572; ts -347406336
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 23.296; az -3.069; gx 2.052; gy 29.161; gz -2.827; ts -347406336
+    data [calibrated]: ; ax -0.0017500035; ay 0.0021250024; az 0.008281231; gx 0.36931235; gy -0.13646889; gz -0.085062265
+I: pitch: -113.55273roll: 43.17311yaw: -2.7371428
+I: data [NOT CALIB]: ; ax -0.034; ay 0.089; az 1.011; gx 0.647; gy -5.635; gz -2.485; ts -1303642112
+    data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.784; az -3.325; gx -30.974; gy -0.535; gz 19.446; ts -1303642112
+    data [calibrated]: ; ax -7.5000525E-4; ay 1.2500584E-4; az 0.0072813034; gx -0.015687585; gy 0.0035309792; gz 0.0019378662
+I: pitch: -111.69008roll: 43.51871yaw: -1.642887
+I: data [NOT CALIB]: ; ax -0.039; ay 0.09; az 0.996; gx 0.927; gy -5.757; gz -2.467; ts 1380777984
+    data [NOT CALIB] [JAVA]: ; ax -9.729; ay 23.04; az -7.165; gx -24.829; gy -31.767; gz 24.054; ts 1380777984
+    data [calibrated]: ; ax -0.005750004; ay 0.0011250079; az -0.007718742; gx 0.2643124; gy -0.11846876; gz 0.019937754
+I: pitch: -110.58432roll: 44.507484yaw: -1.6515038
+I: data [NOT CALIB]: ; ax -0.036; ay 0.084; az 1.002; gx 0.542; gy -5.845; gz -2.362; ts -582156288
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 21.504; az -5.629; gx 7.682; gy 11.241; gz -14.602; ts -582156288
+    data [calibrated]: ; ax -0.0027500018; ay -0.004874997; az -0.0017187595; gx -0.120687604; gy -0.20646858; gz 0.12493777
+I: pitch: -110.07892roll: 44.626842yaw: -0.1357352
+I: data [NOT CALIB]: ; ax -0.039; ay 0.089; az 1.008; gx 0.822; gy -5.775; gz -2.502; ts 2085486592
+    data [NOT CALIB] [JAVA]: ; ax -9.729; ay 22.784; az -4.093; gx 13.827; gy 29.161; gz 15.094; ts 2085486592
+    data [calibrated]: ; ax -0.005750004; ay 1.2500584E-4; az 0.0042812824; gx 0.15931243; gy -0.13646889; gz -0.015062332
+I: pitch: -107.26572roll: 45.433464yaw: 1.9715356
+I: data [NOT CALIB]: ; ax -0.039; ay 0.089; az 1.008; gx 1.26; gy -5.757; gz -2.537; ts 1129250816
+I: data [NOT CALIB] [JAVA]: ; ax -9.729; ay 22.784; az -4.093; gx -5.116; gy -31.767; gz 6.134; ts 1129250816
+    data [calibrated]: ; ax -0.005750004; ay 1.2500584E-4; az 0.0042812824; gx 0.5973124; gy -0.11846876; gz -0.05006218
+I: pitch: -98.885506roll: 46.117615yaw: 4.8570333
+I: FinalizerDaemon: finalize objects = 187
+I: data [NOT CALIB]: ; ax -0.035; ay 0.09; az 1.002; gx 0.717; gy -5.635; gz -2.485; ts -816906240
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 23.04; az -5.629; gx -13.054; gy -0.535; gz 19.446; ts -816906240
+    data [calibrated]: ; ax -0.0017500035; ay 0.0011250079; az -0.0017187595; gx 0.054312408; gy 0.0035309792; gz 0.0019378662
+I: pitch: -98.62149roll: 47.536446yaw: 4.0146117
+I: data [NOT CALIB]: ; ax -0.034; ay 0.089; az 0.997; gx 0.63; gy -5.67; gz -2.537; ts -783286272
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.784; az -6.909; gx 30.21; gy -9.495; gz 6.134; ts -783286272
+    data [calibrated]: ; ax -7.5000525E-4; ay 1.2500584E-4; az -0.006718755; gx -0.032687604; gy -0.03146887; gz -0.05006218
+I: pitch: -101.817665roll: 47.21311yaw: 2.0230682
+I: data [NOT CALIB]: ; ax -0.036; ay 0.09; az 0.998; gx 0.735; gy -5.705; gz -2.415; ts -1739522048
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 23.04; az -6.653; gx -8.446; gy -18.455; gz -28.17; ts -1739522048
+    data [calibrated]: ; ax -0.0027500018; ay 0.0011250079; az -0.005718708; gx 0.072312415; gy -0.066468716; gz 0.0719378
+I: pitch: -103.61164roll: 48.170223yaw: 0.6281291
+I: data [NOT CALIB]: ; ax -0.033; ay 0.089; az 1.002; gx 0.752; gy -5.722; gz -2.485; ts 1599209472
+    data [NOT CALIB] [JAVA]: ; ax -8.193; ay 22.784; az -5.629; gx -4.094; gy -22.807; gz 19.446; ts 1599209472
+    data [calibrated]: ; ax 2.4999678E-4; ay 1.2500584E-4; az -0.0017187595; gx 0.089312375; gy -0.083468914; gz 0.0019378662
+I: pitch: -104.928375roll: 48.16496yaw: -0.4833184
+I: data [NOT CALIB]: ; ax -0.04; ay 0.083; az 1.004; gx 0.875; gy -5.652; gz -2.52; ts -11403264
+I: data [NOT CALIB] [JAVA]: ; ax -9.985; ay 21.248; az -5.117; gx 27.395; gy -4.887; gz 10.486; ts -11403264
+    data [calibrated]: ; ax -0.0067500025; ay -0.005874999; az 2.812147E-4; gx 0.2123124; gy -0.013468742; gz -0.03306222
+I: pitch: -102.15555roll: 48.107567yaw: 0.5497053
+I: data [NOT CALIB]: ; ax -0.035; ay 0.09; az 1.003; gx 0.735; gy -5.67; gz -2.45; ts -1974272000
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 23.04; az -5.373; gx -8.446; gy -9.495; gz 28.406; ts -1974272000
+    data [calibrated]: ; ax -0.0017500035; ay 0.0011250079; az -7.187128E-4; gx 0.072312415; gy -0.03146887; gz 0.036937714
+I: pitch: -101.74236roll: 49.515057yaw: 0.380357
+I: data [NOT CALIB]: ; ax -0.036; ay 0.091; az 1.006; gx 1.295; gy -5.792; gz -2.572; ts 693370880
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 23.296; az -4.605; gx 3.845; gy 24.809; gz -2.827; ts 693370880
+    data [calibrated]: ; ax -0.0027500018; ay 0.0021250024; az 0.0022813082; gx 0.63231236; gy -0.15346861; gz -0.085062265
+I: pitch: -95.51523roll: 50.00144yaw: 2.5125005
+I: data [NOT CALIB]: ; ax -0.035; ay 0.092; az 1.002; gx 0.63; gy -5.74; gz -2.537; ts -262930432
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 23.552; az -5.629; gx 30.21; gy -27.415; gz 6.134; ts -262930432
+    data [calibrated]: ; ax -0.0017500035; ay 0.0031250045; az -0.0017187595; gx -0.032687604; gy -0.10146856; gz -0.05006218
+I: pitch: -94.533745roll: 50.9895yaw: 3.5946777
+I: data [NOT CALIB]: ; ax -0.035; ay 0.093; az 1.001; gx 0.945; gy -5.582; gz -2.52; ts 2085945344
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 23.808; az -5.885; gx -20.221; gy 13.034; gz 10.486; ts 2085945344
+    data [calibrated]: ; ax -0.0017500035; ay 0.0041250065; az -0.002718687; gx 0.2823124; gy 0.05653143; gz -0.03306222
+I: pitch: -93.90292roll: 51.82559yaw: 2.4024916
+I: data [NOT CALIB]: ; ax -0.035; ay 0.09; az 1.002; gx 1.155; gy -5.775; gz -2.52; ts 1129709568
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 23.04; az -5.629; gx -31.996; gy 29.161; gz 10.486; ts 1129709568
+    data [calibrated]: ; ax -0.0017500035; ay 0.0011250079; az -0.0017187595; gx 0.49231237; gy -0.13646889; gz -0.03306222
+I: pitch: -89.598roll: 53.07546yaw: 2.7055879
+I: data [NOT CALIB]: ; ax -0.035; ay 0.09; az 1.009; gx 0.98; gy -5.705; gz -2.502; ts -497680384
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 23.04; az -3.837; gx -11.261; gy -18.455; gz 15.094; ts -497680384
+    data [calibrated]: ; ax -0.0017500035; ay 0.0011250079; az 0.00528121; gx 0.31731242; gy -0.066468716; gz -0.015062332
+I: pitch: -84.8246roll: 53.389084yaw: 4.409111
+I: data [NOT CALIB]: ; ax -0.035; ay 0.09; az 1.008; gx 1.102; gy -5.845; gz -2.625; ts 1834418176
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 23.04; az -4.093; gx 19.972; gy 11.241; gz -16.395; ts 1834418176
+    data [calibrated]: ; ax -0.0017500035; ay 0.0011250079; az 0.0042812824; gx 0.4393124; gy -0.20646858; gz -0.13806224
+I: pitch: -78.023674roll: 52.461113yaw: 7.740927
+I: data [NOT CALIB]: ; ax -0.036; ay 0.089; az 1.005; gx 0.647; gy -5.652; gz -2.45; ts 223870976
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.784; az -4.861; gx -30.974; gy -4.887; gz 28.406; ts 223870976
+    data [calibrated]: ; ax -0.0027500018; ay 1.2500584E-4; az 0.0012812614; gx -0.015687585; gy -0.013468742; gz 0.036937714
+I: pitch: -75.397545roll: 53.336464yaw: 9.597002
+I: data [NOT CALIB]: ; ax -0.034; ay 0.093; az 1.004; gx 1.242; gy -5.687; gz -2.555; ts -1739063296
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 23.808; az -5.117; gx -9.724; gy -13.847; gz 1.526; ts -1739063296
+    data [calibrated]: ; ax -7.5000525E-4; ay 0.0041250065; az 2.812147E-4; gx 0.5793124; gy -0.04846859; gz -0.068062305
+I: pitch: -66.82017roll: 53.774483yaw: 11.219159
+I: data [NOT CALIB]: ; ax -0.036; ay 0.089; az 1.003; gx 1.137; gy -5.95; gz -2.555; ts -1688666112
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.784; az -5.373; gx 28.932; gy -15.64; gz 1.526; ts -1688666112
+I: data [calibrated]: ; ax -0.0027500018; ay 1.2500584E-4; az -7.187128E-4; gx 0.47431237; gy -0.3114686; gz -0.068062305
+I: pitch: -60.155605roll: 53.715336yaw: 13.933371
+I: data [NOT CALIB]: ; ax -0.04; ay 0.093; az 1.007; gx 0.7; gy -5.74; gz -2.502; ts 978976768
+I: data [NOT CALIB] [JAVA]: ; ax -9.985; ay 23.808; az -4.349; gx -17.406; gy -27.415; gz 15.094; ts 978976768
+    data [calibrated]: ; ax -0.0067500025; ay 0.0041250065; az 0.0032812357; gx 0.03731239; gy -0.10146856; gz -0.015062332
+I: pitch: -56.49259roll: 54.072636yaw: 16.473303
+I: data [NOT CALIB]: ; ax -0.033; ay 0.092; az 1.005; gx 1.015; gy -5.74; gz -2.467; ts -983957504
+I: data [NOT CALIB] [JAVA]: ; ax -8.193; ay 23.552; az -4.861; gx -2.301; gy -27.415; gz 24.054; ts -983957504
+    data [calibrated]: ; ax 2.4999678E-4; ay 0.0031250045; az 0.0012812614; gx 0.3523124; gy -0.10146856; gz 0.019937754
+I: pitch: -51.19626roll: 54.12645yaw: 19.06931
+I: data [NOT CALIB]: ; ax -0.038; ay 0.088; az 1.005; gx 1.382; gy -6.002; gz -2.555; ts -1940193280
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.528; az -4.861; gx 26.117; gy -28.952; gz 1.526; ts -1940193280
+    data [calibrated]: ; ax -0.004750002; ay -8.749962E-4; az 0.0012812614; gx 0.71931237; gy -0.36346865; gz -0.068062305
+I: pitch: -40.093395roll: 52.986103yaw: 23.597609
+I: data [NOT CALIB]: ; ax -0.034; ay 0.09; az 1.003; gx 0.665; gy -5.67; gz -2.467; ts 744226816
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 23.04; az -5.373; gx -26.366; gy -9.495; gz 24.054; ts 744226816
+    data [calibrated]: ; ax -7.5000525E-4; ay 0.0011250079; az -7.187128E-4; gx 0.0023124218; gy -0.03146887; gz 0.019937754
+I: pitch: -36.824127roll: 53.96071yaw: 25.479053
+I: data [NOT CALIB]: ; ax -0.032; ay 0.091; az 1.004; gx 0.682; gy -5.67; gz -2.485; ts -1218707456
+I: data [NOT CALIB] [JAVA]: ; ax -7.937; ay 23.296; az -5.117; gx -22.014; gy -9.495; gz 19.446; ts -1218707456
+    data [calibrated]: ; ax 0.0012499951; ay 0.0021250024; az 2.812147E-4; gx 0.019312382; gy -0.03146887; gz 0.0019378662
+I: pitch: -34.64026roll: 54.010986yaw: 27.067621
+I: data [NOT CALIB]: ; ax -0.034; ay 0.089; az 0.996; gx 1.242; gy -5.915; gz -2.502; ts 2120024064
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.784; az -7.165; gx -9.724; gy -6.68; gz 15.094; ts 2120024064
+    data [calibrated]: ; ax -7.5000525E-4; ay 1.2500584E-4; az -0.007718742; gx 0.5793124; gy -0.27646875; gz -0.015062332
+I: pitch: -29.02942roll: 53.2902yaw: 28.026657
+I: data [NOT CALIB]: ; ax -0.033; ay 0.089; az 1.002; gx 0.84; gy -5.687; gz -2.59; ts 492699648
+I: data [NOT CALIB] [JAVA]: ; ax -8.193; ay 22.784; az -5.629; gx 18.435; gy -13.847; gz -7.435; ts 492699648
+    data [calibrated]: ; ax 2.4999678E-4; ay 1.2500584E-4; az -0.0017187595; gx 0.17731237; gy -0.04846859; gz -0.10306215
+I: pitch: -28.522484roll: 53.66748yaw: 26.46176
+I: data [NOT CALIB]: ; ax -0.035; ay 0.087; az 1.0; gx 0.507; gy -5.652; gz -2.485; ts -1453457408
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.272; az -6.141; gx -1.279; gy -4.887; gz 19.446; ts -1453457408
+    data [calibrated]: ; ax -0.0017500035; ay -0.0018749982; az -0.0037187338; gx -0.15568757; gy -0.013468742; gz 0.0019378662
+I: pitch: -31.114698roll: 54.49223yaw: 24.85493
+I: data [NOT CALIB]: ; ax -0.039; ay 0.094; az 0.997; gx 0.91; gy -5.845; gz -2.502; ts 1214185472
+I: data [NOT CALIB] [JAVA]: ; ax -9.729; ay 24.064; az -6.909; gx -29.181; gy 11.241; gz 15.094; ts 1214185472
+    data [calibrated]: ; ax -0.005750004; ay 0.005125001; az -0.006718755; gx 0.24731243; gy -0.20646858; gz -0.015062332
+I: pitch: -28.812704roll: 54.731277yaw: 25.83218
+I: data [NOT CALIB]: ; ax -0.034; ay 0.089; az 0.999; gx 1.12; gy -5.897; gz -2.502; ts 257949696
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.784; az -6.397; gx 24.58; gy -2.072; gz 15.094; ts 257949696
+    data [calibrated]: ; ax -7.5000525E-4; ay 1.2500584E-4; az -0.004718721; gx 0.4573124; gy -0.25846863; gz -0.015062332
+I: pitch: -24.31117roll: 54.21212yaw: 26.474533
+I: data [NOT CALIB]: ; ax -0.034; ay 0.086; az 1.0; gx 0.682; gy -5.705; gz -2.415; ts -1704984576
+    data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.016; az -6.141; gx -22.014; gy -18.455; gz -28.17; ts -1704984576
+I: data [calibrated]: ; ax -7.5000525E-4; ay -0.0028749928; az -0.0037187338; gx 0.019312382; gy -0.066468716; gz 0.0719378
+I: pitch: -24.4292roll: 54.53898yaw: 26.039547
+I: data [NOT CALIB]: ; ax -0.035; ay 0.091; az 1.002; gx 0.787; gy -5.74; gz -2.607; ts 962658304
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 23.296; az -5.629; gx 4.867; gy -27.415; gz -11.787; ts 962658304
+    data [calibrated]: ; ax -0.0017500035; ay 0.0021250024; az -0.0017187595; gx 0.1243124; gy -0.10146856; gz -0.12006235
+I: pitch: -23.360088roll: 54.89721yaw: 25.888151
+I: data [NOT CALIB]: ; ax -0.037; ay 0.09; az 1.006; gx 0.682; gy -5.687; gz -2.415; ts -647954432
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 23.04; az -4.605; gx -22.014; gy -13.847; gz -28.17; ts -647954432
+    data [calibrated]: ; ax -0.0037500039; ay 0.0011250079; az 0.0022813082; gx 0.019312382; gy -0.04846859; gz 0.0719378
+I: pitch: -19.91112roll: 55.31912yaw: 28.745955
+I: data [NOT CALIB]: ; ax -0.035; ay 0.086; az 1.001; gx 0.56; gy -5.792; gz -2.467; ts -1604190208
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.016; az -5.885; gx 12.29; gy 24.809; gz 24.054; ts -1604190208
+    data [calibrated]: ; ax -0.0017500035; ay -0.0028749928; az -0.002718687; gx -0.1026876; gy -0.15346861; gz 0.019937754
+I: pitch: -21.805628roll: 55.07915yaw: 28.316525
+I: data [NOT CALIB]: ; ax -0.034; ay 0.09; az 1.002; gx 0.875; gy -5.792; gz -2.45; ts 1734541312
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 23.04; az -5.629; gx 27.395; gy 24.809; gz 28.406; ts 1734541312
+    data [calibrated]: ; ax -7.5000525E-4; ay 0.0011250079; az -0.0017187595; gx 0.2123124; gy -0.15346861; gz 0.036937714
+I: pitch: -18.159452roll: 55.639yaw: 30.370522
+I: data [NOT CALIB]: ; ax -0.033; ay 0.087; az 0.996; gx 0.262; gy -5.512; gz -2.432; ts 778305536
+I: data [NOT CALIB] [JAVA]: ; ax -8.193; ay 22.272; az -7.165; gx 1.537; gy 30.954; gz -32.522; ts 778305536
+    data [calibrated]: ; ax 2.4999678E-4; ay -0.0018749982; az -0.007718742; gx -0.4006876; gy 0.12653112; gz 0.05493784
+I: pitch: -23.088444roll: 58.384422yaw: 29.076012
+I: data [NOT CALIB]: ; ax -0.03; ay 0.091; az 0.993; gx 0.805; gy -5.74; gz -2.467; ts -177995776
+    data [NOT CALIB] [JAVA]: ; ax -7.425; ay 23.296; az -7.933; gx 9.475; gy -27.415; gz 24.054; ts -177995776
+I: data [calibrated]: ; ax 0.0032499973; ay 0.0021250024; az -0.010718763; gx 0.14231241; gy -0.10146856; gz 0.019937754
+I: pitch: -22.899557roll: 59.71148yaw: 29.024555
+I: data [NOT CALIB]: ; ax -0.035; ay 0.087; az 1.004; gx 0.997; gy -5.862; gz -2.52; ts -1134231552
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.272; az -5.117; gx -6.909; gy 6.889; gz 10.486; ts -1134231552
+    data [calibrated]: ; ax -0.0017500035; ay -0.0018749982; az 2.812147E-4; gx 0.33431238; gy -0.22346878; gz -0.03306222
+I: pitch: -22.429855roll: 58.01504yaw: 27.008476
+I: data [NOT CALIB]: ; ax -0.032; ay 0.085; az 1.01; gx 0.157; gy -5.547; gz -2.432; ts 1197867008
+I: data [NOT CALIB] [JAVA]: ; ax -7.937; ay 21.76; az -3.581; gx -25.344; gy 21.994; gz -32.522; ts 1197867008
+    data [calibrated]: ; ax 0.0012499951; ay -0.0038749948; az 0.0062812567; gx -0.5056876; gy 0.09153128; gz 0.05493784
+I: pitch: -26.043938roll: 57.455738yaw: 26.566408
+I: data [NOT CALIB]: ; ax -0.034; ay 0.087; az 1.0; gx 0.122; gy -5.46; gz -2.432; ts 241631232
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.272; az -6.141; gx 31.232; gy -21.27; gz -32.522; ts 241631232
+    data [calibrated]: ; ax -7.5000525E-4; ay -0.0018749982; az -0.0037187338; gx -0.5406876; gy 0.17853117; gz 0.05493784
+I: pitch: -35.292522roll: 59.907555yaw: 23.123775
+I: data [NOT CALIB]: ; ax -0.034; ay 0.089; az 1.002; gx 0.91; gy -5.705; gz -2.572; ts -714670080
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.784; az -5.629; gx -29.181; gy -18.455; gz -2.827; ts -714670080
+    data [calibrated]: ; ax -7.5000525E-4; ay 1.2500584E-4; az -0.0017187595; gx 0.24731243; gy -0.066468716; gz -0.085062265
+I: pitch: -37.16334roll: 61.101116yaw: 19.816376
+I: data [NOT CALIB]: ; ax -0.042; ay 0.086; az 1.006; gx 1.085; gy -5.775; gz -2.555; ts -664272896
+I: data [NOT CALIB] [JAVA]: ; ax -10.497; ay 22.016; az -4.605; gx 15.62; gy 29.161; gz 1.526; ts -664272896
+    data [calibrated]: ; ax -0.008750003; ay -0.0028749928; az 0.0022813082; gx 0.42231244; gy -0.13646889; gz -0.068062305
+I: pitch: -35.053852roll: 61.043713yaw: 18.10578
+I: data [NOT CALIB]: ; ax -0.029; ay 0.08; az 0.998; gx -0.332; gy -5.442; gz -2.362; ts -613875712
+    data [NOT CALIB] [JAVA]: ; ax -7.169; ay 20.48; az -6.653; gx -19.202; gy -16.662; gz -14.602; ts -613875712
+    data [calibrated]: ; ax 0.0042499974; ay -0.0088749975; az -0.005718708; gx -0.99468756; gy 0.1965313; gz 0.12493777
+I: pitch: -54.81324roll: 63.12021yaw: 11.768208
+I: data [NOT CALIB]: ; ax -0.033; ay 0.084; az 1.0; gx 0.262; gy -5.827; gz -2.38; ts 107675648
+I: data [NOT CALIB] [JAVA]: ; ax -8.193; ay 21.504; az -6.141; gx 1.537; gy 15.849; gz -19.21; ts 107675648
+    data [calibrated]: ; ax 2.4999678E-4; ay -0.004874997; az -0.0037187338; gx -0.4006876; gy -0.18846893; gz 0.10693765
+I: pitch: -63.11629roll: 62.700962yaw: 11.855703
+I: data [NOT CALIB]: ; ax -0.025; ay 0.091; az 1.004; gx 0.385; gy -5.845; gz -2.24; ts -194314240
+I: data [NOT CALIB] [JAVA]: ; ax -6.145; ay 23.296; az -5.117; gx -32.511; gy 11.241; gz 16.631; ts -194314240
+    data [calibrated]: ; ax 0.008249996; ay 0.0021250024; az 2.812147E-4; gx -0.2776876; gy -0.20646858; gz 0.24693775
+I: pitch: -60.708572roll: 63.75352yaw: 20.01198
+I: data [NOT CALIB]: ; ax -0.033; ay 0.092; az 1.004; gx 1.067; gy -5.757; gz -2.485; ts -1150550016
+I: data [NOT CALIB] [JAVA]: ; ax -8.193; ay 23.552; az -5.117; gx 11.012; gy -31.767; gz 19.446; ts -1150550016
+    data [calibrated]: ; ax 2.4999678E-4; ay 0.0031250045; az 2.812147E-4; gx 0.40431243; gy -0.11846876; gz 0.0019378662
+I: pitch: -51.0904roll: 64.126434yaw: 26.180311
+I: data [NOT CALIB]: ; ax -0.036; ay 0.086; az 1.001; gx 0.595; gy -5.635; gz -2.485; ts -1100152832
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.016; az -5.885; gx 21.25; gy -0.535; gz 19.446; ts -1100152832
+    data [calibrated]: ; ax -0.0027500018; ay -0.0028749928; az -0.002718687; gx -0.06768757; gy 0.0035309792; gz 0.0019378662
+I: pitch: -53.556454roll: 64.51851yaw: 24.00258
+I: data [NOT CALIB]: ; ax -0.032; ay 0.089; az 1.002; gx 0.945; gy -5.757; gz -2.52; ts -2056388608
+    data [NOT CALIB] [JAVA]: ; ax -7.937; ay 22.784; az -5.629; gx -20.221; gy -31.767; gz 10.486; ts -2056388608
+    data [calibrated]: ; ax 0.0012499951; ay 1.2500584E-4; az -0.0017187595; gx 0.2823124; gy -0.11846876; gz -0.03306222
+I: pitch: -52.74332roll: 64.13475yaw: 22.688477
+I: data [NOT CALIB]: ; ax -0.034; ay 0.087; az 1.001; gx 0.717; gy -5.74; gz -2.45; ts 1282342912
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.272; az -5.885; gx -13.054; gy -27.415; gz 28.406; ts 1282342912
+    data [calibrated]: ; ax -7.5000525E-4; ay -0.0018749982; az -0.002718687; gx 0.054312408; gy -0.10146856; gz 0.036937714
+I: pitch: -54.18398roll: 64.00354yaw: 20.949766
+I: data [NOT CALIB]: ; ax -0.038; ay 0.086; az 1.006; gx 1.172; gy -5.827; gz -2.52; ts 2003828736
+    data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.016; az -4.605; gx -27.644; gy 15.849; gz 10.486; ts 2003828736
+I: data [calibrated]: ; ax -0.004750002; ay -0.0028749928; az 0.0022813082; gx 0.50931245; gy -0.18846893; gz -0.03306222
+I: pitch: -44.181316roll: 59.663136yaw: 24.128298
+I: data [NOT CALIB]: ; ax -0.035; ay 0.087; az 1.005; gx 1.207; gy -5.775; gz -2.537; ts 1047592960
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.272; az -4.861; gx -18.684; gy 29.161; gz 6.134; ts 1047592960
+    data [calibrated]: ; ax -0.0017500035; ay -0.0018749982; az 0.0012812614; gx 0.5443124; gy -0.13646889; gz -0.05006218
+I: pitch: -37.92789roll: 55.884495yaw: 24.053415
+I: data [NOT CALIB]: ; ax -0.04; ay 0.088; az 1.007; gx 0.962; gy -5.74; gz -2.467; ts 1097990144
+I: data [NOT CALIB] [JAVA]: ; ax -9.985; ay 22.528; az -4.349; gx -15.869; gy -27.415; gz 24.054; ts 1097990144
+    data [calibrated]: ; ax -0.0067500025; ay -8.749962E-4; az 0.0032812357; gx 0.2993124; gy -0.10146856; gz 0.019937754
+I: pitch: -29.471918roll: 55.773453yaw: 27.774637
+I: data [NOT CALIB]: ; ax -0.037; ay 0.086; az 1.005; gx 0.84; gy -5.705; gz -2.485; ts 141754368
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.016; az -4.861; gx 18.435; gy -18.455; gz 19.446; ts 141754368
+    data [calibrated]: ; ax -0.0037500039; ay -0.0028749928; az 0.0012812614; gx 0.17731237; gy -0.066468716; gz 0.0019378662
+I: pitch: -28.723373roll: 55.28048yaw: 26.579645
+I: data [NOT CALIB]: ; ax -0.033; ay 0.089; az 1.0; gx 0.752; gy -5.635; gz -2.45; ts -143458304
+I: data [NOT CALIB] [JAVA]: ; ax -8.193; ay 22.784; az -6.141; gx -4.094; gy -0.535; gz 28.406; ts -143458304
+    data [calibrated]: ; ax 2.4999678E-4; ay 1.2500584E-4; az -0.0037187338; gx 0.089312375; gy 0.0035309792; gz 0.036937714
+I: pitch: -29.288609roll: 57.347706yaw: 25.10184
+I: data [NOT CALIB]: ; ax -0.033; ay 0.091; az 1.003; gx 0.542; gy -5.74; gz -2.432; ts -1099694080
+I: data [NOT CALIB] [JAVA]: ; ax -8.193; ay 23.296; az -5.373; gx 7.682; gy -27.415; gz -32.522; ts -1099694080
+    data [calibrated]: ; ax 2.4999678E-4; ay 0.0021250024; az -7.187128E-4; gx -0.120687604; gy -0.10146856; gz 0.05493784
+I: pitch: -26.977127roll: 58.081585yaw: 28.295193
+I: data [NOT CALIB]: ; ax -0.035; ay 0.088; az 1.004; gx 0.717; gy -5.74; gz -2.52; ts -2055929856
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.528; az -5.117; gx -13.054; gy -27.415; gz 10.486; ts -2055929856
+    data [calibrated]: ; ax -0.0017500035; ay -8.749962E-4; az 2.812147E-4; gx 0.054312408; gy -0.10146856; gz -0.03306222
+I: pitch: -28.282143roll: 58.002148yaw: 27.0881
+I: data [NOT CALIB]: ; ax -0.035; ay 0.085; az 1.003; gx 0.682; gy -5.792; gz -2.45; ts 1282801664
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 21.76; az -5.373; gx -22.014; gy 24.809; gz 28.406; ts 1282801664
+    data [calibrated]: ; ax -0.0017500035; ay -0.0038749948; az -7.187128E-4; gx 0.019312382; gy -0.15346861; gz 0.036937714
+I: pitch: -30.173355roll: 56.853245yaw: 25.8387
+I: data [NOT CALIB]: ; ax -0.036; ay 0.089; az 1.002; gx 0.875; gy -5.722; gz -2.467; ts 326565888
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.784; az -5.629; gx 27.395; gy -22.807; gz 24.054; ts 326565888
+    data [calibrated]: ; ax -0.0027500018; ay 1.2500584E-4; az -0.0017187595; gx 0.2123124; gy -0.083468914; gz 0.019937754
+I: pitch: -28.540104roll: 57.62546yaw: 25.968773
+I: data [NOT CALIB]: ; ax -0.035; ay 0.088; az 1.002; gx 0.542; gy -5.775; gz -2.502; ts -629735424
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.528; az -5.629; gx 7.682; gy 29.161; gz 15.094; ts -629735424
+    data [calibrated]: ; ax -0.0017500035; ay -8.749962E-4; az -0.0017187595; gx -0.120687604; gy -0.13646889; gz -0.015062332
+I: pitch: -30.547535roll: 57.84907yaw: 25.193325
+I: data [NOT CALIB]: ; ax -0.038; ay 0.091; az 1.002; gx 0.945; gy -5.652; gz -2.572; ts -1250426880
+    data [NOT CALIB] [JAVA]: ; ax -9.473; ay 23.296; az -5.629; gx -20.221; gy -4.887; gz -2.827; ts -1250426880
+    data [calibrated]: ; ax -0.004750002; ay 0.0021250024; az -0.0017187595; gx 0.2823124; gy -0.013468742; gz -0.085062265
+I: pitch: -28.656998roll: 59.112717yaw: 24.497206
+I: FinalizerDaemon: finalize objects = 24
+I: data [NOT CALIB]: ; ax -0.042; ay 0.085; az 0.994; gx 0.56; gy -5.67; gz -2.52; ts -545718272
+    data [NOT CALIB] [JAVA]: ; ax -10.497; ay 21.76; az -7.677; gx 12.29; gy -9.495; gz 10.486; ts -545718272
+I: data [calibrated]: ; ax -0.008750003; ay -0.0038749948; az -0.009718716; gx -0.1026876; gy -0.03146887; gz -0.03306222
+I: pitch: -33.157997roll: 60.62139yaw: 21.22355
+I: data [NOT CALIB]: ; ax -0.04; ay 0.084; az 1.008; gx 1.242; gy -5.967; gz -2.555; ts -1485176832
+I: data [NOT CALIB] [JAVA]: ; ax -9.985; ay 21.504; az -4.093; gx -9.724; gy -19.992; gz 1.526; ts -1485176832
+    data [calibrated]: ; ax -0.0067500025; ay -0.004874997; az 0.0042812824; gx 0.5793124; gy -0.3284688; gz -0.068062305
+I: pitch: -29.117758roll: 56.652943yaw: 20.682928
+I: data [NOT CALIB]: ; ax -0.034; ay 0.088; az 1.003; gx 0.577; gy -5.635; gz -2.45; ts -1787101184
+    data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.528; az -5.373; gx 16.642; gy -0.535; gz 28.406; ts -1787101184
+I: data [calibrated]: ; ax -7.5000525E-4; ay -8.749962E-4; az -7.187128E-4; gx -0.08568758; gy 0.0035309792; gz 0.036937714
+I: pitch: -32.134083roll: 57.040543yaw: 18.385546
+I: data [NOT CALIB]: ; ax -0.035; ay 0.087; az 0.999; gx 0.437; gy -5.495; gz -2.45; ts 1551630336
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.272; az -6.397; gx -19.199; gy -30.23; gz 28.406; ts 1551630336
+    data [calibrated]: ; ax -0.0017500035; ay -0.0018749982; az -0.004718721; gx -0.2256876; gy 0.14353132; gz 0.036937714
+I: pitch: -38.325024roll: 59.420685yaw: 14.6576805
+I: data [NOT CALIB]: ; ax -0.032; ay 0.092; az 1.002; gx 0.665; gy -5.635; gz -2.467; ts 1602027520
+    data [NOT CALIB] [JAVA]: ; ax -7.937; ay 23.552; az -5.629; gx -26.366; gy -0.535; gz 24.054; ts 1602027520
+    data [calibrated]: ; ax 0.0012499951; ay 0.0031250045; az -0.0017187595; gx 0.0023124218; gy 0.0035309792; gz 0.019937754
+I: pitch: -37.75138roll: 61.297993yaw: 15.547878
+I: data [NOT CALIB]: ; ax -0.035; ay 0.089; az 0.998; gx 0.42; gy -5.547; gz -2.52; ts 645791744
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.784; az -6.653; gx -23.551; gy 21.994; gz 10.486; ts 645791744
+    data [calibrated]: ; ax -0.0017500035; ay 1.2500584E-4; az -0.005718708; gx -0.24268761; gy 0.09153128; gz -0.03306222
+I: pitch: -43.822937roll: 63.508247yaw: 11.820347
+I: data [NOT CALIB]: ; ax -0.031; ay 0.09; az 1.001; gx 0.927; gy -5.757; gz -2.502; ts -310509568
+I: data [NOT CALIB] [JAVA]: ; ax -7.681; ay 23.04; az -5.885; gx -24.829; gy -31.767; gz 15.094; ts -310509568
+I: data [calibrated]: ; ax 0.002249997; ay 0.0011250079; az -0.002718687; gx 0.2643124; gy -0.11846876; gz -0.015062332
+I: pitch: -42.392445roll: 63.821945yaw: 11.428436
+I: data [NOT CALIB]: ; ax -0.037; ay 0.085; az 1.003; gx 0.77; gy -5.792; gz -2.502; ts -1266745344
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 21.76; az -5.373; gx 0.515; gy 24.809; gz 15.094; ts -1266745344
+    data [calibrated]: ; ax -0.0037500039; ay -0.0038749948; az -7.187128E-4; gx 0.10731238; gy -0.15346861; gz -0.015062332
+I: pitch: -43.143295roll: 62.708298yaw: 9.939641
+I: data [NOT CALIB]: ; ax -0.046; ay 0.084; az 1.01; gx 1.085; gy -5.967; gz -2.467; ts 2071986176
+I: data [NOT CALIB] [JAVA]: ; ax -11.521; ay 21.504; az -3.581; gx 15.62; gy -19.992; gz 24.054; ts 2071986176
+    data [calibrated]: ; ax -0.0127500035; ay -0.004874997; az 0.0062812567; gx 0.42231244; gy -0.3284688; gz 0.019937754
+I: pitch: -34.495804roll: 59.01761yaw: 14.845077
+I: data [NOT CALIB]: ; ax -0.044; ay 0.089; az 0.994; gx 0.945; gy -5.617; gz -2.537; ts 1132527616
+    data [NOT CALIB] [JAVA]: ; ax -11.009; ay 22.784; az -7.677; gx -20.221; gy 4.074; gz 6.134; ts 1132527616
+I: data [calibrated]: ; ax -0.010750003; ay 1.2500584E-4; az -0.009718716; gx 0.2823124; gy 0.021531105; gz -0.05006218
+I: pitch: -32.192154roll: 59.719685yaw: 13.906034
+I: data [NOT CALIB]: ; ax -0.035; ay 0.085; az 0.999; gx 0.805; gy -5.757; gz -2.537; ts 1166147584
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 21.76; az -6.397; gx 9.475; gy -31.767; gz 6.134; ts 1166147584
+    data [calibrated]: ; ax -0.0017500035; ay -0.0038749948; az -0.004718721; gx 0.14231241; gy -0.11846876; gz -0.05006218
+I: pitch: -33.69406roll: 59.283222yaw: 10.730428
+I: data [NOT CALIB]: ; ax -0.032; ay 0.089; az 1.004; gx 1.242; gy -5.81; gz -2.537; ts 881000448
+I: data [NOT CALIB] [JAVA]: ; ax -7.937; ay 22.784; az -5.117; gx -9.724; gy 20.201; gz 6.134; ts 881000448
+    data [calibrated]: ; ax 0.0012499951; ay 1.2500584E-4; az 2.812147E-4; gx 0.5793124; gy -0.17146873; gz -0.05006218
+I: pitch: -26.04931roll: 56.29003yaw: 11.270411
+I: data [NOT CALIB]: ; ax -0.035; ay 0.09; az 1.002; gx 0.875; gy -5.705; gz -2.485; ts 931397632
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 23.04; az -5.629; gx 27.395; gy -18.455; gz 19.446; ts 931397632
+I: data [calibrated]: ; ax -0.0017500035; ay 0.0011250079; az -0.0017187595; gx 0.2123124; gy -0.066468716; gz 0.0019378662
+I: pitch: -21.025604roll: 57.178616yaw: 12.478742
+I: data [NOT CALIB]: ; ax -0.035; ay 0.087; az 1.002; gx 0.822; gy -5.652; gz -2.485; ts 646250496
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.272; az -5.629; gx 13.827; gy -4.887; gz 19.446; ts 646250496
+I: data [calibrated]: ; ax -0.0017500035; ay -0.0018749982; az -0.0017187595; gx 0.15931243; gy -0.013468742; gz 0.0019378662
+I: pitch: -21.324036roll: 58.481yaw: 10.122985
+I: data [NOT CALIB]: ; ax -0.032; ay 0.088; az 1.003; gx 0.56; gy -5.687; gz -2.415; ts 696647680
+I: data [NOT CALIB] [JAVA]: ; ax -7.937; ay 22.528; az -5.373; gx 12.29; gy -13.847; gz -28.17; ts 696647680
+    data [calibrated]: ; ax 0.0012499951; ay -8.749962E-4; az -7.187128E-4; gx -0.1026876; gy -0.04846859; gz 0.0719378
+I: pitch: -23.655594roll: 58.051422yaw: 9.287446
+I: data [NOT CALIB]: ; ax -0.033; ay 0.088; az 1.002; gx 0.752; gy -5.722; gz -2.485; ts 1401356288
+    data [NOT CALIB] [JAVA]: ; ax -8.193; ay 22.528; az -5.629; gx -4.094; gy -22.807; gz 19.446; ts 1401356288
+    data [calibrated]: ; ax 2.4999678E-4; ay -8.749962E-4; az -0.0017187595; gx 0.089312375; gy -0.083468914; gz 0.0019378662
+I: pitch: -26.511034roll: 58.279625yaw: 6.334741
+I: data [NOT CALIB]: ; ax -0.035; ay 0.088; az 1.004; gx 0.997; gy -5.74; gz -2.537; ts 445120512
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.528; az -5.117; gx -6.909; gy -27.415; gz 6.134; ts 445120512
+    data [calibrated]: ; ax -0.0017500035; ay -8.749962E-4; az 2.812147E-4; gx 0.33431238; gy -0.10146856; gz -0.05006218
+I: pitch: -26.517937roll: 58.044796yaw: 3.6405635
+I: data [NOT CALIB]: ; ax -0.035; ay 0.09; az 1.005; gx 0.77; gy -5.617; gz -2.572; ts 495517696
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 23.04; az -4.861; gx 0.515; gy 4.074; gz -2.827; ts 495517696
+    data [calibrated]: ; ax -0.0017500035; ay 0.0011250079; az 0.0012812614; gx 0.10731238; gy 0.021531105; gz -0.085062265
+I: pitch: -22.992214roll: 58.24627yaw: 4.524605
+I: data [NOT CALIB]: ; ax -0.036; ay 0.088; az 1.006; gx 0.945; gy -5.757; gz -2.467; ts 210370560
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.528; az -4.605; gx -20.221; gy -31.767; gz 24.054; ts 210370560
+    data [calibrated]: ; ax -0.0027500018; ay -8.749962E-4; az 0.0022813082; gx 0.2823124; gy -0.11846876; gz 0.019937754
+I: pitch: -17.867996roll: 55.298683yaw: 5.974933
+I: data [NOT CALIB]: ; ax -0.033; ay 0.087; az 1.001; gx 0.402; gy -5.67; gz -2.45; ts 915079168
+I: data [NOT CALIB] [JAVA]: ; ax -8.193; ay 22.272; az -5.885; gx -28.159; gy -9.495; gz 28.406; ts 915079168
+    data [calibrated]: ; ax 2.4999678E-4; ay -0.0018749982; az -0.002718687; gx -0.2606876; gy -0.03146887; gz 0.036937714
+I: pitch: -23.824472roll: 55.75197yaw: 3.816545
+I: data [NOT CALIB]: ; ax -0.039; ay 0.088; az 1.004; gx 0.787; gy -5.757; gz -2.432; ts 965476352
+I: data [NOT CALIB] [JAVA]: ; ax -9.729; ay 22.528; az -5.117; gx 4.867; gy -31.767; gz -32.522; ts 965476352
+    data [calibrated]: ; ax -0.005750004; ay -8.749962E-4; az 2.812147E-4; gx 0.1243124; gy -0.11846876; gz 0.05493784
+I: pitch: -22.677633roll: 56.67201yaw: 4.805724
+I: data [NOT CALIB]: ; ax -0.033; ay 0.086; az 1.007; gx -0.402; gy -5.407; gz -2.345; ts 680329216
+    data [NOT CALIB] [JAVA]: ; ax -8.193; ay 22.016; az -4.349; gx 28.414; gy -7.702; gz -10.25; ts 680329216
+    data [calibrated]: ; ax 2.4999678E-4; ay -0.0028749928; az 0.0032812357; gx -1.0646876; gy 0.23153114; gz 0.14193773
+I: pitch: -35.775394roll: 58.346073yaw: 4.5306816
+I: data [NOT CALIB]: ; ax -0.035; ay 0.086; az 0.999; gx 0.472; gy -5.635; gz -2.45; ts 730726400
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.016; az -6.397; gx -10.239; gy -0.535; gz 28.406; ts 730726400
+I: data [calibrated]: ; ax -0.0017500035; ay -0.0028749928; az -0.004718721; gx -0.1906876; gy 0.0035309792; gz 0.036937714
+I: pitch: -43.918278roll: 59.806816yaw: 1.6867903
+I: data [NOT CALIB]: ; ax -0.036; ay 0.087; az 1.009; gx 2.432; gy -5.897; gz -2.712; ts 445579264
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.272; az -3.837; gx -32.759; gy -2.072; gz 26.869; ts 445579264
+    data [calibrated]: ; ax -0.0027500018; ay -0.0018749982; az 0.00528121; gx 1.7693124; gy -0.25846863; gz -0.22506213
+I: pitch: -24.830633roll: 54.960266yaw: 1.1287557
+I: data [NOT CALIB]: ; ax -0.037; ay 0.088; az 1.006; gx 0.892; gy -5.705; gz -2.625; ts 479199232
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.528; az -4.605; gx 31.747; gy -18.455; gz -16.395; ts 479199232
+    data [calibrated]: ; ax -0.0037500039; ay -8.749962E-4; az 0.0022813082; gx 0.22931242; gy -0.066468716; gz -0.13806224
+I: pitch: -20.47851roll: 54.61117yaw: -1.8978853
+I: data [NOT CALIB]: ; ax -0.042; ay 0.087; az 1.014; gx 0.805; gy -5.617; gz -2.45; ts 1200685056
+I: data [NOT CALIB] [JAVA]: ; ax -10.497; ay 22.272; az -2.557; gx 9.475; gy 4.074; gz 28.406; ts 1200685056
+I: data [calibrated]: ; ax -0.008750003; ay -0.0018749982; az 0.010281324; gx 0.14231241; gy 0.021531105; gz 0.036937714
+I: pitch: -16.123892roll: 53.2778yaw: -0.9085521
+I: data [NOT CALIB]: ; ax -0.03; ay 0.094; az 1.005; gx 1.277; gy -5.792; gz -2.572; ts 1922170880
+I: data [NOT CALIB] [JAVA]: ; ax -7.425; ay 24.064; az -4.861; gx -0.764; gy 24.809; gz -2.827; ts 1922170880
+I: data [calibrated]: ; ax 0.0032499973; ay 0.005125001; az 0.0012812614; gx 0.61431235; gy -0.15346861; gz -0.085062265
+I: pitch: -5.3881693roll: 50.05306yaw: -0.01468022
+I: data [NOT CALIB]: ; ax -0.04; ay 0.087; az 1.002; gx 0.7; gy -5.845; gz -2.502; ts 1955790848
+    data [NOT CALIB] [JAVA]: ; ax -9.985; ay 22.272; az -5.629; gx -17.406; gy 11.241; gz 15.094; ts 1955790848
+    data [calibrated]: ; ax -0.0067500025; ay -0.0018749982; az -0.0017187595; gx 0.03731239; gy -0.20646858; gz -0.015062332
+I: pitch: -3.8746831roll: 48.93905yaw: -0.67307615
+I: data [NOT CALIB]: ; ax -0.033; ay 0.088; az 1.01; gx 1.155; gy -5.775; gz -2.52; ts 1670643712
+I: data [NOT CALIB] [JAVA]: ; ax -8.193; ay 22.528; az -3.581; gx -31.996; gy 29.161; gz 10.486; ts 1670643712
+I: data [calibrated]: ; ax 2.4999678E-4; ay -8.749962E-4; az 0.0062812567; gx 0.49231237; gy -0.13646889; gz -0.03306222
+I: pitch: 1.5719862roll: 45.31266yaw: -1.707259
+I: data [NOT CALIB]: ; ax -0.041; ay 0.089; az 1.009; gx 1.155; gy -5.845; gz -2.45; ts 1721040896
+I: data [NOT CALIB] [JAVA]: ; ax -10.241; ay 22.784; az -3.837; gx -31.996; gy 11.241; gz 28.406; ts 1721040896
+    data [calibrated]: ; ax -0.0077500045; ay 1.2500584E-4; az 0.00528121; gx 0.49231237; gy -0.20646858; gz 0.036937714
+I: pitch: 8.316416roll: 44.09868yaw: -1.6841546
+I: data [NOT CALIB]: ; ax -0.036; ay 0.087; az 1.005; gx 0.805; gy -5.617; gz -2.52; ts 1435893760
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.272; az -4.861; gx 9.475; gy 4.074; gz 10.486; ts 1435893760
+    data [calibrated]: ; ax -0.0027500018; ay -0.0018749982; az 0.0012812614; gx 0.14231241; gy 0.021531105; gz -0.03306222
+I: pitch: 8.267062roll: 45.35991yaw: -4.0162053
+I: data [NOT CALIB]: ; ax -0.04; ay 0.088; az 1.003; gx 1.085; gy -5.775; gz -2.537; ts 1486290944
+I: data [NOT CALIB] [JAVA]: ; ax -9.985; ay 22.528; az -5.373; gx 15.62; gy 29.161; gz 6.134; ts 1486290944
+I: data [calibrated]: ; ax -0.0067500025; ay -8.749962E-4; az -7.187128E-4; gx 0.42231244; gy -0.13646889; gz -0.05006218
+I: pitch: 11.895783roll: 46.191326yaw: -5.8920846
+I: data [NOT CALIB]: ; ax -0.038; ay 0.087; az 1.004; gx 0.962; gy -5.775; gz -2.52; ts 1519910912
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.272; az -5.117; gx -15.869; gy 29.161; gz 10.486; ts 1519910912
+I: data [calibrated]: ; ax -0.004750002; ay -0.0018749982; az 2.812147E-4; gx 0.2993124; gy -0.13646889; gz -0.03306222
+I: pitch: 13.703181roll: 46.793045yaw: -8.303301
+I: data [NOT CALIB]: ; ax -0.037; ay 0.088; az 1.002; gx 0.98; gy -5.845; gz -2.485; ts -2053570560
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.528; az -5.629; gx -11.261; gy 11.241; gz 19.446; ts -2053570560
+    data [calibrated]: ; ax -0.0037500039; ay -8.749962E-4; az -0.0017187595; gx 0.31731242; gy -0.20646858; gz 0.0019378662
+I: pitch: 17.258242roll: 46.688583yaw: -10.044182
+I: data [NOT CALIB]: ; ax -0.033; ay 0.086; az 1.002; gx 0.91; gy -5.775; gz -2.467; ts 1956249600
+I: data [NOT CALIB] [JAVA]: ; ax -8.193; ay 22.016; az -5.629; gx -29.181; gy 29.161; gz 24.054; ts 1956249600
+    data [calibrated]: ; ax 2.4999678E-4; ay -0.0028749928; az -0.0017187595; gx 0.24731243; gy -0.13646889; gz 0.019937754
+I: pitch: 18.14595roll: 46.351463yaw: -12.535515
+I: data [NOT CALIB]: ; ax -0.034; ay 0.089; az 1.003; gx 0.647; gy -5.635; gz -2.537; ts -1634009088
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.784; az -5.373; gx -30.974; gy -0.535; gz 6.134; ts -1634009088
+    data [calibrated]: ; ax -7.5000525E-4; ay 1.2500584E-4; az -7.187128E-4; gx -0.015687585; gy 0.0035309792; gz -0.05006218
+I: pitch: 18.652426roll: 48.8917yaw: -13.071437
+I: data [NOT CALIB]: ; ax -0.035; ay 0.088; az 1.003; gx 0.805; gy -5.705; gz -2.432; ts -1583611904
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.528; az -5.373; gx 9.475; gy -18.455; gz -32.522; ts -1583611904
+I: data [calibrated]: ; ax -0.0017500035; ay -8.749962E-4; az -7.187128E-4; gx 0.14231241; gy -0.066468716; gz 0.05493784
+I: pitch: 19.786253roll: 50.563316yaw: -13.401799
+I: data [NOT CALIB]: ; ax -0.035; ay 0.084; az 1.003; gx 0.805; gy -5.705; gz -2.467; ts -1868759040
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 21.504; az -5.373; gx 9.475; gy -18.455; gz 24.054; ts -1868759040
+    data [calibrated]: ; ax -0.0017500035; ay -0.004874997; az -7.187128E-4; gx 0.14231241; gy -0.066468716; gz 0.019937754
+I: pitch: 18.668512roll: 51.31262yaw: -15.811405
+I: data [NOT CALIB]: ; ax -0.036; ay 0.086; az 1.006; gx 0.77; gy -5.652; gz -2.502; ts -1147273216
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.016; az -4.605; gx 0.515; gy -4.887; gz 15.094; ts -1147273216
+    data [calibrated]: ; ax -0.0027500018; ay -0.0028749928; az 0.0022813082; gx 0.10731238; gy -0.013468742; gz -0.015062332
+I: pitch: 14.946071roll: 51.862915yaw: -20.587286
+I: data [NOT CALIB]: ; ax -0.038; ay 0.087; az 1.004; gx 0.857; gy -5.722; gz -2.52; ts -107020288
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.272; az -5.117; gx 22.787; gy -22.807; gz 10.486; ts -107020288
+    data [calibrated]: ; ax -0.004750002; ay -0.0018749982; az 2.812147E-4; gx 0.1943124; gy -0.083468914; gz -0.03306222
+I: pitch: 13.78133roll: 52.955143yaw: -23.973478
+I: data [NOT CALIB]: ; ax -0.038; ay 0.093; az 0.999; gx 0.787; gy -5.635; gz -2.502; ts -392167424
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 23.808; az -6.397; gx 4.867; gy -0.535; gz 15.094; ts -392167424
+    data [calibrated]: ; ax -0.004750002; ay 0.0041250065; az -0.004718721; gx 0.1243124; gy 0.0035309792; gz -0.015062332
+I: pitch: 18.131226roll: 55.152004yaw: -22.429626
+I: FinalizerDaemon: finalize objects = 20
+I: data [NOT CALIB]: ; ax -0.034; ay 0.088; az 1.005; gx 0.595; gy -5.67; gz -2.415; ts 1319239680
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.528; az -4.861; gx 21.25; gy -9.495; gz -28.17; ts 1319239680
+    data [calibrated]: ; ax -7.5000525E-4; ay -8.749962E-4; az 0.0012812614; gx -0.06768757; gy -0.03146887; gz 0.0719378
+I: pitch: 15.535373roll: 54.234608yaw: -23.735453
+I: data [NOT CALIB]: ; ax -0.039; ay 0.086; az 1.006; gx 1.12; gy -5.827; gz -2.607; ts -1583153152
+I: data [NOT CALIB] [JAVA]: ; ax -9.729; ay 22.016; az -4.605; gx 24.58; gy 15.849; gz -11.787; ts -1583153152
+    data [calibrated]: ; ax -0.005750004; ay -0.0028749928; az 0.0022813082; gx 0.4573124; gy -0.18846893; gz -0.12006235
+I: pitch: 14.270423roll: 53.327717yaw: -32.111332
+I: data [NOT CALIB]: ; ax -0.034; ay 0.089; az 1.004; gx 1.085; gy -5.81; gz -2.537; ts -878444544
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.784; az -5.117; gx 15.62; gy 20.201; gz 6.134; ts -878444544
+I: data [calibrated]: ; ax -7.5000525E-4; ay 1.2500584E-4; az 2.812147E-4; gx 0.42231244; gy -0.17146873; gz -0.05006218
+I: pitch: 18.976099roll: 53.19142yaw: -35.08593
+I: data [NOT CALIB]: ; ax -0.034; ay 0.087; az 1.0; gx 0.577; gy -5.705; gz -2.59; ts -156958720
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.272; az -6.141; gx 16.642; gy -18.455; gz -7.435; ts -156958720
+    data [calibrated]: ; ax -7.5000525E-4; ay -0.0018749982; az -0.0037187338; gx -0.08568758; gy -0.066468716; gz -0.10306215
+I: pitch: 15.645401roll: 55.446056yaw: -39.20806
+I: data [NOT CALIB]: ; ax -0.035; ay 0.088; az 1.003; gx 0.752; gy -5.722; gz -2.467; ts 547815424
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.528; az -5.373; gx -4.094; gy -22.807; gz 24.054; ts 547815424
+    data [calibrated]: ; ax -0.0017500035; ay -8.749962E-4; az -7.187128E-4; gx 0.089312375; gy -0.083468914; gz 0.019937754
+I: pitch: 14.502338roll: 57.075043yaw: -41.427658
+I: data [NOT CALIB]: ; ax -0.036; ay 0.09; az 1.006; gx 0.945; gy -5.757; gz -2.52; ts 598212608
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 23.04; az -4.605; gx -20.221; gy -31.767; gz 10.486; ts 598212608
+    data [calibrated]: ; ax -0.0027500018; ay 0.0011250079; az 0.0022813082; gx 0.2823124; gy -0.11846876; gz -0.03306222
+I: pitch: 18.701576roll: 54.572487yaw: -41.36235
+I: data [NOT CALIB]: ; ax -0.037; ay 0.086; az 1.006; gx 0.875; gy -5.67; gz -2.52; ts 648609792
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.016; az -4.605; gx 27.395; gy -9.495; gz 10.486; ts 648609792
+I: data [calibrated]: ; ax -0.0037500039; ay -0.0028749928; az 0.0022813082; gx 0.2123124; gy -0.03146887; gz -0.03306222
+I: pitch: 17.697731roll: 54.577053yaw: -45.10733
+I: data [NOT CALIB]: ; ax -0.035; ay 0.086; az 1.002; gx 0.892; gy -5.792; gz -2.485; ts 363462656
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.016; az -5.629; gx 31.747; gy 24.809; gz 19.446; ts 363462656
+I: data [calibrated]: ; ax -0.0017500035; ay -0.0028749928; az -0.0017187595; gx 0.22931242; gy -0.15346861; gz 0.0019378662
+I: pitch: 17.059227roll: 54.742462yaw: -48.72536
+I: data [NOT CALIB]: ; ax -0.036; ay 0.089; az 1.005; gx 1.085; gy -5.845; gz -2.572; ts 1068171264
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.784; az -4.861; gx 15.62; gy 11.241; gz -2.827; ts 1068171264
+I: data [calibrated]: ; ax -0.0027500018; ay 1.2500584E-4; az 0.0012812614; gx 0.42231244; gy -0.20646858; gz -0.085062265
+I: pitch: 18.232536roll: 54.637817yaw: -54.143253
+I: data [NOT CALIB]: ; ax -0.035; ay 0.087; az 1.006; gx 0.98; gy -5.74; gz -2.572; ts 1789657088
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.272; az -4.605; gx -11.261; gy -27.415; gz -2.827; ts 1789657088
+    data [calibrated]: ; ax -0.0017500035; ay -0.0018749982; az 0.0022813082; gx 0.31731242; gy -0.10146856; gz -0.085062265
+I: pitch: 16.758047roll: 53.353874yaw: -61.052124
+I: data [NOT CALIB]: ; ax -0.038; ay 0.088; az 1.0; gx 0.822; gy -5.722; gz -2.467; ts -1783824384
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.528; az -6.141; gx 13.827; gy -22.807; gz 24.054; ts -1783824384
+    data [calibrated]: ; ax -0.004750002; ay -8.749962E-4; az -0.0037187338; gx 0.15931243; gy -0.083468914; gz 0.019937754
+I: pitch: 18.78452roll: 54.436417yaw: -62.358578
+I: data [NOT CALIB]: ; ax -0.035; ay 0.087; az 1.003; gx 0.77; gy -5.705; gz -2.485; ts -1079115776
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.272; az -5.373; gx 0.515; gy -18.455; gz 19.446; ts -1079115776
+I: data [calibrated]: ; ax -0.0017500035; ay -0.0018749982; az -7.187128E-4; gx 0.10731238; gy -0.066468716; gz 0.0019378662
+I: pitch: 17.345512roll: 55.951183yaw: -65.501686
+I: data [NOT CALIB]: ; ax -0.036; ay 0.088; az 1.002; gx 0.752; gy -5.6; gz -2.502; ts -38862848
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.528; az -5.629; gx -4.094; gy 8.426; gz 15.094; ts -38862848
+    data [calibrated]: ; ax -0.0027500018; ay -8.749962E-4; az -0.0017187595; gx 0.089312375; gy 0.038531303; gz -0.015062332
+I: pitch: 17.721104roll: 59.23749yaw: -66.58276
+I: data [NOT CALIB]: ; ax -0.035; ay 0.088; az 1.005; gx 1.015; gy -5.757; gz -2.485; ts -307232768
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.528; az -4.861; gx -2.301; gy -31.767; gz 19.446; ts -307232768
+    data [calibrated]: ; ax -0.0017500035; ay -8.749962E-4; az 0.0012812614; gx 0.3523124; gy -0.11846876; gz 0.0019378662
+I: pitch: 17.049294roll: 58.64836yaw: -71.170494
+I: data [NOT CALIB]: ; ax -0.036; ay 0.088; az 1.003; gx 0.717; gy -5.687; gz -2.502; ts 397541376
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.528; az -5.373; gx -13.054; gy -13.847; gz 15.094; ts 397541376
+    data [calibrated]: ; ax -0.0027500018; ay -8.749962E-4; az -7.187128E-4; gx 0.054312408; gy -0.04846859; gz -0.015062332
+I: pitch: 15.630491roll: 60.3225yaw: -74.03001
+I: data [NOT CALIB]: ; ax -0.035; ay 0.088; az 1.005; gx 0.752; gy -5.775; gz -2.502; ts 1119027200
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.528; az -4.861; gx -4.094; gy 29.161; gz 15.094; ts 1119027200
+I: data [calibrated]: ; ax -0.0017500035; ay -8.749962E-4; az 0.0012812614; gx 0.089312375; gy -0.13646889; gz -0.015062332
+I: pitch: 10.485413roll: 58.664486yaw: -80.229294
+I: data [NOT CALIB]: ; ax -0.036; ay 0.086; az 1.004; gx 0.735; gy -5.705; gz -2.467; ts -1464598528
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.016; az -5.117; gx -8.446; gy -18.455; gz 24.054; ts -1464598528
+I: data [calibrated]: ; ax -0.0027500018; ay -0.0028749928; az 2.812147E-4; gx 0.072312415; gy -0.066468716; gz 0.019937754
+I: pitch: 5.485361roll: 58.688015yaw: -85.75899
+I: data [NOT CALIB]: ; ax -0.038; ay 0.084; az 1.005; gx 0.682; gy -5.74; gz -2.485; ts -88801280
+    data [NOT CALIB] [JAVA]: ; ax -9.473; ay 21.504; az -4.861; gx -22.014; gy -27.415; gz 19.446; ts -88801280
+    data [calibrated]: ; ax -0.004750002; ay -0.004874997; az 0.0012812614; gx 0.019312382; gy -0.10146856; gz 0.0019378662
+I: pitch: -1.0395507roll: 57.93955yaw: -91.873764
+I: data [NOT CALIB]: ; ax -0.033; ay 0.089; az 1.001; gx 1.487; gy -5.722; gz -2.66; ts 1639383040
+    data [NOT CALIB] [JAVA]: ; ax -8.193; ay 22.784; az -5.885; gx -12.539; gy -22.807; gz -25.355; ts 1639383040
+    data [calibrated]: ; ax 2.4999678E-4; ay 1.2500584E-4; az -0.002718687; gx 0.8243124; gy -0.083468914; gz -0.17306232
+I: pitch: 6.702647roll: 59.77317yaw: -98.001396
+I: data [NOT CALIB]: ; ax -0.035; ay 0.089; az 1.006; gx 0.875; gy -5.827; gz -2.52; ts -944242688
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.784; az -4.605; gx 27.395; gy 15.849; gz 10.486; ts -944242688
+    data [calibrated]: ; ax -0.0017500035; ay 1.2500584E-4; az 0.0022813082; gx 0.2123124; gy -0.18846893; gz -0.03306222
+I: pitch: 9.252056roll: 54.962753yaw: -101.85116
+I: data [NOT CALIB]: ; ax -0.037; ay 0.085; az 1.002; gx 0.787; gy -5.775; gz -2.467; ts -222756864
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 21.76; az -5.629; gx 4.867; gy 29.161; gz 24.054; ts -222756864
+    data [calibrated]: ; ax -0.0037500039; ay -0.0038749948; az -0.0017187595; gx 0.1243124; gy -0.13646889; gz 0.019937754
+I: pitch: 8.423266roll: 54.13924yaw: -105.104
+I: data [NOT CALIB]: ; ax -0.037; ay 0.086; az 1.007; gx 0.945; gy -5.757; gz -2.537; ts 482017280
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.016; az -4.349; gx -20.221; gy -31.767; gz 6.134; ts 482017280
+    data [calibrated]: ; ax -0.0037500039; ay -0.0028749928; az 0.0032812357; gx 0.2823124; gy -0.11846876; gz -0.05006218
+I: pitch: 6.579996roll: 52.316807yaw: -110.810905
+I: data [NOT CALIB]: ; ax -0.036; ay 0.093; az 1.006; gx 1.015; gy -5.775; gz -2.59; ts 1203503104
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 23.808; az -4.605; gx -2.301; gy 29.161; gz -7.435; ts 1203503104
+I: data [calibrated]: ; ax -0.0027500018; ay 0.0041250065; az 0.0022813082; gx 0.3523124; gy -0.13646889; gz -0.10306215
+I: pitch: 13.14223roll: 49.91188yaw: -111.38009
+I: data [NOT CALIB]: ; ax -0.037; ay 0.087; az 0.997; gx 0.717; gy -5.6; gz -2.555; ts -1715666944
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.272; az -6.909; gx -13.054; gy 8.426; gz 1.526; ts -1715666944
+    data [calibrated]: ; ax -0.0037500039; ay -0.0018749982; az -0.006718755; gx 0.054312408; gy 0.038531303; gz -0.068062305
+I: pitch: 14.098169roll: 53.429585yaw: -113.030205
+I: data [NOT CALIB]: ; ax -0.043; ay 0.092; az 0.998; gx 1.347; gy -5.67; gz -2.52; ts -994181120
+    data [NOT CALIB] [JAVA]: ; ax -10.753; ay 23.552; az -6.653; gx 17.157; gy -9.495; gz 10.486; ts -994181120
+    data [calibrated]: ; ax -0.009750005; ay 0.0031250045; az -0.005718708; gx 0.6843124; gy -0.03146887; gz -0.03306222
+I: pitch: 24.636868roll: 55.905895yaw: -112.52983
+I: data [NOT CALIB]: ; ax -0.034; ay 0.089; az 1.002; gx 0.84; gy -5.67; gz -2.432; ts 46137344
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.784; az -5.629; gx 18.435; gy -9.495; gz -32.522; ts 46137344
+    data [calibrated]: ; ax -7.5000525E-4; ay 1.2500584E-4; az -0.0017187595; gx 0.17731237; gy -0.03146887; gz 0.05493784
+I: pitch: 32.519825roll: 57.901737yaw: -109.36198
+I: data [NOT CALIB]: ; ax -0.038; ay 0.085; az 1.005; gx 1.12; gy -5.687; gz -2.572; ts 767623168
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 21.76; az -4.861; gx 24.58; gy -13.847; gz -2.827; ts 767623168
+    data [calibrated]: ; ax -0.004750002; ay -0.0038749948; az 0.0012812614; gx 0.4573124; gy -0.04846859; gz -0.085062265
+I: pitch: 34.171463roll: 60.1511yaw: -114.63827
+I: data [NOT CALIB]: ; ax -0.038; ay 0.087; az 0.998; gx 0.437; gy -5.617; gz -2.467; ts 2143420416
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.272; az -6.653; gx -19.199; gy 4.074; gz 24.054; ts 2143420416
+    data [calibrated]: ; ax -0.004750002; ay -0.0018749982; az -0.005718708; gx -0.2256876; gy 0.021531105; gz 0.019937754
+I: pitch: 33.195843roll: 63.646935yaw: -113.51838
+I: data [NOT CALIB]: ; ax -0.034; ay 0.088; az 1.004; gx 0.892; gy -5.687; gz -2.502; ts -1430061056
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.528; az -5.117; gx 31.747; gy -13.847; gz 15.094; ts -1430061056
+I: data [calibrated]: ; ax -7.5000525E-4; ay -8.749962E-4; az 2.812147E-4; gx 0.22931242; gy -0.04846859; gz -0.015062332
+I: pitch: 29.712883roll: 65.15079yaw: -119.494514
+I: data [NOT CALIB]: ; ax -0.033; ay 0.087; az 1.001; gx 1.015; gy -5.74; gz -2.572; ts 281346048
+    data [NOT CALIB] [JAVA]: ; ax -8.193; ay 22.272; az -5.885; gx -2.301; gy -27.415; gz -2.827; ts 281346048
+    data [calibrated]: ; ax 2.4999678E-4; ay -0.0018749982; az -0.002718687; gx 0.3523124; gy -0.10146856; gz -0.085062265
+I: pitch: 29.142696roll: 67.68637yaw: -126.47553
+I: data [NOT CALIB]: ; ax -0.035; ay 0.089; az 1.002; gx 0.682; gy -5.687; gz -2.52; ts 1657143296
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.784; az -5.629; gx -22.014; gy -13.847; gz 10.486; ts 1657143296
+    data [calibrated]: ; ax -0.0017500035; ay 1.2500584E-4; az -0.0017187595; gx 0.019312382; gy -0.04846859; gz -0.03306222
+I: pitch: 30.635138roll: 70.282yaw: -126.94937
+I: data [NOT CALIB]: ; ax -0.035; ay 0.088; az 1.004; gx 0.892; gy -5.722; gz -2.467; ts -909705216
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.528; az -5.117; gx 31.747; gy -22.807; gz 24.054; ts -909705216
+    data [calibrated]: ; ax -0.0017500035; ay -8.749962E-4; az 2.812147E-4; gx 0.22931242; gy -0.083468914; gz 0.019937754
+I: pitch: 25.63839roll: 71.423195yaw: -135.71584
+I: data [NOT CALIB]: ; ax -0.038; ay 0.087; az 1.006; gx 1.26; gy -5.81; gz -2.52; ts 801701888
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.272; az -4.605; gx -5.116; gy 20.201; gz 10.486; ts 801701888
+    data [calibrated]: ; ax -0.004750002; ay -0.0018749982; az 0.0022813082; gx 0.5973124; gy -0.17146873; gz -0.03306222
+I: pitch: 21.360733roll: 69.40798yaw: -150.42188
+I: data [NOT CALIB]: ; ax -0.036; ay 0.087; az 1.003; gx 0.787; gy -5.705; gz -2.502; ts -2117468160
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.272; az -5.373; gx 4.867; gy -18.455; gz 15.094; ts -2117468160
+    data [calibrated]: ; ax -0.0027500018; ay -0.0018749982; az -7.187128E-4; gx 0.1243124; gy -0.066468716; gz -0.015062332
+I: pitch: 14.544362roll: 70.80314yaw: -161.38977
+I: FinalizerDaemon: finalize objects = 17
+I: data [NOT CALIB]: ; ax -0.037; ay 0.086; az 1.001; gx 0.91; gy -5.74; gz -2.52; ts 1271660544
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.016; az -5.885; gx -29.181; gy -27.415; gz 10.486; ts 1271660544
+I: data [calibrated]: ; ax -0.0037500039; ay -0.0028749928; az -0.002718687; gx 0.24731243; gy -0.10146856; gz -0.03306222
+I: pitch: 9.571932roll: 72.34951yaw: -171.33792
+I: data [NOT CALIB]: ; ax -0.036; ay 0.085; az 1.005; gx 0.84; gy -5.757; gz -2.485; ts -1630732288
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 21.76; az -4.861; gx 18.435; gy -31.767; gz 19.446; ts -1630732288
+    data [calibrated]: ; ax -0.0027500018; ay -0.0038749948; az 0.0012812614; gx 0.17731237; gy -0.11846876; gz 0.0019378662
+I: pitch: 1.8606551roll: 70.60935yaw: 105.45444
+I: data [NOT CALIB]: ; ax -0.035; ay 0.089; az 1.002; gx 0.752; gy -5.635; gz -2.52; ts 1070530560
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.784; az -5.629; gx -4.094; gy -0.535; gz 10.486; ts 1070530560
+    data [calibrated]: ; ax -0.0017500035; ay 1.2500584E-4; az -0.0017187595; gx 0.089312375; gy 0.0035309792; gz -0.03306222
+I: pitch: 0.69120127roll: 73.49301yaw: 159.46242
+I: data [NOT CALIB]: ; ax -0.034; ay 0.089; az 1.003; gx 0.822; gy -5.705; gz -2.485; ts -1831862272
+    data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.784; az -5.373; gx 13.827; gy -18.455; gz 19.446; ts -1831862272
+    data [calibrated]: ; ax -7.5000525E-4; ay 1.2500584E-4; az -7.187128E-4; gx 0.15931243; gy -0.066468716; gz 0.0019378662
+I: pitch: 4.9617324roll: 75.757164yaw: 172.20195
+I: data [NOT CALIB]: ; ax -0.035; ay 0.088; az 1.004; gx 0.857; gy -5.722; gz -2.467; ts -120520704
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.528; az -5.117; gx 22.787; gy -22.807; gz 24.054; ts -120520704
+    data [calibrated]: ; ax -0.0017500035; ay -8.749962E-4; az 2.812147E-4; gx 0.1943124; gy -0.083468914; gz 0.019937754
+I: pitch: -2.9060571roll: 75.356255yaw: 163.2588
+I: data [NOT CALIB]: ; ax -0.036; ay 0.089; az 1.001; gx 0.665; gy -5.635; gz -2.537; ts 1272119296
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.784; az -5.885; gx -26.366; gy -0.535; gz 6.134; ts 1272119296
+I: data [calibrated]: ; ax -0.0027500018; ay 1.2500584E-4; az -0.002718687; gx 0.0023124218; gy 0.0035309792; gz -0.05006218
+I: pitch: -8.831889roll: 78.00561yaw: 156.99057
+I: data [NOT CALIB]: ; ax -0.038; ay 0.085; az 0.999; gx 0.472; gy -5.757; gz -2.45; ts -640417792
+    data [NOT CALIB] [JAVA]: ; ax -9.473; ay 21.76; az -6.397; gx -10.239; gy -31.767; gz 28.406; ts -640417792
+I: data [calibrated]: ; ax -0.004750002; ay -0.0038749948; az -0.004718721; gx -0.1906876; gy -0.11846876; gz 0.036937714
+I: pitch: -20.672125roll: 78.84421yaw: 148.85776
+I: data [NOT CALIB]: ; ax -0.036; ay 0.088; az 1.011; gx 0.875; gy -5.705; gz -2.572; ts 1742077952
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.528; az -3.325; gx 27.395; gy -18.455; gz -2.827; ts 1742077952
+    data [calibrated]: ; ax -0.0027500018; ay -8.749962E-4; az 0.0072813034; gx 0.2123124; gy -0.066468716; gz -0.085062265
+I: pitch: -20.634037roll: 75.22984yaw: 145.49432
+I: data [NOT CALIB]: ; ax -0.036; ay 0.082; az 1.007; gx 1.155; gy -5.775; gz -2.485; ts -1512636416
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 20.992; az -4.349; gx -31.996; gy 29.161; gz 19.446; ts -1512636416
+    data [calibrated]: ; ax -0.0027500018; ay -0.0068749934; az 0.0032812357; gx 0.49231237; gy -0.13646889; gz 0.0019378662
+I: pitch: -17.434052roll: 71.25152yaw: 141.318
+I: data [NOT CALIB]: ; ax -0.036; ay 0.087; az 0.998; gx 0.63; gy -5.67; gz -2.502; ts -120061952
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.272; az -6.653; gx 30.21; gy -9.495; gz 15.094; ts -120061952
+    data [calibrated]: ; ax -0.0027500018; ay -0.0018749982; az -0.005718708; gx -0.032687604; gy -0.03146887; gz -0.015062332
+I: pitch: -22.849447roll: 72.348625yaw: 135.19415
+I: data [NOT CALIB]: ; ax -0.036; ay 0.09; az 1.006; gx 0.997; gy -5.74; gz -2.555; ts 1591345152
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 23.04; az -4.605; gx -6.909; gy -27.415; gz 1.526; ts 1591345152
+I: data [calibrated]: ; ax -0.0027500018; ay 0.0011250079; az 0.0022813082; gx 0.33431238; gy -0.10146856; gz -0.068062305
+I: pitch: -13.460368roll: 69.55941yaw: 138.52922
+I: data [NOT CALIB]: ; ax -0.036; ay 0.087; az 1.001; gx 1.032; gy -5.845; gz -2.52; ts -321191936
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.272; az -5.885; gx 2.052; gy 11.241; gz 10.486; ts -321191936
+    data [calibrated]: ; ax -0.0027500018; ay -0.0018749982; az -0.002718687; gx 0.36931235; gy -0.20646858; gz -0.03306222
+I: pitch: -9.934311roll: 67.87093yaw: 134.30847
+I: data [NOT CALIB]: ; ax -0.034; ay 0.086; az 1.006; gx 0.84; gy -5.757; gz -2.52; ts -1562574848
+    data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.016; az -4.605; gx 18.435; gy -31.767; gz 10.486; ts -1562574848
+    data [calibrated]: ; ax -7.5000525E-4; ay -0.0028749928; az 0.0022813082; gx 0.17731237; gy -0.11846876; gz -0.03306222
+I: pitch: -11.34845roll: 62.927574yaw: 128.0948
+I: data [NOT CALIB]: ; ax -0.037; ay 0.09; az 1.001; gx 0.612; gy -5.67; gz -2.59; ts 148832256
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 23.04; az -5.885; gx 25.602; gy -9.495; gz -7.435; ts 148832256
+    data [calibrated]: ; ax -0.0037500039; ay 0.0011250079; az -0.002718687; gx -0.05068761; gy -0.03146887; gz -0.10306215
+I: pitch: -14.751187roll: 63.939316yaw: 124.06946
+I: data [NOT CALIB]: ; ax -0.034; ay 0.09; az 1.004; gx 0.787; gy -5.722; gz -2.537; ts -1746927616
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 23.04; az -5.117; gx 4.867; gy -22.807; gz 6.134; ts -1746927616
+    data [calibrated]: ; ax -7.5000525E-4; ay 0.0011250079; az 2.812147E-4; gx 0.1243124; gy -0.083468914; gz -0.05006218
+I: pitch: -6.8328223roll: 63.204697yaw: 128.7194
+I: data [NOT CALIB]: ; ax -0.037; ay 0.087; az 1.001; gx 0.717; gy -5.687; gz -2.45; ts -35586048
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.272; az -5.885; gx -13.054; gy -13.847; gz 28.406; ts -35586048
+I: data [calibrated]: ; ax -0.0037500039; ay -0.0018749982; az -0.002718687; gx 0.054312408; gy -0.04846859; gz 0.036937714
+I: pitch: -6.1410074roll: 64.856384yaw: 128.37505
+I: data [NOT CALIB]: ; ax -0.036; ay 0.09; az 1.003; gx 0.91; gy -5.845; gz -2.467; ts -1948057600
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 23.04; az -5.373; gx -29.181; gy 11.241; gz 24.054; ts -1948057600
+    data [calibrated]: ; ax -0.0027500018; ay 0.0011250079; az -7.187128E-4; gx 0.24731243; gy -0.20646858; gz 0.019937754
+I: pitch: 3.5068815roll: 64.124596yaw: 133.13344
+I: data [NOT CALIB]: ; ax -0.036; ay 0.091; az 1.003; gx 0.84; gy -5.722; gz -2.555; ts 2112159744
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 23.296; az -5.373; gx 18.435; gy -22.807; gz 1.526; ts 2112159744
+    data [calibrated]: ; ax -0.0027500018; ay 0.0021250024; az -7.187128E-4; gx 0.17731237; gy -0.083468914; gz -0.068062305
+I: pitch: 13.876362roll: 64.70453yaw: 137.33195
+I: data [NOT CALIB]: ; ax -0.036; ay 0.088; az 1.006; gx 1.592; gy -5.95; gz -2.59; ts 1189543936
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.528; az -4.605; gx 14.342; gy -15.64; gz -7.435; ts 1189543936
+I: data [calibrated]: ; ax -0.0027500018; ay -8.749962E-4; az 0.0022813082; gx 0.9293124; gy -0.3114686; gz -0.10306215
+I: pitch: 21.256027roll: 58.34619yaw: 123.64172
+I: data [NOT CALIB]: ; ax -0.039; ay 0.087; az 1.001; gx 0.84; gy -5.74; gz -2.52; ts -706215936
+    data [NOT CALIB] [JAVA]: ; ax -9.729; ay 22.272; az -5.885; gx 18.435; gy -27.415; gz 10.486; ts -706215936
+    data [calibrated]: ; ax -0.005750004; ay -0.0018749982; az -0.002718687; gx 0.17731237; gy -0.10146856; gz -0.03306222
+I: pitch: 23.220554roll: 58.914444yaw: 117.99629
+I: data [NOT CALIB]: ; ax -0.035; ay 0.089; az 1.002; gx 0.822; gy -5.652; gz -2.485; ts 1676279808
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.784; az -5.629; gx 13.827; gy -4.887; gz 19.446; ts 1676279808
+I: data [calibrated]: ; ax -0.0017500035; ay 1.2500584E-4; az -0.0017187595; gx 0.15931243; gy -0.013468742; gz 0.0019378662
+I: pitch: 28.916964roll: 61.774284yaw: 119.009514
+I: data [NOT CALIB]: ; ax -0.034; ay 0.097; az 1.005; gx 0.822; gy -5.722; gz -2.52; ts -1242890240
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 24.832; az -4.861; gx 13.827; gy -22.807; gz 10.486; ts -1242890240
+    data [calibrated]: ; ax -7.5000525E-4; ay 0.008125007; az 0.0012812614; gx 0.15931243; gy -0.083468914; gz -0.03306222
+I: pitch: 35.426865roll: 59.716095yaw: 121.07786
+I: data [NOT CALIB]: ; ax -0.038; ay 0.088; az 0.996; gx -0.245; gy -5.53; gz -2.345; ts 2146238464
+    data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.528; az -7.165; gx 3.071; gy 26.346; gz -10.25; ts 2146238464
+    data [calibrated]: ; ax -0.004750002; ay -8.749962E-4; az -0.007718742; gx -0.9076876; gy 0.108531; gz 0.14193773
+I: pitch: 27.887793roll: 63.246754yaw: 131.31317
+I: data [NOT CALIB]: ; ax -0.038; ay 0.089; az 1.002; gx 0.612; gy -5.687; gz -2.485; ts 1223622656
+    data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.784; az -5.629; gx 25.602; gy -13.847; gz 19.446; ts 1223622656
+    data [calibrated]: ; ax -0.004750002; ay 1.2500584E-4; az -0.0017187595; gx -0.05068761; gy -0.04846859; gz 0.0019378662
+I: pitch: 26.515263roll: 66.332695yaw: 134.2288
+I: data [NOT CALIB]: ; ax -0.034; ay 0.085; az 0.994; gx 0.455; gy -5.687; gz -2.52; ts -672137216
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 21.76; az -7.677; gx -14.591; gy -13.847; gz 10.486; ts -672137216
+    data [calibrated]: ; ax -7.5000525E-4; ay -0.0038749948; az -0.009718716; gx -0.20768759; gy -0.04846859; gz -0.03306222
+I: pitch: 20.29206roll: 70.024025yaw: 132.40178
+I: data [NOT CALIB]: ; ax -0.036; ay 0.089; az 1.004; gx 1.05; gy -5.635; gz -2.502; ts 1710358528
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.784; az -5.117; gx 6.66; gy -0.535; gz 15.094; ts 1710358528
+    data [calibrated]: ; ax -0.0027500018; ay 1.2500584E-4; az 2.812147E-4; gx 0.38731235; gy 0.0035309792; gz -0.015062332
+I: pitch: 26.332796roll: 73.63089yaw: 132.42056
+I: data [NOT CALIB]: ; ax -0.036; ay 0.089; az 0.994; gx 0.402; gy -5.705; gz -2.415; ts -202178560
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.784; az -7.677; gx -28.159; gy -18.455; gz -28.17; ts -202178560
+    data [calibrated]: ; ax -0.0027500018; ay 1.2500584E-4; az -0.009718716; gx -0.2606876; gy -0.066468716; gz 0.0719378
+I: pitch: 31.787024roll: 75.71623yaw: 141.25198
+I: FinalizerDaemon: finalize objects = 12
+I: data [NOT CALIB]: ; ax -0.036; ay 0.085; az 0.998; gx 0.77; gy -5.6; gz -2.485; ts -2114650112
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 21.76; az -6.653; gx 0.515; gy 8.426; gz 19.446; ts -2114650112
+    data [calibrated]: ; ax -0.0027500018; ay -0.0038749948; az -0.005718708; gx 0.10731238; gy 0.038531303; gz 0.0019378662
+I: pitch: 37.755936roll: 80.295746yaw: 146.00954
+I: data [NOT CALIB]: ; ax -0.037; ay 0.087; az 1.001; gx 0.805; gy -5.722; gz -2.52; ts 267845632
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.272; az -5.885; gx 9.475; gy -22.807; gz 10.486; ts 267845632
+I: data [calibrated]: ; ax -0.0037500039; ay -0.0018749982; az -0.002718687; gx 0.14231241; gy -0.083468914; gz -0.03306222
+I: pitch: 29.859915roll: 83.673164yaw: 135.16945
+I: data [NOT CALIB]: ; ax -0.035; ay 0.087; az 1.003; gx 0.84; gy -5.775; gz -2.52; ts -638058496
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.272; az -5.373; gx 18.435; gy 29.161; gz 10.486; ts -638058496
+I: data [calibrated]: ; ax -0.0017500035; ay -0.0018749982; az -7.187128E-4; gx 0.17731237; gy -0.13646889; gz -0.03306222
+I: pitch: -14.933141roll: 82.95634yaw: 85.7107
+I: data [NOT CALIB]: ; ax -0.033; ay 0.09; az 1.004; gx 0.805; gy -5.705; gz -2.485; ts -1879441408
+    data [NOT CALIB] [JAVA]: ; ax -8.193; ay 23.04; az -5.117; gx 9.475; gy -18.455; gz 19.446; ts -1879441408
+I: data [calibrated]: ; ax 2.4999678E-4; ay 0.0011250079; az 2.812147E-4; gx 0.14231241; gy -0.066468716; gz 0.0019378662
+I: pitch: -3.1893709roll: 81.486755yaw: 93.73854
+I: data [NOT CALIB]: ; ax -0.037; ay 0.09; az 1.002; gx 0.7; gy -5.687; gz -2.45; ts 1509687296
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 23.04; az -5.629; gx -17.406; gy -13.847; gz 28.406; ts 1509687296
+I: data [calibrated]: ; ax -0.0037500039; ay 0.0011250079; az -0.0017187595; gx 0.03731239; gy -0.04846859; gz 0.036937714
+I: pitch: 19.507664roll: 82.80333yaw: 114.88227
+I: data [NOT CALIB]: ; ax -0.032; ay 0.085; az 1.003; gx 0.7; gy -5.792; gz -2.52; ts -402849792
+I: data [NOT CALIB] [JAVA]: ; ax -7.937; ay 21.76; az -5.373; gx -17.406; gy 24.809; gz 10.486; ts -402849792
+I: data [calibrated]: ; ax 0.0012499951; ay -0.0038749948; az -7.187128E-4; gx 0.03731239; gy -0.15346861; gz -0.03306222
+I: pitch: -2.1088579roll: 80.64735yaw: 92.167336
+I: data [NOT CALIB]: ; ax -0.037; ay 0.09; az 1.003; gx 1.102; gy -5.687; gz -2.607; ts -637599744
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 23.04; az -5.373; gx 19.972; gy -13.847; gz -11.787; ts -637599744
+I: data [calibrated]: ; ax -0.0037500039; ay 0.0011250079; az -7.187128E-4; gx 0.4393124; gy -0.04846859; gz -0.12006235
+I: pitch: 1.8575372roll: 81.88105yaw: 86.71436
+I: data [NOT CALIB]: ; ax -0.035; ay 0.089; az 0.999; gx 0.507; gy -5.652; gz -2.52; ts -1576992512
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.784; az -6.397; gx -1.279; gy -4.887; gz 10.486; ts -1576992512
+I: data [calibrated]: ; ax -0.0017500035; ay 1.2500584E-4; az -0.004718721; gx -0.15568757; gy -0.013468742; gz -0.03306222
+I: pitch: -9.216649roll: 85.663536yaw: 76.8104
+I: data [NOT CALIB]: ; ax -0.035; ay 0.087; az 1.0; gx 0.945; gy -5.775; gz -2.467; ts -1811742464
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.272; az -6.141; gx -20.221; gy 29.161; gz 24.054; ts -1811742464
+    data [calibrated]: ; ax -0.0017500035; ay -0.0018749982; az -0.0037187338; gx 0.2823124; gy -0.13646889; gz 0.019937754
+I: pitch: -34.947098roll: 86.54233yaw: 45.07865
+I: data [NOT CALIB]: ; ax -0.035; ay 0.084; az 1.011; gx 1.19; gy -5.827; gz -2.485; ts 1241841920
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 21.504; az -3.325; gx -23.036; gy 15.849; gz 19.446; ts 1241841920
+    data [calibrated]: ; ax -0.0017500035; ay -0.004874997; az 0.0072813034; gx 0.52731246; gy -0.18846893; gz 0.0019378662
+I: pitch: -16.16227roll: 80.83143yaw: 51.462757
+I: data [NOT CALIB]: ; ax -0.037; ay 0.088; az 0.998; gx 0.805; gy -5.635; gz -2.537; ts -335150848
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.528; az -6.653; gx 9.475; gy -0.535; gz 6.134; ts -335150848
+    data [calibrated]: ; ax -0.0037500039; ay -8.749962E-4; az -0.005718708; gx 0.14231241; gy 0.0035309792; gz -0.05006218
+I: pitch: -25.026281roll: 82.4725yaw: 37.559364
+I: data [NOT CALIB]: ; ax -0.036; ay 0.08; az 0.997; gx 0.647; gy -5.74; gz -2.45; ts -1576533760
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 20.48; az -6.909; gx -30.974; gy -27.415; gz 28.406; ts -1576533760
+    data [calibrated]: ; ax -0.0027500018; ay -0.0088749975; az -0.006718755; gx -0.015687585; gy -0.10146856; gz 0.036937714
+I: pitch: -43.694195roll: 81.6701yaw: 18.560764
+I: data [NOT CALIB]: ; ax -0.036; ay 0.09; az 1.0; gx 0.77; gy -5.687; gz -2.502; ts 1812594944
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 23.04; az -6.141; gx 0.515; gy -13.847; gz 15.094; ts 1812594944
+    data [calibrated]: ; ax -0.0027500018; ay 0.0011250079; az -0.0037187338; gx 0.10731238; gy -0.04846859; gz -0.015062332
+I: pitch: -57.987186roll: 83.80193yaw: 2.195284
+I: data [NOT CALIB]: ; ax -0.037; ay 0.087; az 1.003; gx 0.752; gy -5.722; gz -2.502; ts 571212032
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.272; az -5.373; gx -4.094; gy -22.807; gz 15.094; ts 571212032
+I: data [calibrated]: ; ax -0.0037500039; ay -0.0018749982; az -7.187128E-4; gx 0.089312375; gy -0.083468914; gz -0.015062332
+I: pitch: -71.159874roll: 80.90898yaw: -12.9711895
+I: data [NOT CALIB]: ; ax -0.035; ay 0.089; az 1.004; gx 0.945; gy -5.687; gz -2.572; ts -1341325056
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.784; az -5.117; gx -20.221; gy -13.847; gz -2.827; ts -1341325056
+    data [calibrated]: ; ax -0.0017500035; ay 1.2500584E-4; az 2.812147E-4; gx 0.2823124; gy -0.04846859; gz -0.085062265
+I: pitch: -52.481888roll: 80.376686yaw: -0.1649098
+I: data [NOT CALIB]: ; ax -0.035; ay 0.088; az 1.002; gx 0.945; gy -5.705; gz -2.502; ts 2047803648
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.528; az -5.629; gx -20.221; gy -18.455; gz 15.094; ts 2047803648
+    data [calibrated]: ; ax -0.0017500035; ay -8.749962E-4; az -0.0017187595; gx 0.2823124; gy -0.066468716; gz -0.015062332
+I: pitch: -58.034927roll: 80.30212yaw: -12.217429
+I: data [NOT CALIB]: ; ax -0.036; ay 0.084; az 1.017; gx 0.385; gy -5.565; gz -2.362; ts 1796276480
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 21.504; az -1.789; gx -32.511; gy 17.386; gz -14.602; ts 1796276480
+I: data [calibrated]: ; ax -0.0027500018; ay -0.004874997; az 0.013281226; gx -0.2776876; gy 0.07353115; gz 0.12493777
+I: pitch: -54.40493roll: 81.755066yaw: -3.4291027
+I: data [NOT CALIB]: ; ax -0.035; ay 0.09; az 1.003; gx 0.822; gy -5.617; gz -2.555; ts 890437888
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 23.04; az -5.373; gx 13.827; gy 4.074; gz 1.526; ts 890437888
+    data [calibrated]: ; ax -0.0017500035; ay 0.0011250079; az -7.187128E-4; gx 0.15931243; gy 0.021531105; gz -0.068062305
+I: pitch: -62.460655roll: 85.158165yaw: -13.819269
+I: data [NOT CALIB]: ; ax -0.037; ay 0.088; az 0.997; gx 0.63; gy -5.722; gz -2.485; ts -351010560
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.528; az -6.909; gx 30.21; gy -22.807; gz 19.446; ts -351010560
+I: data [calibrated]: ; ax -0.0037500039; ay -8.749962E-4; az -0.006718755; gx -0.032687604; gy -0.083468914; gz 0.0019378662
+I: pitch: -94.813675roll: 85.74978yaw: -45.79432
+I: data [NOT CALIB]: ; ax -0.034; ay 0.091; az 1.002; gx 0.612; gy -5.687; gz -2.45; ts -1256849152
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 23.296; az -5.629; gx 25.602; gy -13.847; gz 28.406; ts -1256849152
+I: data [calibrated]: ; ax -7.5000525E-4; ay 0.0021250024; az -0.0017187595; gx -0.05068761; gy -0.04846859; gz 0.036937714
+I: pitch: 108.92971roll: 86.723305yaw: -128.77435
+I: data [NOT CALIB]: ; ax -0.041; ay 0.085; az 1.006; gx 0.91; gy -5.932; gz -2.537; ts -1508376320
+    data [NOT CALIB] [JAVA]: ; ax -10.241; ay 21.76; az -4.605; gx -29.181; gy -11.032; gz 6.134; ts -1508376320
+    data [calibrated]: ; ax -0.0077500045; ay -0.0038749948; az 0.0022813082; gx 0.24731243; gy -0.29346895; gz -0.05006218
+I: pitch: 2.392969roll: 82.04408yaw: -10.50658
+I: data [NOT CALIB]: ; ax -0.036; ay 0.091; az 0.999; gx 0.385; gy -5.67; gz -2.467; ts 1880752384
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 23.296; az -6.397; gx -32.511; gy -9.495; gz 24.054; ts 1880752384
+    data [calibrated]: ; ax -0.0027500018; ay 0.0021250024; az -0.004718721; gx -0.2776876; gy -0.03146887; gz 0.019937754
+I: pitch: -19.569984roll: 84.60648yaw: 18.174456
+I: data [NOT CALIB]: ; ax -0.038; ay 0.086; az 1.006; gx 1.067; gy -5.81; gz -2.502; ts 1646002432
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.016; az -4.605; gx 11.012; gy 20.201; gz 15.094; ts 1646002432
+    data [calibrated]: ; ax -0.004750002; ay -0.0028749928; az 0.0022813082; gx 0.40431243; gy -0.17146873; gz -0.015062332
+I: pitch: -19.157269roll: 78.18437yaw: 19.21618
+I: data [NOT CALIB]: ; ax -0.035; ay 0.088; az 1.002; gx 0.822; gy -5.687; gz -2.572; ts 1394475264
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.528; az -5.629; gx 13.827; gy -13.847; gz -2.827; ts 1394475264
+    data [calibrated]: ; ax -0.0017500035; ay -8.749962E-4; az -0.0017187595; gx 0.15931243; gy -0.04846859; gz -0.085062265
+I: pitch: -34.07049roll: 77.7308yaw: 1.0061482
+I: data [NOT CALIB]: ; ax -0.037; ay 0.09; az 0.996; gx 1.155; gy -5.687; gz -2.59; ts -2128609024
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 23.04; az -7.165; gx -31.996; gy -13.847; gz -7.435; ts -2128609024
+    data [calibrated]: ; ax -0.0037500039; ay 0.0011250079; az -0.007718742; gx 0.49231237; gy -0.04846859; gz -0.10306215
+I: pitch: -42.57687roll: 79.12285yaw: -20.215889
+I: data [NOT CALIB]: ; ax -0.037; ay 0.088; az 1.0; gx 1.102; gy -5.722; gz -2.537; ts 1914831104
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.528; az -6.141; gx 19.972; gy -22.807; gz 6.134; ts 1914831104
+    data [calibrated]: ; ax -0.0037500039; ay -8.749962E-4; az -0.0037187338; gx 0.4393124; gy -0.083468914; gz -0.05006218
+I: pitch: -48.37359roll: 79.66054yaw: -38.0024
+I: FinalizerDaemon: finalize objects = 12
+I: data [NOT CALIB]: ; ax -0.042; ay 0.091; az 1.007; gx 0.717; gy -5.617; gz -2.52; ts 1680081152
+    data [NOT CALIB] [JAVA]: ; ax -10.497; ay 23.296; az -4.349; gx -13.054; gy 4.074; gz 10.486; ts 1680081152
+    data [calibrated]: ; ax -0.008750003; ay 0.0021250024; az 0.0032812357; gx 0.054312408; gy 0.021531105; gz -0.03306222
+I: pitch: -32.135666roll: 79.97814yaw: -25.83411
+I: data [NOT CALIB]: ; ax -0.038; ay 0.089; az 0.99; gx 0.42; gy -5.67; gz -2.45; ts 774242560
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.784; az -8.701; gx -23.551; gy -9.495; gz 28.406; ts 774242560
+    data [calibrated]: ; ax -0.004750002; ay 1.2500584E-4; az -0.013718724; gx -0.24268761; gy -0.03146887; gz 0.036937714
+I: pitch: -44.191017roll: 83.34611yaw: -33.28445
+I: data [NOT CALIB]: ; ax -0.038; ay 0.088; az 1.002; gx 0.647; gy -5.67; gz -2.502; ts 1193804032
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.528; az -5.629; gx -30.974; gy -9.495; gz 15.094; ts 1193804032
+    data [calibrated]: ; ax -0.004750002; ay -8.749962E-4; az -0.0017187595; gx -0.015687585; gy -0.03146887; gz -0.015062332
+I: pitch: -78.70377roll: 83.95031yaw: -66.32115
+I: data [NOT CALIB]: ; ax -0.033; ay 0.092; az 1.002; gx 1.155; gy -5.722; gz -2.555; ts 1965687040
+I: data [NOT CALIB] [JAVA]: ; ax -8.193; ay 23.552; az -5.629; gx -31.996; gy -22.807; gz 1.526; ts 1965687040
+    data [calibrated]: ; ax 2.4999678E-4; ay 0.0031250045; az -0.0017187595; gx 0.49231237; gy -0.083468914; gz -0.068062305
+I: pitch: -65.6262roll: 85.960144yaw: -65.55216
+I: data [NOT CALIB]: ; ax -0.034; ay 0.09; az 1.001; gx 0.682; gy -5.652; gz -2.432; ts -1909718784
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 23.04; az -5.885; gx -22.014; gy -4.887; gz -32.522; ts -1909718784
+I: data [calibrated]: ; ax -7.5000525E-4; ay 0.0011250079; az -0.002718687; gx 0.019312382; gy -0.013468742; gz 0.05493784
+I: pitch: 118.69523roll: 86.20418yaw: 115.952736
+I: data [NOT CALIB]: ; ax -0.038; ay 0.094; az 0.999; gx 0.49; gy -5.652; gz -2.485; ts -1154612992
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 24.064; az -6.397; gx -5.631; gy -4.887; gz 19.446; ts -1154612992
+    data [calibrated]: ; ax -0.004750002; ay 0.005125001; az -0.004718721; gx -0.17268759; gy -0.013468742; gz 0.0019378662
+I: pitch: 134.25644roll: 81.82995yaw: 135.33696
+I: data [NOT CALIB]: ; ax -0.038; ay 0.088; az 1.003; gx 1.067; gy -5.81; gz -2.537; ts 288424192
+    data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.528; az -5.373; gx 11.012; gy 20.201; gz 6.134; ts 288424192
+    data [calibrated]: ; ax -0.004750002; ay -8.749962E-4; az -7.187128E-4; gx 0.40431243; gy -0.17146873; gz -0.05006218
+I: pitch: -69.96559roll: 85.167145yaw: -79.630165
+I: data [NOT CALIB]: ; ax -0.041; ay 0.087; az 1.006; gx 1.172; gy -5.775; gz -2.485; ts 1043529984
+I: data [NOT CALIB] [JAVA]: ; ax -10.241; ay 22.272; az -4.605; gx -27.644; gy 29.161; gz 19.446; ts 1043529984
+    data [calibrated]: ; ax -0.0077500045; ay -0.0018749982; az 0.0022813082; gx 0.50931245; gy -0.13646889; gz 0.0019378662
+I: pitch: -39.718616roll: 81.93853yaw: -64.79838
+I: data [NOT CALIB]: ; ax -0.036; ay 0.089; az 1.003; gx 0.805; gy -5.67; gz -2.45; ts -1154154240
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.784; az -5.373; gx 9.475; gy -9.495; gz 28.406; ts -1154154240
+I: data [calibrated]: ; ax -0.0027500018; ay 1.2500584E-4; az -7.187128E-4; gx 0.14231241; gy -0.03146887; gz 0.036937714
+I: pitch: -22.605038roll: 85.48538yaw: -54.665817
+I: data [NOT CALIB]: ; ax -0.034; ay 0.09; az 1.001; gx 0.665; gy -5.74; gz -2.502; ts -399048448
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 23.04; az -5.885; gx -26.366; gy -27.415; gz 15.094; ts -399048448
+    data [calibrated]: ; ax -7.5000525E-4; ay 0.0011250079; az -0.002718687; gx 0.0023124218; gy -0.10146856; gz -0.015062332
+I: pitch: 26.618084roll: 88.15785yaw: -6.89352
+I: data [NOT CALIB]: ; ax -0.036; ay 0.088; az 1.0; gx 0.787; gy -5.775; gz -2.555; ts 2033844480
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.528; az -6.141; gx 4.867; gy 29.161; gz 1.526; ts 2033844480
+    data [calibrated]: ; ax -0.0027500018; ay -8.749962E-4; az -0.0037187338; gx 0.1243124; gy -0.13646889; gz -0.068062305
+I: pitch: -72.99436roll: 86.98218yaw: -110.48025
+I: data [NOT CALIB]: ; ax -0.034; ay 0.09; az 1.003; gx 0.63; gy -5.617; gz -2.502; ts -163839744
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 23.04; az -5.373; gx 30.21; gy 4.074; gz 15.094; ts -163839744
+    data [calibrated]: ; ax -7.5000525E-4; ay 0.0011250079; az -7.187128E-4; gx -0.032687604; gy 0.021531105; gz -0.015062332
+I: pitch: 108.23163roll: 84.81584yaw: 71.017265
+I: data [NOT CALIB]: ; ax -0.035; ay 0.088; az 1.003; gx 0.682; gy -5.67; gz -2.502; ts -2025914112
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.528; az -5.373; gx -22.014; gy -9.495; gz 15.094; ts -2025914112
+    data [calibrated]: ; ax -0.0017500035; ay -8.749962E-4; az -7.187128E-4; gx 0.019312382; gy -0.03146887; gz -0.015062332
+I: pitch: -98.6592roll: 81.974014yaw: 151.32368
+I: data [NOT CALIB]: ; ax -0.037; ay 0.091; az 1.003; gx 0.735; gy -5.757; gz -2.537; ts -599719680
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 23.296; az -5.373; gx -8.446; gy -31.767; gz 6.134; ts -599719680
+    data [calibrated]: ; ax -0.0037500039; ay 0.0021250024; az -7.187128E-4; gx 0.072312415; gy -0.11846876; gz -0.05006218
+I: pitch: 119.31823roll: 85.16065yaw: 137.32625
+I: data [NOT CALIB]: ; ax -0.041; ay 0.088; az 1.007; gx 1.242; gy -5.845; gz -2.502; ts 826540288
+I: data [NOT CALIB] [JAVA]: ; ax -10.241; ay 22.528; az -4.349; gx -9.724; gy 11.241; gz 15.094; ts 826540288
+    data [calibrated]: ; ax -0.0077500045; ay -8.749962E-4; az 0.0032812357; gx 0.5793124; gy -0.20646858; gz -0.015062332
+I: pitch: 21.033216roll: 82.74249yaw: -23.903318
+I: data [NOT CALIB]: ; ax -0.037; ay 0.09; az 1.005; gx 1.33; gy -5.862; gz -2.572; ts -1706688256
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 23.04; az -4.861; gx 12.805; gy 6.889; gz -2.827; ts -1706688256
+I: data [calibrated]: ; ax -0.0037500039; ay 0.0011250079; az 0.0012812614; gx 0.66731244; gy -0.22346878; gz -0.085062265
+I: pitch: 21.066765roll: 73.39825yaw: -55.816998
+I: data [NOT CALIB]: ; ax -0.036; ay 0.092; az 1.007; gx 0.682; gy -5.722; gz -2.467; ts -1270349568
+I: data [NOT CALIB] [JAVA]: ; ax -8.961; ay 23.552; az -4.349; gx -22.014; gy -22.807; gz 24.054; ts -1270349568
+    data [calibrated]: ; ax -0.0027500018; ay 0.0031250045; az 0.0032812357; gx 0.019312382; gy -0.083468914; gz 0.019937754
+I: pitch: 25.31327roll: 65.7988yaw: -58.848488
+I: data [NOT CALIB]: ; ax -0.039; ay 0.088; az 1.006; gx 1.067; gy -5.757; gz -2.537; ts -515243776
+I: data [NOT CALIB] [JAVA]: ; ax -9.729; ay 22.528; az -4.605; gx 11.012; gy -31.767; gz 6.134; ts -515243776
+I: data [calibrated]: ; ax -0.005750004; ay -8.749962E-4; az 0.0022813082; gx 0.40431243; gy -0.11846876; gz -0.05006218
+I: pitch: 21.36567roll: 64.35411yaw: -74.022575
+I: FinalizerDaemon: finalize objects = 4
+I: data [NOT CALIB]: ; ax -0.041; ay 0.097; az 1.001; gx 2.135; gy -6.195; gz -2.642; ts 911016192
+I: data [NOT CALIB] [JAVA]: ; ax -10.241; ay 24.832; az -5.885; gx 22.28; gy -12.825; gz -20.747; ts 911016192
+    data [calibrated]: ; ax -0.0077500045; ay 0.008125007; az -0.002718687; gx 1.4723125; gy -0.55646896; gz -0.1550622
+I: pitch: 47.806915roll: 55.929684yaw: -90.63335
+I: data [NOT CALIB]: ; ax -0.041; ay 0.086; az 0.993; gx 0.875; gy -5.792; gz -2.485; ts 1682899200
+I: data [NOT CALIB] [JAVA]: ; ax -10.241; ay 22.016; az -7.933; gx 27.395; gy 24.809; gz 19.446; ts 1682899200
+    data [calibrated]: ; ax -0.0077500045; ay -0.0028749928; az -0.010718763; gx 0.2123124; gy -0.15346861; gz 0.0019378662
+I: pitch: 58.573086roll: 56.182213yaw: -95.553276
+I: data [NOT CALIB]: ; ax -0.037; ay 0.088; az 0.999; gx 0.805; gy -5.67; gz -2.45; ts 475136256
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.528; az -6.397; gx 9.475; gy -9.495; gz 28.406; ts 475136256
+    data [calibrated]: ; ax -0.0037500039; ay -8.749962E-4; az -0.004718721; gx 0.14231241; gy -0.03146887; gz 0.036937714
+I: pitch: 72.48343roll: 59.055164yaw: -90.44032
+I: data [NOT CALIB]: ; ax -0.038; ay 0.086; az 1.007; gx 0.752; gy -5.687; gz -2.485; ts -715915008
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.016; az -4.349; gx -4.094; gy -13.847; gz 19.446; ts -715915008
+    data [calibrated]: ; ax -0.004750002; ay -0.0028749928; az 0.0032812357; gx 0.089312375; gy -0.04846859; gz 0.0019378662
+I: pitch: 68.245186roll: 62.25918yaw: -98.99017
+I: data [NOT CALIB]: ; ax -0.038; ay 0.089; az 1.012; gx 1.277; gy -5.862; gz -2.572; ts 710344960
+    data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.784; az -3.069; gx -0.764; gy 6.889; gz -2.827; ts 710344960
+    data [calibrated]: ; ax -0.004750002; ay 1.2500584E-4; az 0.008281231; gx 0.61431235; gy -0.22346878; gz -0.085062265
+I: pitch: 64.573364roll: 61.986458yaw: -121.898186
+I: data [NOT CALIB]: ; ax -0.038; ay 0.089; az 1.002; gx 0.84; gy -5.705; gz -2.485; ts 1482227968
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.784; az -5.629; gx 18.435; gy -18.455; gz 19.446; ts 1482227968
+    data [calibrated]: ; ax -0.004750002; ay 1.2500584E-4; az -0.0017187595; gx 0.17731237; gy -0.066468716; gz 0.0019378662
+I: pitch: 70.64383roll: 64.94625yaw: -124.89446
+I: data [NOT CALIB]: ; ax -0.037; ay 0.086; az 1.004; gx 1.172; gy -5.74; gz -2.555; ts -1386544896
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.016; az -5.117; gx -27.644; gy -27.415; gz 1.526; ts -1386544896
+    data [calibrated]: ; ax -0.0037500039; ay -0.0028749928; az 2.812147E-4; gx 0.50931245; gy -0.10146856; gz -0.068062305
+I: pitch: 73.796165roll: 71.39406yaw: -138.02113
+I: data [NOT CALIB]: ; ax -0.04; ay 0.093; az 0.998; gx 1.085; gy -5.705; gz -2.607; ts 39715072
+    data [NOT CALIB] [JAVA]: ; ax -9.985; ay 23.808; az -6.653; gx 15.62; gy -18.455; gz -11.787; ts 39715072
+    data [calibrated]: ; ax -0.0067500025; ay 0.0041250065; az -0.005718708; gx 0.42231244; gy -0.066468716; gz -0.12006235
+I: pitch: 96.83582roll: 74.659195yaw: -131.4079
+I: data [NOT CALIB]: ; ax -0.038; ay 0.092; az 1.004; gx 1.067; gy -5.757; gz -2.52; ts -1822424832
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 23.552; az -5.117; gx 11.012; gy -31.767; gz 10.486; ts -1822424832
+    data [calibrated]: ; ax -0.004750002; ay 0.0031250045; az 2.812147E-4; gx 0.40431243; gy -0.11846876; gz -0.03306222
+I: pitch: 94.52116roll: 72.06196yaw: -148.51979
+I: data [NOT CALIB]: ; ax -0.037; ay 0.089; az 1.001; gx 0.7; gy -5.722; gz -2.537; ts -396230400
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.784; az -5.885; gx -17.406; gy -22.807; gz 6.134; ts -396230400
+    data [calibrated]: ; ax -0.0037500039; ay 1.2500584E-4; az -0.002718687; gx 0.03731239; gy -0.083468914; gz -0.05006218
+I: pitch: 104.18586roll: 74.25777yaw: -143.8676
+I: data [NOT CALIB]: ; ax -0.038; ay 0.088; az 1.005; gx 0.875; gy -5.775; gz -2.572; ts 1030029568
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 22.528; az -4.861; gx 27.395; gy 29.161; gz -2.827; ts 1030029568
+    data [calibrated]: ; ax -0.004750002; ay -8.749962E-4; az 0.0012812614; gx 0.2123124; gy -0.13646889; gz -0.085062265
+I: pitch: 78.34342roll: 80.77147yaw: 111.05074
+I: data [NOT CALIB]: ; ax -0.037; ay 0.091; az 1.0; gx 0.787; gy -5.705; gz -2.485; ts -1838743296
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 23.296; az -6.141; gx 4.867; gy -18.455; gz 19.446; ts -1838743296
+    data [calibrated]: ; ax -0.0037500039; ay 0.0021250024; az -0.0037187338; gx 0.1243124; gy -0.066468716; gz 0.0019378662
+I: pitch: 95.07371roll: 80.33963yaw: -107.814095
+I: data [NOT CALIB]: ; ax -0.039; ay 0.086; az 0.995; gx 0.875; gy -5.547; gz -2.485; ts 594149632
+I: data [NOT CALIB] [JAVA]: ; ax -9.729; ay 22.016; az -7.421; gx 27.395; gy 21.994; gz 19.446; ts 594149632
+    data [calibrated]: ; ax -0.005750004; ay -0.0028749928; az -0.008718729; gx 0.2123124; gy 0.09153128; gz 0.0019378662
+I: pitch: 142.34084roll: 77.20316yaw: -114.05805
+I: data [NOT CALIB]: ; ax -0.034; ay 0.088; az 1.003; gx 0.805; gy -5.635; gz -2.52; ts -1603534592
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.528; az -5.373; gx 9.475; gy -0.535; gz 10.486; ts -1603534592
+    data [calibrated]: ; ax -7.5000525E-4; ay -8.749962E-4; az -7.187128E-4; gx 0.14231241; gy 0.0035309792; gz -0.03306222
+I: pitch: -106.577545roll: 74.258286yaw: -90.56714
+I: data [NOT CALIB]: ; ax -0.036; ay 0.089; az 1.0; gx 0.28; gy -5.582; gz -2.415; ts 158269696
+    data [NOT CALIB] [JAVA]: ; ax -8.961; ay 22.784; az -6.141; gx 6.145; gy 13.034; gz -28.17; ts 158269696
+    data [calibrated]: ; ax -0.0027500018; ay 1.2500584E-4; az -0.0037187338; gx -0.3826876; gy 0.05653143; gz 0.0719378
+I: pitch: 114.55431roll: 67.524155yaw: -92.80679
+I: data [NOT CALIB]: ; ax -0.037; ay 0.086; az 0.996; gx 0.77; gy -5.827; gz -2.502; ts -2039414528
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.016; az -7.165; gx 0.515; gy 15.849; gz 15.094; ts -2039414528
+    data [calibrated]: ; ax -0.0037500039; ay -0.0028749928; az -0.007718742; gx 0.10731238; gy -0.18846893; gz -0.015062332
+I: pitch: -117.74736roll: 66.957436yaw: -85.838524
+I: data [NOT CALIB]: ; ax -0.044; ay 0.078; az 0.998; gx 0.787; gy -5.635; gz -2.485; ts 393478400
+I: data [NOT CALIB] [JAVA]: ; ax -11.009; ay 19.968; az -6.653; gx 4.867; gy -0.535; gz 19.446; ts 393478400
+I: data [calibrated]: ; ax -0.010750003; ay -0.010874994; az -0.005718708; gx 0.1243124; gy 0.0035309792; gz 0.0019378662
+I: pitch: -147.49968roll: 64.88525yaw: -72.77317
+I: data [NOT CALIB]: ; ax -0.035; ay 0.086; az 1.004; gx 0.787; gy -5.757; gz -2.45; ts -1468661504
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.016; az -5.117; gx 4.867; gy -31.767; gz 28.406; ts -1468661504
+    data [calibrated]: ; ax -0.0017500035; ay -0.0028749928; az 2.812147E-4; gx 0.1243124; gy -0.11846876; gz 0.036937714
+I: pitch: -136.91052roll: 67.279305yaw: -58.2292
+I: FinalizerDaemon: finalize objects = 6
+I: data [NOT CALIB]: ; ax -0.035; ay 0.091; az 1.005; gx 1.33; gy -5.74; gz -2.537; ts -998702848
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 23.296; az -4.861; gx 12.805; gy -27.415; gz 6.134; ts -998702848
+    data [calibrated]: ; ax -0.0017500035; ay 0.0021250024; az 0.0012812614; gx 0.66731244; gy -0.10146856; gz -0.05006218
+I: pitch: -94.510445roll: 71.34765yaw: -39.524235
+I: data [NOT CALIB]: ; ax -0.038; ay 0.09; az 0.997; gx 0.332; gy -5.6; gz -2.502; ts 1149042944
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 23.04; az -6.909; gx 19.457; gy 8.426; gz 15.094; ts 1149042944
+    data [calibrated]: ; ax -0.004750002; ay 0.0011250079; az -0.006718755; gx -0.3306876; gy 0.038531303; gz -0.015062332
+I: pitch: -126.726204roll: 71.260284yaw: -62.704205
+I: data [NOT CALIB]: ; ax -0.04; ay 0.091; az 1.007; gx 0.945; gy -5.687; gz -2.537; ts 947912960
+I: data [NOT CALIB] [JAVA]: ; ax -9.985; ay 23.296; az -4.349; gx -20.221; gy -13.847; gz 6.134; ts 947912960
+    data [calibrated]: ; ax -0.0067500025; ay 0.0021250024; az 0.0032812357; gx 0.2823124; gy -0.04846859; gz -0.05006218
+I: pitch: -108.78619roll: 74.61061yaw: -52.845608
+I: data [NOT CALIB]: ; ax -0.038; ay 0.085; az 1.005; gx 0.787; gy -5.705; gz -2.485; ts -243138304
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 21.76; az -4.861; gx 4.867; gy -18.455; gz 19.446; ts -243138304
+    data [calibrated]: ; ax -0.004750002; ay -0.0038749948; az 0.0012812614; gx 0.1243124; gy -0.066468716; gz 0.0019378662
+I: pitch: -84.12069roll: 70.95684yaw: -34.194798
+I: data [NOT CALIB]: ; ax -0.034; ay 0.084; az 0.995; gx 0.542; gy -5.915; gz -2.537; ts -1450901248
+    data [NOT CALIB] [JAVA]: ; ax -8.449; ay 21.504; az -7.421; gx 7.682; gy -6.68; gz 6.134; ts -1450901248
+    data [calibrated]: ; ax -7.5000525E-4; ay -0.004874997; az -0.008718729; gx -0.120687604; gy -0.27646875; gz -0.05006218
+I: pitch: -79.19291roll: 65.217026yaw: -24.035706
+I: data [NOT CALIB]: ; ax -0.04; ay 0.087; az 1.006; gx 1.277; gy -5.88; gz -2.502; ts 1653080320
+I: data [NOT CALIB] [JAVA]: ; ax -9.985; ay 22.272; az -4.605; gx -0.764; gy 2.281; gz 15.094; ts 1653080320
+    data [calibrated]: ; ax -0.0067500025; ay -0.0018749982; az 0.0022813082; gx 0.61431235; gy -0.2414689; gz -0.015062332
+I: pitch: -35.096767roll: 58.381943yaw: 0.08706892
+I: data [NOT CALIB]: ; ax -0.037; ay 0.085; az 1.005; gx 0.875; gy -5.74; gz -2.502; ts 2123038976
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 21.76; az -4.861; gx 27.395; gy -27.415; gz 15.094; ts 2123038976
+    data [calibrated]: ; ax -0.0037500039; ay -0.0038749948; az 0.0012812614; gx 0.2123124; gy -0.10146856; gz -0.015062332
+I: pitch: -28.933708roll: 53.020466yaw: -2.719529
+I: data [NOT CALIB]: ; ax -0.043; ay 0.078; az 1.008; gx 1.225; gy -6.02; gz -2.52; ts 260964608
+I: data [NOT CALIB] [JAVA]: ; ax -10.753; ay 19.968; az -4.093; gx -14.076; gy 31.976; gz 10.486; ts 260964608
+I: data [calibrated]: ; ax -0.009750005; ay -0.010874994; az 0.0042812824; gx 0.5623124; gy -0.38146877; gz -0.03306222
+I: pitch: -16.260078roll: 41.166214yaw: -5.387843
+I: data [NOT CALIB]: ; ax -0.034; ay 0.086; az 1.002; gx 0.542; gy -5.635; gz -2.432; ts -930086656
+    data [NOT CALIB] [JAVA]: ; ax -8.449; ay 22.016; az -5.629; gx 7.682; gy -0.535; gz -32.522; ts -930086656
+    data [calibrated]: ; ax -7.5000525E-4; ay -0.0028749928; az -0.0017187595; gx -0.120687604; gy 0.0035309792; gz 0.05493784
+I: pitch: -23.972452roll: 41.29302yaw: -8.815171
+I: data [NOT CALIB]: ; ax -0.037; ay 0.085; az 1.012; gx 1.19; gy -5.845; gz -2.52; ts -2121072384
+    data [NOT CALIB] [JAVA]: ; ax -9.217; ay 21.76; az -3.069; gx -23.036; gy 11.241; gz 10.486; ts -2121072384
+I: data [calibrated]: ; ax -0.0037500039; ay -0.0038749948; az 0.008281231; gx 0.52731246; gy -0.20646858; gz -0.03306222
+I: pitch: -8.081207roll: 29.193058yaw: -9.716235
+I: data [NOT CALIB]: ; ax -0.043; ay 0.087; az 1.006; gx 0.822; gy -5.757; gz -2.45; ts 1301676288
+I: data [NOT CALIB] [JAVA]: ; ax -10.753; ay 22.272; az -4.605; gx 13.827; gy -31.767; gz 28.406; ts 1301676288
+    data [calibrated]: ; ax -0.009750005; ay -0.0018749982; az 0.0022813082; gx 0.15931243; gy -0.11846876; gz 0.036937714
+I: pitch: -0.56239295roll: 28.791206yaw: -8.8190365
+I: data [NOT CALIB]: ; ax -0.038; ay 0.083; az 1.003; gx 0.98; gy -5.705; gz -2.52; ts 781779200
+I: data [NOT CALIB] [JAVA]: ; ax -9.473; ay 21.248; az -5.373; gx -11.261; gy -18.455; gz 10.486; ts 781779200
+    data [calibrated]: ; ax -0.004750002; ay -0.005874999; az -7.187128E-4; gx 0.31731242; gy -0.066468716; gz -0.03306222
+I: pitch: 5.0062165roll: 30.756828yaw: -12.804935
+I: data [NOT CALIB]: ; ax -0.039; ay 0.088; az 1.004; gx 0.805; gy -5.687; gz -2.485; ts 1570504960
+I: data [NOT CALIB] [JAVA]: ; ax -9.729; ay 22.528; az -5.117; gx 9.475; gy -13.847; gz 19.446; ts 1570504960
+    data [calibrated]: ; ax -0.005750004; ay -8.749962E-4; az 2.812147E-4; gx 0.14231241; gy -0.04846859; gz 0.0019378662
+I: pitch: 9.751141roll: 35.917038yaw: -14.279487
+I: data [NOT CALIB]: ; ax -0.035; ay 0.085; az 1.003; gx 1.102; gy -5.74; gz -2.607; ts 1050607872
+I: data [NOT CALIB] [JAVA]: ; ax -8.705; ay 21.76; az -5.373; gx 19.972; gy -27.415; gz -11.787; ts 1050607872
+    data [calibrated]: ; ax -0.0017500035; ay -0.0038749948; az -7.187128E-4; gx 0.4393124; gy -0.10146856; gz -0.12006235
+I: pitch: 14.7698765roll: 38.280388yaw: -24.97114
+I: data [NOT CALIB]: ; ax -0.034; ay 0.093; az 1.007; gx 0.665; gy -5.6; gz -2.537; ts -140443392
+I: data [NOT CALIB] [JAVA]: ; ax -8.449; ay 23.808; az -4.349; gx -26.366; gy 8.426; gz 6.134; ts -140443392
+I: data [calibrated]: ; ax -7.5000525E-4; ay 0.0041250065; az 0.0032812357; gx 0.0023124218; gy 0.038531303; gz -0.05006218
+I: pitch: 21.862204roll: 36.495316yaw: -24.480549
+I: data [NOT CALIB]: ; ax -0.039; ay 0.085; az 1.007; gx 0.927; gy -5.81; gz -2.52; ts -341573376
+I: data [NOT CALIB] [JAVA]: ; ax -9.729; ay 21.76; az -4.349; gx -24.829; gy 20.201; gz 10.486; ts -341573376
+    data [calibrated]: ; ax -0.005750004; ay -0.0038749948; az 0.0032812357; gx 0.2643124; gy -0.17146873; gz -0.03306222
+I: pitch: 23.30144roll: 35.445427yaw: -31.90837
+I: data [NOT CALIB]: ; ax -0.04; ay 0.085; az 0.998; gx 0.805; gy -5.757; gz -2.467; ts -1532559104
+    data [NOT CALIB] [JAVA]: ; ax -9.985; ay 21.76; az -6.653; gx 9.475; gy -31.767; gz 24.054; ts -1532559104
+    data [calibrated]: ; ax -0.0067500025; ay -0.0038749948; az -0.005718708; gx 0.14231241; gy -0.11846876; gz 0.019937754
+I: pitch: 26.433023roll: 37.77359yaw: -35.043705
+I: data [NOT CALIB]: ; ax -0.039; ay 0.079; az 1.003; gx 1.33; gy -6.02; gz -2.537; ts -1733689088
+    data [NOT CALIB] [JAVA]: ; ax -9.729; ay 20.224; az -5.373; gx 12.805; gy 31.976; gz 6.134; ts -1733689088
+    data [calibrated]: ; ax -0.005750004; ay -0.009874992; az -7.187128E-4; gx 0.66731244; gy -0.38146877; gz -0.05006218
+I: pitch: 38.348236roll: 33.157143yaw: -49.3836
+I: FinalizerDaemon: finalize objects = 7
+I: data [NOT CALIB]: ; ax -0.04; ay 0.088; az 0.999; gx 0.577; gy -5.582; gz -2.52; ts -1246953216
+    data [NOT CALIB] [JAVA]: ; ax -9.985; ay 22.528; az -6.397; gx 16.642; gy 13.034; gz 10.486; ts -1246953216
+I: data [calibrated]: ; ax -0.0067500025; ay -8.749962E-4; az -0.004718721; gx -0.08568758; gy 0.05653143; gz -0.03306222
+I: pitch: 40.6099roll: 41.24416yaw: -50.309063
+I: data [NOT CALIB]: ; ax -0.035; ay 0.088; az 1.001; gx 0.577; gy -5.6; gz -2.485; ts -1448083200
+    data [NOT CALIB] [JAVA]: ; ax -8.705; ay 22.528; az -5.885; gx 16.642; gy 8.426; gz 19.446; ts -1448083200
+    data [calibrated]: ; ax -0.0017500035; ay -8.749962E-4; az -0.002718687; gx -0.08568758; gy 0.038531303; gz 0.0019378662
+I: pitch: 42.74885roll: 50.063126yaw: -46.578007
+I: data [NOT CALIB]: ; ax -0.039; ay 0.087; az 1.0; gx 0.595; gy -5.722; gz -2.502; ts -1967980288
+I: data [NOT CALIB] [JAVA]: ; ax -9.729; ay 22.272; az -6.141; gx 21.25; gy -22.807; gz 15.094; ts -1967980288
+    data [calibrated]: ; ax -0.005750004; ay -0.0018749982; az -0.0037187338; gx -0.06768757; gy -0.083468914; gz -0.015062332
+I: pitch: 39.241375roll: 56.50761yaw: -48.665447
+I: data [NOT CALIB]: ; ax -0.039; ay 0.083; az 1.005; gx 0.56; gy -5.652; gz -2.485; ts -1162477312
+I: data [NOT CALIB] [JAVA]: ; ax -9.729; ay 21.248; az -4.861; gx 12.29; gy -4.887; gz 19.446; ts -1162477312
+    data [calibrated]: ; ax -0.005750004; ay -0.005874999; az 0.0012812614; gx -0.1026876; gy -0.013468742; gz 0.0019378662
+I: pitch: 22.930914roll: 61.439304yaw: -59.58954
+I: data [NOT CALIB]: ; ax -0.041; ay 0.085; az 1.009; gx 0.875; gy -5.74; gz -2.52; ts -1699151616
+I: data [NOT CALIB] [JAVA]: ; ax -10.241; ay 21.76; az -3.837; gx 27.395; gy -27.415; gz 10.486; ts -1699151616
+I: data [calibrated]: ; ax -0.0077500045; ay -0.0038749948; az 0.00528121; gx 0.2123124; gy -0.10146856; gz -0.03306222
+I: pitch: 10.564667roll: 58.84155yaw: -77.46231
+I: data [NOT CALIB]: ; ax -0.037; ay 0.088; az 1.003; gx 1.82; gy -5.967; gz -2.677; ts -2135031552
+I: data [NOT CALIB] [JAVA]: ; ax -9.217; ay 22.528; az -5.373; gx 7.175; gy -19.992; gz -29.707; ts -2135031552
+    data [calibrated]: ; ax -0.0037500039; ay -8.749962E-4; az -7.187128E-4; gx 1.1573124; gy -0.3284688; gz -0.19006228
+I: pitch: 40.607773roll: 56.874023yaw: -106.109055

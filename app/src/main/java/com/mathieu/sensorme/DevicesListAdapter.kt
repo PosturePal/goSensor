@@ -173,16 +173,37 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                                 var gy = sint16FromBytes(bytes.subList(12, 14).toByteArray()).toFloat()/1000.0f
                                 var gz = sint16FromBytes(bytes.subList(14, 16).toByteArray()).toFloat()/1000.0f
 
+                                // reserved - (17, 21)
+                                Log.i("I:", "data [NOT CALIB]: "
+                                        + "; ax " + ax.toString()
+                                        + "; ay " + ay.toString()
+                                        + "; az " + az.toString()
+                                        + "; gx " + gx.toString()
+                                        + "; gy " + gy.toString()
+                                        + "; gz " + gz.toString()
+                                        + "; ts " + timestamp.toString()
+                                )
 
-//                                var timestamp = ByteBuffer.allocate(4).put(bytes.subList(0, 4).toByteArray()).getInt(0)
-//                                var ax = ByteBuffer.allocate(2).put(bytes.subList(4, 6).toByteArray()).getShort(0).toFloat()/1000.0f
-//                                var ay = ByteBuffer.allocate(2).put(bytes.subList(6, 8).toByteArray()).getShort(0).toFloat()/1000.0f
-//                                var az = ByteBuffer.allocate(2).put(bytes.subList(8, 10).toByteArray()).getShort(0).toFloat()/1000.0f
-//                                var gx = ByteBuffer.allocate(2).put(bytes.subList(10, 12).toByteArray()).getShort(0).toFloat()/1000.0f
-//                                var gy = ByteBuffer.allocate(2).put(bytes.subList(12, 14).toByteArray()).getShort(0).toFloat()/1000.0f
-//                                var gz = ByteBuffer.allocate(2).put(bytes.subList(14, 16).toByteArray()).getShort(0).toFloat()/1000.0f
+                                var jtimestamp = ByteBuffer.allocate(4).put(bytes.subList(0, 4).toByteArray()).getInt(0)
+                                var jax = ByteBuffer.allocate(2).put(bytes.subList(4, 6).toByteArray()).getShort(0).toFloat()/1000.0f
+                                var jay = ByteBuffer.allocate(2).put(bytes.subList(6, 8).toByteArray()).getShort(0).toFloat()/1000.0f
+                                var jaz = ByteBuffer.allocate(2).put(bytes.subList(8, 10).toByteArray()).getShort(0).toFloat()/1000.0f
+                                var jgx = ByteBuffer.allocate(2).put(bytes.subList(10, 12).toByteArray()).getShort(0).toFloat()/1000.0f
+                                var jgy = ByteBuffer.allocate(2).put(bytes.subList(12, 14).toByteArray()).getShort(0).toFloat()/1000.0f
+                                var jgz = ByteBuffer.allocate(2).put(bytes.subList(14, 16).toByteArray()).getShort(0).toFloat()/1000.0f
+                                // reserved - (17, 21)
+                                Log.i("I:", "data [NOT CALIB] [JAVA]: "
+                                        + "; ax " + jax.toString()
+                                        + "; ay " + jay.toString()
+                                        + "; az " + jaz.toString()
+                                        + "; gx " + jgx.toString()
+                                        + "; gy " + jgy.toString()
+                                        + "; gz " + jgz.toString()
+                                        + "; ts " + jtimestamp.toString()
 
-                                if(false)//calibIterator < 32)
+                                )
+
+                                if(calibIterator < 32)
                                 {
                                     Log.i(TAG, "Calib?" + calibIterator)
                                     calibOffsets[0] = calibOffsets[0] + gx
@@ -200,19 +221,19 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                                     madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
                                     lastUpdate = now
 
-//                                    // calib
-//                                    gx -= calibOffsets[0]/32
-//                                    gy -= calibOffsets[1]/32
-//                                    gz -= calibOffsets[2]/32
-//
-//
-//                                    ax -= calibOffsets[3]/32
-//                                    ay -= calibOffsets[4]/32
-//                                    az -= calibOffsets[5]/32
+                                    // calib
+                                    gx -= calibOffsets[0]/32
+                                    gy -= calibOffsets[1]/32
+                                    gz -= calibOffsets[2]/32
+
+
+                                    ax -= calibOffsets[3]/32
+                                    ay -= calibOffsets[4]/32
+                                    az -= calibOffsets[5]/32
 
 
                                     // reserved - (17, 21)
-                                    Log.i("I:", "data [not calibrated]: "
+                                    Log.i("I:", "data [calibrated]: "
                                             + "; ax " + ax.toString()
                                             + "; ay " + ay.toString()
                                             + "; az " + az.toString()
