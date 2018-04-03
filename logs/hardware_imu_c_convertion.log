@@ -1,0 +1,192 @@
+I: FinalizerDaemon: finalize objects = 351
+I: data from sensors: ; ax -0.152; ay 0.022; az 1.001; gx 0.91; gy -5.775; gz -2.59
+I: Calib?0
+I: data from sensors: ; ax -0.154; ay 0.026; az 0.999; gx 0.875; gy -5.757; gz -2.66
+I: Calib?1
+I: data from sensors: ; ax -0.152; ay 0.025; az 0.998; gx 1.015; gy -5.757; gz -2.607
+I: Calib?2
+I: data from sensors: ; ax -0.155; ay 0.025; az 0.996; gx 0.822; gy -5.88; gz -2.607
+I: Calib?3
+I: data from sensors: ; ax -0.154; ay 0.025; az 0.993; gx 1.032; gy -5.6; gz -2.625
+I: Calib?4
+I: data from sensors: ; ax -0.153; ay 0.026; az 0.994; gx 0.945; gy -5.897; gz -2.625
+I: Calib?5
+I: data from sensors: ; ax -0.154; ay 0.028; az 0.996; gx 0.945; gy -5.74; gz -2.555
+I: Calib?6
+I: data from sensors: ; ax -0.154; ay 0.026; az 0.991; gx 0.56; gy -5.95; gz -2.66
+I: Calib?7
+I: data from sensors: ; ax -0.153; ay 0.028; az 0.998; gx 1.085; gy -5.74; gz -2.555
+I: Calib?8
+I: data from sensors: ; ax -0.153; ay 0.027; az 0.988; gx 0.647; gy -6.037; gz -2.607
+I: Calib?9
+I: data from sensors: ; ax -0.153; ay 0.027; az 1.003; gx 1.085; gy -5.757; gz -2.555
+I: Calib?10
+I: data from sensors: ; ax -0.154; ay 0.027; az 0.993; gx 0.892; gy -5.827; gz -2.642
+I: Calib?11
+I: data from sensors: ; ax -0.155; ay 0.025; az 0.997; gx 0.962; gy -5.757; gz -2.625
+I: Calib?12
+I: data from sensors: ; ax -0.154; ay 0.029; az 0.997; gx 0.84; gy -5.845; gz -2.66
+I: Calib?13
+I: data from sensors: ; ax -0.153; ay 0.026; az 0.991; gx 0.805; gy -5.862; gz -2.642
+I: Calib?14
+I: data from sensors: ; ax -0.153; ay 0.027; az 1.002; gx 1.015; gy -5.635; gz -2.572
+I: Calib?15
+I: data from sensors: ; ax -0.152; ay 0.029; az 0.991; gx 0.875; gy -5.792; gz -2.572
+I: Calib?16
+I: data from sensors: ; ax -0.153; ay 0.028; az 1.0; gx 0.98; gy -5.6; gz -2.607
+I: Calib?17
+I: data from sensors: ; ax -0.153; ay 0.03; az 0.995; gx 0.822; gy -5.862; gz -2.59
+I: Calib?18
+I: data from sensors: ; ax -0.153; ay 0.024; az 0.999; gx 0.857; gy -5.897; gz -2.59
+I: Calib?19
+I: data from sensors: ; ax -0.155; ay 0.025; az 0.992; gx 1.015; gy -5.67; gz -2.572
+I: Calib?20
+I: data from sensors: ; ax -0.154; ay 0.028; az 0.994; gx 0.752; gy -5.845; gz -2.642
+I: Calib?21
+I: data from sensors: ; ax -0.151; ay 0.027; az 0.992; gx 0.805; gy -5.722; gz -2.59
+I: Calib?22
+I: data from sensors: ; ax -0.151; ay 0.025; az 0.992; gx 0.612; gy -6.055; gz -2.555
+I: Calib?23
+I: data from sensors: ; ax -0.158; ay 0.031; az 0.999; gx 1.19; gy -5.565; gz -2.59
+I: Calib?24
+I: data from sensors: ; ax -0.151; ay 0.024; az 0.993; gx 0.735; gy -6.002; gz -2.625
+I: Calib?25
+I: data from sensors: ; ax -0.156; ay 0.03; az 0.993; gx 0.997; gy -5.635; gz -2.572
+I: Calib?26
+I: data from sensors: ; ax -0.154; ay 0.026; az 0.996; gx 0.787; gy -5.985; gz -2.677
+I: Calib?27
+I: data from sensors: ; ax -0.154; ay 0.028; az 0.991; gx 1.05; gy -5.652; gz -2.625
+I: Calib?28
+I: data from sensors: ; ax -0.153; ay 0.03; az 1.003; gx 1.05; gy -5.757; gz -2.555
+I: Calib?29
+I: data from sensors: ; ax -0.152; ay 0.023; az 0.987; gx 0.647; gy -5.967; gz -2.59
+I: Calib?30
+I: data from sensors: ; ax -0.151; ay 0.026; az 0.998; gx 0.822; gy -5.932; gz -2.607
+I: Calib?31
+I: data from sensors: ; ax -0.151; ay 0.02; az 0.996; gx 0.84; gy -5.775; gz -2.66
+I: pitch: 140.59163roll: -20.555166yaw: 14.821645
+I: data from sensors: ; ax -0.15; ay 0.025; az 0.997; gx 0.84; gy -6.002; gz -2.607
+I: pitch: 168.59213roll: -23.215754yaw: 17.459778
+I: data from sensors: ; ax -0.152; ay 0.027; az 0.991; gx 0.892; gy -5.95; gz -2.607
+I: pitch: 174.25154roll: -19.169388yaw: 17.877064
+I: data from sensors: ; ax -0.154; ay 0.027; az 0.993; gx 0.822; gy -5.705; gz -2.572
+I: pitch: 175.00562roll: -17.952475yaw: 17.872583
+I: data from sensors: ; ax -0.153; ay 0.025; az 0.993; gx 0.945; gy -5.792; gz -2.572
+I: pitch: 177.43608roll: -17.535885yaw: 17.065792
+I: data from sensors: ; ax -0.154; ay 0.026; az 0.995; gx 0.857; gy -5.775; gz -2.572
+I: pitch: 178.46155roll: -16.960228yaw: 16.379267
+I: data from sensors: ; ax -0.153; ay 0.028; az 1.0; gx 1.05; gy -5.635; gz -2.502
+I: pitch: 179.48398roll: -17.72069yaw: 15.776809
+I: data from sensors: ; ax -0.155; ay 0.029; az 0.992; gx 0.822; gy -5.792; gz -2.572
+I: pitch: 178.90381roll: -17.371185yaw: 15.654306
+I: data from sensors: ; ax -0.155; ay 0.029; az 0.996; gx 1.102; gy -5.775; gz -2.537
+I: pitch: -108.01412roll: -17.265738yaw: 15.271209
+I: data from sensors: ; ax -0.155; ay 0.024; az 0.993; gx 0.927; gy -5.757; gz -2.607
+I: pitch: -164.70145roll: -17.03633yaw: 15.0529
+I: data from sensors: ; ax -0.155; ay 0.029; az 0.996; gx 0.84; gy -5.845; gz -2.572
+I: pitch: -176.73985roll: -16.46016yaw: 14.89737
+I: data from sensors: ; ax -0.157; ay 0.029; az 0.996; gx 1.015; gy -5.74; gz -2.625
+I: pitch: -178.60709roll: -16.397587yaw: 15.091729
+I: data from sensors: ; ax -0.15; ay 0.027; az 0.995; gx 0.875; gy -5.88; gz -2.572
+I: pitch: -179.05757roll: -16.525202yaw: 14.9958725
+I: data from sensors: ; ax -0.154; ay 0.027; az 0.996; gx 0.927; gy -5.95; gz -2.59
+I: pitch: -178.99316roll: -15.300635yaw: 14.927707
+I: data from sensors: ; ax -0.155; ay 0.03; az 0.999; gx 0.822; gy -5.827; gz -2.59
+I: pitch: -179.64056roll: -14.860765yaw: 14.879725
+I: data from sensors: ; ax -0.155; ay 0.028; az 0.995; gx 1.382; gy -5.582; gz -2.712
+I: pitch: -174.95334roll: -16.61131yaw: 16.283976
+I: data from sensors: ; ax -0.153; ay 0.027; az 0.998; gx 0.84; gy -5.74; gz -2.66
+I: pitch: -174.61508roll: -17.80433yaw: 17.038355
+I: data from sensors: ; ax -0.155; ay 0.026; az 0.996; gx 0.91; gy -5.81; gz -2.555
+I: pitch: -174.10374roll: -17.624247yaw: 16.777988
+I: data from sensors: ; ax -0.152; ay 0.027; az 0.997; gx 0.98; gy -5.81; gz -2.625
+I: pitch: -173.43637roll: -17.918377yaw: 16.889456
+I: data from sensors: ; ax -0.154; ay 0.029; az 1.0; gx 1.085; gy -5.617; gz -2.52
+I: pitch: -171.78534roll: -19.277494yaw: 16.138794
+I: data from sensors: ; ax -0.156; ay 0.027; az 0.995; gx 0.892; gy -5.897; gz -2.59
+I: pitch: -171.52438roll: -18.314247yaw: 16.015505
+I: data from sensors: ; ax -0.154; ay 0.029; az 0.991; gx 0.822; gy -5.775; gz -2.59
+I: pitch: -172.98888roll: -17.65112yaw: 16.187372
+I: data from sensors: ; ax -0.156; ay 0.03; az 0.996; gx 0.962; gy -5.792; gz -2.607
+I: pitch: -173.152roll: -17.278599yaw: 16.396757
+I: data from sensors: ; ax -0.154; ay 0.028; az 0.998; gx 0.997; gy -5.722; gz -2.572
+I: pitch: -172.46904roll: -17.7685yaw: 16.166155
+I: data from sensors: ; ax -0.154; ay 0.029; az 1.0; gx 1.19; gy -5.67; gz -2.642
+I: pitch: -170.37924roll: -18.906286yaw: 16.277006
+I: data from sensors: ; ax -0.152; ay 0.027; az 1.001; gx 0.962; gy -5.74; gz -2.625
+I: pitch: -169.4242roll: -19.802794yaw: 16.344984
+I: data from sensors: ; ax -0.15; ay 0.024; az 1.002; gx 0.875; gy -5.827; gz -2.59
+I: pitch: -168.99152roll: -20.144648yaw: 16.109352
+I: data from sensors: ; ax -0.156; ay 0.025; az 0.995; gx 0.752; gy -5.862; gz -2.59
+I: pitch: -169.50423roll: -19.238224yaw: 15.913315
+I: data from sensors: ; ax -0.156; ay 0.027; az 0.993; gx 0.945; gy -5.88; gz -2.625
+I: pitch: -169.50127roll: -17.077044yaw: 16.315847
+I: data from sensors: ; ax -0.157; ay 0.027; az 0.997; gx 0.962; gy -5.722; gz -2.607
+I: pitch: -168.42444roll: -17.106558yaw: 16.207613
+I: data from sensors: ; ax -0.152; ay 0.026; az 1.001; gx 0.997; gy -5.705; gz -2.555
+I: pitch: -167.16174roll: -17.91054yaw: 15.628534
+I: data from sensors: ; ax -0.156; ay 0.031; az 0.994; gx 0.822; gy -5.757; gz -2.59
+I: pitch: -167.9329roll: -18.028439yaw: 15.522722
+I: data from sensors: ; ax -0.156; ay 0.029; az 0.987; gx 0.612; gy -5.897; gz -2.607
+I: pitch: -171.79741roll: -15.886355yaw: 15.964665
+I: data from sensors: ; ax -0.155; ay 0.026; az 0.997; gx 0.98; gy -5.757; gz -2.59
+I: pitch: -171.71614roll: -15.579994yaw: 15.858238
+I: FinalizerDaemon: finalize objects = 217
+I: data from sensors: ; ax -0.153; ay 0.026; az 1.001; gx 1.015; gy -5.705; gz -2.537
+I: pitch: -170.20244roll: -16.465696yaw: 15.016216
+I: data from sensors: ; ax -0.151; ay 0.025; az 1.009; gx 1.487; gy -5.46; gz -2.485
+I: pitch: -165.23152roll: -18.920002yaw: 13.400554
+I: data from sensors: ; ax -0.154; ay 0.028; az 0.991; gx 0.945; gy -5.932; gz -2.625
+I: pitch: -165.33978roll: -17.263737yaw: 14.071892
+I: data from sensors: ; ax -0.152; ay 0.029; az 0.993; gx 0.945; gy -5.845; gz -2.59
+I: pitch: -166.2501roll: -16.910137yaw: 14.580742
+I: data from sensors: ; ax -0.151; ay 0.03; az 0.988; gx 1.015; gy -5.705; gz -2.625
+I: pitch: -167.04677roll: -17.933216yaw: 15.181247
+I: data from sensors: ; ax -0.156; ay 0.029; az 0.991; gx 0.735; gy -5.932; gz -2.66
+I: pitch: -169.1737roll: -16.53803yaw: 16.089294
+I: data from sensors: ; ax -0.154; ay 0.029; az 0.997; gx 0.962; gy -5.722; gz -2.607
+I: pitch: -169.36713roll: -16.813168yaw: 16.264029
+I: data from sensors: ; ax -0.153; ay 0.028; az 0.994; gx 0.91; gy -5.722; gz -2.572
+I: pitch: -170.2973roll: -17.400858yaw: 16.290804
+I: data from sensors: ; ax -0.154; ay 0.027; az 0.997; gx 0.875; gy -5.81; gz -2.607
+I: pitch: -170.60057roll: -17.459566yaw: 16.324728
+I: data from sensors: ; ax -0.154; ay 0.026; az 0.996; gx 1.015; gy -5.722; gz -2.52
+I: pitch: -167.28749roll: -18.099813yaw: 14.387333
+I: data from sensors: ; ax -0.151; ay 0.028; az 0.995; gx 0.84; gy -5.932; gz -2.59
+I: pitch: -167.40752roll: -17.978788yaw: 14.240646
+I: data from sensors: ; ax -0.155; ay 0.028; az 0.994; gx 0.997; gy -5.792; gz -2.555
+I: pitch: -167.07588roll: -17.072598yaw: 13.963904
+I: data from sensors: ; ax -0.153; ay 0.028; az 0.994; gx 0.91; gy -5.897; gz -2.555
+I: pitch: -167.93376roll: -16.203665yaw: 14.029171
+I: data from sensors: ; ax -0.156; ay 0.028; az 0.994; gx 0.927; gy -5.862; gz -2.555
+I: pitch: -168.16985roll: -14.8837385yaw: 13.888248
+I: data from sensors: ; ax -0.155; ay 0.031; az 0.995; gx 0.945; gy -5.74; gz -2.555
+I: pitch: -168.29575roll: -14.799139yaw: 13.562472
+I: data from sensors: ; ax -0.152; ay 0.025; az 0.994; gx 0.91; gy -5.652; gz -2.52
+I: pitch: -167.07777roll: -16.234047yaw: 12.430264
+I: data from sensors: ; ax -0.154; ay 0.028; az 0.994; gx 0.857; gy -5.88; gz -2.537
+I: pitch: -168.57498roll: -14.642404yaw: 12.0167675
+I: data from sensors: ; ax -0.158; ay 0.029; az 0.992; gx 0.84; gy -5.792; gz -2.59
+I: pitch: -169.88199roll: -13.380583yaw: 11.912452
+I: data from sensors: ; ax -0.156; ay 0.03; az 0.994; gx 0.962; gy -5.722; gz -2.59
+I: pitch: -170.19995roll: -13.295293yaw: 11.77481
+I: data from sensors: ; ax -0.154; ay 0.029; az 0.991; gx 0.857; gy -5.827; gz -2.607
+I: pitch: -171.60489roll: -12.576777yaw: 12.036763
+I: data from sensors: ; ax -0.153; ay 0.026; az 0.999; gx 0.7; gy -5.915; gz -2.642
+I: pitch: -173.17932roll: -11.80082yaw: 12.43456
+I: data from sensors: ; ax -0.145; ay 0.037; az 0.98; gx 0.577; gy -6.002; gz -2.625
+I: pitch: -177.8564roll: -10.436795yaw: 13.139871
+I: data from sensors: ; ax -0.151; ay 0.024; az 0.992; gx 0.507; gy -6.107; gz -2.572
+I: pitch: 106.95002roll: -8.174668yaw: 12.765898
+I: data from sensors: ; ax -0.153; ay 0.026; az 0.995; gx 0.735; gy -5.985; gz -2.625
+I: pitch: 163.4683roll: -6.1981196yaw: 12.673728
+I: data from sensors: ; ax -0.154; ay 0.03; az 1.0; gx 0.997; gy -5.635; gz -2.502
+I: pitch: 175.57085roll: -7.39513yaw: 11.779676
+I: data from sensors: ; ax -0.15; ay 0.026; az 1.0; gx 1.015; gy -5.617; gz -2.59
+I: pitch: -108.432884roll: -10.289509yaw: 11.427715
+I: data from sensors: ; ax -0.154; ay 0.026; az 0.997; gx 0.857; gy -5.792; gz -2.66
+I: pitch: -165.50311roll: -10.912488yaw: 11.976256
+I: data from sensors: ; ax -0.155; ay 0.03; az 0.994; gx 0.752; gy -5.81; gz -2.502
+I: pitch: 109.04614roll: -10.477447yaw: 11.282813
+I: data from sensors: ; ax -0.151; ay 0.027; az 0.994; gx 0.717; gy -6.002; gz -2.572
+I: pitch: 160.50604roll: -9.249878yaw: 10.390841

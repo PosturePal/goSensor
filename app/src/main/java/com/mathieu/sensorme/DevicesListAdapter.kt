@@ -115,51 +115,6 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
 
         }
 
-
-//        override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
-//            Log.i(TAG, "onaccuracy changed")
-//            ///TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-//        }
-//
-//        override fun onSensorChanged(event: SensorEvent?) {
-//            Log.i(TAG, "onSchngd")
-//            if(readFromAndroid)
-//            {
-//                if (event?.sensor?.getType() == Sensor.TYPE_ACCELEROMETER) {
-//                    aax = event.values[0];
-//                    aay = event.values[1];
-//                    aaz = event.values[2];
-//                    Log.i(TAG, "OnSensorChanged: x: " + aax.toString()
-//                            + ", y: " + aay.toString()
-//                            + ", z: " + aaz.toString())
-//                } else if (event?.sensor?.type == Sensor.TYPE_GYROSCOPE) {
-//                    agx = event.values[0];
-//                    agy = event.values[1];
-//                    agz = event.values[2];
-//                    Log.i(TAG, "OnSensorChanged: x: " + agx.toString() + ", y: " + agy.toString() + ", z: " + agz.toString())
-//                }
-//
-//
-//                val now: Long = System.currentTimeMillis()
-//                madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
-//                lastUpdate = now
-//
-//                madgwickAHRS.Update(agx.toFloat(), agy.toFloat(), agz.toFloat(),
-//                        aax.toFloat(), aay.toFloat(), aaz.toFloat())
-//
-//                lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
-//                lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
-//                lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
-//
-//                Log.i("Android:", "pitch: " + lpPitch.toString()
-//                        + "roll: " + lpRoll.toString()
-//                        + "yaw: " + lpYaw.toString())
-//
-//
-//                deviceFr.view!!.devices_stage_render.mStageRenderer.setRotation(lpRoll, lpPitch, lpYaw)
-//            }
-//        }
-
         fun hexStringToByteArray(s: String): ByteArray {
             val len = s.length
             val data = ByteArray(len / 2)
@@ -197,6 +152,7 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                     { characteristicValue ->
                         if(!deviceFr.readFromAndroid) {
 
+
                             //                        Log.i(TAG,"read char: " + toHex(characteristicValue) + ", bytes are\n " + characteristicValue.contentToString())
                             val bytes = characteristicValue.asList()
 
@@ -209,13 +165,22 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                          */
                                 // TODO: here may be an error
                                 // TODO: maybe use C for converting bytes to uints?
-                                var timestamp = ByteBuffer.allocate(4).put(bytes.subList(0, 4).toByteArray()).getInt(0)
-                                var ax = ByteBuffer.allocate(2).put(bytes.subList(4, 6).toByteArray()).getShort(0).toFloat()/1000.0f
-                                var ay = ByteBuffer.allocate(2).put(bytes.subList(6, 8).toByteArray()).getShort(0).toFloat()/1000.0f
-                                var az = ByteBuffer.allocate(2).put(bytes.subList(8, 10).toByteArray()).getShort(0).toFloat()/1000.0f
-                                var gx = ByteBuffer.allocate(2).put(bytes.subList(10, 12).toByteArray()).getShort(0).toFloat()/1000.0f
-                                var gy = ByteBuffer.allocate(2).put(bytes.subList(12, 14).toByteArray()).getShort(0).toFloat()/1000.0f
-                                var gz = ByteBuffer.allocate(2).put(bytes.subList(14, 16).toByteArray()).getShort(0).toFloat()/1000.0f
+                                var timestamp = uint32FromBytes(bytes.subList(0, 4).toByteArray())
+                                var ax = sint16FromBytes(bytes.subList(4, 6).toByteArray()).toFloat()/1000.0f
+                                var ay = sint16FromBytes(bytes.subList(6, 8).toByteArray()).toFloat()/1000.0f
+                                var az = sint16FromBytes(bytes.subList(8, 10).toByteArray()).toFloat()/1000.0f
+                                var gx = sint16FromBytes(bytes.subList(10, 12).toByteArray()).toFloat()/1000.0f
+                                var gy = sint16FromBytes(bytes.subList(12, 14).toByteArray()).toFloat()/1000.0f
+                                var gz = sint16FromBytes(bytes.subList(14, 16).toByteArray()).toFloat()/1000.0f
+
+
+//                                var timestamp = ByteBuffer.allocate(4).put(bytes.subList(0, 4).toByteArray()).getInt(0)
+//                                var ax = ByteBuffer.allocate(2).put(bytes.subList(4, 6).toByteArray()).getShort(0).toFloat()/1000.0f
+//                                var ay = ByteBuffer.allocate(2).put(bytes.subList(6, 8).toByteArray()).getShort(0).toFloat()/1000.0f
+//                                var az = ByteBuffer.allocate(2).put(bytes.subList(8, 10).toByteArray()).getShort(0).toFloat()/1000.0f
+//                                var gx = ByteBuffer.allocate(2).put(bytes.subList(10, 12).toByteArray()).getShort(0).toFloat()/1000.0f
+//                                var gy = ByteBuffer.allocate(2).put(bytes.subList(12, 14).toByteArray()).getShort(0).toFloat()/1000.0f
+//                                var gz = ByteBuffer.allocate(2).put(bytes.subList(14, 16).toByteArray()).getShort(0).toFloat()/1000.0f
 
                                 // reserved - (17, 21)
                                 Log.i("I:", "data from sensors: "
@@ -288,43 +253,16 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                 return ByteBuffer.wrap(bytes).getInt();
             }
         }
-//
-//
-//        class DoMadgwick(private val madgwickAHRS: MadgwickAHRS, private var lastUpdate:Long) : TimerTask() {
-//            override fun run() {
-//                val now: Long = System.currentTimeMillis()
-//                madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f;
-//                lastUpdate = now;
-//                madgwickAHRS.Update(gyro[0], gyro[1], gyro[2], accel[0], accel[1], accel[2], magnet[0], magnet[1], magnet[2]);
-//                if (seriesAccx.size() > HISTORY_SIZE) {
-//                    seriesAccx.removeFirst();
-//                    seriesAccy.removeFirst();
-//                    seriesAccz.removeFirst();
-//                }
-//
-//                //add the latest history sample:
-//                lpPitch = lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8;
-//                lpRpll = lpRpll * 0.2 + madgwickAHRS.MadgRoll * 0.8;
-//                lpYaw = lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8;
-//                seriesAccx.addLast(null, lpPitch);
-//                seriesAccy.addLast(null, lpRpll);
-//                seriesAccz.addLast(null, lpYaw);
-//                //  seriesAccx.addLast(null, gyro[0]);
-//                //   seriesAccy.addLast(null, gyro[1]);
-//                //  seriesAccz.addLast(null, gyro[2]);
-////            plot.post(new Runnable() {
-////                public void run() {
-////            /* the desired UI update */
-////                 //   labelaccx.setText(Double.toString(madgwickAHRS.MadgPitch));
-////                  //  labelaccy.setText(Double.toString(madgwickAHRS.MadgRoll));
-////                  //  labelaccz.setText(Double.toString(madgwickAHRS.MadgYaw));
-////                   //labeldt.setText(Double.toString(madgwickAHRS.SamplePeriod));
-////                    plot.redraw();
-////                }
-////            });
-//            }
-//
-//        }
+
+        // native
+        external fun stringFromJNI():String
+        external fun uint32FromBytes(bytes: ByteArray):Int
+        external fun sint16FromBytes(bytes: ByteArray):Int
+        companion object {
+            init {
+                System.loadLibrary("native-lib")
+            }
+        }
 
         fun startConnection() {
             if (device == null) {
