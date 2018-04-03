@@ -182,17 +182,7 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
 //                                var gy = ByteBuffer.allocate(2).put(bytes.subList(12, 14).toByteArray()).getShort(0).toFloat()/1000.0f
 //                                var gz = ByteBuffer.allocate(2).put(bytes.subList(14, 16).toByteArray()).getShort(0).toFloat()/1000.0f
 
-                                // reserved - (17, 21)
-                                Log.i("I:", "data from sensors: "
-                                        + "; ax " + ax.toString()
-                                        + "; ay " + ay.toString()
-                                        + "; az " + az.toString()
-                                        + "; gx " + gx.toString()
-                                        + "; gy " + gy.toString()
-                                        + "; gz " + gz.toString()
-                                )
-
-                                if(calibIterator < 32)
+                                if(false)//calibIterator < 32)
                                 {
                                     Log.i(TAG, "Calib?" + calibIterator)
                                     calibOffsets[0] = calibOffsets[0] + gx
@@ -210,15 +200,26 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                                     madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
                                     lastUpdate = now
 
-                                    // calib
-                                    gx -= calibOffsets[0]/32
-                                    gy -= calibOffsets[1]/32
-                                    gz -= calibOffsets[2]/32
+//                                    // calib
+//                                    gx -= calibOffsets[0]/32
+//                                    gy -= calibOffsets[1]/32
+//                                    gz -= calibOffsets[2]/32
+//
+//
+//                                    ax -= calibOffsets[3]/32
+//                                    ay -= calibOffsets[4]/32
+//                                    az -= calibOffsets[5]/32
 
 
-                                    ax -= calibOffsets[3]/32
-                                    ay -= calibOffsets[4]/32
-                                    az -= calibOffsets[5]/32
+                                    // reserved - (17, 21)
+                                    Log.i("I:", "data [not calibrated]: "
+                                            + "; ax " + ax.toString()
+                                            + "; ay " + ay.toString()
+                                            + "; az " + az.toString()
+                                            + "; gx " + gx.toString()
+                                            + "; gy " + gy.toString()
+                                            + "; gz " + gz.toString()
+                                    )
 
 
                                     madgwickAHRS.Update(gx.toFloat(),
