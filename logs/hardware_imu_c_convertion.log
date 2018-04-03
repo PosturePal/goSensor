@@ -1,192 +1,447 @@
-I: FinalizerDaemon: finalize objects = 351
-I: data from sensors: ; ax -0.152; ay 0.022; az 1.001; gx 0.91; gy -5.775; gz -2.59
+I: FinalizerDaemon: finalize objects = 72
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.004; gx 0.752; gy -5.722; gz -2.327
 I: Calib?0
-I: data from sensors: ; ax -0.154; ay 0.026; az 0.999; gx 0.875; gy -5.757; gz -2.66
+I: data from sensors: ; ax -0.076; ay 0.021; az 1.006; gx 0.787; gy -5.705; gz -2.275
 I: Calib?1
-I: data from sensors: ; ax -0.152; ay 0.025; az 0.998; gx 1.015; gy -5.757; gz -2.607
+I: data from sensors: ; ax -0.077; ay 0.022; az 1.006; gx 0.787; gy -5.687; gz -2.292
 I: Calib?2
-I: data from sensors: ; ax -0.155; ay 0.025; az 0.996; gx 0.822; gy -5.88; gz -2.607
+I: data from sensors: ; ax -0.075; ay 0.021; az 1.006; gx 0.77; gy -5.652; gz -2.31
 I: Calib?3
-I: data from sensors: ; ax -0.154; ay 0.025; az 0.993; gx 1.032; gy -5.6; gz -2.625
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.004; gx 0.787; gy -5.635; gz -2.205
 I: Calib?4
-I: data from sensors: ; ax -0.153; ay 0.026; az 0.994; gx 0.945; gy -5.897; gz -2.625
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.005; gx 0.84; gy -5.67; gz -2.275
 I: Calib?5
-I: data from sensors: ; ax -0.154; ay 0.028; az 0.996; gx 0.945; gy -5.74; gz -2.555
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.005; gx 0.717; gy -5.635; gz -2.222
 I: Calib?6
-I: data from sensors: ; ax -0.154; ay 0.026; az 0.991; gx 0.56; gy -5.95; gz -2.66
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.006; gx 0.822; gy -5.757; gz -2.257
 I: Calib?7
-I: data from sensors: ; ax -0.153; ay 0.028; az 0.998; gx 1.085; gy -5.74; gz -2.555
+I: data from sensors: ; ax -0.075; ay 0.021; az 1.005; gx 0.787; gy -5.635; gz -2.257
 I: Calib?8
-I: data from sensors: ; ax -0.153; ay 0.027; az 0.988; gx 0.647; gy -6.037; gz -2.607
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.006; gx 0.84; gy -5.722; gz -2.31
 I: Calib?9
-I: data from sensors: ; ax -0.153; ay 0.027; az 1.003; gx 1.085; gy -5.757; gz -2.555
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.006; gx 0.787; gy -5.652; gz -2.31
 I: Calib?10
-I: data from sensors: ; ax -0.154; ay 0.027; az 0.993; gx 0.892; gy -5.827; gz -2.642
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.006; gx 0.875; gy -5.687; gz -2.24
 I: Calib?11
-I: data from sensors: ; ax -0.155; ay 0.025; az 0.997; gx 0.962; gy -5.757; gz -2.625
+I: data from sensors: ; ax -0.075; ay 0.021; az 1.004; gx 0.805; gy -5.6; gz -2.31
 I: Calib?12
-I: data from sensors: ; ax -0.154; ay 0.029; az 0.997; gx 0.84; gy -5.845; gz -2.66
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.004; gx 0.822; gy -5.617; gz -2.31
 I: Calib?13
-I: data from sensors: ; ax -0.153; ay 0.026; az 0.991; gx 0.805; gy -5.862; gz -2.642
+I: data from sensors: ; ax -0.077; ay 0.024; az 1.006; gx 0.822; gy -5.687; gz -2.327
 I: Calib?14
-I: data from sensors: ; ax -0.153; ay 0.027; az 1.002; gx 1.015; gy -5.635; gz -2.572
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.005; gx 0.787; gy -5.652; gz -2.275
 I: Calib?15
-I: data from sensors: ; ax -0.152; ay 0.029; az 0.991; gx 0.875; gy -5.792; gz -2.572
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.007; gx 0.857; gy -5.687; gz -2.327
 I: Calib?16
-I: data from sensors: ; ax -0.153; ay 0.028; az 1.0; gx 0.98; gy -5.6; gz -2.607
+I: Background partial concurrent mark sweep GC freed 43568(1310KB) AllocSpace objects, 0(0B) LOS objects, 13% free, 25MB/29MB, paused 2.015ms total 139.335ms
+I: data from sensors: ; ax -0.075; ay 0.021; az 1.005; gx 0.787; gy -5.67; gz -2.31
 I: Calib?17
-I: data from sensors: ; ax -0.153; ay 0.03; az 0.995; gx 0.822; gy -5.862; gz -2.59
+I: data from sensors: ; ax -0.074; ay 0.022; az 1.005; gx 0.892; gy -5.687; gz -2.327
 I: Calib?18
-I: data from sensors: ; ax -0.153; ay 0.024; az 0.999; gx 0.857; gy -5.897; gz -2.59
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.005; gx 0.822; gy -5.775; gz -2.327
 I: Calib?19
-I: data from sensors: ; ax -0.155; ay 0.025; az 0.992; gx 1.015; gy -5.67; gz -2.572
+I: data from sensors: ; ax -0.075; ay 0.023; az 1.005; gx 0.822; gy -5.687; gz -2.222
 I: Calib?20
-I: data from sensors: ; ax -0.154; ay 0.028; az 0.994; gx 0.752; gy -5.845; gz -2.642
+I: data from sensors: ; ax -0.074; ay 0.022; az 1.005; gx 0.787; gy -5.705; gz -2.24
 I: Calib?21
-I: data from sensors: ; ax -0.151; ay 0.027; az 0.992; gx 0.805; gy -5.722; gz -2.59
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.004; gx 0.84; gy -5.652; gz -2.31
 I: Calib?22
-I: data from sensors: ; ax -0.151; ay 0.025; az 0.992; gx 0.612; gy -6.055; gz -2.555
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.005; gx 0.857; gy -5.705; gz -2.257
 I: Calib?23
-I: data from sensors: ; ax -0.158; ay 0.031; az 0.999; gx 1.19; gy -5.565; gz -2.59
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.006; gx 0.77; gy -5.652; gz -2.327
 I: Calib?24
-I: data from sensors: ; ax -0.151; ay 0.024; az 0.993; gx 0.735; gy -6.002; gz -2.625
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.006; gx 0.84; gy -5.705; gz -2.327
 I: Calib?25
-I: data from sensors: ; ax -0.156; ay 0.03; az 0.993; gx 0.997; gy -5.635; gz -2.572
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.006; gx 0.857; gy -5.705; gz -2.345
 I: Calib?26
-I: data from sensors: ; ax -0.154; ay 0.026; az 0.996; gx 0.787; gy -5.985; gz -2.677
+I: data from sensors: ; ax -0.075; ay 0.021; az 1.005; gx 0.84; gy -5.687; gz -2.345
 I: Calib?27
-I: data from sensors: ; ax -0.154; ay 0.028; az 0.991; gx 1.05; gy -5.652; gz -2.625
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.004; gx 0.822; gy -5.652; gz -2.275
 I: Calib?28
-I: data from sensors: ; ax -0.153; ay 0.03; az 1.003; gx 1.05; gy -5.757; gz -2.555
+I: Background partial concurrent mark sweep GC freed 43607(1471KB) AllocSpace objects, 0(0B) LOS objects, 12% free, 29MB/33MB, paused 2.199ms total 178.839ms
+I: data from sensors: ; ax -0.076; ay 0.021; az 1.005; gx 0.84; gy -5.74; gz -2.257
 I: Calib?29
-I: data from sensors: ; ax -0.152; ay 0.023; az 0.987; gx 0.647; gy -5.967; gz -2.59
+I: data from sensors: ; ax -0.075; ay 0.021; az 1.005; gx 0.84; gy -5.687; gz -2.362
 I: Calib?30
-I: data from sensors: ; ax -0.151; ay 0.026; az 0.998; gx 0.822; gy -5.932; gz -2.607
+I: data from sensors: ; ax -0.075; ay 0.023; az 1.006; gx 0.875; gy -5.705; gz -2.327
 I: Calib?31
-I: data from sensors: ; ax -0.151; ay 0.02; az 0.996; gx 0.84; gy -5.775; gz -2.66
-I: pitch: 140.59163roll: -20.555166yaw: 14.821645
-I: data from sensors: ; ax -0.15; ay 0.025; az 0.997; gx 0.84; gy -6.002; gz -2.607
-I: pitch: 168.59213roll: -23.215754yaw: 17.459778
-I: data from sensors: ; ax -0.152; ay 0.027; az 0.991; gx 0.892; gy -5.95; gz -2.607
-I: pitch: 174.25154roll: -19.169388yaw: 17.877064
-I: data from sensors: ; ax -0.154; ay 0.027; az 0.993; gx 0.822; gy -5.705; gz -2.572
-I: pitch: 175.00562roll: -17.952475yaw: 17.872583
-I: data from sensors: ; ax -0.153; ay 0.025; az 0.993; gx 0.945; gy -5.792; gz -2.572
-I: pitch: 177.43608roll: -17.535885yaw: 17.065792
-I: data from sensors: ; ax -0.154; ay 0.026; az 0.995; gx 0.857; gy -5.775; gz -2.572
-I: pitch: 178.46155roll: -16.960228yaw: 16.379267
-I: data from sensors: ; ax -0.153; ay 0.028; az 1.0; gx 1.05; gy -5.635; gz -2.502
-I: pitch: 179.48398roll: -17.72069yaw: 15.776809
-I: data from sensors: ; ax -0.155; ay 0.029; az 0.992; gx 0.822; gy -5.792; gz -2.572
-I: pitch: 178.90381roll: -17.371185yaw: 15.654306
-I: data from sensors: ; ax -0.155; ay 0.029; az 0.996; gx 1.102; gy -5.775; gz -2.537
-I: pitch: -108.01412roll: -17.265738yaw: 15.271209
-I: data from sensors: ; ax -0.155; ay 0.024; az 0.993; gx 0.927; gy -5.757; gz -2.607
-I: pitch: -164.70145roll: -17.03633yaw: 15.0529
-I: data from sensors: ; ax -0.155; ay 0.029; az 0.996; gx 0.84; gy -5.845; gz -2.572
-I: pitch: -176.73985roll: -16.46016yaw: 14.89737
-I: data from sensors: ; ax -0.157; ay 0.029; az 0.996; gx 1.015; gy -5.74; gz -2.625
-I: pitch: -178.60709roll: -16.397587yaw: 15.091729
-I: data from sensors: ; ax -0.15; ay 0.027; az 0.995; gx 0.875; gy -5.88; gz -2.572
-I: pitch: -179.05757roll: -16.525202yaw: 14.9958725
-I: data from sensors: ; ax -0.154; ay 0.027; az 0.996; gx 0.927; gy -5.95; gz -2.59
-I: pitch: -178.99316roll: -15.300635yaw: 14.927707
-I: data from sensors: ; ax -0.155; ay 0.03; az 0.999; gx 0.822; gy -5.827; gz -2.59
-I: pitch: -179.64056roll: -14.860765yaw: 14.879725
-I: data from sensors: ; ax -0.155; ay 0.028; az 0.995; gx 1.382; gy -5.582; gz -2.712
-I: pitch: -174.95334roll: -16.61131yaw: 16.283976
-I: data from sensors: ; ax -0.153; ay 0.027; az 0.998; gx 0.84; gy -5.74; gz -2.66
-I: pitch: -174.61508roll: -17.80433yaw: 17.038355
-I: data from sensors: ; ax -0.155; ay 0.026; az 0.996; gx 0.91; gy -5.81; gz -2.555
-I: pitch: -174.10374roll: -17.624247yaw: 16.777988
-I: data from sensors: ; ax -0.152; ay 0.027; az 0.997; gx 0.98; gy -5.81; gz -2.625
-I: pitch: -173.43637roll: -17.918377yaw: 16.889456
-I: data from sensors: ; ax -0.154; ay 0.029; az 1.0; gx 1.085; gy -5.617; gz -2.52
-I: pitch: -171.78534roll: -19.277494yaw: 16.138794
-I: data from sensors: ; ax -0.156; ay 0.027; az 0.995; gx 0.892; gy -5.897; gz -2.59
-I: pitch: -171.52438roll: -18.314247yaw: 16.015505
-I: data from sensors: ; ax -0.154; ay 0.029; az 0.991; gx 0.822; gy -5.775; gz -2.59
-I: pitch: -172.98888roll: -17.65112yaw: 16.187372
-I: data from sensors: ; ax -0.156; ay 0.03; az 0.996; gx 0.962; gy -5.792; gz -2.607
-I: pitch: -173.152roll: -17.278599yaw: 16.396757
-I: data from sensors: ; ax -0.154; ay 0.028; az 0.998; gx 0.997; gy -5.722; gz -2.572
-I: pitch: -172.46904roll: -17.7685yaw: 16.166155
-I: data from sensors: ; ax -0.154; ay 0.029; az 1.0; gx 1.19; gy -5.67; gz -2.642
-I: pitch: -170.37924roll: -18.906286yaw: 16.277006
-I: data from sensors: ; ax -0.152; ay 0.027; az 1.001; gx 0.962; gy -5.74; gz -2.625
-I: pitch: -169.4242roll: -19.802794yaw: 16.344984
-I: data from sensors: ; ax -0.15; ay 0.024; az 1.002; gx 0.875; gy -5.827; gz -2.59
-I: pitch: -168.99152roll: -20.144648yaw: 16.109352
-I: data from sensors: ; ax -0.156; ay 0.025; az 0.995; gx 0.752; gy -5.862; gz -2.59
-I: pitch: -169.50423roll: -19.238224yaw: 15.913315
-I: data from sensors: ; ax -0.156; ay 0.027; az 0.993; gx 0.945; gy -5.88; gz -2.625
-I: pitch: -169.50127roll: -17.077044yaw: 16.315847
-I: data from sensors: ; ax -0.157; ay 0.027; az 0.997; gx 0.962; gy -5.722; gz -2.607
-I: pitch: -168.42444roll: -17.106558yaw: 16.207613
-I: data from sensors: ; ax -0.152; ay 0.026; az 1.001; gx 0.997; gy -5.705; gz -2.555
-I: pitch: -167.16174roll: -17.91054yaw: 15.628534
-I: data from sensors: ; ax -0.156; ay 0.031; az 0.994; gx 0.822; gy -5.757; gz -2.59
-I: pitch: -167.9329roll: -18.028439yaw: 15.522722
-I: data from sensors: ; ax -0.156; ay 0.029; az 0.987; gx 0.612; gy -5.897; gz -2.607
-I: pitch: -171.79741roll: -15.886355yaw: 15.964665
-I: data from sensors: ; ax -0.155; ay 0.026; az 0.997; gx 0.98; gy -5.757; gz -2.59
-I: pitch: -171.71614roll: -15.579994yaw: 15.858238
-I: FinalizerDaemon: finalize objects = 217
-I: data from sensors: ; ax -0.153; ay 0.026; az 1.001; gx 1.015; gy -5.705; gz -2.537
-I: pitch: -170.20244roll: -16.465696yaw: 15.016216
-I: data from sensors: ; ax -0.151; ay 0.025; az 1.009; gx 1.487; gy -5.46; gz -2.485
-I: pitch: -165.23152roll: -18.920002yaw: 13.400554
-I: data from sensors: ; ax -0.154; ay 0.028; az 0.991; gx 0.945; gy -5.932; gz -2.625
-I: pitch: -165.33978roll: -17.263737yaw: 14.071892
-I: data from sensors: ; ax -0.152; ay 0.029; az 0.993; gx 0.945; gy -5.845; gz -2.59
-I: pitch: -166.2501roll: -16.910137yaw: 14.580742
-I: data from sensors: ; ax -0.151; ay 0.03; az 0.988; gx 1.015; gy -5.705; gz -2.625
-I: pitch: -167.04677roll: -17.933216yaw: 15.181247
-I: data from sensors: ; ax -0.156; ay 0.029; az 0.991; gx 0.735; gy -5.932; gz -2.66
-I: pitch: -169.1737roll: -16.53803yaw: 16.089294
-I: data from sensors: ; ax -0.154; ay 0.029; az 0.997; gx 0.962; gy -5.722; gz -2.607
-I: pitch: -169.36713roll: -16.813168yaw: 16.264029
-I: data from sensors: ; ax -0.153; ay 0.028; az 0.994; gx 0.91; gy -5.722; gz -2.572
-I: pitch: -170.2973roll: -17.400858yaw: 16.290804
-I: data from sensors: ; ax -0.154; ay 0.027; az 0.997; gx 0.875; gy -5.81; gz -2.607
-I: pitch: -170.60057roll: -17.459566yaw: 16.324728
-I: data from sensors: ; ax -0.154; ay 0.026; az 0.996; gx 1.015; gy -5.722; gz -2.52
-I: pitch: -167.28749roll: -18.099813yaw: 14.387333
-I: data from sensors: ; ax -0.151; ay 0.028; az 0.995; gx 0.84; gy -5.932; gz -2.59
-I: pitch: -167.40752roll: -17.978788yaw: 14.240646
-I: data from sensors: ; ax -0.155; ay 0.028; az 0.994; gx 0.997; gy -5.792; gz -2.555
-I: pitch: -167.07588roll: -17.072598yaw: 13.963904
-I: data from sensors: ; ax -0.153; ay 0.028; az 0.994; gx 0.91; gy -5.897; gz -2.555
-I: pitch: -167.93376roll: -16.203665yaw: 14.029171
-I: data from sensors: ; ax -0.156; ay 0.028; az 0.994; gx 0.927; gy -5.862; gz -2.555
-I: pitch: -168.16985roll: -14.8837385yaw: 13.888248
-I: data from sensors: ; ax -0.155; ay 0.031; az 0.995; gx 0.945; gy -5.74; gz -2.555
-I: pitch: -168.29575roll: -14.799139yaw: 13.562472
-I: data from sensors: ; ax -0.152; ay 0.025; az 0.994; gx 0.91; gy -5.652; gz -2.52
-I: pitch: -167.07777roll: -16.234047yaw: 12.430264
-I: data from sensors: ; ax -0.154; ay 0.028; az 0.994; gx 0.857; gy -5.88; gz -2.537
-I: pitch: -168.57498roll: -14.642404yaw: 12.0167675
-I: data from sensors: ; ax -0.158; ay 0.029; az 0.992; gx 0.84; gy -5.792; gz -2.59
-I: pitch: -169.88199roll: -13.380583yaw: 11.912452
-I: data from sensors: ; ax -0.156; ay 0.03; az 0.994; gx 0.962; gy -5.722; gz -2.59
-I: pitch: -170.19995roll: -13.295293yaw: 11.77481
-I: data from sensors: ; ax -0.154; ay 0.029; az 0.991; gx 0.857; gy -5.827; gz -2.607
-I: pitch: -171.60489roll: -12.576777yaw: 12.036763
-I: data from sensors: ; ax -0.153; ay 0.026; az 0.999; gx 0.7; gy -5.915; gz -2.642
-I: pitch: -173.17932roll: -11.80082yaw: 12.43456
-I: data from sensors: ; ax -0.145; ay 0.037; az 0.98; gx 0.577; gy -6.002; gz -2.625
-I: pitch: -177.8564roll: -10.436795yaw: 13.139871
-I: data from sensors: ; ax -0.151; ay 0.024; az 0.992; gx 0.507; gy -6.107; gz -2.572
-I: pitch: 106.95002roll: -8.174668yaw: 12.765898
-I: data from sensors: ; ax -0.153; ay 0.026; az 0.995; gx 0.735; gy -5.985; gz -2.625
-I: pitch: 163.4683roll: -6.1981196yaw: 12.673728
-I: data from sensors: ; ax -0.154; ay 0.03; az 1.0; gx 0.997; gy -5.635; gz -2.502
-I: pitch: 175.57085roll: -7.39513yaw: 11.779676
-I: data from sensors: ; ax -0.15; ay 0.026; az 1.0; gx 1.015; gy -5.617; gz -2.59
-I: pitch: -108.432884roll: -10.289509yaw: 11.427715
-I: data from sensors: ; ax -0.154; ay 0.026; az 0.997; gx 0.857; gy -5.792; gz -2.66
-I: pitch: -165.50311roll: -10.912488yaw: 11.976256
-I: data from sensors: ; ax -0.155; ay 0.03; az 0.994; gx 0.752; gy -5.81; gz -2.502
-I: pitch: 109.04614roll: -10.477447yaw: 11.282813
-I: data from sensors: ; ax -0.151; ay 0.027; az 0.994; gx 0.717; gy -6.002; gz -2.572
-I: pitch: 160.50604roll: -9.249878yaw: 10.390841
+I: data from sensors: ; ax -0.075; ay 0.02; az 1.005; gx 0.84; gy -5.67; gz -2.31
+I: pitch: 142.30074roll: -8.545234yaw: 17.946215
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.007; gx 0.84; gy -5.705; gz -2.275
+I: pitch: 170.8589roll: -10.249302yaw: 21.450632
+I: data from sensors: ; ax -0.076; ay 0.02; az 1.007; gx 0.857; gy -5.705; gz -2.345
+I: pitch: 176.90538roll: -10.451339yaw: 22.358349
+I: data from sensors: ; ax -0.075; ay 0.023; az 1.005; gx 0.875; gy -5.705; gz -2.275
+I: pitch: 177.6179roll: -10.632324yaw: 22.53671
+I: Background sticky concurrent mark sweep GC freed 74520(2MB) AllocSpace objects, 0(0B) LOS objects, 5% free, 31MB/33MB, paused 2.918ms total 106.078ms
+I: data from sensors: ; ax -0.075; ay 0.023; az 1.005; gx 0.77; gy -5.652; gz -2.257
+I: pitch: 176.76007roll: -11.124337yaw: 22.463703
+I: data from sensors: ; ax -0.075; ay 0.021; az 1.005; gx 0.822; gy -5.687; gz -2.31
+I: pitch: 177.07347roll: -11.398834yaw: 22.432297
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.005; gx 0.805; gy -5.687; gz -2.275
+I: pitch: 176.92691roll: -10.620881yaw: 22.321814
+I: data from sensors: ; ax -0.073; ay 0.021; az 1.004; gx 0.77; gy -5.635; gz -2.275
+I: pitch: 176.95506roll: -11.602396yaw: 22.12411
+I: Background partial concurrent mark sweep GC freed 49053(1754KB) AllocSpace objects, 0(0B) LOS objects, 11% free, 32MB/36MB, paused 2.465ms total 210.433ms
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.005; gx 0.787; gy -5.67; gz -2.345
+I: pitch: 176.20988roll: -13.0699625yaw: 22.6676
+I: data from sensors: ; ax -0.078; ay 0.022; az 1.006; gx 0.892; gy -5.705; gz -2.31
+I: pitch: 176.37082roll: -12.971849yaw: 22.85405
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.005; gx 0.787; gy -5.652; gz -2.275
+I: pitch: 176.07552roll: -12.372589yaw: 22.804787
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.004; gx 0.84; gy -5.67; gz -2.275
+I: pitch: 175.94006roll: -13.159384yaw: 22.755949
+I: data from sensors: ; ax -0.076; ay 0.02; az 1.005; gx 0.857; gy -5.687; gz -2.327
+I: pitch: 176.78918roll: -13.071878yaw: 22.83591
+I: data from sensors: ; ax -0.076; ay 0.021; az 1.005; gx 0.857; gy -5.652; gz -2.31
+I: pitch: 177.52957roll: -12.924088yaw: 22.847836
+I: data from sensors: ; ax -0.074; ay 0.021; az 1.005; gx 0.805; gy -5.67; gz -2.345
+I: pitch: 177.84483roll: -13.355324yaw: 23.036985
+I: Background sticky concurrent mark sweep GC freed 65737(2MB) AllocSpace objects, 0(0B) LOS objects, 5% free, 34MB/36MB, paused 2.891ms total 100.023ms
+I: data from sensors: ; ax -0.076; ay 0.023; az 1.004; gx 0.875; gy -5.705; gz -2.275
+I: pitch: 177.48001roll: -12.626739yaw: 23.135723
+I: data from sensors: ; ax -0.076; ay 0.02; az 1.004; gx 0.822; gy -5.687; gz -2.327
+I: pitch: 177.98131roll: -12.213497yaw: 23.189146
+I: data from sensors: ; ax -0.077; ay 0.022; az 1.006; gx 0.805; gy -5.67; gz -2.292
+I: pitch: 178.00217roll: -11.951276yaw: 23.200636
+I: data from sensors: ; ax -0.074; ay 0.021; az 1.005; gx 0.84; gy -5.722; gz -2.275
+I: pitch: 178.6083roll: -12.239584yaw: 22.975683
+I: data from sensors: ; ax -0.076; ay 0.024; az 1.006; gx 0.84; gy -5.74; gz -2.24
+I: pitch: 178.581roll: -11.976756yaw: 22.738026
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.004; gx 0.822; gy -5.74; gz -2.345
+I: pitch: 178.11757roll: -12.4113yaw: 23.018232
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.004; gx 0.822; gy -5.652; gz -2.327
+I: pitch: 177.3741roll: -13.861181yaw: 23.468176
+I: Background partial concurrent mark sweep GC freed 25197(1247KB) AllocSpace objects, 0(0B) LOS objects, 9% free, 36MB/40MB, paused 4.195ms total 267.617ms
+I: data from sensors: ; ax -0.075; ay 0.023; az 1.005; gx 0.805; gy -5.617; gz -2.345
+I: pitch: 175.97487roll: -15.02251yaw: 24.342724
+I: data from sensors: ; ax -0.077; ay 0.021; az 1.005; gx 0.805; gy -5.652; gz -2.31
+I: pitch: 175.97281roll: -14.787381yaw: 24.58669
+I: data from sensors: ; ax -0.076; ay 0.023; az 1.006; gx 0.84; gy -5.652; gz -2.327
+I: pitch: 175.69952roll: -14.816174yaw: 24.986984
+I: data from sensors: ; ax -0.075; ay 0.021; az 1.007; gx 0.875; gy -5.722; gz -2.327
+I: pitch: 176.14592roll: -14.689959yaw: 25.253521
+I: data from sensors: ; ax -0.075; ay 0.02; az 1.007; gx 0.857; gy -5.722; gz -2.31
+I: pitch: 176.77162roll: -14.521355yaw: 25.335243
+I: data from sensors: ; ax -0.077; ay 0.022; az 1.006; gx 0.805; gy -5.757; gz -2.345
+I: pitch: 176.68965roll: -13.603167yaw: 25.702202
+I: data from sensors: ; ax -0.076; ay 0.02; az 1.006; gx 0.805; gy -5.687; gz -2.31
+I: pitch: 176.99371roll: -13.296162yaw: 25.794373
+I: data from sensors: ; ax -0.078; ay 0.021; az 1.006; gx 0.822; gy -5.705; gz -2.257
+I: pitch: 177.29793roll: -12.687199yaw: 25.51412
+I: data from sensors: ; ax -0.076; ay 0.021; az 1.006; gx 0.84; gy -5.67; gz -2.345
+I: pitch: 177.72362roll: -12.508365yaw: 25.772148
+I: data from sensors: ; ax -0.076; ay 0.021; az 1.006; gx 0.787; gy -5.652; gz -2.327
+I: pitch: 177.83109roll: -12.548468yaw: 26.014877
+I: data from sensors: ; ax -0.076; ay 0.021; az 1.006; gx 0.875; gy -5.705; gz -2.24
+I: pitch: 178.60919roll: -12.286491yaw: 25.626225
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.006; gx 0.787; gy -5.722; gz -2.362
+I: pitch: 178.39204roll: -12.198345yaw: 26.04577
+I: Background partial concurrent mark sweep GC freed 36304(1832KB) AllocSpace objects, 0(0B) LOS objects, 9% free, 40MB/44MB, paused 3.760ms total 346.719ms
+I: data from sensors: ; ax -0.077; ay 0.021; az 1.007; gx 0.805; gy -5.67; gz -2.292
+I: pitch: 178.41849roll: -12.048001yaw: 26.08276
+I: data from sensors: ; ax -0.075; ay 0.02; az 1.006; gx 0.805; gy -5.652; gz -2.31
+I: pitch: 178.76718roll: -12.363735yaw: 26.119581
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.006; gx 0.822; gy -5.687; gz -2.292
+I: pitch: 178.81262roll: -12.170304yaw: 26.129528
+I: data from sensors: ; ax -0.076; ay 0.023; az 1.007; gx 0.84; gy -5.652; gz -2.275
+I: pitch: 178.80148roll: -12.307568yaw: 26.049536
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.007; gx 0.822; gy -5.635; gz -2.327
+I: pitch: 178.73305roll: -12.721755yaw: 26.37663
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.006; gx 0.822; gy -5.652; gz -2.31
+I: pitch: 178.62521roll: -13.587945yaw: 26.675877
+I: data from sensors: ; ax -0.076; ay 0.023; az 1.007; gx 0.84; gy -5.705; gz -2.275
+I: pitch: 178.58577roll: -13.578179yaw: 26.650583
+I: FinalizerDaemon: finalize objects = 180
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.006; gx 0.77; gy -5.67; gz -2.292
+I: pitch: 178.19467roll: -13.510122yaw: 26.651535
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.006; gx 0.892; gy -5.67; gz -2.327
+I: pitch: 178.78867roll: -14.069428yaw: 27.08582
+I: data from sensors: ; ax -0.077; ay 0.021; az 1.005; gx 0.84; gy -5.67; gz -2.327
+I: pitch: 179.33092roll: -13.7022085yaw: 27.337666
+I: data from sensors: ; ax -0.076; ay 0.023; az 1.005; gx 0.84; gy -5.67; gz -2.292
+I: pitch: 178.96266roll: -13.372245yaw: 27.528723
+I: data from sensors: ; ax -0.075; ay 0.023; az 1.006; gx 0.857; gy -5.705; gz -2.292
+I: pitch: 178.79732roll: -13.334354yaw: 27.640749
+I: Background partial concurrent mark sweep GC freed 32304(1776KB) AllocSpace objects, 0(0B) LOS objects, 8% free, 44MB/48MB, paused 10.670ms total 389.379ms
+I: data from sensors: ; ax -0.076; ay 0.021; az 1.006; gx 0.752; gy -5.6; gz -2.292
+I: pitch: 178.60094roll: -13.776199yaw: 27.600424
+I: data from sensors: ; ax -0.074; ay 0.022; az 1.006; gx 0.735; gy -5.705; gz -2.345
+I: pitch: 177.86186roll: -14.164495yaw: 27.96997
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.006; gx 0.787; gy -5.67; gz -2.275
+I: pitch: 177.46597roll: -14.600719yaw: 27.93295
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.006; gx 0.77; gy -5.74; gz -2.24
+I: pitch: 177.09756roll: -14.16182yaw: 27.539907
+I: data from sensors: ; ax -0.074; ay 0.022; az 1.007; gx 0.84; gy -5.652; gz -2.292
+I: pitch: 177.18762roll: -14.78951yaw: 27.47507
+I: data from sensors: ; ax -0.076; ay 0.021; az 1.006; gx 0.822; gy -5.635; gz -2.327
+I: pitch: 177.54387roll: -15.188913yaw: 27.710861
+I: data from sensors: ; ax -0.076; ay 0.021; az 1.006; gx 0.787; gy -5.652; gz -2.292
+I: pitch: 177.6952roll: -15.368978yaw: 27.680248
+I: data from sensors: ; ax -0.076; ay 0.021; az 1.006; gx 0.805; gy -5.635; gz -2.275
+I: pitch: 177.95908roll: -15.6234665yaw: 27.480698
+I: Background sticky concurrent mark sweep GC freed 16260(619KB) AllocSpace objects, 0(0B) LOS objects, 1% free, 48MB/48MB, paused 6.080ms total 51.248ms
+I: data from sensors: ; ax -0.077; ay 0.021; az 1.007; gx 0.84; gy -5.652; gz -2.327
+I: pitch: 178.23901roll: -15.7137375yaw: 27.6561
+I: Background sticky concurrent mark sweep GC freed 7685(180KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 48MB/48MB, paused 6.095ms total 50.913ms
+I: data from sensors: ; ax -0.076; ay 0.021; az 1.006; gx 0.857; gy -5.67; gz -2.397
+I: pitch: 178.66176roll: -15.68669yaw: 28.366299
+I: data from sensors: ; ax -0.076; ay 0.024; az 1.006; gx 0.84; gy -5.652; gz -2.31
+I: pitch: 178.398roll: -15.810043yaw: 28.762934
+I: Background partial concurrent mark sweep GC freed 36740(2046KB) AllocSpace objects, 0(0B) LOS objects, 7% free, 48MB/52MB, paused 5.077ms total 432.476ms
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.006; gx 0.805; gy -5.687; gz -2.327
+I: pitch: 177.99657roll: -15.5344095yaw: 29.275944
+I: data from sensors: ; ax -0.076; ay 0.023; az 1.006; gx 0.805; gy -5.67; gz -2.275
+I: pitch: 177.50804roll: -15.459324yaw: 29.345165
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.007; gx 0.805; gy -5.635; gz -2.257
+I: pitch: 177.35405roll: -15.766825yaw: 29.122477
+I: data from sensors: ; ax -0.075; ay 0.022; az 1.005; gx 0.875; gy -5.6; gz -2.38
+I: pitch: 177.20323roll: -17.754622yaw: 30.075092
+I: data from sensors: ; ax -0.074; ay 0.021; az 1.006; gx 0.84; gy -5.67; gz -2.292
+I: pitch: 177.72542roll: -18.866278yaw: 30.149902
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.006; gx 0.84; gy -5.67; gz -2.275
+I: pitch: 177.97188roll: -19.06028yaw: 30.053207
+I: Background sticky concurrent mark sweep GC freed 33306(1049KB) AllocSpace objects, 0(0B) LOS objects, 1% free, 51MB/52MB, paused 6.454ms total 66.808ms
+I: data from sensors: ; ax -0.076; ay 0.021; az 1.006; gx 0.805; gy -5.67; gz -2.257
+I: pitch: 178.52094roll: -19.096222yaw: 29.430187
+I: Background sticky concurrent mark sweep GC freed 14862(345KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 52MB/52MB, paused 6.516ms total 65.217ms
+I: data from sensors: ; ax -0.077; ay 0.024; az 1.006; gx 0.84; gy -5.722; gz -2.275
+I: pitch: 178.35881roll: -18.427486yaw: 29.293653
+
+    --------- beginning of system
+I: data from sensors: ; ax -0.075; ay 0.021; az 1.007; gx 0.822; gy -5.687; gz -2.275
+I: pitch: 178.65688roll: -18.498173yaw: 29.012606
+I: data from sensors: ; ax -0.075; ay 0.023; az 1.006; gx 0.822; gy -5.67; gz -2.292
+I: pitch: 178.23901roll: -18.905716yaw: 29.116072
+I: Background partial concurrent mark sweep GC freed 44574(2MB) AllocSpace objects, 0(0B) LOS objects, 7% free, 52MB/56MB, paused 5.283ms total 506.768ms
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.005; gx 0.84; gy -5.67; gz -2.38
+I: pitch: 177.89763roll: -18.039345yaw: 30.05128
+I: data from sensors: ; ax -0.077; ay 0.02; az 1.006; gx 0.84; gy -5.74; gz -2.327
+I: pitch: 178.44598roll: -16.996262yaw: 30.401178
+I: data from sensors: ; ax -0.076; ay 0.021; az 1.006; gx 0.805; gy -5.652; gz -2.275
+I: pitch: 178.8886roll: -16.930069yaw: 30.185633
+I: Background sticky concurrent mark sweep GC freed 58796(2MB) AllocSpace objects, 0(0B) LOS objects, 4% free, 54MB/56MB, paused 5.443ms total 96.871ms
+I: data from sensors: ; ax -0.075; ay 0.021; az 1.006; gx 0.805; gy -5.652; gz -2.31
+I: pitch: 179.3199roll: -17.650194yaw: 30.193687
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.006; gx 0.787; gy -5.705; gz -2.292
+I: pitch: 178.97192roll: -17.317413yaw: 30.202055
+I: Background sticky concurrent mark sweep GC freed 43503(1317KB) AllocSpace objects, 0(0B) LOS objects, 1% free, 55MB/56MB, paused 6.635ms total 84.673ms
+I: data from sensors: ; ax -0.076; ay 0.023; az 1.007; gx 0.787; gy -5.74; gz -2.327
+I: pitch: 178.24536roll: -16.69131yaw: 30.602648
+I: Background sticky concurrent mark sweep GC freed 18892(443KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 56MB/56MB, paused 5.568ms total 72.596ms
+I: data from sensors: ; ax -0.076; ay 0.023; az 1.006; gx 0.84; gy -5.705; gz -2.292
+I: pitch: 177.83888roll: -16.212711yaw: 30.798988
+I: data from sensors: ; ax -0.076; ay 0.022; az 1.007; gx 0.77; gy -5.722; gz -2.345
+I: pitch: 177.13622roll: -15.703604yaw: 31.336298
+I: data from sensors: ; ax -0.076; ay 0.023; az 1.006; gx 0.805; gy -5.617; gz -2.31
+I: pitch: 176.5074roll: -15.937321yaw: 31.689491
+I: data from sensors: ; ax -0.076; ay 0.021; az 1.007; gx 0.805; gy -5.67; gz -2.31
+I: pitch: 176.41856roll: -16.072662yaw: 31.875252
+I: Background partial concurrent mark sweep GC freed 59482(3MB) AllocSpace objects, 0(0B) LOS objects, 6% free, 57MB/61MB, paused 7.765ms total 660.743ms
+I: data from sensors: ; ax -0.077; ay 0.022; az 1.006; gx 0.822; gy -5.67; gz -2.345
+I: pitch: 176.21068roll: -15.63672yaw: 32.57643
+I: data from sensors: ; ax -0.076; ay 0.021; az 1.005; gx 1.015; gy -5.757; gz -1.12
+I: pitch: -106.33765roll: -14.400531yaw: 21.38033
+I: data from sensors: ; ax -0.076; ay 0.024; az 1.007; gx 0.822; gy -5.67; gz -2.275
+I: pitch: -163.1695roll: -14.236274yaw: 19.059296
+I: Background sticky concurrent mark sweep GC freed 60451(2MB) AllocSpace objects, 0(0B) LOS objects, 3% free, 59MB/61MB, paused 6.738ms total 113.663ms
+I: data from sensors: ; ax 0.061; ay -0.262; az 1.094; gx -2.17; gy -6.212; gz -2.24
+I: pitch: 81.146706roll: -9.265859yaw: 16.19901
+I: data from sensors: ; ax -0.067; ay 0.067; az 1.038; gx -11.55; gy -10.5; gz -4.114
+I: pitch: 47.820026roll: 2.6309106yaw: -11.023426
+I: Background sticky concurrent mark sweep GC freed 33335(1120KB) AllocSpace objects, 0(0B) LOS objects, 1% free, 60MB/61MB, paused 6.530ms total 86.022ms
+I: data from sensors: ; ax -0.073; ay -0.002; az 1.005; gx 0.997; gy -5.722; gz -2.345
+I: pitch: 41.5415roll: 4.9679456yaw: -17.200544
+I: Background sticky concurrent mark sweep GC freed 18700(436KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 61MB/61MB, paused 6.782ms total 102.885ms
+I: data from sensors: ; ax -0.073; ay -0.001; az 1.006; gx 1.015; gy -5.652; gz -2.292
+I: pitch: 40.91612roll: 5.5667844yaw: -18.366056
+I: data from sensors: ; ax -0.072; ay 0.002; az 1.009; gx 1.067; gy -5.687; gz -2.292
+I: pitch: 41.85868roll: 5.472423yaw: -18.748272
+I: data from sensors: ; ax -0.072; ay -0.001; az 1.006; gx 0.91; gy -5.67; gz -2.275
+I: pitch: 41.69771roll: 5.2438903yaw: -18.710638
+I: Background partial concurrent mark sweep GC freed 56693(3MB) AllocSpace objects, 0(0B) LOS objects, 6% free, 61MB/65MB, paused 8.175ms total 658.524ms
+I: data from sensors: ; ax -0.072; ay 0.0; az 1.006; gx 0.805; gy -5.652; gz -2.275
+I: pitch: 40.406845roll: 5.144026yaw: -18.495852
+I: data from sensors: ; ax -0.073; ay 0.0; az 1.007; gx 0.822; gy -5.652; gz -2.292
+I: pitch: 38.968494roll: 5.239114yaw: -18.37699
+I: data from sensors: ; ax -0.073; ay 0.0; az 1.006; gx 0.91; gy -5.722; gz -2.345
+I: pitch: 38.219322roll: 5.1727yaw: -19.084827
+I: data from sensors: ; ax -0.072; ay 0.0; az 1.005; gx 0.822; gy -5.705; gz -2.24
+I: pitch: 36.877434roll: 4.5234537yaw: -19.073122
+I: Background sticky concurrent mark sweep GC freed 53864(2MB) AllocSpace objects, 0(0B) LOS objects, 3% free, 63MB/65MB, paused 6.926ms total 71.252ms
+I: data from sensors: ; ax -0.072; ay 0.0; az 1.006; gx 0.787; gy -5.705; gz -2.257
+I: pitch: 35.031933roll: 3.8410745yaw: -19.018711
+I: data from sensors: ; ax -0.074; ay 0.001; az 1.006; gx 0.822; gy -5.722; gz -2.257
+I: pitch: 32.99199roll: 3.0072458yaw: -19.02364
+I: Background sticky concurrent mark sweep GC freed 42413(1754KB) AllocSpace objects, 0(0B) LOS objects, 1% free, 64MB/65MB, paused 7.623ms total 85.693ms
+I: data from sensors: ; ax -0.074; ay 0.0; az 1.006; gx 0.84; gy -5.635; gz -2.345
+I: pitch: 31.343851roll: 3.3954906yaw: -19.275434
+I: Background sticky concurrent mark sweep GC freed 20207(471KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 65MB/65MB, paused 6.295ms total 98.036ms
+I: FinalizerDaemon: finalize objects = 23
+I: data from sensors: ; ax -0.074; ay 0.0; az 1.007; gx 0.822; gy -5.687; gz -2.257
+I: pitch: 29.577526roll: 3.194498yaw: -19.145588
+I: data from sensors: ; ax -0.074; ay 0.0; az 1.006; gx 0.805; gy -5.652; gz -2.327
+I: pitch: 27.60234roll: 3.4707744yaw: -19.344973
+I: data from sensors: ; ax -0.074; ay 0.002; az 1.006; gx 0.787; gy -5.705; gz -2.362
+I: pitch: 23.886438roll: 3.5102394yaw: -20.729483
+I: Background partial concurrent mark sweep GC freed 62946(3MB) AllocSpace objects, 0(0B) LOS objects, 5% free, 66MB/70MB, paused 8.956ms total 774.766ms
+I: data from sensors: ; ax -0.075; ay 0.0; az 1.006; gx 0.822; gy -5.565; gz -2.327
+I: pitch: 20.328588roll: 5.4905276yaw: -21.008324
+I: data from sensors: ; ax -0.074; ay 0.0; az 1.006; gx 0.822; gy -5.617; gz -2.362
+I: pitch: 17.4736roll: 6.7641516yaw: -21.811512
+I: data from sensors: ; ax -0.074; ay 0.0; az 1.006; gx 0.822; gy -5.67; gz -2.292
+I: pitch: 15.206186roll: 7.0554214yaw: -22.145206
+I: Background sticky concurrent mark sweep GC freed 63822(2MB) AllocSpace objects, 0(0B) LOS objects, 2% free, 68MB/70MB, paused 8.369ms total 104.342ms
+I: data from sensors: ; ax -0.07; ay 0.001; az 1.007; gx 0.84; gy -5.705; gz -2.327
+I: pitch: 12.430873roll: 6.282229yaw: -23.048683
+I: Background sticky concurrent mark sweep GC freed 40939(949KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 70MB/70MB, paused 7.293ms total 146.849ms
+I: data from sensors: ; ax -0.073; ay 0.002; az 1.007; gx 0.822; gy -5.722; gz -2.31
+I: pitch: 8.779528roll: 5.175415yaw: -23.930191
+I: data from sensors: ; ax -0.073; ay 0.002; az 1.006; gx 0.857; gy -5.652; gz -2.345
+I: pitch: 6.184548roll: 5.1028523yaw: -24.852858
+I: data from sensors: ; ax -0.073; ay 0.0; az 1.006; gx 0.77; gy -5.705; gz -2.397
+I: pitch: 2.7498581roll: 4.65296yaw: -26.441101
+I: data from sensors: ; ax -0.1; ay -0.101; az 1.135; gx 19.757; gy 19.511; gz 25.357
+I: pitch: 78.13682roll: -15.554468yaw: 70.22183
+I: Background partial concurrent mark sweep GC freed 74579(4MB) AllocSpace objects, 0(0B) LOS objects, 5% free, 71MB/75MB, paused 21.073ms total 745.102ms
+I: data from sensors: ; ax -0.145; ay 0.144; az 1.128; gx -0.77; gy -0.857; gz -7.001
+I: pitch: 83.7983roll: 29.14314yaw: 135.12408
+I: data from sensors: ; ax -0.188; ay 0.112; az 1.104; gx 2.17; gy -9.187; gz 28.855
+I: pitch: -75.898705roll: -53.721535yaw: 19.936909
+I: data from sensors: ; ax -0.184; ay 0.096; az 1.029; gx -8.137; gy 2.642; gz -11.884
+I: pitch: -3.8315594roll: -23.842558yaw: 118.160774
+I: Background sticky concurrent mark sweep GC freed 65615(2MB) AllocSpace objects, 0(0B) LOS objects, 2% free, 73MB/75MB, paused 8.197ms total 154.796ms
+I: data from sensors: ; ax 0.002; ay -0.071; az 0.962; gx -11.077; gy -13.335; gz 0.277
+I: pitch: -103.31932roll: -31.097109yaw: -99.14055
+I: data from sensors: ; ax -0.036; ay -0.01; az 1.033; gx 9.537; gy -13.597; gz -15.942
+I: pitch: -157.46579roll: -35.916183yaw: -17.766438
+I: Background sticky concurrent mark sweep GC freed 33880(1255KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 75MB/75MB, paused 10.287ms total 123.790ms
+I: Background sticky concurrent mark sweep GC freed 13201(305KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 75MB/75MB, paused 9.986ms total 61.359ms
+I: data from sensors: ; ax -0.038; ay -0.13; az 1.007; gx 0.805; gy -5.67; gz -2.835
+I: pitch: -171.74216roll: -37.93735yaw: 5.5104914
+I: data from sensors: ; ax -0.036; ay -0.129; az 1.005; gx 0.945; gy -5.722; gz -2.677
+I: pitch: -175.11678roll: -38.406197yaw: 14.955578
+I: data from sensors: ; ax -0.036; ay -0.131; az 1.004; gx 0.84; gy -5.722; gz -2.922
+I: pitch: 108.116844roll: -38.440773yaw: 25.419628
+I: data from sensors: ; ax -0.035; ay -0.129; az 1.004; gx 0.927; gy -5.67; gz -2.607
+I: pitch: 164.63838roll: -38.775352yaw: 31.329487
+I: Background partial concurrent mark sweep GC freed 72027(4MB) AllocSpace objects, 0(0B) LOS objects, 4% free, 76MB/80MB, paused 9.257ms total 881.980ms
+I: data from sensors: ; ax -0.033; ay -0.13; az 1.003; gx 0.945; gy -5.635; gz -2.432
+I: pitch: -110.39628roll: -39.607037yaw: 33.592007
+I: data from sensors: ; ax -0.034; ay -0.129; az 1.004; gx 0.875; gy -5.705; gz -2.502
+I: pitch: -165.22151roll: -39.778164yaw: 35.78222
+I: Background sticky concurrent mark sweep GC freed 59278(2MB) AllocSpace objects, 0(0B) LOS objects, 3% free, 77MB/80MB, paused 8.457ms total 86.319ms
+I: data from sensors: ; ax -0.033; ay -0.129; az 1.003; gx 0.822; gy -5.722; gz -2.502
+I: pitch: -176.71904roll: -39.53463yaw: 39.27369
+I: data from sensors: ; ax -0.035; ay -0.128; az 1.001; gx 0.892; gy -5.705; gz -2.642
+I: pitch: 108.09973roll: -39.43963yaw: 44.227295
+I: Background sticky concurrent mark sweep GC freed 39227(1416KB) AllocSpace objects, 0(0B) LOS objects, 1% free, 79MB/80MB, paused 8.380ms total 107.764ms
+I: data from sensors: ; ax -0.033; ay -0.129; az 1.002; gx 0.822; gy -5.687; gz -2.467
+I: pitch: 165.02335roll: -39.592014yaw: 46.86575
+I: Background sticky concurrent mark sweep GC freed 20401(475KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 80MB/80MB, paused 9.155ms total 87.001ms
+I: data from sensors: ; ax -0.034; ay -0.129; az 1.0; gx 0.84; gy -5.74; gz -2.38
+I: pitch: -110.53766roll: -39.16368yaw: 47.692616
+I: data from sensors: ; ax -0.034; ay -0.129; az 1.0; gx 0.822; gy -5.652; gz -2.415
+I: pitch: -165.15167roll: -39.677254yaw: 48.692898
+I: data from sensors: ; ax -0.035; ay -0.129; az 1.001; gx 0.84; gy -5.67; gz -2.362
+I: pitch: -174.87823roll: -40.142982yaw: 48.896877
+I: Background partial concurrent mark sweep GC freed 81406(4MB) AllocSpace objects, 0(0B) LOS objects, 4% free, 81MB/85MB, paused 9.727ms total 899.504ms
+I: data from sensors: ; ax -0.034; ay -0.13; az 1.001; gx 0.822; gy -5.687; gz -2.38
+I: pitch: -175.99313roll: -40.42188yaw: 49.20173
+I: data from sensors: ; ax -0.035; ay -0.128; az 1.0; gx 0.84; gy -5.687; gz -2.345
+I: pitch: -174.78491roll: -40.631653yaw: 48.97288
+I: data from sensors: ; ax -0.035; ay -0.128; az 1.0; gx 0.822; gy -5.652; gz -2.362
+I: pitch: -173.17659roll: -41.387775yaw: 48.79741
+I: Background sticky concurrent mark sweep GC freed 56865(2MB) AllocSpace objects, 0(0B) LOS objects, 2% free, 83MB/85MB, paused 29.631ms total 110.663ms
+I: data from sensors: ; ax -0.035; ay -0.127; az 1.001; gx 0.857; gy -5.652; gz -2.275
+I: pitch: -168.95738roll: -42.17661yaw: 46.345818
+I: Background sticky concurrent mark sweep GC freed 41962(971KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 84MB/85MB, paused 9.248ms total 116.220ms
+I: Background sticky concurrent mark sweep GC freed 10729(248KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 85MB/85MB, paused 9.226ms total 54.197ms
+I: data from sensors: ; ax -0.034; ay -0.129; az 1.002; gx 0.77; gy -5.722; gz -2.362
+I: pitch: -167.57593roll: -42.05943yaw: 45.83868
+I: data from sensors: ; ax -0.033; ay -0.128; az 1.002; gx 0.752; gy -5.722; gz -2.485
+I: pitch: -168.33672roll: -42.122963yaw: 47.631878
+I: data from sensors: ; ax -0.035; ay -0.128; az 1.001; gx 0.805; gy -5.705; gz -2.502
+I: pitch: -169.17694roll: -42.464348yaw: 50.528988
+I: Background partial concurrent mark sweep GC freed 91053(5MB) AllocSpace objects, 0(0B) LOS objects, 4% free, 85MB/89MB, paused 10.735ms total 945.809ms
+I: data from sensors: ; ax -0.033; ay -0.127; az 1.001; gx 0.875; gy -5.652; gz -2.555
+I: pitch: -169.74461roll: -43.93895yaw: 55.127777
+I: data from sensors: ; ax -0.033; ay -0.127; az 1.002; gx 0.805; gy -5.705; gz -2.362
+I: pitch: -168.59422roll: -44.18131yaw: 55.86662
+I: Background sticky concurrent mark sweep GC freed 42667(1571KB) AllocSpace objects, 0(0B) LOS objects, 1% free, 88MB/89MB, paused 10.019ms total 122.286ms
+I: data from sensors: ; ax -0.034; ay -0.127; az 1.002; gx 0.875; gy -5.705; gz -2.362
+I: pitch: -165.91466roll: -44.1638yaw: 55.829132
+I: FinalizerDaemon: finalize objects = 18
+I: Background sticky concurrent mark sweep GC freed 29916(694KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 89MB/89MB, paused 10.742ms total 126.589ms
+I: data from sensors: ; ax -0.032; ay -0.127; az 1.001; gx 0.822; gy -5.74; gz -2.397
+I: pitch: -164.5776roll: -43.763042yaw: 56.485443
+I: data from sensors: ; ax -0.033; ay -0.128; az 1.001; gx 0.77; gy -5.617; gz -2.327
+I: pitch: -162.30884roll: -45.02295yaw: 54.800175
+I: data from sensors: ; ax -0.033; ay -0.128; az 1.001; gx 0.822; gy -5.652; gz -2.257
+I: pitch: -158.74509roll: -45.374535yaw: 51.865784
+I: Background partial concurrent mark sweep GC freed 97833(4MB) AllocSpace objects, 0(0B) LOS objects, 4% free, 91MB/95MB, paused 11.679ms total 1.029s
+I: data from sensors: ; ax -0.032; ay -0.127; az 1.001; gx 0.875; gy -5.635; gz -2.362
+I: pitch: -155.46603roll: -46.229187yaw: 50.448513
+I: data from sensors: ; ax -0.033; ay -0.127; az 1.002; gx 0.787; gy -5.635; gz -2.327
+I: pitch: -153.18706roll: -46.84311yaw: 48.814613
+I: Background sticky concurrent mark sweep GC freed 58748(1985KB) AllocSpace objects, 0(0B) LOS objects, 2% free, 93MB/95MB, paused 10.115ms total 132.042ms
+I: data from sensors: ; ax -0.034; ay -0.128; az 1.0; gx 0.752; gy -5.67; gz -2.31
+I: pitch: -150.72842roll: -46.817356yaw: 46.252792
+I: Background sticky concurrent mark sweep GC freed 32064(740KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 95MB/95MB, paused 11.708ms total 105.002ms
+I: data from sensors: ; ax -0.034; ay -0.128; az 1.001; gx 0.77; gy -5.722; gz -2.31
+I: pitch: -148.66312roll: -45.89604yaw: 44.430992
+I: Background sticky concurrent mark sweep GC freed 15121(353KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 96MB/96MB, paused 14.798ms total 107.297ms
+I: data from sensors: ; ax -0.034; ay -0.128; az 1.0; gx 0.805; gy -5.722; gz -2.31
+I: pitch: -146.4574roll: -44.908188yaw: 43.02543
+I: data from sensors: ; ax -0.033; ay -0.129; az 1.002; gx 0.822; gy -5.722; gz -2.362
+I: pitch: -144.59698roll: -44.33839yaw: 42.606834
+I: data from sensors: ; ax -0.032; ay -0.128; az 1.0; gx 0.805; gy -5.74; gz -2.345
+I: pitch: -142.98282roll: -43.48553yaw: 42.325054
+I: data from sensors: ; ax -0.032; ay -0.127; az 1.001; gx 0.84; gy -5.722; gz -2.362
+I: pitch: -141.01009roll: -42.96196yaw: 42.162136
+I: Background partial concurrent mark sweep GC freed 99509(6MB) AllocSpace objects, 0(0B) LOS objects, 3% free, 97MB/101MB, paused 11.680ms total 1.139s
+I: data from sensors: ; ax -0.032; ay -0.128; az 1.0; gx 0.857; gy -5.687; gz -2.397
+I: pitch: -139.06862roll: -43.116837yaw: 42.10413
+I: data from sensors: ; ax -0.032; ay -0.126; az 1.0; gx 0.805; gy -5.67; gz -2.362
+I: pitch: -137.31491roll: -43.258785yaw: 41.43277
+I: Background sticky concurrent mark sweep GC freed 58162(2MB) AllocSpace objects, 0(0B) LOS objects, 2% free, 98MB/101MB, paused 11.029ms total 127.060ms
+I: data from sensors: ; ax -0.033; ay -0.128; az 1.0; gx 0.84; gy -5.705; gz -2.31
+I: pitch: -134.61053roll: -42.484768yaw: 40.217995
+I: data from sensors: ; ax -0.034; ay -0.128; az 1.001; gx 0.805; gy -5.67; gz -2.327
+I: pitch: -132.11389roll: -42.013405yaw: 38.70746
+I: Background sticky concurrent mark sweep GC freed 44742(1720KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 100MB/101MB, paused 11.702ms total 107.417ms
+I: Background sticky concurrent mark sweep GC freed 22750(528KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 100MB/101MB, paused 13.405ms total 130.102ms
+I: data from sensors: ; ax -0.034; ay -0.127; az 1.001; gx 0.77; gy -5.67; gz -2.327
+I: pitch: -130.12296roll: -41.5411yaw: 37.11439
+I: data from sensors: ; ax -0.032; ay -0.127; az 1.0; gx 0.892; gy -5.687; gz -2.345
+I: pitch: -126.84991roll: -41.074738yaw: 35.98464
+I: data from sensors: ; ax -0.034; ay -0.128; az 1.001; gx 0.875; gy -5.652; gz -2.292
+I: pitch: -122.85947roll: -40.157772yaw: 33.868176
+I: data from sensors: ; ax -0.032; ay -0.129; az 0.999; gx 0.822; gy -5.67; gz -2.31
+I: pitch: -119.79215roll: -39.069477yaw: 32.04072
+I: Background partial concurrent mark sweep GC freed 108700(6MB) AllocSpace objects, 0(0B) LOS objects, 3% free, 102MB/106MB, paused 12.704ms total 1.218s
+I: data from sensors: ; ax -0.032; ay -0.129; az 1.001; gx 0.805; gy -5.67; gz -2.327
+I: pitch: -117.00432roll: -38.00749yaw: 30.285437
+I: data from sensors: ; ax -0.032; ay -0.126; az 1.002; gx 0.84; gy -5.635; gz -2.327
+I: pitch: -113.78327roll: -37.2198yaw: 28.217754
+I: Background sticky concurrent mark sweep GC freed 55528(2008KB) AllocSpace objects, 0(0B) LOS objects, 1% free, 104MB/106MB, paused 12.030ms total 141.058ms
+I: data from sensors: ; ax -0.032; ay -0.128; az 1.002; gx 0.805; gy -5.687; gz -2.397
+I: pitch: -111.78577roll: -36.959896yaw: 27.401606
+I: Background sticky concurrent mark sweep GC freed 32734(757KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 106MB/106MB, paused 12.440ms total 126.629ms
+I: data from sensors: ; ax -0.033; ay -0.127; az 1.0; gx 0.787; gy -5.67; gz -2.362
+I: pitch: -109.85335roll: -36.190235yaw: 26.219604
+I: Background sticky concurrent mark sweep GC freed 10713(249KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 107MB/107MB, paused 16.396ms total 101.377ms
+I: data from sensors: ; ax -0.033; ay -0.129; az 1.0; gx 0.805; gy -5.652; gz -2.345
+I: pitch: -106.81938roll: -34.72428yaw: 24.12155
+I: data from sensors: ; ax -0.034; ay -0.127; az 1.0; gx 0.787; gy -5.652; gz -2.397
+I: pitch: -104.95521roll: -34.11128yaw: 22.762259
+I: data from sensors: ; ax -0.033; ay -0.126; az 1.0; gx 0.84; gy -5.67; gz -2.362
+I: pitch: -101.750244roll: -32.52582yaw: 21.327631
+I: Background partial concurrent mark sweep GC freed 121710(6MB) AllocSpace objects, 0(0B) LOS objects, 3% free, 109MB/113MB, paused 16.415ms total 1.282s
+I: data from sensors: ; ax -0.033; ay -0.128; az 1.0; gx 0.822; gy -5.67; gz -2.397
+I: pitch: -99.10241roll: -31.18369yaw: 20.192986
+I: data from sensors: ; ax -0.034; ay -0.127; az 1.001; gx 0.735; gy -5.617; gz -2.362
+I: pitch: -98.1203roll: -29.701365yaw: 18.513748
+I: Background sticky concurrent mark sweep GC freed 53810(2026KB) AllocSpace objects, 0(0B) LOS objects, 1% free, 111MB/113MB, paused 12.197ms total 124.173ms
+I: data from sensors: ; ax -0.034; ay -0.129; az 1.0; gx 0.857; gy -5.705; gz -2.362
+I: pitch: -96.282616roll: -27.72538yaw: 18.18408
