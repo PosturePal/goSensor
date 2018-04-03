@@ -147,7 +147,7 @@ class DevicesFragment : Fragment(), View.OnClickListener, SensorEventListener {
                 + "yaw: " + lpYaw.toString())
 
 
-        view!!.devices_stage_render.mStageRenderer.setRotation(-lpPitch, lpRoll, -lpYaw)
+        view?.devices_stage_render?.mStageRenderer?.setRotation(-lpPitch, lpRoll, -lpYaw)
 
     }
 
