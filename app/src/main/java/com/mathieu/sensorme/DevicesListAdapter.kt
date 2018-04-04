@@ -26,6 +26,8 @@ import com.polidea.rxandroidble2.RxBleConnection
 import com.polidea.rxandroidble2.RxBleDevice
 import com.polidea.rxandroidble2.Timeout
 import io.reactivex.disposables.Disposable
+import io.reactivex.exceptions.UndeliverableException
+import io.reactivex.plugins.RxJavaPlugins
 import kotlinx.android.synthetic.main.fragment_devices.*
 import kotlinx.android.synthetic.main.fragment_devices.view.*
 import java.net.URLDecoder
@@ -66,10 +68,11 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
         var lpRoll: Float = 0.0f
         var lpYaw: Float = 0.0f
 
-        var mthr:Thread? = null
+        var mthr: Thread? = null
 
-        var calibIterator:Int = 0
-        var calibOffsets = FloatArray(6, { i -> 0.0f})
+        var calibIterator: Int = 0
+        var calibOffsets = FloatArray(6, { i -> 0.0f })
+
         init {
             this.deviceName = row?.findViewById(R.id.device_item_name)
             this.deviceStatus = row?.findViewById(R.id.device_item_status)
@@ -80,12 +83,7 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
 
                 if (mRxDevice != null && mRxDevice?.connectionState == RxBleConnection.RxBleConnectionState.CONNECTED) {
                     // connected, disconnect
-                    mConnectionDisposable?.dispose()
-                    mConnectionDisposable = null
-                    mRxBleConnection = null
-                    mRxDevice = null
-                    deviceFr.alert("Disconnected device with address " + this.deviceAddress)
-                    connectBtn?.alpha = 1.0f
+                    disconnect()
                 } else {
                     startConnection()
                 }
@@ -95,30 +93,38 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                 if (mRxDevice != null && mRxDevice?.connectionState == RxBleConnection.RxBleConnectionState.CONNECTED) {
 //                    mthr = Thread {
 //                        while (read()) {}
-                        read()
+                    read()
 //                    }
 //                    mthr?.start()
-                }
-                else
-                {
+                } else {
                     deviceFr.alert("Connect device first")
                 }
             }
 
-
-
-//            mSensorManager = deviceFr.context.getSystemService(SENSOR_SERVICE) as SensorManager?
-//            mAccelerometer = mSensorManager!!.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
-//            mGyroscope = mSensorManager!!.getDefaultSensor(Sensor.TYPE_GYROSCOPE)
-//            madgwickTimer.scheduleAtFixedRate(DoMadgwick(madgwickAHRS),
-//                    1000, 10)
-//
-//            mSensorManager!!.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
-//            mSensorManager!!.registerListener(this, mGyroscope, SensorManager.SENSOR_DELAY_NORMAL);
-
-
-//            var x =
-
+                    RxJavaPlugins.setErrorHandler({ e ->
+//                        if (e instanceof UndeliverableException) {
+//                            e = e.getCause();
+//                        }
+//                        if ((e instanceof IOException)) {
+//                            // fine, irrelevant network problem or API that throws on cancellation
+//                            return;
+//                        }
+//                        if (e instanceof InterruptedException) {
+//                            // fine, some blocking code was interrupted by a dispose call
+//                            return;
+//                        }
+//                        if ((e instanceof NullPointerException) || (e instanceof IllegalArgumentException)) {
+//                            // that's likely a bug in the application
+//                            Thread.currentThread().getUncaughtExceptionHandler().uncaughtException(Thread.currentThread(), e);
+//                            return;
+//                        }
+//                        if (e instanceof IllegalStateException) {
+//                            // that's a bug in RxJava or in a custom operator
+//                            Thread.currentThread().getUncaughtExceptionHandler().uncaughtException(Thread.currentThread(), e);
+//                            return;
+//                        }
+                        Log.w("Undeliverable exception", e);
+                    });
         }
 
         fun hexStringToByteArray(s: String): ByteArray {
@@ -144,7 +150,7 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
         }
 
 
-        fun read():Boolean {
+        fun read(): Boolean {
             if (device == null) {
                 deviceFr.alert("There is no device for connection")
                 return false
@@ -157,140 +163,151 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
             var success = true
 //            mRxBleConnection?.readCharacteristic(accGyroCharacteristicUUID)?.subscribe(
             mRxBleConnection?.setupNotification(accGyroCharacteristicUUID)
-                    ?.doOnNext({notificationObservable ->
+                    ?.doOnNext({ notificationObservable ->
                         Log.i(TAG, "Notif setup")
                     })
-                    ?.flatMap({notificationObservable -> notificationObservable})
+                    ?.flatMap({ notificationObservable -> notificationObservable })
                     ?.subscribe(
                             { characteristicValue ->
-                        if(!deviceFr.readFromAndroid) {
+                                if (!deviceFr.readFromAndroid) {
+                                    ///Log.i(TAG,"read char: " + toHex(characteristicValue) + ", bytes are\n " + characteristicValue.contentToString())
+                                    val bytes = characteristicValue.asList()
 
-
-                            //                        Log.i(TAG,"read char: " + toHex(characteristicValue) + ", bytes are\n " + characteristicValue.contentToString())
-                            val bytes = characteristicValue.asList()
-
-                            if (bytes.size > 16) {
-                                // 44020100e7fffdfff9039d00fbee9cfd0100d022
-                                /*
-                          1    2    3  4    5    6   7    8   9   10  11   12   13   14   15   16   17 18 19   20
-                        [-40, -114, 0, 0,| -24, -1,| -6, -1,| -7, 3,| 122, 0|, -40, -18|, -13, -3,| 1, 0, -48, 34]
-                         -- timestamp -- | - ax -  |- ay -  | - az -| - gx -| - gy -   | - gz -   | -- reserve --
-                         */
-                                // TODO: here may be an error
-                                // TODO: maybe use C for converting bytes to uints?
-                                var timestamp = uint32FromBytes(bytes.subList(0, 4).toByteArray())
-                                var ax = sint16FromBytes(bytes.subList(4, 6).toByteArray()).toFloat()/1000.0f
-                                var ay = sint16FromBytes(bytes.subList(6, 8).toByteArray()).toFloat()/1000.0f
-                                var az = sint16FromBytes(bytes.subList(8, 10).toByteArray()).toFloat()/1000.0f
-                                var gx = sint16FromBytes(bytes.subList(10, 12).toByteArray()).toFloat()/1000.0f
-                                var gy = sint16FromBytes(bytes.subList(12, 14).toByteArray()).toFloat()/1000.0f
-                                var gz = sint16FromBytes(bytes.subList(14, 16).toByteArray()).toFloat()/1000.0f
-
-                                // reserved - (17, 21)
-                                Log.i("I:", "data [NOT CALIB]: "
-                                        + "; ax " + ax.toString()
-                                        + "; ay " + ay.toString()
-                                        + "; az " + az.toString()
-                                        + "; gx " + gx.toString()
-                                        + "; gy " + gy.toString()
-                                        + "; gz " + gz.toString()
-                                        + "; ts " + timestamp.toString()
-                                )
-
-                                var jtimestamp = ByteBuffer.allocate(4).put(bytes.subList(0, 4).toByteArray()).getInt(0)
-                                var jax = ByteBuffer.allocate(2).put(bytes.subList(4, 6).toByteArray()).getShort(0).toFloat()/1000.0f
-                                var jay = ByteBuffer.allocate(2).put(bytes.subList(6, 8).toByteArray()).getShort(0).toFloat()/1000.0f
-                                var jaz = ByteBuffer.allocate(2).put(bytes.subList(8, 10).toByteArray()).getShort(0).toFloat()/1000.0f
-                                var jgx = ByteBuffer.allocate(2).put(bytes.subList(10, 12).toByteArray()).getShort(0).toFloat()/1000.0f
-                                var jgy = ByteBuffer.allocate(2).put(bytes.subList(12, 14).toByteArray()).getShort(0).toFloat()/1000.0f
-                                var jgz = ByteBuffer.allocate(2).put(bytes.subList(14, 16).toByteArray()).getShort(0).toFloat()/1000.0f
-                                // reserved - (17, 21)
-                                Log.i("I:", "data [NOT CALIB] [JAVA]: "
-                                        + "; ax " + jax.toString()
-                                        + "; ay " + jay.toString()
-                                        + "; az " + jaz.toString()
-                                        + "; gx " + jgx.toString()
-                                        + "; gy " + jgy.toString()
-                                        + "; gz " + jgz.toString()
-                                        + "; ts " + jtimestamp.toString()
-
-                                )
-
-                                if(calibIterator < 32)
-                                {
-                                    Log.i(TAG, "Calib?" + calibIterator)
-                                    calibOffsets[0] = calibOffsets[0] + gx
-                                    calibOffsets[1] = calibOffsets[1] + gy
-                                    calibOffsets[2] = calibOffsets[2] + gz
-
-                                    calibOffsets[3] = calibOffsets[3] + ax
-                                    calibOffsets[4] = calibOffsets[4] + ay
-                                    calibOffsets[5] = calibOffsets[5] + az
-
-                                    calibIterator++;
+                                    if (bytes.size > 16) {
+                                        readCharacteristic(bytes)
+                                    }
                                 }
-                                else {
-                                    val now: Long = System.currentTimeMillis()
-                                    madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
-                                    lastUpdate = now
-
-                                    // calib
-                                    gx -= calibOffsets[0]/32
-                                    gy -= calibOffsets[1]/32
-                                    gz -= calibOffsets[2]/32
-
-
-                                    ax -= calibOffsets[3]/32
-                                    ay -= calibOffsets[4]/32
-                                    az -= calibOffsets[5]/32
-
-
-                                    // reserved - (17, 21)
-                                    Log.i("I:", "data [calibrated]: "
-                                            + "; ax " + ax.toString()
-                                            + "; ay " + ay.toString()
-                                            + "; az " + az.toString()
-                                            + "; gx " + gx.toString()
-                                            + "; gy " + gy.toString()
-                                            + "; gz " + gz.toString()
-                                    )
-
-
-                                    madgwickAHRS.Update(gx.toFloat(),
-                                            gy.toFloat(),
-                                            gz.toFloat(),
-                                            ax.toFloat(),
-                                            ay.toFloat(),
-                                            az.toFloat())
-
-                                    lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
-                                    lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
-                                    lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
-
-                                    Log.i("Android:", "pitch: " + lpPitch.toString()
-                                            + "roll: " + lpRoll.toString()
-                                            + "yaw: " + lpYaw.toString())
-
-
-                                    deviceFr.view!!.devices_stage_render.mStageRenderer.setRotation(lpRoll, lpPitch, lpYaw)
-                                }
+                            },
+                            { e ->
+                                Log.i(TAG, "error reading char" + e.toString())
+                                success = false
                             }
-                        }
-//                        Log.i(TAG, ByteBuffer.wrap(timestamp.toByteArray()).int.toString())
-                    },
-                    { e ->
-                        Log.i(TAG, "error reading char" + e.toString())
-                        success = false
-                    }
-            )
+                    )
 
             return success
         }
 
+        private fun readCharacteristic(bytes: List<Byte>) {
+            // data : 44020100e7fffdfff9039d00fbee9cfd0100d022
+            /* format:
+              1    2    3  4    5    6   7    8   9   10  11   12   13   14   15   16   17 18 19   20
+            [-40, -114, 0, 0,| -24, -1,| -6, -1,| -7, 3,| 122, 0|, -40, -18|, -13, -3,| 1, 0, -48, 34]
+             -- timestamp -- | - ax -  |- ay -  | - az -| - gx -| - gy -   | - gz -   | -- reserve --
+             */
+
+            // converting bytes to uint32 / sint16
+            // TODO: here may be an error
+            // DONE: TODO: maybe use C for converting bytes to uints?
+            var timestamp = uint32FromBytes(bytes.subList(0, 4).toByteArray())
+            var ax = sint16FromBytes(bytes.subList(4, 6).toByteArray()).toFloat() / 1000.0f
+            var ay = sint16FromBytes(bytes.subList(6, 8).toByteArray()).toFloat() / 1000.0f
+            var az = sint16FromBytes(bytes.subList(8, 10).toByteArray()).toFloat() / 1000.0f
+            var gx = sint16FromBytes(bytes.subList(10, 12).toByteArray()).toFloat() / 1000.0f
+            var gy = sint16FromBytes(bytes.subList(12, 14).toByteArray()).toFloat() / 1000.0f
+            var gz = sint16FromBytes(bytes.subList(14, 16).toByteArray()).toFloat() / 1000.0f
+
+            // log
+            Log.i("I:", "data [NOT CALIB]: "
+                    + "; ax " + ax.toString()
+                    + "; ay " + ay.toString()
+                    + "; az " + az.toString()
+                    + "; gx " + gx.toString()
+                    + "; gy " + gy.toString()
+                    + "; gz " + gz.toString()
+                    + "; ts " + timestamp.toString()
+            )
+
+            // java convertion (Bad method i think)
+/*                                        var jtimestamp = ByteBuffer.allocate(4).put(bytes.subList(0, 4).toByteArray()).getInt(0)
+                                        var jax = ByteBuffer.allocate(2).put(bytes.subList(4, 6).toByteArray()).getShort(0).toFloat() / 1000.0f
+                                        var jay = ByteBuffer.allocate(2).put(bytes.subList(6, 8).toByteArray()).getShort(0).toFloat() / 1000.0f
+                                        var jaz = ByteBuffer.allocate(2).put(bytes.subList(8, 10).toByteArray()).getShort(0).toFloat() / 1000.0f
+                                        var jgx = ByteBuffer.allocate(2).put(bytes.subList(10, 12).toByteArray()).getShort(0).toFloat() / 1000.0f
+                                        var jgy = ByteBuffer.allocate(2).put(bytes.subList(12, 14).toByteArray()).getShort(0).toFloat() / 1000.0f
+                                        var jgz = ByteBuffer.allocate(2).put(bytes.subList(14, 16).toByteArray()).getShort(0).toFloat() / 1000.0f
+                                        // reserved - (17, 21)
+                                        Log.i("I:", "data [NOT CALIB] [JAVA]: "
+                                                + "; ax " + jax.toString()
+                                                + "; ay " + jay.toString()
+                                                + "; az " + jaz.toString()
+                                                + "; gx " + jgx.toString()
+                                                + "; gy " + jgy.toString()
+                                                + "; gz " + jgz.toString()
+                                                + "; ts " + jtimestamp.toString()
+
+                                        )
+*/
+
+            if (false){//calibIterator < 32) {
+                // we need to get more data for calibration
+                Log.i(TAG, "Collecting data for calibration " + calibIterator)
+                calibOffsets[0] = calibOffsets[0] + gx
+                calibOffsets[1] = calibOffsets[1] + gy
+                calibOffsets[2] = calibOffsets[2] + gz
+
+                calibOffsets[3] = calibOffsets[3] + ax
+                calibOffsets[4] = calibOffsets[4] + ay
+                calibOffsets[5] = calibOffsets[5] + az
+
+                calibIterator++;
+            } else {
+                // get new period
+                val now: Long = System.currentTimeMillis()
+                madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
+                lastUpdate = now
+
+                // calibration
+//                gx -= calibOffsets[0] / 32
+//                gy -= calibOffsets[1] / 32
+//                gz -= calibOffsets[2] / 32
+//
+//                ax -= calibOffsets[3] / 32
+//                ay -= calibOffsets[4] / 32
+//                az -= calibOffsets[5] / 32
+
+                // log
+
+//                Log.i("I:", "data [calibrated]: "
+//                        + "; ax " + ax.toString()
+//                        + "; ay " + ay.toString()
+//                        + "; az " + az.toString()
+//                        + "; gx " + gx.toString()
+//                        + "; gy " + gy.toString()
+//                        + "; gz " + gz.toString()
+//                )
+
+
+                // madgw.
+                madgwickAHRS.Update(gx.toFloat(),
+                        gy.toFloat(),
+                        gz.toFloat(),
+                        ax.toFloat(),
+                        ay.toFloat(),
+                        az.toFloat())
+
+                // TODO: try without these 3 lines of code
+//                lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
+//                lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
+//                lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
+
+                lpPitch = madgwickAHRS.MadgPitch.toFloat()
+                lpRoll = madgwickAHRS.MadgRoll.toFloat()
+                lpYaw = madgwickAHRS.MadgYaw.toFloat()
+                Log.i("Android:", "pitch: " + lpPitch.toString()
+                        + "roll: " + lpRoll.toString()
+                        + "yaw: " + lpYaw.toString())
+
+
+                deviceFr.view!!.devices_stage_render.mStageRenderer.setRotation(lpRoll, lpPitch, lpYaw)
+            }
+        }
+
         // native
-        external fun stringFromJNI():String
-        external fun uint32FromBytes(bytes: ByteArray):Int
-        external fun sint16FromBytes(bytes: ByteArray):Int
+        external fun stringFromJNI(): String
+
+        external fun uint32FromBytes(bytes: ByteArray): Int
+        external fun sint16FromBytes(bytes: ByteArray): Int
+
         companion object {
             init {
                 System.loadLibrary("native-lib")
@@ -310,34 +327,49 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                             { rxBleConnection ->
                                 deviceFr.alert("YEAH, rxble connected")
                                 deviceFr.alert("Connected device with address " + this.device?.address + " " + connected)
-                                connectBtn?.alpha = 0.5f
-
                                 mRxBleConnection = rxBleConnection
+                                updateUI(true)
                             }
                             , { e ->
-                        Log.i(TAG, "error!" + e.toString())
+                        Log.i(TAG, "error connecting device: " + e.toString())
                         deviceFr.alert("Error while connecting device with address " + this.device?.address + " " + connected)
-                        connectBtn?.alpha = 1.0f
+                        updateUI(false)
                     }
-                            , {
-                        Log.i(TAG, "Completed")
-                        deviceFr.alert("EWHATTATATATA FUCK")
-                    }
+//                            , {
+//                        Log.i(TAG, "Completed")
+//                        deviceFr.alert("EWHATTATATATA")
+//                    }
                     );
         }
 
+        private fun updateUI(isConnected: Boolean) {
+            deviceFr.activity.runOnUiThread(
+                    object : Runnable {
+                        override fun run() {
+
+                            if(isConnected)
+                            {
+                                connectBtn?.alpha = 0.5f
+                                deviceStatus?.text = "Connected"
+                            }
+                            else
+                            {
+                                connectBtn?.alpha = 1.0f
+                                deviceStatus?.text = "Disconnected"
+
+                            }
+                        }
+                    }
+            )
+        }
+
         public fun disconnect() {
-            Log.i(TAG, "dsconnect proc")
-//            mSensorManager?.unregisterListener(this);
-//            if(mRxDevice != null && mRxDevice?.connectionState == RxBleConnection.RxBleConnectionState.CONNECTED)
-//            {
-            // connected, disconnect
             mConnectionDisposable?.dispose()
             mConnectionDisposable = null
             mRxBleConnection = null
             mRxDevice = null
-            Log.i(TAG, "disconnected frrom here")
-//            }
+            deviceFr.alert("Disconnected device with address " + this.deviceAddress)
+            updateUI(false)
         }
     }
 
@@ -363,13 +395,12 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
         val device = items[position]
         viewHolder?.device = device
         viewHolder?.deviceName?.text = device.name
-        viewHolder?.deviceStatus?.text = device.address
-//                when (device.bondState) {
-//                    BluetoothDevice.BOND_NONE -> "not paired"
-//                    BluetoothDevice.BOND_BONDING -> "pairing"
-//                    BluetoothDevice.BOND_BONDED -> "paired before"
-//                    else -> device.address
-//                }
+        viewHolder?.deviceStatus?.text = when (device.bondState) {
+            BluetoothDevice.BOND_NONE -> "Disconnected"
+            BluetoothDevice.BOND_BONDING -> "pairing"
+            BluetoothDevice.BOND_BONDED -> "paired before"
+            else -> device.address
+        }
         viewHolder?.deviceAddress = device.address
         return view as View
     }
@@ -396,9 +427,10 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
     }
 
     public fun addItem(btd: BluetoothDevice) {
-        if (!items.contains(btd)) {
+        if (!items.contains(btd) && btd.name.isNotEmpty()) {
             items.add(btd)
             notifyDataSetChanged()
+            deviceFr.stat_available_count.text = items.size.toString()
         }
     }
 
