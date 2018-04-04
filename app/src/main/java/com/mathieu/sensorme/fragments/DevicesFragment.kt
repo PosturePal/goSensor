@@ -351,6 +351,7 @@ class DevicesFragment : Fragment(), View.OnClickListener, SensorEventListener {
         super.onPause()
 
         mAvailableDevicesAdapter.disconnect()
+        mSensorManager?.unregisterListener(this)
         cancelScan()
 //        activity.appbar.setVisibility(View.VISIBLE);
     }
@@ -376,6 +377,7 @@ class DevicesFragment : Fragment(), View.OnClickListener, SensorEventListener {
 //        if (registered) {
 //            context.unregisterReceiver(mReceiver)
 //        }
+        mSensorManager?.unregisterListener(this)
     }
 
 

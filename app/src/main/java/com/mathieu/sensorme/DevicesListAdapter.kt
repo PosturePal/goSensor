@@ -66,6 +66,7 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
         var lpRoll: Float = 0.0f
         var lpYaw: Float = 0.0f
 
+        var mthr:Thread? = null
 
         var calibIterator:Int = 0
         var calibOffsets = FloatArray(6, { i -> 0.0f})
@@ -91,12 +92,17 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
             }
 
             readBtn?.setOnClickListener { view ->
-
-                Thread {
-                    while (true) {
+                if (mRxDevice != null && mRxDevice?.connectionState == RxBleConnection.RxBleConnectionState.CONNECTED) {
+//                    mthr = Thread {
+//                        while (read()) {}
                         read()
-                    }
-                }.start()
+//                    }
+//                    mthr?.start()
+                }
+                else
+                {
+                    deviceFr.alert("Connect device first")
+                }
             }
 
 
@@ -138,18 +144,25 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
         }
 
 
-        fun read() {
+        fun read():Boolean {
             if (device == null) {
                 deviceFr.alert("There is no device for connection")
-                return
+                return false
             }
 
             if (mRxDevice?.connectionState != RxBleConnection.RxBleConnectionState.CONNECTED) {
                 deviceFr.alert("device is not connected")
-                return
+                return false
             }
-            mRxBleConnection?.readCharacteristic(accGyroCharacteristicUUID)?.subscribe(
-                    { characteristicValue ->
+            var success = true
+//            mRxBleConnection?.readCharacteristic(accGyroCharacteristicUUID)?.subscribe(
+            mRxBleConnection?.setupNotification(accGyroCharacteristicUUID)
+                    ?.doOnNext({notificationObservable ->
+                        Log.i(TAG, "Notif setup")
+                    })
+                    ?.flatMap({notificationObservable -> notificationObservable})
+                    ?.subscribe(
+                            { characteristicValue ->
                         if(!deviceFr.readFromAndroid) {
 
 
@@ -267,13 +280,11 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                     },
                     { e ->
                         Log.i(TAG, "error reading char" + e.toString())
+                        success = false
                     }
-
             )
 
-            fun fromByteArray(bytes: ByteArray): Int {
-                return ByteBuffer.wrap(bytes).getInt();
-            }
+            return success
         }
 
         // native
