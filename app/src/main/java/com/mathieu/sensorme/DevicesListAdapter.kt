@@ -187,6 +187,8 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
             return success
         }
 
+        val highPassFilters:Array<Filter> = Array<Filter>(6,
+                {i -> Filter(15000.0f, 44100, Filter.PassType.Highpass, 1.0f)})
         private fun readCharacteristic(bytes: List<Byte>) {
             // data : 44020100e7fffdfff9039d00fbee9cfd0100d022
             /* format:
@@ -206,9 +208,35 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
             var gy = sint16FromBytes(bytes.subList(12, 14).toByteArray()).toFloat() / 1000.0f
             var gz = sint16FromBytes(bytes.subList(14, 16).toByteArray()).toFloat() / 1000.0f
 
+
             // log
             Log.i("I:", "data [NOT CALIB]: "
-                    + "; ax " + ax.toString()
+                    + "ax " + ax.toString()
+                    + "; ay " + ay.toString()
+                    + "; az " + az.toString()
+                    + "; gx " + gx.toString()
+                    + "; gy " + gy.toString()
+                    + "; gz " + gz.toString()
+                    + "; ts " + timestamp.toString()
+            )
+
+            highPassFilters[0].Update(ax)
+            ax = highPassFilters[0].getValue()
+            highPassFilters[1].Update(ay)
+            ay = highPassFilters[1].getValue()
+            highPassFilters[2].Update(az)
+            az = highPassFilters[2].getValue()
+
+            highPassFilters[3].Update(gx)
+            gx = highPassFilters[3].getValue()
+            highPassFilters[4].Update(gy)
+            gy = highPassFilters[4].getValue()
+            highPassFilters[5].Update(gz)
+            gz = highPassFilters[5].getValue()
+
+            // log
+            Log.i("I:", "data [NOT CALIB] [FILTERED]: "
+                    + "ax " + ax.toString()
                     + "; ay " + ay.toString()
                     + "; az " + az.toString()
                     + "; gx " + gx.toString()
