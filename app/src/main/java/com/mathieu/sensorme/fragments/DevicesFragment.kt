@@ -135,9 +135,9 @@ class DevicesFragment : Fragment(), View.OnClickListener, SensorEventListener {
         madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
         lastUpdate = now
 
+
         madgwickAHRS.Update(agx.toFloat(), agy.toFloat(), agz.toFloat(),
                 aax.toFloat(), aay.toFloat(), aaz.toFloat())
-
 //        lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
 //        lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
 //        lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()

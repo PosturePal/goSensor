@@ -188,7 +188,9 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
         }
 
         val highPassFilters:Array<Filter> = Array<Filter>(6,
-                {i -> Filter(15000.0f, 44100, Filter.PassType.Highpass, 1.0f)})
+                {i -> Filter(2016.32f, 11900, Filter.PassType.Highpass, 1.0f)})
+        val lowPassFilters:Array<Filter> = Array<Filter>(6,
+                {i -> Filter(2000.0f, 11900, Filter.PassType.Lowpass, 1.0f)})
         private fun readCharacteristic(bytes: List<Byte>) {
             // data : 44020100e7fffdfff9039d00fbee9cfd0100d022
             /* format:
@@ -208,25 +210,39 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
             var gy = sint16FromBytes(bytes.subList(12, 14).toByteArray()).toFloat() / 1000.0f
             var gz = sint16FromBytes(bytes.subList(14, 16).toByteArray()).toFloat() / 1000.0f
 
+//            const int IMU_SIGN[9] = {1, -1, -1, 1, -1, -1, 1, -1, -1};// IMU sign sets the palm IMU coordinate system to right coordinate system https://www.evl.uic.edu/ralph/508S98/coordinates.html
+//            const int FINGER_IMU_SIGN[9] = { -1, 1, 1, 1, -1, -1, -1, 1, -1}; //IMU sign for fingers IMU's
+
+
 
             // log
-            Log.i("I:", "data [NOT CALIB]: "
-                    + "ax " + ax.toString()
-                    + "; ay " + ay.toString()
-                    + "; az " + az.toString()
+//            Log.i("I:", "data [NOT CALIB]: "
+//                    + "ax " + ax.toString()
+//                    + "; ay " + ay.toString()
+//                    + "; az " + az.toString()
+//                    + "; gx " + gx.toString()
+//                    + "; gy " + gy.toString()
+//                    + "; gz " + gz.toString()
+//                    + "; ts " + timestamp.toString()
+//            )
+
+            Log.i("I:", "-bf--"
+//                        + "ax " + ax.toString()
+//                        + "; ay " + ay.toString()
+//                        + "; az " + az.toString()
                     + "; gx " + gx.toString()
                     + "; gy " + gy.toString()
                     + "; gz " + gz.toString()
-                    + "; ts " + timestamp.toString()
+//                        + "; ts " + timestamp.toString()
             )
 
-            highPassFilters[0].Update(ax)
-            ax = highPassFilters[0].getValue()
-            highPassFilters[1].Update(ay)
-            ay = highPassFilters[1].getValue()
-            highPassFilters[2].Update(az)
-            az = highPassFilters[2].getValue()
-
+//            highPassFilters[0].Update(ax)
+//            ax = highPassFilters[0].getValue()
+//            highPassFilters[1].Update(ay)
+//            ay = highPassFilters[1].getValue()
+//            highPassFilters[2].Update(az)
+//            az = highPassFilters[2].getValue()
+//
             highPassFilters[3].Update(gx)
             gx = highPassFilters[3].getValue()
             highPassFilters[4].Update(gy)
@@ -234,16 +250,24 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
             highPassFilters[5].Update(gz)
             gz = highPassFilters[5].getValue()
 
+
+            lowPassFilters[3].Update(gx)
+            gx = lowPassFilters[3].getValue()
+            lowPassFilters[4].Update(gy)
+            gy = lowPassFilters[4].getValue()
+            lowPassFilters[5].Update(gz)
+            gz = lowPassFilters[5].getValue()
+
             // log
-            Log.i("I:", "data [NOT CALIB] [FILTERED]: "
-                    + "ax " + ax.toString()
-                    + "; ay " + ay.toString()
-                    + "; az " + az.toString()
-                    + "; gx " + gx.toString()
-                    + "; gy " + gy.toString()
-                    + "; gz " + gz.toString()
-                    + "; ts " + timestamp.toString()
-            )
+//            Log.i("I:", "data [NOT CALIB] [FILTERED]: "
+//                    + "ax " + ax.toString()
+//                    + "; ay " + ay.toString()
+//                    + "; az " + az.toString()
+//                    + "; gx " + gx.toString()
+//                    + "; gy " + gy.toString()
+//                    + "; gz " + gz.toString()
+//                    + "; ts " + timestamp.toString()
+//            )
 
             // java convertion (Bad method i think)
 /*                                        var jtimestamp = ByteBuffer.allocate(4).put(bytes.subList(0, 4).toByteArray()).getInt(0)
@@ -266,16 +290,16 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                                         )
 */
 
-            if (false){//calibIterator < 32) {
+            if (calibIterator < 32) {
                 // we need to get more data for calibration
                 Log.i(TAG, "Collecting data for calibration " + calibIterator)
                 calibOffsets[0] = calibOffsets[0] + gx
                 calibOffsets[1] = calibOffsets[1] + gy
                 calibOffsets[2] = calibOffsets[2] + gz
 
-                calibOffsets[3] = calibOffsets[3] + ax
-                calibOffsets[4] = calibOffsets[4] + ay
-                calibOffsets[5] = calibOffsets[5] + az
+//                calibOffsets[3] = calibOffsets[3] + ax
+//                calibOffsets[4] = calibOffsets[4] + ay
+//                calibOffsets[5] = calibOffsets[5] + az
 
                 calibIterator++;
             } else {
@@ -284,14 +308,23 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                 madgwickAHRS.SamplePeriod = (now - lastUpdate) / 1000.0f //timestamp.toFloat()
                 lastUpdate = now
 
-                // calibration
-//                gx -= calibOffsets[0] / 32
-//                gy -= calibOffsets[1] / 32
-//                gz -= calibOffsets[2] / 32
-//
+//                 calibration
+                gx -= calibOffsets[0] / 32
+                gy -= calibOffsets[1] / 32
+                gz -= calibOffsets[2] / 32
+
 //                ax -= calibOffsets[3] / 32
 //                ay -= calibOffsets[4] / 32
 //                az -= calibOffsets[5] / 32
+                Log.i("I:", "data"
+//                        + "ax " + ax.toString()
+//                        + "; ay " + ay.toString()
+//                        + "; az " + az.toString()
+                        + "; gx " + gx.toString()
+                        + "; gy " + gy.toString()
+                        + "; gz " + gz.toString()
+//                        + "; ts " + timestamp.toString()
+                )
 
                 // log
 
@@ -321,9 +354,9 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                 lpPitch = madgwickAHRS.MadgPitch.toFloat()
                 lpRoll = madgwickAHRS.MadgRoll.toFloat()
                 lpYaw = madgwickAHRS.MadgYaw.toFloat()
-                Log.i("Android:", "pitch: " + lpPitch.toString()
-                        + "roll: " + lpRoll.toString()
-                        + "yaw: " + lpYaw.toString())
+//                Log.i("Android:", "pitch: " + lpPitch.toString()
+//                        + "roll: " + lpRoll.toString()
+//                        + "yaw: " + lpYaw.toString())
 
 
                 deviceFr.view!!.devices_stage_render.mStageRenderer.setRotation(lpRoll, lpPitch, lpYaw)

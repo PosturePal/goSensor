@@ -71,7 +71,8 @@ Java_com_mathieu_sensorme_DevicesListAdapter_00024ViewHolder_sint16FromBytes(
         jbyteArray bytes) {
     jbyte *m_bytes = env->GetByteArrayElements(bytes, 0);
     unsigned char *res = as_unsigned_char_array(env, bytes);
-    int16_t result = res[0] | res[1] << 8;
+    // combine high and low bytes
+    int16_t result = res[1] << 8 | res[0];
     return result;
 }
 //      0    2    3  4    5    6   7    8   9   10  11   12   13   14   15   16   17 18 19   20
