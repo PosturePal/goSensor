@@ -347,9 +347,9 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                         az.toFloat())
 
                 // TODO: try without these 3 lines of code
-                lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
-                lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
-                lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
+//                lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
+//                lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
+//                lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
 
                 lpPitch = madgwickAHRS.MadgPitch.toFloat()
                 lpRoll = madgwickAHRS.MadgRoll.toFloat()
