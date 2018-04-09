@@ -309,9 +309,9 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                 lastUpdate = now
 
 //                 calibration
-                gx -= calibOffsets[0] / 32
-                gy -= calibOffsets[1] / 32
-                gz -= calibOffsets[2] / 32
+//                gx -= calibOffsets[0] / 32
+//                gy -= calibOffsets[1] / 32
+//                gz -= calibOffsets[2] / 32
 
 //                ax -= calibOffsets[3] / 32
 //                ay -= calibOffsets[4] / 32
