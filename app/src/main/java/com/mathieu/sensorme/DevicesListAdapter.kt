@@ -188,9 +188,9 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
         }
 
         val highPassFilters:Array<Filter> = Array<Filter>(6,
-                {i -> Filter(2016.32f, 11900, Filter.PassType.Highpass, 1.0f)})
+                {i -> Filter(300.32f, 11900, Filter.PassType.Highpass, 1.0f)})
         val lowPassFilters:Array<Filter> = Array<Filter>(6,
-                {i -> Filter(2000.0f, 11900, Filter.PassType.Lowpass, 1.0f)})
+                {i -> Filter(300.0f, 11900, Filter.PassType.Lowpass, 1.0f)})
         private fun readCharacteristic(bytes: List<Byte>) {
             // data : 44020100e7fffdfff9039d00fbee9cfd0100d022
             /* format:
@@ -347,9 +347,9 @@ class DevicesListAdapter(private var deviceFr: DevicesFragment, private var item
                         az.toFloat())
 
                 // TODO: try without these 3 lines of code
-//                lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
-//                lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
-//                lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
+                lpPitch = (lpPitch * 0.2 + madgwickAHRS.MadgPitch * 0.8).toFloat()
+                lpRoll = (lpRoll * 0.2 + madgwickAHRS.MadgRoll * 0.8).toFloat()
+                lpYaw = (lpYaw * 0.2 + madgwickAHRS.MadgYaw * 0.8).toFloat()
 
                 lpPitch = madgwickAHRS.MadgPitch.toFloat()
                 lpRoll = madgwickAHRS.MadgRoll.toFloat()
